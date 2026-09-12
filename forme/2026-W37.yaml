@@ -1,0 +1,45 @@
+# Une semaine = un fichier. Nommage en semaines ISO.
+# Section "mesures" : generee par scripts/weekly.py, ne pas editer a la main.
+# Section "ressenti" : saisie manuelle, l'agent n'y ecrit jamais.
+
+semaine: 2026-W37
+du: 2026-09-07
+au: 2026-09-13
+
+mesures:
+  maj: '2026-09-12'
+  ctl_fin: 68.9
+  atl_fin: 77.5
+  tsb_fin: -8.6
+  ramp_rate: 3.1083527
+  charge_totale: 392
+  heures: 9.5
+  distance_km: 236
+  denivele_m: 3219
+  seances: 7
+  sommeil_moyen_h:
+  hrv_moyenne:
+  fc_repos_moyenne: 59.7
+
+# saisie manuelle
+ressenti:
+  global:
+  jambes:
+  motivation:
+  sommeil:
+  seances_manquees: []
+  imprevus:
+  notes:
+
+adaptations: []
+
+analyse_coach:
+  maj: '2026-09-12'
+  synthese: >
+    Semaine de régularité retrouvée (9.5h, 392 TSS, 3219m D+ à date). Les vélotafs
+    mardi et mercredi ont été bien assimilés, la FC de repos est redescendue sous les 60 bpm
+    (59.7 bpm), signe d'un système nerveux autonome apaisé après le coup de chaud de W36.
+    Le socle aérobie est bien en place avec un CTL stabilisé à 68.9.
+  decision: >
+    Clôturer W37 calmement dimanche (trail ou récup). Enchaîner sur W38 en maintien plaisir
+    avant la coupure complète du 23 septembre au 4 octobre.

@@ -1,0 +1,34 @@
+# Une semaine = un fichier. Nommage en semaines ISO.
+# Section "mesures" : generee par scripts/weekly.py, ne pas editer a la main.
+# Section "ressenti" : saisie manuelle, l'agent n'y ecrit jamais.
+
+semaine: 2026-W34
+du: 2026-08-17
+au: 2026-08-23
+
+mesures:
+  maj: '2026-09-12'
+  ctl_fin: 69.6
+  atl_fin: 54.2
+  tsb_fin: 15.4
+  ramp_rate: -1.0167923
+  charge_totale: 444
+  heures: 10.4
+  distance_km: 251
+  denivele_m: 3490
+  seances: 7
+  sommeil_moyen_h:
+  hrv_moyenne:
+  fc_repos_moyenne: 67.5
+
+# saisie manuelle
+ressenti:
+  global: juste rouler pour recuperer du virus et voyage a londres a partir de mercredi
+  jambes:
+  motivation:
+  sommeil:
+  seances_manquees: []
+  imprevus:
+  notes:
+
+adaptations: []

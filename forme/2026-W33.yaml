@@ -1,0 +1,34 @@
+# Une semaine = un fichier. Nommage en semaines ISO.
+# Section "mesures" : generee par scripts/weekly.py, ne pas editer a la main.
+# Section "ressenti" : saisie manuelle, l'agent n'y ecrit jamais.
+
+semaine: 2026-W33
+du: 2026-08-10
+au: 2026-08-16
+
+mesures:
+  maj: '2026-09-12'
+  ctl_fin: 70.6
+  atl_fin: 31.1
+  tsb_fin: 39.5
+  ramp_rate: -9.698479
+  charge_totale: 127
+  heures: 5.0
+  distance_km: 101
+  denivele_m: 1225
+  seances: 6
+  sommeil_moyen_h:
+  hrv_moyenne:
+  fc_repos_moyenne: 67.8
+
+# saisie manuelle
+ressenti:
+  global: reprise apres 1 semaine de gros virus sans sport
+  jambes: aucune sensation
+  motivation: difficile
+  sommeil: ca va mieux
+  seances_manquees: []
+  imprevus:
+  notes:
+
+adaptations: []

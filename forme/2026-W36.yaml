@@ -1,0 +1,45 @@
+# Une semaine = un fichier. Nommage en semaines ISO.
+# Section "mesures" : generee par scripts/weekly.py, ne pas editer a la main.
+# Section "ressenti" : saisie manuelle, l'agent n'y ecrit jamais.
+
+semaine: 2026-W36
+du: 2026-08-31
+au: 2026-09-06
+
+mesures:
+  maj: '2026-09-12'
+  ctl_fin: 69.2
+  atl_fin: 80.6
+  tsb_fin: -11.3
+  ramp_rate: 3.5702362
+  charge_totale: 530
+  heures: 11.1
+  distance_km: 275
+  denivele_m: 4863
+  seances: 7
+  sommeil_moyen_h:
+  hrv_moyenne:
+  fc_repos_moyenne: 76.5
+ressenti:
+  global: remise en route apres les dernieres semaines coupées entre maladie et 
+    vacances
+  jambes: largement meilleurs
+  motivation: bonne
+  sommeil: bon
+  seances_manquees: []
+  imprevus: aucun
+  notes:
+
+adaptations: []
+
+analyse_coach:
+  maj: '2026-09-12'
+  synthese: >
+    Vraie semaine de relance post-coupures (11.1h, 530 TSS, 4863m D+).
+    Excellente réponse physiologique : les jambes et le moral sont revenus immédiatement
+    dès la réactivation du système cardiovasculaire. Le test Z4 Over-Under a validé la
+    tenue du seuil malgré la dérive de FC de repos (76 bpm) consécutive à la chaleur et
+    au redémarrage. Le CTL remonte à 69.2.
+  decision: >
+    Stabiliser le volume sur W37 sans surenchérir sur la charge, consolider les acquis
+    avant la coupure programmée fin septembre.

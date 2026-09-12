@@ -1,0 +1,176 @@
+# Objectifs et architecture de saison.
+# Rempli par Cyril, puis complete par l'agent apres validation explicite
+# de chaque etape de la construction.
+
+saison: 2026-2027
+debut: 2026-10-01
+
+federations:
+  pratiquees: [FFC, FSGT, cyclosportive]
+  prioritaire: null
+
+objectifs:
+  principal:
+    nom: MERCAN’TOUR BONETTE
+    date: "2027-06-13"
+    type: cyclo
+    parcours : "177 KM – 4800 D+"
+    profil: montagne              # plat | vallonne | montagne
+    notes: si pas assez pret je passerai sur le petit parcours 110km 3000 D+
+  secondaires:
+  - nom: "Paris nice challenge"
+    date: "13 Mars 2027"
+    type: cyclo
+    parcours: "150 KM – 3500 D+"
+    profil: montagne
+    notes:
+  - nom: "MERCAN’TOUR MADONE PEILLE"
+    date: "2027-04-04"
+    type: cyclo
+    parcours: "110 KM – 2800 D+"
+    profil: montagne
+    notes:
+  - nom: "GNFY CANNES"
+    date: "Mi Avril 2027"
+    type: cyclo
+    parcours: "110 KM – 2000 D+"
+    profil: vallonne
+    notes: "course de préparation"
+  - nom: "LAZARDIERES CANNES"
+    date: "premier WE Mai 2027 "
+    type: cyclo
+    parcours: "112 KM – 1800 D+"
+    profil: vallonne
+    notes: "course de préparation"
+  - nom: "GRANDFONDO LA VENCOISE"
+    date: "2eme we Mai 2027"
+    type: cyclo
+    parcours: "147 KM – 2800 D+"
+    profil: vallonne
+    notes: "1 semaine apres la LAZARDIERES en général"
+  - nom: "Cimes Mercantour"
+    date: "debut aout 2027"
+    type: cyclo
+    parcours: "100 KM – 2800 D+"
+    profil: montagne
+  commentaires : "je vais peut etre pas toutes les faires et aussi integrer des courses FFC/FSGT"
+
+# Rempli apres l'etape "architecture de saison" validee en conversation.
+blocs:
+  - id: bloc-01
+    nom: Reprise & Capacité Aérobie
+    du: 2026-10-05
+    au: 2026-11-01
+    duree_semaines: 4
+    objectif: reconstruire la base aerobie, le rythme moteur et les adaptations tendineuses
+    focus: [Z2, sprints_courts_alactiques, reprise_trail, ppg]
+    volume_cible_h: [8, 14]
+    rythme: "4 semaines progressives de reprise et foncier (8h à 14h) sans assimilation (sortie de coupure)"
+    fichier: blocs/bloc-01.yaml
+
+  - id: bloc-02
+    nom: Force Sous-Max & Couple (Torque)
+    du: 2026-11-02
+    au: 2026-11-29
+    duree_semaines: 4
+    objectif: developper la force musculaire en col et le recrutement neuro en bosse
+    focus: [force_basse_cadence_z3, sprints_depart_arrete, sortie_longue_5h]
+    volume_cible_h: [10, 14]
+    rythme: "Cycle 3:1 -> 3 semaines de charge progressive (10h à 14h) + 1 semaine d'assimilation (8h)"
+
+  - id: bloc-03
+    nom: Foncier Étendu & Sweet Spot Base
+    du: 2026-11-30
+    au: 2026-12-27
+    duree_semaines: 4
+    objectif: consolider le moteur aerobie, allonger l'endurance et introduire le Sweet Spot
+    focus: [sweet_spot_intro, maintien_sprints, volume_hivernal]
+    volume_cible_h: [10, 14]
+    rythme: "Cycle 3:1 -> 3 semaines de charge (11h à 14h) + 1 semaine d'assimilation fêtes (8h)"
+
+  - id: bloc-04
+    nom: Sweet Spot Extensif
+    du: 2026-12-28
+    au: 2027-01-24
+    duree_semaines: 4
+    objectif: allonger le temps de soutien au Sweet Spot en col et repousser l'apparition de la fatigue
+    focus: [test_terrain_3m_12m, sweet_spot_long, endurance_fatigue, sorties_samedi_5h30]
+    test: "Test terrain 3 min + 12 min début janvier (semaine du 4 janv) pour calibrer les zones Sweet Spot / Seuil"
+    volume_cible_h: [12, 15]
+    rythme: "Cycle 3:1 -> S1 Test 3m+12m & montée en charge (12h à 15h) + S4 assimilation (8h)"
+
+  - id: bloc-05
+    nom: Seuil Z4 & Over-Unders
+    du: 2027-01-25
+    au: 2027-02-21
+    duree_semaines: 4
+    objectif: elever le seuil anaerobie et entrainer le recyclage du lactate en montagne
+    focus: [seuil_z4, over_unders, resistance_dplus, test_controle_fevrier]
+    test: "Test de contrôle 3 min + 12 min fin février (semaine du 15 fév) pour valider la progression avant Paris-Nice"
+    volume_cible_h: [12, 15]
+    rythme: "Cycle 3:1 -> 3 semaines charge haute (12h à 15h) dont test de contrôle en S4 + 1 semaine d'assimilation / décharge (8h)"
+
+  - id: bloc-06
+    nom: Spécifique & Affûtage Paris-Nice
+    du: 2027-02-22
+    au: 2027-03-14
+    duree_semaines: 3
+    objectif: transformer les gains hivernaux en allure de course et reussir la premiere cyclo cible
+    focus: [pacing_montagne, specifique_course, affutage_pre_course]
+    course: "Paris Nice Challenge (13 mars 2027 - 150 km, 3500 D+)"
+    volume_cible_h: [8, 13]
+    rythme: "S1-S2 specifique et pacing (12-13h) -> S3 SEMAINE D'AFFUTAGE (volume -40%, 8h, debloquage Z4 court, TSB positif pour la course du 13 mars)"
+
+  - id: bloc-07
+    nom: PMA & Rythme Punchy
+    du: 2027-03-15
+    au: 2027-04-18
+    duree_semaines: 5
+    objectif: relancer la PMA rapidement post-PNC et convertir en puissance sur bosses nerveuses
+    focus: [transition_rapide_pnc, pma_z5, bosses_courtes, affutage]
+    courses:
+      - "Mercan'Tour Madone-Peille (04 avril 2027)"
+      - "GFNY Cannes (mi-avril 2027)"
+    volume_cible_h: [8, 12]
+    rythme: "S1 transition active (début de semaine vélotaf souple, démarrage PMA en fin de semaine) -> S2 gros bloc PMA en bosse -> S3 SEMAINE D'AFFUTAGE (8h) & Madone-Peille -> S4 rappel rythme -> S5 SEMAINE D'AFFUTAGE (8h) & GFNY Cannes"
+
+  - id: bloc-08
+    nom: Densité Cyclos & Assimilation
+    du: 2027-04-19
+    au: 2027-05-09
+    duree_semaines: 3
+    objectif: gerer la fraicheur, enchainer les epreuves de mai sans s'epuiser
+    focus: [recup_active, maintien_puissance, fraicheur_course]
+    courses:
+      - "Lazardieres Cannes (debut mai 2027)"
+      - "Grandfondo La Vencoise (2e WE mai 2027)"
+    volume_cible_h: [8, 10]
+    rythme: "S1 SEMAINE RECUP POST-GFNY (8h) -> S2 SEMAINE D'AFFUTAGE (8h) & Lazardieres -> S3 gestion fraicheur & La Vencoise"
+
+  - id: bloc-09
+    nom: Spécifique Haute Montagne & Affûtage Bonette
+    du: 2027-05-10
+    au: 2027-06-13
+    duree_semaines: 5
+    objectif: pic de forme absolu pour le monument de la saison (177 km, 4800 D+)
+    focus: [haute_montagne, pacing_bonette, nutrition_course, affutage_deux_semaines]
+    course: "MERCAN’TOUR BONETTE (13 juin 2027 - 177 km, 4800 D+)"
+    volume_cible_h: [7, 15]
+    rythme: "S1 SEMAINE RECUP POST-VENCOISE (8h) -> S2-S3 semaines chocs specifiques cols (14-15h, sorties 6h) -> S4 AFFUTAGE S-2 (10h) -> S5 AFFUTAGE FINAL S-1 (6-7h, debloquage court, pic TSB +10 le 13 juin)"
+
+# Synthese validee de la session de construction du programme.
+# C'est le document de reference : l'agent s'y appuie pour construire
+# chaque nouveau bloc.
+synthese_construction:
+  date: "2026-09-12"
+  texte: >
+    Cadrage saison 2026/2027 validé avec Cyril.
+    Reprise officielle le lundi 05/10/2026 après coupure régénératrice du 23/09 au 04/10.
+    Volume disponible : entre 8h et 15h d'entraînement par semaine.
+    Règles physiologiques cardinales du plan :
+    1. Structure des mésocycles : cycle 3:1 (3 semaines de charge progressive, 1 semaine d'assimilation/récupération ramenée au plancher de 8h), avec pour exception le Bloc 1 (4 semaines progressives sans semaine d'assimilation car sortie directe de coupure).
+    2. Règle absolue d'affûtage pré-course : la semaine précédant toute cyclosportive (Paris-Nice, Madone-Peille, GFNY, Lazardières, Vençoise, Bonette), le volume est allégé de 40 à 50% (environ 7-8h) avec maintien de courts rappels d'intensité (déblocage Z4/PMA très court) pour garantir un TSB positif et une tonicité maximale le jour J.
+    3. Règle de récupération post-course : régénération active après les cyclos. Exception pour le post-Paris-Nice Challenge : décompression active limitée au début de semaine (lundi-jeudi, vélotaf très souple) pour attaquer le premier stimulus de PMA dès la fin de semaine (samedi) afin de préparer de façon optimale la Madone-Peille (à J+22) et la GFNY Cannes.
+    4. Sprints en Phase 1 (hiver) : intégration systématique de rappels de sprints courts alactiques (10-15s max, récup complète 3-4 min) en fin de sortie Z2 (maintien recrutement fibres rapides et commande motrice sans acide lactique) et de départs arrêtés / sprints à fort couple (torque) en bosse pour le renforcement musculaire spécifique.
+    5. Intégration stricte des contraintes : 2 jours de repos/semaine (lundi/vendredi), vélotaf mardi/mercredi (2h10 AR), séances en semaine (hors vélotaf, ex: jeudi) plafonnées à max 2h sur la pause déjeuner, sortie longue samedi (cols niçois 5 à 6h), trail le dimanche au moins un WE sur deux (1 à 2h), renforcement musculaire 2x/semaine.
+    6. Protocole de tests terrain : abandon du test 20 min classique au profit du protocole de terrain 3 min + 12 min en côte (avec 20 min de récup Z1 entre les deux). Deux dates programmées : début janvier 2027 (début Bloc 4 pour calibrer Sweet Spot et Seuil) et mi-février 2027 (fin Bloc 5 pour valider la progression et fixer le pacing du Paris-Nice Challenge).

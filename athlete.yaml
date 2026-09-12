@@ -1,0 +1,95 @@
+# Profil physiologique.
+# Bloc "seuils" : saisie manuelle, l'agent n'y touche jamais.
+# Blocs "puissance_record", "empreinte_volume", "profil_type" : generes par
+# scripts/build_profile.py.
+
+identite:
+  poids_kg: 68
+  taille_cm: 187
+  annee_naissance: 2000
+
+# saisie manuelle
+seuils:
+  ftp:
+    valeur_w: 310
+    date: 2026-09-12
+    methode: effort_45min_regulier
+    source: declare
+    fiabilite: moyenne
+    note: "308 W tenus 45 min avec puissance parfaitement plate
+           (record 30 min = record 45 min). Meilleure donnee disponible."
+  fc_max: 204
+  fc_seuil_lthr: 184
+  fc_repos_reference:
+
+# genere par build_profile.py
+puissance_record:
+  maj: '2026-09-12'
+  fenetre_jours: 365
+  pics:
+    - duree: 5s
+      watts: 844
+      w_kg: 12.6
+      source: record_reel
+    - duree: 1min
+      watts: 581
+      w_kg: 8.67
+      source: record_reel
+    - duree: 5min
+      watts: 351
+      w_kg: 5.24
+      source: record_reel
+    - duree: 20min
+      watts: 315
+      w_kg: 4.7
+      source: record_reel
+    - duree: 60min
+      watts: 289
+      w_kg: 4.31
+      source: record_reel
+  fiable: true
+empreinte_volume:
+  maj: '2026-09-12'
+  fenetre_jours: 365
+  heures_semaine_moyenne: 6.6
+  heures_semaine_max: 15.3
+  sorties_semaine_moyenne: 5.9
+  tss_semaine_moyenne: 319
+  tss_semaine_max: 762
+  denivele_m_par_km: 12.2
+
+# genere par build_profile.py
+profil_type:
+  maj: '2026-09-12'
+  commentaire: rapport PMA/seuil equilibre (5min/20min = 1.11). A confronter au 
+    ressenti.
+
+course_a_pied:
+  volume_semaine_moyen_h:
+  allure_reference:
+
+materiel:
+  compteur: Garmin Edge
+  montre: Garmin Fenix 5
+  capteur_sante: Garmin CIRQA
+  capteur_puissance:
+modele_cp:
+  maj: '2026-09-12'
+  source: icu_rolling_* (modele ajuste par Intervals)
+  cp_w: 303
+  w_prime_j: 25066
+  p_max_w: 864
+  usage: prediction d'effort (col, echappee). PAS un profil d'athlete.
+  points_modelises:
+    - duree: 5min
+      watts: 387
+      w_kg: 5.77
+      source: modele_cp_wprime
+    - duree: 10min
+      watts: 345
+      w_kg: 5.15
+      source: modele_cp_wprime
+    - duree: 20min
+      watts: 324
+      w_kg: 4.83
+      source: modele_cp_wprime

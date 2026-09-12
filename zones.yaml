@@ -1,0 +1,127 @@
+# Zones de puissance et de FC.
+# Saisie manuelle uniquement — aucun script n'ecrit dans ce fichier.
+# build_profile.py signale seulement si reference_ftp_w ne correspond plus au
+# FTP declare dans athlete.yaml.
+#
+# Trois niveaux, du plus theorique au plus personnel :
+#   pct_ftp   bornes en % du FTP. Verite de reference, ne bouge jamais.
+#   watts     conversion sur reference_ftp_w. A recalculer apres un test.
+#   perso     ce que TU appelles cette zone. Fait foi pour la prescription.
+#
+# Dans un fichier de bloc : cible nommee (Z4) -> bornes perso si renseignees ;
+# cible en pourcentage (91-105%) -> conversion theorique. Les deux notations
+# ne disent donc pas la meme chose, c'est voulu.
+
+reference_ftp_w: 308
+maj: 2026-09-12
+zones_custom: false
+
+puissance:
+  - zone: Z1
+    nom: Recuperation
+    pct_ftp: [0, 55]
+    watts: [0, 168]
+    perso:
+      watts: null
+      ressenti: null
+
+  - zone: Z2
+    nom: Endurance
+    pct_ftp: [56, 75]
+    watts: [171, 229]
+    perso:
+      watts: null
+      ressenti: null
+
+  - zone: Z3
+    nom: Tempo
+    pct_ftp: [76, 90]
+    watts: [232, 275]
+    perso:
+      watts: null
+      ressenti: "bornes coherentes avec le ressenti, zone validee.
+                 Pas de correction necessaire."
+
+  - zone: Z4
+    nom: Seuil
+    pct_ftp: [91, 105]
+    watts: [278, 320]
+    perso:
+      watts: null
+      ressenti: null
+      # Point d'ancrage : 304 W tenus 45 min avec puissance parfaitement
+      # plate (record 30 min = record 45 min). A confronter au ressenti
+      # sur du 2x20 en cotte vs sur le plat.
+
+  - zone: Z5
+    nom: PMA
+    pct_ftp: [106, 120]
+    watts: [323, 366]
+    perso:
+      watts: null
+      ressenti: null
+
+  - zone: Z6
+    nom: Anaerobie
+    pct_ftp: [121, 150]
+    watts: [369, 458]
+    perso:
+      watts: null
+      ressenti: null
+      # Profil puncheur : 581 W sur 1 min, W' a 25 kJ. Zone a exploiter,
+      # pas seulement a subir.
+
+  - zone: Z7
+    nom: Neuromusculaire
+    pct_ftp: [151, 999]
+    watts: [461, null]
+    perso:
+      watts: null
+      ressenti: null
+
+# Intervals calcule le sweet spot entre 84 et 97 % du FTP sur ce compte.
+# Zone centrale de la prepa hivernale.
+sweet_spot:
+  pct_ftp: [84, 97]
+  watts: [256, 296]
+  perso:
+    watts: null
+    ressenti: null
+
+# Bornes reprises de icu_hr_zones sur le compte Intervals (bornes hautes).
+# Utile surtout en trail, ou il n'y a pas de puissance.
+fc:
+  reference_lthr: 184
+  fc_max: 204
+  zones:
+    - zone: Z1
+      nom: Recuperation
+      bpm: [0, 148]
+      ressenti: null
+    - zone: Z2
+      nom: Endurance
+      bpm: [149, 164]
+      ressenti: null
+    - zone: Z3
+      nom: Tempo
+      bpm: [165, 171]
+      ressenti: null
+    - zone: Z4
+      nom: Seuil
+      bpm: [172, 183]
+      ressenti: null
+    - zone: Z5
+      nom: PMA
+      bpm: [184, 188]
+      ressenti: null
+    - zone: Z6
+      nom: Anaerobie
+      bpm: [189, 194]
+      ressenti: null
+    - zone: Z7
+      nom: Neuromusculaire
+      bpm: [195, 203]
+      ressenti: null
+
+notes: "Watts recalcules sur FTP 305 W (ancre sur l'effort de 45 min a 304 W).
+        A refaire apres le prochain test 20 min dehors."

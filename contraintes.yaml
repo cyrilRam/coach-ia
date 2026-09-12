@@ -1,0 +1,45 @@
+# Contraintes dures. L'agent ne modifie JAMAIS ce fichier.
+# Un plan qui viole une de ces regles est un plan faux, pas une exception.
+
+contexte:
+  lieu: Nice, France
+  entrainement_exterieur_toute_annee: true
+  home_trainer: false
+  terrain: vallonne / cols
+  temps_par_semaine: Entre 8 et 15h d'entrainement possible
+
+semaine:
+  jours_repos_min: 2
+  jours_repos_preferes: [lundi,vendredi]        # ex: [lundi, vendredi]
+  velo_taf:
+    jours: [mardi,mercredi]                     # ex: [mardi, mercredi]
+    duree_aller_retour_min: 2h10
+    distance_AR: 55km
+  sortie_longue:
+    jour: [samedi,dimanche]
+    duree_h: [5, 6]
+    periode: toutes
+    note: il en faut sur tous les blocs. Ne pas hésiter a mettre des series pour avoir de la repitions d'efforts sur de longues durées
+    gestion_we: ne pas hésiter sur les we sans trail a mettre le jour non sortie longue une sortie de 2 à 4h.
+  seance_semaine: max 2h de temps d'entrainement sur la pause dej
+
+
+trail:
+  frequence_min: toutes_les_2_semaines, sur une journée du WE (10 à 20km avec bcp de d+)
+  duree_h: 1 à 2 h
+
+renforcement_musculaire:
+  frequences: sur toute la saison hivernale au moins 2 fois par semaine (possible sur jours off)
+  exos: a creer par toi et a mettre sur intervals.icu
+
+charge:
+  # Garde-fous que tout plan doit respecter.
+  ramp_rate_ctl_max_par_semaine: 7
+  seances_intensives_max_par_semaine: 3
+  jours_durs_consecutifs_max: 2
+  variation_volume_hebdo_max_pct: 30
+
+indisponibilites: []
+  # - du: 2026-12-24
+  #   au: 2027-01-02
+  #   motif: conges

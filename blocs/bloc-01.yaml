@@ -1,0 +1,404 @@
+# Bloc d'entrainement : Bloc 1 - Reprise & Capacite Aerobie
+# Seances en JOURS RELATIFS (jour: 1 a 28). Jamais de dates absolues.
+# Cibles en % du FTP declare (308 W). Conversion en watts au moment du push.
+
+id: bloc-01
+nom: Reprise & Capacité Aérobie
+duree_semaines: 4
+objectif: Reconstruire la base aerobie, relancer le recrutement neuromusculaire le week-end et installer les routines
+focus: [Z2, sprints_alactiques_weekend, reprise_trail, ppg]
+valide_le: '2026-09-12'
+
+seances:
+  # =========================================================================
+  # SEMAINE 1 (Jours 1 a 7) — Volume velo/trail : ~9h15
+  # =========================================================================
+  - jour: 1
+    sport: WeightTraining
+    nom: Renforcement S1 - PPG & Chaine postérieure
+    duree_min: 45
+    description: |
+      SEANCE 1 (Jour off velo) - 45 min : PPG, Fessiers & Gainage
+      
+      1. Echauffement & Mobilite (8 min) :
+      - Cat-Cow : 10 reps lentes
+      - Bird-Dog : 2x 8 reps/cote (maintien 2s)
+      - World's Greatest Stretch : 2x 6 reps/cote
+      - Fire Hydrants (cercles hanche) : 2x 10 reps/cote
+      
+      2. Circuit Bas du corps (18 min) - 3 tours (recup 1'30 entre tours) :
+      - Fentes arriere alternees : 3x 10 reps/jambe (descente controlee 3s)
+      - Pont fessier 1 jambe (Single Leg Bridge) : 3x 12 reps/jambe (maintien 2s en haut)
+      - Mollets excentriques sur marche : 3x 15 reps (montee 1s, descente lente 3s)
+      - Clamshells fessiers : 3x 15 reps/cote
+      
+      3. Circuit Gainage & Tronc (14 min) - 3 tours (recup 1') :
+      - Planche ventrale active : 3x 45s
+      - Deadbug lent et controle : 3x 10 reps alternees
+      - Planche laterale : 3x 30s/cote
+      - Hollow Body Hold : 3x 25s
+      
+      4. Retour au calme (5 min) : Posture enfant + etirement psoas.
+
+  - jour: 2
+    sport: Ride
+    nom: Vélotaf A/R Reprise
+    duree_min: 130
+    description: "Trajet velotaf aller-retour (55 km). 100% Z2 souple et fluide. Aucun sprint, securite et regularite."
+    intervalles:
+      - { type: continu, duree_min: 130, cible: 58-70% }
+
+  - jour: 3
+    sport: Ride
+    nom: Vélotaf A/R Z2
+    duree_min: 130
+    description: "Deuxieme journee velotaf. Trajet en endurance fondamentale pure (60-72%), cadence naturelle, aucun a-coup."
+    intervalles:
+      - { type: continu, duree_min: 130, cible: 60-72% }
+
+  - jour: 4
+    sport: Ride
+    nom: Pause déj - Aérobie vallonnée
+    duree_min: 90
+    description: "Sortie midi sur parcours vallonne (max 2h pause dej). Rester strictement en Z2 sur le plat et monter au train sans depasser 74% FTP."
+    intervalles:
+      - { type: echauffement, duree_min: 15, cible: 60-68% }
+      - { type: continu, duree_min: 60, cible: 65-74% }
+      - { type: retour_calme, duree_min: 15, cible: 55-65% }
+
+  - jour: 4
+    sport: WeightTraining
+    nom: Renforcement S1 - Posture cycliste & Haut du dos
+    duree_min: 30
+    description: |
+      SEANCE 2 (Fin de journee apres velo) - 30 min : Posture & Mobilite
+      
+      1. Echauffement express (5 min) :
+      - Rotations thoraciques a 4 pattes : 2x 8 reps/cote
+      - Bird-Dog dynamique : 2x 8 reps
+      
+      2. Circuit Postural (20 min) - 3 tours (recup 1' entre tours) :
+      - Squats au poids de corps (tempo 3-1-1 : descente 3s, remontee tonique) : 3x 12 reps
+      - Y-T-W au sol a plat ventre (fixateurs d'omoplates) : 3x 8 reps sur chaque lettre
+      - Good Morning poids du corps (charniere hanche) : 3x 12 reps
+      - Planche avec toucher d'epaules : 3x 16 touches (8/bras, bassin fixe)
+      - Gainage lateral avec jambe levee : 3x 20s/cote
+      
+      3. Decompression (5 min) : Ouverture pectoraux + etirement fléchisseurs hanches.
+
+  # Jour 5 : Repos complet (Vendredi)
+
+  - jour: 6
+    sport: Ride
+    nom: Sortie longue arrière-pays + 6 Sprints
+    duree_min: 210
+    description: "Sortie longue (3h30). Parcours arriere-pays nicois. Sur route degagee apres 1h30 de selle, integrer 6 sprints de 10 a 12 secondes depart lance a fond (>130% FTP). Recuperation complete de 3 minutes en Z1/roue libre entre chaque sprint."
+    intervalles:
+      - { type: echauffement, duree_min: 20, cible: 60-68% }
+      - { type: continu, duree_min: 110, cible: 62-74% }
+      - { type: effort, repetitions: 6, duree_s: 15, cible: 130-160%, recup_min: 3, recup_cible: 50% }
+      - { type: retour_calme, duree_min: 56, cible: 58-68% }
+
+  - jour: 7
+    sport: Run
+    nom: Trail aérobie de reprise + Lignes droites
+    duree_min: 75
+    description: "Trail souple en nature (1h15). Allure fondamentale conversationnelle en colline. En fin de sortie, placer 4 a 5 lignes droites / foulees bondissantes de 15s en cote douce pour le pied et le dynamisme."
+    intervalles:
+      - { type: continu, duree_min: 65, cible: Z2 }
+      - { type: effort, repetitions: 5, duree_s: 15, cible: Z4, recup_min: 1, recup_cible: Z1 }
+
+  # =========================================================================
+  # SEMAINE 2 (Jours 8 a 14) — Volume velo : ~10h15
+  # =========================================================================
+  - jour: 8
+    sport: WeightTraining
+    nom: Renforcement S2 - PPG & Proprioception
+    duree_min: 45
+    description: |
+      SEANCE 1 (Jour off velo) - 45 min : Progression Force Fonctionnelle & Pieds
+      
+      1. Mobilite & Activation (8 min) :
+      - Cat-Cow + rotations dorsales : 2x 8 reps
+      - Fentes ouvertes avec torsion : 2x 6 reps/cote
+      - Equilibre 1 pied yeux fermes : 2x 30s/jambe
+      
+      2. Circuit Bas du corps (18 min) - 3 tours (recup 1'30) :
+      - Fentes arriere alternees : 3x 12 reps/jambe (tempo 3s descente)
+      - Pont fessier 1 jambe : 3x 12 reps/jambe (maintien 2s)
+      - Mollets excentriques sur marche : 3x 15 reps (descente 4s)
+      - Clamshells ou abduction hanche debout : 3x 15 reps/cote
+      
+      3. Circuit Gainage (14 min) - 3 tours (recup 1') :
+      - Planche ventrale active : 3x 50s
+      - Deadbug lent : 3x 12 reps alternees
+      - Planche laterale : 3x 35s/cote
+      - Hollow Body Hold : 3x 30s
+      
+      4. Retour au calme (5 min) : Etirements doux chaine posterieure et psoas.
+
+  - jour: 9
+    sport: Ride
+    nom: Vélotaf A/R Z2
+    duree_min: 130
+    description: "Velotaf regulier en Z2 sur les 55 km. Aucun sprint en ville."
+    intervalles:
+      - { type: continu, duree_min: 130, cible: 60-72% }
+
+  - jour: 10
+    sport: Ride
+    nom: Vélotaf A/R Z2
+    duree_min: 130
+    description: "Deuxieme journee velotaf en Z2 stable (55 km). Cadence fluide."
+    intervalles:
+      - { type: continu, duree_min: 130, cible: 60-72% }
+
+  - jour: 11
+    sport: Ride
+    nom: Pause déj - Aérobie & Cadence
+    duree_min: 105
+    description: "Sortie midi (1h45) avec alternance de cadence : 80 rpm en montee douce, 95-100 rpm sur le plat."
+    intervalles:
+      - { type: echauffement, duree_min: 15, cible: 60-68% }
+      - { type: continu, duree_min: 75, cible: 65-75% }
+      - { type: retour_calme, duree_min: 15, cible: 55-65% }
+
+  - jour: 11
+    sport: WeightTraining
+    nom: Renforcement S2 - Posture & Ceinture scapulaire
+    duree_min: 30
+    description: |
+      SEANCE 2 (Fin de journee apres velo) - 30 min : Posture velo & Lombaires
+      
+      1. Echauffement express (5 min) :
+      - Bird-Dog dynamique : 2x 8 reps/cote
+      - Pont fessier bilatéral : 2x 10 reps
+      
+      2. Circuit Postural (20 min) - 3 tours (recup 1') :
+      - Goblet Squat (poids du corps ou charge legere, descente 3s) : 3x 12 reps
+      - Y-T-W au sol a plat ventre : 3x 10 reps par lettre
+      - Good Morning poids du corps : 3x 12 reps
+      - Planche dynamique touchers d'epaules : 3x 20 touches (10/bras)
+      - Gainage lateral : 3x 35s/cote
+      
+      3. Decompression (5 min) : Posture de l'enfant et ouverture d'epaules.
+
+  # Jour 12 : Repos complet (Vendredi)
+
+  - jour: 13
+    sport: Ride
+    nom: Sortie longue arrière-pays + 8 Sprints
+    duree_min: 240
+    description: "Sortie de 4h00 en arriere-pays nicois. Enchainement de cols au train en Z2 (65-75%). Sur portions ouvertes, integrer 8 sprints de 10 a 12s pleine puissance (>130% FTP), 3 min de recup complete en Z1 entre chaque."
+    intervalles:
+      - { type: echauffement, duree_min: 20, cible: 60-68% }
+      - { type: continu, duree_min: 130, cible: 62-75% }
+      - { type: effort, repetitions: 8, duree_s: 15, cible: 130-160%, recup_min: 3, recup_cible: 50% }
+      - { type: retour_calme, duree_min: 58, cible: 58-68% }
+
+  - jour: 14
+    sport: Ride
+    nom: Endurance rythmée + 6 Sprints
+    duree_min: 120
+    description: "Pas de trail ce WE. 2h de velo en endurance. Apres 40 min d'echauffement en Z2, placer 6 sprints courts de 10s alactiques lances (>130% FTP) sur le plat ou faux-plat, recup 3 min complete. Terminer en Z2 souple."
+    intervalles:
+      - { type: echauffement, duree_min: 40, cible: 60-70% }
+      - { type: effort, repetitions: 6, duree_s: 15, cible: 130-160%, recup_min: 3, recup_cible: 50% }
+      - { type: retour_calme, duree_min: 56, cible: 56-66% }
+
+  # =========================================================================
+  # SEMAINE 3 (Jours 15 a 21) — Volume velo/trail : ~11h45
+  # =========================================================================
+  - jour: 15
+    sport: WeightTraining
+    nom: Renforcement S3 - Force fonctionnelle & Gainage
+    duree_min: 45
+    description: |
+      SEANCE 1 (Jour off velo) - 45 min : Force & Stabilite
+      
+      1. Echauffement & Mobilite (8 min) :
+      - Cat-Cow + rotations dorsales : 2x 8 reps
+      - World's Greatest Stretch : 2x 6 reps/cote
+      - Fire Hydrants : 2x 10 reps/cote
+      
+      2. Circuit Bas du corps (18 min) - 3 a 4 tours (recup 1'30) :
+      - Fentes bulgares (pied arriere surreleve) ou fentes arriere : 3x 10 reps/jambe (tempo 3s descente)
+      - Single Leg Glute Bridge : 3x 12 reps/jambe (maintien 2s)
+      - Mollets excentriques 1 jambe sur marche : 3x 12 reps/cote (descente lente)
+      - Abduction de hanche avec pause : 3x 15 reps/cote
+      
+      3. Circuit Gainage (14 min) - 3 tours (recup 1') :
+      - Planche ventrale active : 3x 55s
+      - Deadbug lent et tendu : 3x 12 reps alternees
+      - Planche laterale avec rotations : 3x 35s/cote
+      - Hollow Body Hold : 3x 30s
+      
+      4. Decompression (5 min) : Posture enfant + etirements doux.
+
+  - jour: 16
+    sport: Ride
+    nom: Vélotaf A/R Z2
+    duree_min: 130
+    description: "Velotaf A/R en Z2 reguliere."
+    intervalles:
+      - { type: continu, duree_min: 130, cible: 60-72% }
+
+  - jour: 17
+    sport: Ride
+    nom: Vélotaf A/R Z2
+    duree_min: 130
+    description: "Velotaf A/R Z2 sans sprint. Roulage propre et sans risque."
+    intervalles:
+      - { type: continu, duree_min: 130, cible: 60-72% }
+
+  - jour: 18
+    sport: Ride
+    nom: Pause déj - Vallonné & Tempo touch
+    duree_min: 110
+    description: "Sortie midi (1h50). Parcours vallonne avec 2 montees de 10 min en Z3 bas / tempo (76-80%) pour reveiller les jambes sans entamer la fraicheur."
+    intervalles:
+      - { type: echauffement, duree_min: 20, cible: 60-68% }
+      - { type: effort, repetitions: 2, duree_min: 10, cible: 76-80%, recup_min: 5, recup_cible: 55% }
+      - { type: continu, duree_min: 45, cible: 62-72% }
+      - { type: retour_calme, duree_min: 15, cible: 55-65% }
+
+  - jour: 18
+    sport: WeightTraining
+    nom: Renforcement S3 - Posture & Gainage dynamique
+    duree_min: 30
+    description: |
+      SEANCE 2 (Fin de journee apres velo) - 30 min : Renforcement Postural
+      
+      1. Echauffement express (5 min) :
+      - Rotations thoraciques : 2x 8 reps/cote
+      - Bird-Dog : 2x 8 reps
+      
+      2. Circuit Postural (20 min) - 3 tours (recup 1') :
+      - Squats tempo 3-1-1 : 3x 15 reps
+      - Y-T-W au sol a plat ventre : 3x 10 reps sur chaque lettre
+      - Single leg Romanian Deadlift (poids de corps) : 3x 10 reps/jambe
+      - Planche commando (coudes-mains) : 3x 12 reps
+      - Gainage lateral avec abduction jambe : 3x 25s/cote
+      
+      3. Decompression (5 min) : Etirement dos, ischios et psoas.
+
+  # Jour 19 : Repos complet (Vendredi)
+
+  - jour: 20
+    sport: Ride
+    nom: Sortie longue cols niçois + 8 Sprints (Torque & Vitesse)
+    duree_min: 270
+    description: "Sortie longue de 4h30 en montagne. Cols au train en Z2 (65-74%). Integrer 8 sprints alactiques de 10-12s : 4 departs arretes a fort couple (torque) en bosse grand braquet (50 rpm de depart) + 4 sprints lances haute velocite sur le plat (>130% FTP). 3 min de recup complete entre chaque."
+    intervalles:
+      - { type: echauffement, duree_min: 20, cible: 60-70% }
+      - { type: continu, duree_min: 160, cible: 62-75% }
+      - { type: effort, repetitions: 8, duree_s: 15, cible: 130-160%, recup_min: 3, recup_cible: 50% }
+      - { type: retour_calme, duree_min: 58, cible: 58-68% }
+
+  - jour: 21
+    sport: Run
+    nom: Trail vallonné D+ + Côtes courtes
+    duree_min: 90
+    description: "Trail dominical de 1h30 en colline / sentiers avec denivele. Allure souple en endurance fondamentale. Inclure en cours de sortie 6 accelerations courtes de 15s en montee dynamique."
+    intervalles:
+      - { type: continu, duree_min: 75, cible: Z2 }
+      - { type: effort, repetitions: 6, duree_s: 15, cible: Z4, recup_min: 1, recup_cible: Z1 }
+      - { type: retour_calme, duree_min: 3, cible: Z1 }
+
+  # =========================================================================
+  # SEMAINE 4 (Jours 22 a 28) — Volume velo : ~12h45
+  # =========================================================================
+  - jour: 22
+    sport: WeightTraining
+    nom: Renforcement S4 - Consolidation & Puissance basse
+    duree_min: 45
+    description: |
+      SEANCE 1 (Jour off velo) - 45 min : Consolidation Fondations
+      
+      1. Echauffement & Mobilite (8 min) :
+      - Cat-Cow + mobilite chevilles : 2x 10 reps
+      - Fentes avec ouverture thoracique : 2x 6 reps/cote
+      - Fire Hydrants : 2x 10 reps/cote
+      
+      2. Circuit Bas du corps (18 min) - 3 a 4 tours (recup 1'30) :
+      - Fentes arriere dynamiques : 3x 12 reps/jambe
+      - Single Leg Glute Bridge (maintien 3s en haut) : 3x 12 reps/jambe
+      - Mollets excentriques sur marche : 3x 15 reps lentes (tempo 4s descente)
+      - Squats isometriques contre le mur (Wall Sit) : 3x 40s
+      
+      3. Circuit Gainage & Tronc (14 min) - 3 tours (recup 1') :
+      - Planche ventrale active : 3x 60s
+      - Deadbug tendu lent : 3x 12 reps alternees
+      - Planche laterale : 3x 40s/cote
+      - Hollow Body Hold : 3x 35s
+      
+      4. Decompression (5 min) : Posture enfant + etirements complets.
+
+  - jour: 23
+    sport: Ride
+    nom: Vélotaf A/R Z2
+    duree_min: 130
+    description: "Velotaf A/R Z2 regulier sans sprint."
+    intervalles:
+      - { type: continu, duree_min: 130, cible: 60-72% }
+
+  - jour: 24
+    sport: Ride
+    nom: Vélotaf A/R Z2
+    duree_min: 130
+    description: "Velotaf A/R Z2 propre, cadence fluide."
+    intervalles:
+      - { type: continu, duree_min: 130, cible: 60-72% }
+
+  - jour: 25
+    sport: Ride
+    nom: Pause déj - Aérobie rythmée
+    duree_min: 110
+    description: "Sortie midi (1h50). Travail de braquet et de rythme en bosse tout en restant sous les 75% du FTP."
+    intervalles:
+      - { type: echauffement, duree_min: 20, cible: 60-70% }
+      - { type: continu, duree_min: 75, cible: 66-75% }
+      - { type: retour_calme, duree_min: 15, cible: 55-65% }
+
+  - jour: 25
+    sport: WeightTraining
+    nom: Renforcement S4 - Posture & Decompression
+    duree_min: 30
+    description: |
+      SEANCE 2 (Fin de journee apres velo) - 30 min : Cloture Posturale
+      
+      1. Echauffement express (5 min) :
+      - Rotations thoraciques : 2x 8 reps/cote
+      - Bird-Dog : 2x 8 reps
+      
+      2. Circuit Postural (20 min) - 3 tours (recup 1') :
+      - Squats au poids du corps tempo 3-1-1 : 3x 15 reps
+      - Y-T-W au sol a plat ventre : 3x 10 reps sur chaque lettre
+      - Pont fessier bilatéral avec maintien haut 5s : 3x 10 reps
+      - Planche avec touchers d'epaules : 3x 20 touches (10/bras)
+      - Gainage lateral : 3x 35s/cote
+      
+      3. Decompression (5 min) : Chaine posterieure, psoas et detente lombaire.
+
+  # Jour 26 : Repos complet (Vendredi)
+
+  - jour: 27
+    sport: Ride
+    nom: Sortie longue reine - Arrière-pays + 10 Sprints
+    duree_min: 300
+    description: "Sortie reine de 5h00 dans l'arriere-pays nicois. Constance sur les 5 heures, 100% Z2 dans les cols. Placer 10 sprints alactiques de 10-12s (>130% FTP) : 5 departs arretes / force explosive en cote + 5 sprints lances pleine vitesse sur le plat. 3 min de recup complete en Z1."
+    intervalles:
+      - { type: echauffement, duree_min: 25, cible: 60-70% }
+      - { type: continu, duree_min: 175, cible: 62-75% }
+      - { type: effort, repetitions: 10, duree_s: 15, cible: 130-160%, recup_min: 3, recup_cible: 50% }
+      - { type: retour_calme, duree_min: 60, cible: 58-68% }
+
+  - jour: 28
+    sport: Ride
+    nom: Clôture Bloc 1 - Endurance + 8 Sprints
+    duree_min: 120
+    description: "Pas de trail ce WE. 2h en endurance de base souple sur le littoral, avec une serie de 8 sprints courts alactiques lances de 10s (recup 3 min) pour clore le Bloc 1 avec un influx neuromusculaire au top."
+    intervalles:
+      - { type: echauffement, duree_min: 35, cible: 60-68% }
+      - { type: effort, repetitions: 8, duree_s: 15, cible: 130-160%, recup_min: 3, recup_cible: 50% }
+      - { type: retour_calme, duree_min: 53, cible: 56-66% }
