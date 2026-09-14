@@ -7,7 +7,7 @@ du: 2026-08-31
 au: 2026-09-06
 
 mesures:
-  maj: '2026-09-12'
+  maj: '2026-09-13'
   ctl_fin: 69.2
   atl_fin: 80.6
   tsb_fin: -11.3
@@ -37,8 +37,10 @@ analyse_coach:
   synthese: >
     Vraie semaine de relance post-coupures (11.1h, 530 TSS, 4863m D+).
     Excellente réponse physiologique : les jambes et le moral sont revenus immédiatement
-    dès la réactivation du système cardiovasculaire. Le test Z4 Over-Under a validé la
-    tenue du seuil malgré la dérive de FC de repos (76 bpm) consécutive à la chaleur et
+    dès la réactivation du système cardiovasculaire. Le test Z4 Over-Under a validé
+    la
+    tenue du seuil malgré la dérive de FC de repos (76 bpm) consécutive à la chaleur
+    et
     au redémarrage. Le CTL remonte à 69.2.
   decision: >
     Stabiliser le volume sur W37 sans surenchérir sur la charge, consolider les acquis

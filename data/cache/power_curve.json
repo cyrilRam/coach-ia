@@ -1,8 +1,8 @@
 {
   "meta": {
-    "recupere_a": "2026-09-12T18:32:17",
-    "oldest": "2026-07-14",
-    "newest": "2026-09-12"
+    "recupere_a": "2026-09-13T13:55:29",
+    "oldest": "2025-09-13",
+    "newest": "2026-09-13"
   },
   "data": {
     "list": [
@@ -10,8 +10,8 @@
         "id": "1y",
         "after_kj": 0,
         "label": "1 year",
-        "start_date_local": "2025-09-12T00:00:00",
-        "end_date_local": "2026-09-12T23:59:59",
+        "start_date_local": "2025-09-13T00:00:00",
+        "end_date_local": "2026-09-13T23:59:59",
         "days": 366,
         "moving_time": 0,
         "training_load": 0,

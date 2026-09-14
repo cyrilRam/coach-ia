@@ -7,26 +7,26 @@ du: 2026-09-07
 au: 2026-09-13
 
 mesures:
-  maj: '2026-09-12'
-  ctl_fin: 68.9
-  atl_fin: 77.5
-  tsb_fin: -8.6
-  ramp_rate: 3.1083527
-  charge_totale: 392
-  heures: 9.5
-  distance_km: 236
-  denivele_m: 3219
-  seances: 7
+  maj: '2026-09-13'
+  ctl_fin: 72.0
+  atl_fin: 93.7
+  tsb_fin: -21.7
+  ramp_rate: 2.752884
+  charge_totale: 591
+  heures: 13.8
+  distance_km: 343
+  denivele_m: 5458
+  seances: 8
   sommeil_moyen_h:
   hrv_moyenne:
   fc_repos_moyenne: 59.7
-
-# saisie manuelle
 ressenti:
-  global:
-  jambes:
-  motivation:
-  sommeil:
+  global: vraiment bonnes sensations. Dimanche Madonne utelle en 55min 240W et 
+    159bm moyen. j'etais vraiment bien et pas dans le dur. Impression fin zone 2
+    debut zone 3
+  jambes: enfin de retour
+  motivation: tres bonne
+  sommeil: un peu hachée les 2 derniers jours
   seances_manquees: []
   imprevus:
   notes:
@@ -34,12 +34,19 @@ ressenti:
 adaptations: []
 
 analyse_coach:
-  maj: '2026-09-12'
+  maj: '2026-09-13'
   synthese: >
-    Semaine de régularité retrouvée (9.5h, 392 TSS, 3219m D+ à date). Les vélotafs
-    mardi et mercredi ont été bien assimilés, la FC de repos est redescendue sous les 60 bpm
-    (59.7 bpm), signe d'un système nerveux autonome apaisé après le coup de chaud de W36.
-    Le socle aérobie est bien en place avec un CTL stabilisé à 68.9.
+    Semaine dense et très rassurante sur le plan moteur (13.8h, 591 TSS, 5458m D+).
+    Les jambes sont revenues : la montée de la Madone d'Utelle dimanche (55 min à 240W,
+    159 bpm) confirme un solide socle aérobie avec une excellente aisance perçue
+    (ressenti Z2/Z3). Ravitaillement remarquable sur la sortie longue (300g glucides,
+    ~70g/h). En contrepartie, le bloc du week-end (vendredi raide + samedi 3h25 + dimanche
+    4h20) pèse lourd physiologiquement : ATL à 93.7, TSB qui plonge à -21.7 et un sommeil
+    rapporté haché sur les 48 dernières heures, signal classique d'un système sympathique
+    fortement sollicité.
   decision: >
-    Clôturer W37 calmement dimanche (trail ou récup). Enchaîner sur W38 en maintien plaisir
-    avant la coupure complète du 23 septembre au 4 octobre.
+    Priorité absolue à la récupération et au sommeil pour W38 : lundi repos complet.
+    Mardi et mercredi, vélotafs en Z1/Z2 stricte (moulinette, FC < 130 bpm). Alléger la
+    deuxième partie de semaine pour faire remonter le TSB vers la zone neutre/positive
+    avant le départ à Paris le 23 septembre. Objectif : aborder la coupure sans dette de
+    sommeil ni fatigue résiduelle.
