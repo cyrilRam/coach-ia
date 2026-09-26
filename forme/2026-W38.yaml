@@ -1,0 +1,105 @@
+# Une semaine = un fichier. Nommage en semaines ISO.
+# Section "mesures" : generee par scripts/weekly.py, ne pas editer a la main.
+# Section "ressenti" : saisie manuelle, l'agent n'y ecrit jamais.
+# Section "analyse_coach" : analyse hebdomadaire formulee par l'IA et conservee.
+
+semaine: 2026-W38
+du: 2026-09-14
+au: 2026-09-20
+
+mesures:
+  maj: '2026-09-26'
+  ctl_fin: 72.7
+  atl_fin: 89.6
+  tsb_fin: -16.9
+  ramp_rate: 0.7273407
+  charge_totale: 523
+  heures: 13.0
+  distance_km: 301
+  denivele_m: 4623
+  seances: 8
+  sommeil_moyen_h: 7.8
+  hrv_moyenne: 55.0
+  fc_repos_moyenne: 63.1
+ressenti:
+  global: Super semaine pour finir la saison. PR col eze en 28min30 jeudi et PR 
+    dimanche sur le col de braus en 33 min (col connecté 06). Apres le mois 
+    d'aout maladie et vacances je pensais avoir de meilleurs jambes et battre de
+    gros PR apres des semaines sans grosses seaces d'intensités.
+  jambes: pas loin des meilleurs
+  motivation: super
+  sommeil: un peu fatigué cette semaine car bcp de choses entre le boulot et ma 
+    famille.
+  seances_manquees: []
+  imprevus:
+  notes: J'ai recu le garmin cirqa vendredi donc mes premieres notes de 
+    santés/sommeil sont arrivés.
+
+adaptations: []
+
+analyse_coach:
+  maj: '2026-09-20'
+  synthese: >
+    Troisième semaine de relance post-maladie/vacances et confirmation éclatante
+    du retour en forme. 13h de selle, 523 TSS, 301 km, 4623 m D+ sur 8 séances :
+    charge soutenue et cohérente avec W37 (591 TSS / 13.8h) sans surenchère, comme
+    préconisé. Le CTL se stabilise à 72.7 (+0.7 vs W37), le ramp rate retombe à
+    0.73 (excellent, zone verte) après le pic à 2.75 de W37. L'ATL redescend
+    légèrement à 89.6 (vs 93.7), et le TSB remonte de -21.7 à -16.9 : la dette de
+    fatigue se résorbe progressivement.
+
+    PERFORMANCES — Deux PR majeurs explosés dans la même semaine :
+    • Col d'Èze jeudi : 28 min 30 → +1 min sur le précédent record.
+    • Col de Braus dimanche : 33 min → +2 min 30 sur le précédent record (Col Connecté
+    06).
+    C'est massif. Battre des records de cette ampleur après un mois de coupure
+    (maladie + vacances) sans aucune séance d'intensité structurée, c'est le signe
+    d'une surcompensation profonde réussie : le corps a eu le temps de réparer,
+    d'assimiler le travail des mois précédents, et le moteur redémarre au-dessus du
+    niveau d'avant la coupure. Le fait que ça arrive SANS bloc d'intensité dédié
+    montre que le socle aérobie construit cette année est solide et que la
+    surcompensation porte sur des adaptations centrales (VO2max, débit cardiaque,
+    économie de pédalage). Quand les blocs Seuil/PMA de l'hiver viendront ajouter
+    les adaptations périphériques (tolérance lactique, recrutement neuromusculaire),
+    le potentiel de progression est considérable.
+
+    SANTÉ & SIGNAUX — Premières données Garmin CIRQA (reçu vendredi) :
+    • Sommeil moyen : 7.8 h (correct mais Cyril rapporte une fatigue liée à la
+      charge boulot/famille cette semaine).
+    • HRV moyenne : 55 ms (première mesure, pas encore de baseline pour comparaison).
+    • FC repos moyenne : 63.1 bpm (en nette baisse vs W36 = 76.5 bpm et vs W37 =
+      59.7 bpm). La FC repos est désormais dans une fourchette cohérente avec un
+      athlète entraîné et reposé. L'écart W36 (76.5) → W38 (63.1) confirme que la
+      chaleur et la relance post-maladie de W36 gonflaient artificiellement la FC.
+    • Aucune séance manquée, aucun imprévu.
+
+    GARDE-FOUS — Aucun signal d'alerte :
+    • Ramp rate 0.73 : zone verte, montée en charge maîtrisée.
+    • TSB -16.9 : en dessous du neutre mais en remontée, pas de zone de danger.
+    • Pas de dérive cardiaque anormale rapportée.
+    • Sommeil légèrement impacté par le contexte de vie, mais durée correcte (7.8h).
+    Point de vigilance : Cyril mentionne de la fatigue extra-sportive (boulot +
+    famille). Ce n'est pas un red flag physiologique mais c'est un rappel que la
+    charge de vie compte dans l'équation de récupération.
+
+    CONTEXTE — Dernière semaine avant la coupure régénératrice (23/09 au 04/10).
+    La saison 2026-2027 démarre officiellement le 05/10 avec le Bloc 01. Cette W38
+    clôture parfaitement la pré-saison : le CTL est remonté de 65.7 (W35) à 72.7
+    en trois semaines, les jambes sont revenues, les PR sont tombés, et le corps
+    répond bien aux stimuli. Le timing est idéal pour couper.
+
+  decision: >
+    COUPURE PROGRAMMÉE — Semaine du 21 au 27 septembre (W39) : décharge progressive.
+    Cyril part à Paris le 23/09 : profiter du voyage pour couper mentalement et
+    physiquement. Autoriser du vélo léger (balade, vélotaf parisien en Z1) mais
+    ZÉRO intensité. Objectif : laisser le TSB remonter franchement vers le positif
+    (+5 à +10) pour arriver frais le 05/10. Semaine W40 (28/09-04/10) : repos
+    quasi-complet, éventuellement 2-3 sorties courtes en Z1 pure (< 1h) pour ne pas
+    raidir. Le Bloc 01 (Reprise & Capacité Aérobie) débutera le lundi 05/10 avec
+    un organisme régénéré et une motivation intacte.
+
+    NOTE GARMIN CIRQA — Les premières données HRV/sommeil arrivent. D'ici 2 semaines
+    le capteur aura construit une baseline fiable. À partir du Bloc 01, ces données
+    seront un outil précieux pour le suivi de la charge et la détection précoce de
+    fatigue. Surveiller en priorité : la tendance HRV (pas la valeur absolue d'un
+    jour), le score de sommeil global, et la corrélation avec le ressenti.

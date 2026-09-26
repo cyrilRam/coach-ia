@@ -1,0 +1,97 @@
+# Une semaine = un fichier. Nommage en semaines ISO.
+# Section "mesures" : generee par scripts/weekly.py, ne pas editer a la main.
+# Section "ressenti" : saisie manuelle, l'agent n'y ecrit jamais.
+# Section "analyse_coach" : analyse hebdomadaire formulee par l'IA et conservee.
+
+semaine: 2026-W39
+du: 2026-09-21
+au: 2026-09-27
+
+mesures:
+  maj: '2026-09-26'
+  ctl_fin: 65.5
+  atl_fin: 46.4
+  tsb_fin: 19.1
+  ramp_rate: -4.3512726
+  charge_totale: 117
+  heures: 3.6
+  distance_km: 86
+  denivele_m: 999
+  seances: 3
+  sommeil_moyen_h: 8.0
+  hrv_moyenne: 47.8
+  fc_repos_moyenne: 55.7
+
+# saisie manuelle
+ressenti:
+  global: Première vraie coupure volontaire, ça fait du bien au cerveau. Zéro culpabilité. Déménagement Paris en cours.
+  jambes: totalement reposées
+  motivation: bien, content de couper sereinement
+  sommeil: correct malgré soirées boulot mercredi et jeudi (alcool jeudi soir)
+  seances_manquees: []
+  imprevus: déménagement (restitution appart Paris), soirées boulot mer+jeu avec excès alimentaire/alcool
+  notes: Premières données CIRQA sur une semaine complète de repos.
+
+adaptations: []
+
+analyse_coach:
+  maj: '2026-09-26'
+  synthese: >
+    SEMAINE DE COUPURE RÉALISÉE — Les chiffres confirment une décharge nette et conforme
+    au plan prescrit en W38. En résumé : 3.6h de selle, 117 TSS, 86 km, 999 m D+ sur
+    3 séances. C'est un ratio de ~4.5x moins de charge que W38 (523 TSS / 13h) — exactement
+    ce qui était demandé pour cette semaine de transition vers la coupure.
+
+    CHARGE & FITNESS — Le CTL recule de 72.7 à 65.5 (-7.2 pts en une semaine), ce qui est
+    le comportement attendu d'une décharge franche. L'ATL s'effondre de 89.6 à 46.4 : la
+    fatigue aiguë est entièrement purgée. Le TSB explose de -16.9 à +19.1 : c'est une
+    fraîcheur massive, le plus haut TSB depuis très longtemps. Le Ramp Rate est négatif
+    (-4.35), confirmant la décharge volontaire. Aucun garde-fou déclenché (pas de surcharge).
+
+    SANTÉ & SIGNAUX — Données Garmin CIRQA (deuxième semaine de données) :
+    • Sommeil moyen : 8.0h (en hausse vs 7.8h en W38). Très bon signal de récupération.
+    • HRV moyenne : 47.8 ms (en baisse vs 55.0 en W38). Ce recul est à relativiser : le
+      capteur CIRQA n'a que 2 semaines de données et la baseline n'est pas encore fiable.
+      La valeur absolue n'est pas alarmante mais à surveiller à la reprise.
+    • FC repos moyenne : 55.7 bpm (en nette baisse vs 63.1 en W38). C'est le plus bas
+      observé depuis le début du suivi et un excellent marqueur de récupération profonde.
+      Le système parasympathique reprend le dessus.
+    • Pas de dérive cardiaque à surveiller (volume trop faible pour être significatif).
+
+    BILAN DE TRAJECTOIRE W36→W39 (4 semaines post-maladie/vacances) :
+    • W36 : relance douce (CTL 65.7, TSB +11.5, FC repos 76.5 — encore très haut post-maladie)
+    • W37 : grosse semaine (CTL 72.0, TSB -21.7, FC repos 59.7 — retour des jambes)
+    • W38 : confirmation PR (CTL 72.7, TSB -16.9, FC repos 63.1 — 2 PR cols)
+    • W39 : coupure (CTL 65.5, TSB +19.1, FC repos 55.7 — purge de fatigue)
+    Le schéma est parfait : relance → charge → surcompensation → coupure. Le CTL a perdu
+    7 points mais c'est le prix normal de la coupure ; il sera reconstruit dès le Bloc 01.
+
+    RESSENTI (verbal, 26/09) — Cyril rapporte des jambes « totalement reposées », première
+    vraie coupure volontaire (pas subie via blessure ou maladie) depuis longtemps. Bénéfice
+    mental fort : « ça fait du bien au cerveau », zéro culpabilité de ne pas rouler, ce qui
+    est un excellent marqueur psychologique de maturité dans la gestion de la coupure.
+    Contexte de vie chargé : déménagement en cours (restitution appart à Paris) + soirées
+    professionnelles mercredi et jeudi soir avec excès alimentaire et alcool le jeudi.
+    Malgré ce contexte, le sommeil a été préservé (8.0h de moyenne confirmé par les métriques).
+    CROISEMENT MÉTRIQUES/RESSENTI — Tout converge positivement : la FC repos au plus bas
+    (55.7 bpm) confirme les jambes reposées, le sommeil tenu à 8h malgré les soirées confirme
+    le ressenti « pas de déficit ». La charge mentale du déménagement est compensée par le
+    soulagement de la coupure. Aucun signal d'alerte.
+
+  decision: >
+    SEMAINE W40 (28/09 → 04/10) : DERNIÈRE SEMAINE DE COUPURE — Maintenir le repos
+    quasi-complet comme prévu. Autoriser 2-3 sorties courtes en Z1 pure (< 1h, moulinette)
+    pour entretenir la souplesse musculaire et ne pas arriver raide le 05/10. ZÉRO intensité.
+    Le TSB est déjà à +19.1, il va continuer à monter : on vise +10 à +15 au démarrage du
+    Bloc 01 (un TSB trop haut signifie aussi une perte de fitness, donc il faudra relancer
+    dès le 05/10 sans tarder). La FC repos à 55.7 et le sommeil à 8h confirment que le
+    corps est prêt à absorber la reprise.
+
+    BLOC 01 (REPRISE & CAPACITÉ AÉROBIE) — Début confirmé le lundi 05/10. Le profil de
+    démarrage est idéal : organisme régénéré, CTL à ~62-63 (estimation après une W40
+    légère), TSB positif. La première semaine doit être progressive (8h, Z2 stricte) pour
+    réactiver le système sans casser la fraîcheur accumulée.
+
+    NOTE HRV — Continuer à porter le CIRQA chaque nuit. D'ici fin W40, on aura ~3 semaines
+    de données et la baseline commencera à être exploitable. À partir du Bloc 01, la HRV
+    deviendra un outil de pilotage clé pour ajuster la charge au jour le jour.
