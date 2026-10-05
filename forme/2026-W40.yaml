@@ -1,0 +1,108 @@
+# Une semaine = un fichier. Nommage en semaines ISO.
+# Section "mesures" : generee par scripts/weekly.py, ne pas editer a la main.
+# Section "ressenti" : saisie manuelle, l'agent n'y ecrit jamais.
+# Section "analyse_coach" : analyse hebdomadaire formulee par l'IA et conservee.
+
+semaine: 2026-W40
+du: 2026-09-28
+au: 2026-10-04
+
+mesures:
+  maj: '2026-10-05'
+  ctl_fin: 60.8
+  atl_fin: 42.9
+  tsb_fin: 17.9
+  ramp_rate: -3.892414
+  charge_totale: 274
+  heures: 7.8
+  distance_km: 186
+  denivele_m: 2113
+  seances: 9
+  sommeil_moyen_h: 8.0
+  hrv_moyenne: 51.6
+  fc_repos_moyenne: 54.0
+ressenti:
+  global: coupure quand meme active avec le velo taff. Fais tres attention a reste vers les 135 bpm. Aucune fatigue, bien dormi. Sur tes conseils j'ai fait une sortie Z1-Z2 le dimanche.
+  jambes: impressioné par mes jambes sur la sortie de reprise. C'etait pas mes meilleurs et de lin mais par rapport aux posts coupures d'aout avec la maladie rien a voir. Cardio plus haut que la normal mais aucune difficulté dans le col Eze a 230W
+  motivation: super j'avais vraiment hate de me remettre sur le vélo
+  sommeil: je dors bien
+  seances_manquees: []
+  imprevus:
+  notes: Sur les analyses de sommeil garmin et notamment le score attention car le cirqua dit que je me reveille et que ma nuit est finie alors juste que je vais aux toilettes te je me rendors aprs. Je modifie a la main la durée de sommeil pour corriger
+
+adaptations: []
+
+analyse_coach:
+  maj: '2026-10-05'
+  synthese: >
+    FIN DE COUPURE RÉALISÉE (données finales lun→dim) — 7.8h de selle, 274 TSS,
+    186 km, 2113 m D+ sur 9 séances. Charge cumulée W39+W40 = 421 TSS / 12.1h sur
+    14 jours, soit ~4x moins que les 2 semaines précédentes. Coupure franche,
+    disciplinée, conforme au plan.
+
+    CHARGE & FITNESS (valeurs finales) —
+    • CTL : 64.7 → 60.8 (-3.9 pts, -11.9 pts vs W38). Plancher atteint, la courbe
+      s'aplatit. Le fitness superficiel a décroché mais les adaptations centrales
+      (VO2max, débit cardiaque, économie de pédalage) ne se perdent pas en 2 semaines.
+    • ATL : 43.7 → 42.9. Fatigue aiguë au plancher, quasi stable — plus rien à purger.
+    • TSB : +21.0 → +17.9. Redescente de 5.7 pts liée à la sortie de dimanche. C'est
+      le signal parfait : la fraîcheur excédentaire a été consommée pour remettre le
+      moteur en route. TSB de départ idéal pour le Bloc 01.
+    • Ramp Rate : -3.89. Décharge prolongée, aucun garde-fou déclenché.
+
+    SANTÉ & SIGNAUX —
+    • Sommeil moyen : 8.0h (stable vs 8.3 en W39 et 7.8 en W38). Aucune perturbation.
+      Note : le CIRQA interprète les levers nocturnes (pipi) comme des réveils
+      définitifs, Cyril corrige manuellement la durée. Score automatique à prendre
+      avec recul sur ce compte.
+    • HRV moyenne : 51.6 ms (vs 49.0 en W39, 55.0 en W38). Quasi stable, pas de
+      signal d'alerte. Baseline CIRQA ~3.5 semaines, commence à être exploitable.
+    • FC repos moyenne : 54.0 bpm — PLUS BAS HISTORIQUE, identique au relevé de
+      milieu de semaine. Plateau confirmé sur 3 mesures consécutives. Le système
+      nerveux autonome est complètement régénéré et stabilisé. Valeur de référence
+      à retenir pour le suivi du Bloc 01.
+
+    CROISEMENT MÉTRIQUES/RESSENTI — Convergence totale sur tous les axes :
+    • Discipline de coupure exemplaire : VT à 135 bpm (Z1 pure, bien en dessous du
+      plafond Z1 FC à 148). IF moyenne de la semaine ~0.55. Zéro intensité parasite.
+    • Sortie de reprise dimanche (col d'Èze à 230W) : jambes « impressionnantes par
+      rapport à la coupure d'août/maladie ». La différence qualitative entre cette
+      coupure (sur base saine) et celle d'août (post-maladie) est flagrante dans le
+      ressenti. Le socle aérobie est intact.
+    • FC plus haute que la normale à puissance égale sur la reprise — transitoire et
+      attendu : le volume plasmatique diminue légèrement pendant le repos (moins de
+      sang = FC compensatoire plus élevée). Se normalise en 3-4 séances d'endurance.
+    • « Pas mes meilleures jambes et de loin » — normal après 2 semaines sans
+      stimulation neuromusculaire. La coordination fine et le punch reviennent en
+      7-10 jours de pédalage régulier.
+    • Motivation « super, vraiment hâte de remonter sur le vélo » + zéro fatigue +
+      bon sommeil = état mental et physique parfaitement alignés pour la reprise.
+
+    BILAN DE TRAJECTOIRE W38→W40 (coupure complète) —
+    • FC repos : 63.1 → 54.0 bpm (-9.1 bpm). Récupération profonde accomplie.
+    • TSB : -16.9 → +17.9 (+34.8 pts). Swing complet vers la fraîcheur.
+    • CTL : 72.7 → 60.8 (-11.9 pts). Prix attendu, récupérable en 3-4 semaines.
+    • Surcompensation déjà manifeste en W38 (PR Èze 28'30, PR Braus 33') sans bloc
+      d'intensité structuré. Deux semaines de repos supplémentaires ont consolidé
+      ces gains sans les altérer.
+
+  decision: >
+    BLOC 01 (REPRISE & CAPACITÉ AÉROBIE) — Feu vert total pour le démarrage mardi
+    06/10. Profil de départ idéal : CTL ~60, TSB +17.9, FC repos au plancher
+    historique (54 bpm), sommeil solide (8h), motivation maximale, jambes qui
+    répondent dès la première sortie de reprise.
+
+    Lundi 05/10 : renfo musculaire (jour off vélo, conformément aux contraintes).
+    Mardi 06/10 : première séance du Bloc 01.
+
+    POINTS DE VIGILANCE BLOC 01 —
+    • FC élevée à l'effort les premiers jours : ne pas s'inquiéter, c'est le volume
+      plasmatique qui se reconstitue. Se normalise en 3-4 séances.
+    • Ne pas céder à la tentation de durcir les Z2 sous prétexte que les jambes
+      répondent bien. La première semaine est une semaine de réamorçage : Z2 stricte,
+      sprints courts alactiques en fin de sortie uniquement.
+    • Continuer à porter le CIRQA chaque nuit. La baseline sera fiable (~4 semaines)
+      à partir de W41 et deviendra un outil de pilotage précieux pour la montée en
+      charge.
+    • FC repos de référence : 54 bpm. Seuil d'alerte proposé : > 62-65 bpm durablement
+      (hors lendemain de grosse séance).
