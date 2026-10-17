@@ -9,84 +9,114 @@ federations:
   pratiquees: [FFC, FSGT, cyclosportive]
   prioritaire: null
 
+# Hierarchie des courses :
+#   A : pic de forme, affutage 2 semaines
+#   B : mini-affutage 5-7 jours
+#   C : courue dans la charge, 2 jours de fraicheur (vendredi repos + samedi court)
 objectifs:
   principal:
-    nom: MERCAN’TOUR BONETTE
+    nom: "MERCAN’TOUR BONETTE DT SWISS"
     date: "2027-06-13"
+    priorite: A
     type: cyclo
     parcours : "177 KM – 4800 D+"
     profil: montagne              # plat | vallonne | montagne
     notes: si pas assez pret je passerai sur le petit parcours 110km 3000 D+
   secondaires:
   - nom: "Paris nice challenge"
-    date: "13 Mars 2027"
+    date: "2027-03-13"
+    priorite: B
     type: cyclo
     parcours: "150 KM – 3500 D+"
     profil: montagne
     notes:
-  - nom: "MERCAN’TOUR MADONE PEILLE"
+  - nom: "Mercan'Tour Madone-Peille"
     date: "2027-04-04"
+    priorite: B
     type: cyclo
     parcours: "110 KM – 2800 D+"
     profil: montagne
-    notes:
-  - nom: "GNFY CANNES"
-    date: "Mi Avril 2027"
+    notes: "Parcours 100% montagne : 3 grands cols (km 30-43 à 1000m, km 50-62 à 1200m, Madone finale km 88-100 avec 800m D+ d'un bloc). Gestion W/kg sur efforts longs (30-45 min) et gros D+ au km (26m/km)."
+  - nom: "GFNY CANNES"
+    date: "2027-04-11"
+    priorite: B
     type: cyclo
     parcours: "110 KM – 2000 D+"
     profil: vallonne
-    notes: "course de préparation"
+    notes: "objectif B, une semaine apres Madone-Peille"
   - nom: "LAZARDIERES CANNES"
     date: "premier WE Mai 2027 "
+    priorite: C
     type: cyclo
     parcours: "112 KM – 1800 D+"
     profil: vallonne
-    notes: "course de préparation"
+    notes: "course de préparation, courue dans la charge"
   - nom: "GRANDFONDO LA VENCOISE"
     date: "2eme we Mai 2027"
+    priorite: C
     type: cyclo
     parcours: "147 KM – 2800 D+"
     profil: vallonne
-    notes: "1 semaine apres la LAZARDIERES en général"
+    notes: "1 semaine apres la LAZARDIERES en général. Courue dans la charge comme sortie longue de qualité"
   - nom: "Cimes Mercantour"
     date: "debut aout 2027"
+    priorite: a definir apres la Bonette
     type: cyclo
     parcours: "100 KM – 2800 D+"
     profil: montagne
   commentaires : "je vais peut etre pas toutes les faires et aussi integrer des courses FFC/FSGT"
+
+indisponibilites_connues:
+  - du: 2026-12-17
+    au: 2026-12-20
+    motif: Paris, course a pied uniquement
+  - du: 2026-12-24
+    au: 2026-12-25
+    motif: fetes, velo possible a partir du 26/12
 
 # Rempli apres l'etape "architecture de saison" validee en conversation.
 blocs:
   - id: bloc-01
     nom: Reprise & Capacité Aérobie
     du: 2026-10-05
-    au: 2026-11-01
-    duree_semaines: 4
+    au: 2026-10-25
+    duree_semaines: 3
     objectif: reconstruire la base aerobie, le rythme moteur et les adaptations tendineuses
     focus: [Z2, sprints_courts_alactiques, reprise_trail, ppg]
-    volume_cible_h: [8, 14]
-    rythme: "4 semaines progressives de reprise et foncier (8h à 14h) sans assimilation (sortie de coupure)"
+    volume_cible_h: [10, 12]
+    rythme: "3 semaines progressives (10h -> 10h15 -> 12h, sortie longue 5h en S3) sans assimilation, reduit de 4 a 3 semaines car reprise sans fatigue"
     fichier: blocs/bloc-01.yaml
 
   - id: bloc-02
     nom: Force Sous-Max & Couple (Torque)
-    du: 2026-11-02
-    au: 2026-11-29
+    du: 2026-10-26
+    au: 2026-11-22
     duree_semaines: 4
     objectif: developper la force musculaire en col et le recrutement neuro en bosse
-    focus: [force_basse_cadence_z3, sprints_depart_arrete, sortie_longue_5h]
-    volume_cible_h: [10, 14]
-    rythme: "Cycle 3:1 -> 3 semaines de charge progressive (10h à 14h) + 1 semaine d'assimilation (8h)"
+    focus: [force_basse_cadence_z3_jeudi, sprints_depart_arrete, sortie_longue_5h_5h30]
+    volume_cible_h: [10, 13.5]
+    rythme: "Cycle 3:1 -> S1 12h, S2 13h, S3 13h30, S4 assimilation 10h (premiere assimilation apres 6 semaines de charge : si sommeil/FC repos/VFC clignotent, S3 devient l'assimilation)"
 
   - id: bloc-03
-    nom: Foncier Étendu & Sweet Spot Base
-    du: 2026-11-30
+    nom: PMA Concentrée
+    du: 2026-11-23
+    au: 2026-12-13
+    duree_semaines: 3
+    objectif: elever le plafond aerobie (PMA, point faible relatif 5min/20min = 1.11) avant les blocs sweet spot et seuil
+    focus: [pma_z5_concentree, sortie_longue_avec_series_pma, maintien_sprints, endurance_z2_stricte]
+    volume_cible_h: [12, 13.5]
+    rythme: "3 semaines de charge PMA (12h, 13h, 13h30) : 3 seances PMA/semaine (jeudi midi, serie dans la sortie longue du samedi, dimanche), 2 seances les WE de trail. Assimilation assuree par la periode decharge-fetes qui suit."
+    garde_fous: "bloc le plus traumatisant de l'hiver : Z2 et velotaf strictement souples. Sommeil degrade, FC repos +5 bpm ou VFC en chute -> on supprime d'abord la seance du dimanche"
+
+  - id: decharge-fetes
+    nom: Décharge Paris & Fêtes
+    du: 2026-12-14
     au: 2026-12-27
-    duree_semaines: 4
-    objectif: consolider le moteur aerobie, allonger l'endurance et introduire le Sweet Spot
-    focus: [sweet_spot_intro, maintien_sprints, volume_hivernal]
-    volume_cible_h: [10, 14]
-    rythme: "Cycle 3:1 -> 3 semaines de charge (11h à 14h) + 1 semaine d'assimilation fêtes (8h)"
+    duree_semaines: 2
+    objectif: assimiler le bloc PMA en respectant les indisponibilites
+    focus: [assimilation, z2_libre, course_a_pied_paris]
+    volume_cible_h: [4, 10]
+    rythme: "S1 (Paris) : lundi repos, velotaf mardi-mercredi, footing libre a Paris jeudi-dimanche (~4-5h velo) -> S2 (fetes) : velotaf jusqu'au 23/12, repos 24-25, sorties Z2 libres 26-27 (~8-10h)"
 
   - id: bloc-04
     nom: Sweet Spot Extensif
@@ -94,21 +124,21 @@ blocs:
     au: 2027-01-24
     duree_semaines: 4
     objectif: allonger le temps de soutien au Sweet Spot en col et repousser l'apparition de la fatigue
-    focus: [test_terrain_3m_12m, sweet_spot_long, endurance_fatigue, sorties_samedi_5h30]
-    test: "Test terrain 3 min + 12 min début janvier (semaine du 4 janv) pour calibrer les zones Sweet Spot / Seuil"
-    volume_cible_h: [12, 15]
-    rythme: "Cycle 3:1 -> S1 Test 3m+12m & montée en charge (12h à 15h) + S4 assimilation (8h)"
+    focus: [test_terrain_3m_12m, sweet_spot_long, entretien_pma_jeudi, endurance_fatigue]
+    test: "Test 1 terrain 3 min + 12 min le samedi 02/01 ou dimanche 03/01, frais apres deux semaines legeres, pour calibrer les zones Sweet Spot / Seuil"
+    volume_cible_h: [10, 14]
+    rythme: "Cycle 3:1 -> S1 11h (test), S2 13h, S3 14h, S4 assimilation 10h. Entretien PMA court le jeudi tous les 7 a 10 jours. Samedi sweet spot en col (2x30' ou 3x20')"
 
   - id: bloc-05
     nom: Seuil Z4 & Over-Unders
     du: 2027-01-25
     au: 2027-02-21
     duree_semaines: 4
-    objectif: elever le seuil anaerobie et entrainer le recyclage du lactate en montagne
-    focus: [seuil_z4, over_unders, resistance_dplus, test_controle_fevrier]
-    test: "Test de contrôle 3 min + 12 min fin février (semaine du 15 fév) pour valider la progression avant Paris-Nice"
-    volume_cible_h: [12, 15]
-    rythme: "Cycle 3:1 -> Bascule week-end course : Samedi intensités spécifiques en col (Seuil Z4, Over-Unders 3h-3h30) + Dimanche sortie longue volume sur fatigue (4h30-5h). S1-S3 charge haute (12h à 15h de selle) dont test 3m+12m en S4 + S4 assimilation / décharge (8h)"
+    objectif: elever le seuil et entrainer le recyclage du lactate en montagne
+    focus: [seuil_z4, over_unders, entretien_pma_jeudi, resistance_dplus, test_controle_fevrier]
+    test: "Test 2 de contrôle 3 min + 12 min le samedi 20/02, en fin d'assimilation, pour valider la progression et fixer le pacing du Paris-Nice Challenge"
+    volume_cible_h: [10, 14]
+    rythme: "Cycle 3:1 -> S1 12h30, S2 13h30, S3 14h, S4 assimilation 10h + test. Week-ends alternes : A = samedi sortie longue 5-6h avec series seuil en col + dimanche trail ; B = samedi intensites en col 3h-3h30 + dimanche sortie longue sur fatigue 4h30-5h"
 
   - id: bloc-06
     nom: Spécifique & Affûtage Paris-Nice
@@ -116,36 +146,36 @@ blocs:
     au: 2027-03-14
     duree_semaines: 3
     objectif: transformer les gains hivernaux en allure de course et reussir la premiere cyclo cible
-    focus: [pacing_montagne, specifique_course, affutage_pre_course]
-    course: "Paris Nice Challenge (13 mars 2027 - 150 km, 3500 D+)"
-    volume_cible_h: [8, 13]
-    rythme: "S1-S2 specifique et pacing (12-13h) -> S3 SEMAINE D'AFFUTAGE (volume -40%, 8h, debloquage Z4 court, TSB positif pour la course du 13 mars)"
+    focus: [pacing_montagne, specifique_course, entretien_pma, mini_affutage]
+    course: "Paris Nice Challenge (samedi 13 mars 2027 - 150 km, 3500 D+) - priorite B"
+    volume_cible_h: [11, 13.5]
+    rythme: "S1 12h30, S2 13h30 specifique et pacing -> S3 mini-affutage B (~11h course comprise, deblocage Z4 court jeudi, trail souple dimanche 07/03, TSB positif le 13 mars)"
 
   - id: bloc-07
-    nom: PMA & Rythme Punchy
+    nom: Montagne de Printemps, Madone & GFNY
     du: 2027-03-15
-    au: 2027-04-18
-    duree_semaines: 5
-    objectif: relancer la PMA rapidement post-PNC et convertir en puissance sur bosses nerveuses
-    focus: [transition_rapide_pnc, pma_z5, bosses_courtes, affutage]
+    au: 2027-04-11
+    duree_semaines: 4
+    objectif: capitaliser sur l'endurance de col de Paris-Nice, rappel PMA concentre, puis enchainer deux objectifs B en 8 jours
+    focus: [recup_active_pnc, rappel_pma_concentre, seuil_cols_longs, mini_affutage_madone, fraicheur_gfny]
     courses:
-      - "Mercan'Tour Madone-Peille (04 avril 2027)"
-      - "GFNY Cannes (mi-avril 2027)"
-    volume_cible_h: [8, 12]
-    rythme: "S1 transition active (début de semaine vélotaf souple, démarrage PMA en fin de semaine) -> S2 gros bloc PMA en bosse -> S3 SEMAINE D'AFFUTAGE (8h) & Madone-Peille -> S4 rappel rythme -> S5 SEMAINE D'AFFUTAGE (8h) & GFNY Cannes"
+      - "Mercan'Tour Madone-Peille (dimanche 04 avril 2027) - priorite B"
+      - "GFNY Cannes (dimanche 11 avril 2027) - priorite B"
+    volume_cible_h: [10, 12.5]
+    rythme: "S1 recuperation post-PNC (10h) -> S2 rappel PMA concentre (3 seances) & cols (12h30) -> S3 mini-affutage & Madone-Peille (~10h30 course comprise) -> S4 recup active lundi-mercredi, activation jeudi + samedi, GFNY (~10h course comprise)"
 
   - id: bloc-08
-    nom: Densité Cyclos & Assimilation
-    du: 2027-04-19
+    nom: Charge Cyclos de Mai
+    du: 2027-04-12
     au: 2027-05-09
-    duree_semaines: 3
-    objectif: gerer la fraicheur, enchainer les epreuves de mai sans s'epuiser
-    focus: [recup_active, maintien_puissance, fraicheur_course]
+    duree_semaines: 4
+    objectif: reconstruire le volume de montagne en utilisant les deux courses C comme seances cles
+    focus: [assimilation_post_gfny, volume_cols, entretien_pma, courses_c_dans_la_charge]
     courses:
-      - "Lazardieres Cannes (debut mai 2027)"
-      - "Grandfondo La Vencoise (2e WE mai 2027)"
-    volume_cible_h: [8, 10]
-    rythme: "S1 SEMAINE RECUP POST-GFNY (8h) -> S2 SEMAINE D'AFFUTAGE (8h) & Lazardieres -> S3 gestion fraicheur & La Vencoise"
+      - "Lazardieres Cannes (debut mai 2027) - priorite C"
+      - "Grandfondo La Vencoise (2e WE mai 2027) - priorite C"
+    volume_cible_h: [10, 14]
+    rythme: "S1 assimilation post-Madone/GFNY (10h) -> S2 charge (12h30) -> S3 charge & Lazardieres (13h30) -> S4 charge & La Vencoise en sortie longue de qualite (14h)"
 
   - id: bloc-09
     nom: Spécifique Haute Montagne & Affûtage Bonette
@@ -153,26 +183,42 @@ blocs:
     au: 2027-06-13
     duree_semaines: 5
     objectif: pic de forme absolu pour le monument de la saison (177 km, 4800 D+)
-    focus: [haute_montagne, pacing_bonette, nutrition_course, affutage_deux_semaines]
-    course: "MERCAN’TOUR BONETTE (13 juin 2027 - 177 km, 4800 D+)"
-    volume_cible_h: [7, 15]
-    rythme: "S1 SEMAINE RECUP POST-VENCOISE (8h) -> S2-S3 semaines chocs specifiques cols (14-15h, sorties 6h) -> S4 AFFUTAGE S-2 (10h) -> S5 AFFUTAGE FINAL S-1 (6-7h, debloquage court, pic TSB +10 le 13 juin)"
+    focus: [chocs_montagne, pacing_bonette, nutrition_course, entretien_pma, affutage_deux_semaines]
+    course: "MERCAN’TOUR BONETTE DT SWISS (dimanche 13 juin 2027 - 177 km, 4800 D+) - priorite A"
+    test: "Test 3 optionnel 3 min + 12 min le samedi 15/05 (fin d'assimilation) pour caler le pacing Bonette, sinon donnees Madone-Peille"
+    volume_cible_h: [10.5, 15]
+    rythme: "S1 assimilation (10h30) -> S2 choc (13h30, samedi 6h + dimanche trail) -> S3 choc (15h, samedi 6h + dimanche 4h enchaines, simulation course) -> S4 affutage S-2 (11h, reconnaissance Bonette si route ouverte) -> S5 affutage final S-1 (~6h hors course, deblocages courts, TSB +10 le 13 juin)"
+    terrain: "haute montagne probablement fermee mi-mai : chocs sur Madone, Turini, Couillole, Colmiane, Valberg"
+
+  - id: bloc-10
+    nom: Après-Bonette (à construire)
+    du: 2027-06-14
+    au: null
+    objectif: a definir apres la Bonette selon emploi du temps et performances
+    focus: [recuperation_post_bonette]
+    rythme: "seul jalon connu : Cimes du Mercantour (debut aout 2027). Autres courses eventuelles decidees plus tard par Cyril. Structure a construire le moment venu."
 
 # Synthese validee de la session de construction du programme.
 # C'est le document de reference : l'agent s'y appuie pour construire
 # chaque nouveau bloc.
 synthese_construction:
-  date: "2026-09-12"
+  date: "2026-10-17"
   texte: >
-    Cadrage saison 2026/2027 validé avec Cyril.
+    Cadrage saison 2026/2027 validé avec Cyril le 12/09/2026, révisé le 17/10/2026
+    après analyse de cohérence (bloc 1 réduit à 3 semaines, bloc PMA concentré en
+    décembre, hiérarchie A/B/C des courses, respect de la règle des ±30 % de volume).
     Reprise officielle le lundi 05/10/2026 après coupure régénératrice du 23/09 au 04/10.
+    FTP de référence 310 W (déclaré).
     Volume disponible : entre 8h et 15h de selle pure par semaine (hors renforcement musculaire).
     Règles physiologiques cardinales du plan :
-    1. Structure des mésocycles : cycle 3:1 (3 semaines de charge progressive, 1 semaine d'assimilation/récupération ramenée au plancher de 8h), avec pour exception le Bloc 1 (4 semaines progressives sans semaine d'assimilation car sortie directe de coupure).
-    2. Règle absolue d'affûtage pré-course : la semaine précédant toute cyclosportive (Paris-Nice, Madone-Peille, GFNY, Lazardières, Vençoise, Bonette), le volume est allégé de 40 à 50% (environ 7-8h) avec maintien de courts rappels d'intensité (déblocage Z4/PMA très court) pour garantir un TSB positif et une tonicité maximale le jour J.
-    3. Règle de récupération post-course : régénération active après les cyclos. Exception pour le post-Paris-Nice Challenge : décompression active limitée au début de semaine (lundi-jeudi, vélotaf très souple) pour attaquer le premier stimulus de PMA dès la fin de semaine (samedi) afin de préparer de façon optimale la Madone-Peille (à J+22) et la GFNY Cannes.
-    4. Sprints en Phase 1 (hiver) : intégration systématique de rappels de sprints courts alactiques (10-15s max, récup complète 3-4 min) en fin de sortie Z2 (maintien recrutement fibres rapides et commande motrice sans acide lactique) et de départs arrêtés / sprints à fort couple (torque) en bosse pour le renforcement musculaire spécifique.
-    5. Intégration stricte des contraintes : 2 jours de repos/semaine (lundi/vendredi), vélotaf mardi/mercredi (2h10 AR), séances en semaine (hors vélotaf, ex: jeudi) plafonnées à max 2h sur la pause déjeuner, sortie longue samedi (cols niçois 5 à 6h), trail le dimanche au moins un WE sur deux (1 à 2h), renforcement musculaire 2x/semaine (1h15-1h30 en bonus, hors quota selle).
-    6. Bascule Compétition dès Février (Bloc 5) : Cyril visant la performance sur tout son calendrier (dès Paris-Nice Challenge le 13 mars), le week-end bascule en « Samedi Intensités spécifiques de course en col » et « Dimanche Sortie longue de volume sur fatigue ».
-    7. Protocole de tests terrain : abandon du test 20 min classique au profit du protocole de terrain 3 min + 12 min en côte (avec 20 min de récup Z1 entre les deux). Deux dates programmées : début janvier 2027 (début Bloc 4 pour calibrer Sweet Spot et Seuil) et mi-février 2027 (fin Bloc 5 pour valider la progression et fixer le pacing du Paris-Nice Challenge).
-    8. Rôle de canalisateur du coach : Cyril a le moteur et le besoin de « se faire mal » pour franchir des caps. Le coach n'est pas frileux sur les blocs de charge et les intensités ciblées (semaines chocs de cols, Seuil, PMA), où l'exigence est maximale. En revanche, le rôle de modérateur s'exerce avec fermeté pour préserver la facilité des séances d'endurance Z2/vélotaf, imposer l'assimilation et le repos post-choc, et poser un veto absolu dès que des signaux inquiétants apparaissent (score de sommeil bas, forte dérive cardiaque anormale) afin de désamorcer une infection en incubation avant que l'illusion trompeuse du « tout va bien » ne cloue l'athlète au lit.
+    1. Structure des mésocycles : cycle 3:1 (3 semaines de charge progressive, 1 semaine d'assimilation à ~10h). La semaine d'assimilation garde la sortie du samedi (5h en Z2 souple, sprints alactiques autorisés) et supprime toute autre intensité. Pics de charge plafonnés à 14h (15h uniquement en choc Bonette) pour que la variation hebdomadaire reste dans ±30 %, à la hausse comme à la baisse. Exceptions : bloc 1 (3 semaines sans assimilation, sortie de coupure) et bloc 3 PMA (assimilation assurée par la décharge Paris/fêtes).
+    2. Volume d'une semaine de course : la course compte dans le volume. La fraîcheur s'obtient en baissant l'intensité, pas en effondrant le volume.
+    3. Hiérarchie des courses et affûtage : A (Bonette) = affûtage 2 semaines, TSB ~+10 ; B (Paris-Nice, Madone-Peille, GFNY Cannes) = mini-affûtage 5-7 jours (déblocages courts, vendredi repos, samedi activation) ; C (Lazardières, Vençoise) = courue dans la charge avec 2 jours de fraîcheur, utilisée comme séance clé.
+    4. PMA en bloc : un bloc PMA concentré en décembre (bloc 3, jusqu'à 3 séances/semaine dans la limite de 3 séances dures et 2 jours durs consécutifs), entretien court le jeudi tous les 7 à 10 jours de janvier à mars, rappel concentré d'une semaine en S2 du bloc 7 (post Paris-Nice), entretien sur le bloc Bonette.
+    5. Récupération post-course : régénération active en Z1/Z2 souple. Post-Paris-Nice : une semaine de récupération avant le rappel PMA. Entre Madone-Peille et GFNY : récupération lundi-mercredi, activation jeudi et samedi.
+    6. Sprints en Phase 1 (hiver) : rappels de sprints courts alactiques (10-15s max, récup complète 3-4 min) en fin de sortie Z2 et départs arrêtés à fort couple en bosse.
+    7. Intégration stricte des contraintes : 2 jours de repos/semaine (lundi/vendredi), vélotaf mardi/mercredi (2h10 AR) toujours en Z2, séance du jeudi plafonnée à 2h sur la pause déjeuner, sortie longue 5-6h chaque semaine, renforcement musculaire 2x/semaine tout l'hiver (hors quota selle). Trail un dimanche sur deux, supprimé les week-ends de course (décision de Cyril : le trail est secondaire).
+    8. Week-ends alternés à partir du bloc 5 : A = samedi sortie longue 5-6h avec séries de seuil ou d'allure course en col + dimanche trail ; B = samedi intensités spécifiques en col 3h-3h30 + dimanche sortie longue de volume sur fatigue 4h30-5h.
+    9. Protocole de tests terrain 3 min + 12 min en côte (20 min Z1 entre les deux) : 02-03/01/2027 (bloc 4), 20/02/2027 (fin bloc 5), 15/05/2027 optionnel (bloc 9).
+    10. Maladie : aucune séance rattrapée. Une semaine de charge touchée par 3 jours de maladie ou plus devient une semaine d'assimilation ; si le calendrier coince, on retire une semaine de charge, jamais une assimilation.
+    11. Rôle de canalisateur du coach : exigence maximale sur les blocs de charge et les intensités ciblées (bloc PMA, seuil, chocs de cols) ; fermeté sur la facilité des séances Z2/vélotaf, l'assimilation post-choc et le veto dès que des signaux inquiétants apparaissent (sommeil bas, dérive cardiaque anormale, FC repos en hausse, VFC en chute).

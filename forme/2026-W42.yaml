@@ -1,0 +1,87 @@
+# Une semaine = un fichier. Nommage en semaines ISO.
+# Section "mesures" : generee par scripts/weekly.py, ne pas editer a la main.
+# Section "ressenti" : saisie manuelle, l'agent n'y ecrit jamais.
+# Section "analyse_coach" : analyse hebdomadaire formulee par l'IA et conservee.
+
+semaine: 2026-W42
+du: 2026-10-12
+au: 2026-10-18
+
+mesures:
+  maj: '2026-10-17'
+  ctl_fin: 64.4
+  atl_fin: 80.8
+  tsb_fin: -16.5
+  ramp_rate: 4.0863075
+  charge_totale: 486
+  heures: 12.6
+  distance_km: 290
+  denivele_m: 3943
+  seances: 9
+  sommeil_moyen_h: 7.9
+  hrv_moyenne: 62.7
+  fc_repos_moyenne: 51.0
+ressenti:
+  global: Je lance l'analyse et saisis mon ressenti car on a changé les blocs et
+    la semaine pro et la derniere semaine du bloc1. La sortie de samedi a été 
+    plus longue que prévu (découverte de nouvelles routes).
+  jambes: Super sur la sortie du samedi, j'ai sorti 205W sur les 3H30 premieres 
+    sachant que l'auto pose était désactivé.
+  motivation: Franchement les jambes sont la, j'arrive a rester en Z2 et pas 
+    rouler trop fort. Je roule au paradis donc moral parfait
+  sommeil: Bon
+  seances_manquees: []
+  imprevus:
+  notes:
+
+adaptations: []
+
+analyse_coach:
+  maj: '2026-10-17'
+  synthese: >
+    S2 BLOC-01 (analyse au samedi soir, dimanche non inclus) — 11h26 de selle
+    (hors 1h10 de renfo) pour 12h05 prévues dimanche compris : volume conforme
+    (l'en-tête « ~10h15 » de la S2 dans bloc-01.yaml est une erreur de somme).
+    Charge 486 TSS, CTL 61.8 → 64.4 (niveau pré-coupure retrouvé), ATL 80.8,
+    TSB -16.5 après la sortie de samedi (fatigue productive, loin du seuil -25),
+    Ramp Rate 4.1 (< 7).
+
+    SANTÉ — Meilleurs marqueurs depuis la reprise. FC repos moyenne 51.0 bpm
+    (W40 54.0, W41 53.3), plus bas historique à 50 bpm les 15 et 17/10. VFC
+    moyenne 62.7 ms (W40 51.6, W41 55.3), pic à 77 jeudi. Sommeil 7.9h, scores
+    75-84 sans effondrement ; seul point bas la nuit du 16 au 17 (6h36, départ
+    7h49), sans impact (FC repos 50, VFC 66 au réveil). Le coup de froid
+    suspecté le 07/10 n'a eu aucune suite : profil inverse d'une incubation.
+    Pas d'« illusion du tout va bien » : ressenti (« les jambes sont là ») et
+    données convergent.
+
+    SÉANCES — VT mardi/mercredi conformes (FC moy. 142/125 et 144/118, 98 % en
+    Z1-Z2). Jeudi midi 1h46, NP 203 W (IF 0.65), 976 m D+ : EF 1.41 contre 1.35
+    le jeudi précédent, FC moy. 144 contre 155 à puissance comparable. Samedi
+    4h49 / 129 km / 2000 m D+, NP 215 W (IF 0.69), 229 TSS, 205 W moy. sur les
+    3h30 initiales (66 % FTP, haut de Z2), FC moy. 154, 86 % du temps FC en
+    Z1-Z2, sprints faits. 20 % du temps puissance en Z3 dans les montées :
+    acceptable sur ce terrain mais limite (plafond Z2 = 232 W). Sortie +49 min
+    vs prescrit (découverte de routes). Découplage 13 % non significatif (fin en
+    Z1, VI 1.14, auto-pause désactivée) ; l'EF, plus fiable ici, progresse :
+    1.34 → 1.35 → 1.41 → 1.40.
+
+    ÉCARTS — Renfo PPG lundi écourté (17' pour 45'), renfo jeudi durci (54'
+    pour 30'). Vérif mécanique 30' Z1 vendredi (jour de repos, 15 TSS, toléré).
+    Rappel W41 : trail du 11/10 à FC moy. 175 (69 % en Z4-Z5) pour une séance
+    prescrite en Z2.
+  decision: >
+    Dimanche 18/10 : si sec, 1h45-2h en Z2 basse (60-70 % FTP, FC < 150),
+    littoral plat, 6 sprints alactiques seulement si jambes vives ; si pluie,
+    repos complet sans compensation.
+
+    S3 BLOC-01 (19-25/10), adaptée à la pluie annoncée mardi-mercredi (VT
+    annulés) et validée avec Cyril : lundi midi Z2 basse 1h30 (2h si dimanche
+    non roulé, pas de vélo si FC repos > 55 ou VFC < 50 au réveil), mardi repos
+    vélo + renfo PPG, mercredi repos, jeudi midi 2x10' tempo 76-80 % + renfo
+    posture, vendredi repos, samedi sortie longue 5h MAXIMUM avec cols sous
+    232 W et 8 sprints, dimanche trail 1h30 en Z2 (FC < 164, marcher le raide).
+    Volume ~10h20 : -20 % vs W42, puis +16 % à l'entrée du bloc 2 (12h). Si
+    mardi ou mercredi sont secs, ne pas rajouter de VT. Bilan du bloc 1
+    (rituel 5) le 25 ou 26/10 avant d'écrire le bloc 2. Analyse à compléter
+    lundi avec la sortie de dimanche.

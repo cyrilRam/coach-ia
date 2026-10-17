@@ -12,15 +12,15 @@
 # cible en pourcentage (91-105%) -> conversion theorique. Les deux notations
 # ne disent donc pas la meme chose, c'est voulu.
 
-reference_ftp_w: 308
-maj: 2026-09-12
+reference_ftp_w: 310
+maj: 2026-10-17
 zones_custom: false
 
 puissance:
   - zone: Z1
     nom: Recuperation
     pct_ftp: [0, 55]
-    watts: [0, 168]
+    watts: [0, 171]
     perso:
       watts: null
       ressenti: null
@@ -28,7 +28,7 @@ puissance:
   - zone: Z2
     nom: Endurance
     pct_ftp: [56, 75]
-    watts: [171, 229]
+    watts: [174, 233]
     perso:
       watts: null
       ressenti: null
@@ -36,7 +36,7 @@ puissance:
   - zone: Z3
     nom: Tempo
     pct_ftp: [76, 90]
-    watts: [232, 275]
+    watts: [236, 279]
     perso:
       watts: null
       ressenti: "bornes coherentes avec le ressenti, zone validee.
@@ -45,7 +45,7 @@ puissance:
   - zone: Z4
     nom: Seuil
     pct_ftp: [91, 105]
-    watts: [278, 320]
+    watts: [282, 326]
     perso:
       watts: null
       ressenti: null
@@ -56,7 +56,7 @@ puissance:
   - zone: Z5
     nom: PMA
     pct_ftp: [106, 120]
-    watts: [323, 366]
+    watts: [329, 372]
     perso:
       watts: null
       ressenti: null
@@ -64,7 +64,7 @@ puissance:
   - zone: Z6
     nom: Anaerobie
     pct_ftp: [121, 150]
-    watts: [369, 458]
+    watts: [375, 465]
     perso:
       watts: null
       ressenti: null
@@ -74,7 +74,7 @@ puissance:
   - zone: Z7
     nom: Neuromusculaire
     pct_ftp: [151, 999]
-    watts: [461, null]
+    watts: [468, null]
     perso:
       watts: null
       ressenti: null
@@ -83,7 +83,7 @@ puissance:
 # Zone centrale de la prepa hivernale.
 sweet_spot:
   pct_ftp: [84, 97]
-  watts: [256, 296]
+  watts: [260, 301]
   perso:
     watts: null
     ressenti: null
@@ -123,5 +123,5 @@ fc:
       bpm: [195, 203]
       ressenti: null
 
-notes: "Watts recalcules sur FTP 305 W (ancre sur l'effort de 45 min a 304 W).
-        A refaire apres le prochain test 20 min dehors."
+notes: "Watts recalcules sur FTP declare 310 W (athlete.yaml, 2026-09-12).
+        A refaire apres le test terrain 3' + 12' du 02/01/2027."

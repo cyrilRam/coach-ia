@@ -1,10 +1,10 @@
 # Bloc d'entrainement : Bloc 1 - Reprise & Capacite Aerobie
-# Seances en JOURS RELATIFS (jour: 1 a 28). Jamais de dates absolues.
-# Cibles en % du FTP declare (308 W). Conversion en watts au moment du push.
+# Seances en JOURS RELATIFS (jour: 1 a 21). Jamais de dates absolues.
+# Cibles en % du FTP declare (310 W). Conversion en watts au moment du push.
 
 id: bloc-01
 nom: Reprise & Capacité Aérobie
-duree_semaines: 4
+duree_semaines: 3
 objectif: Reconstruire la base aerobie, relancer le recrutement neuromusculaire le week-end et installer les routines
 focus: [Z2, sprints_alactiques_weekend, reprise_trail, ppg]
 valide_le: '2026-09-12'
@@ -207,9 +207,20 @@ seances:
       - { type: retour_calme, duree_min: 56, cible: 56-66% }
 
   # =========================================================================
-  # SEMAINE 3 (Jours 15 a 21) — Volume velo/trail : ~11h45
+  # SEMAINE 3 (Jours 15 a 21) — Volume velo/trail : ~10h20
+  # Adaptee le 2026-10-17 : VT mardi-mercredi annules (pluie), velo deplace au lundi
   # =========================================================================
   - jour: 15
+    sport: Ride
+    nom: Pause déj - Récupération active Z2 basse
+    duree_min: 90
+    description: "Sortie midi de recuperation active (1h30 si dimanche roule, jusqu'a 2h sinon). Parcours plat ou littoral, Z2 basse stricte (60-70%), FC sous 150, aucun sprint. Ne pas rouler si au reveil FC repos > 55 bpm ou VFC < 50 ms."
+    intervalles:
+      - { type: echauffement, duree_min: 15, cible: 55-62% }
+      - { type: continu, duree_min: 65, cible: 60-70% }
+      - { type: retour_calme, duree_min: 10, cible: 50-60% }
+
+  - jour: 16
     sport: WeightTraining
     nom: Renforcement S3 - Force fonctionnelle & Gainage
     duree_min: 45
@@ -235,21 +246,7 @@ seances:
       
       4. Decompression (5 min) : Posture enfant + etirements doux.
 
-  - jour: 16
-    sport: Ride
-    nom: Vélotaf A/R Z2
-    duree_min: 130
-    description: "Velotaf A/R en Z2 reguliere."
-    intervalles:
-      - { type: continu, duree_min: 130, cible: 60-72% }
-
-  - jour: 17
-    sport: Ride
-    nom: Vélotaf A/R Z2
-    duree_min: 130
-    description: "Velotaf A/R Z2 sans sprint. Roulage propre et sans risque."
-    intervalles:
-      - { type: continu, duree_min: 130, cible: 60-72% }
+  # Jour 17 : Repos complet (Mercredi, VT annule)
 
   - jour: 18
     sport: Ride
@@ -287,11 +284,11 @@ seances:
   - jour: 20
     sport: Ride
     nom: Sortie longue cols niçois + 8 Sprints (Torque & Vitesse)
-    duree_min: 270
-    description: "Sortie longue de 4h30 en montagne. Cols au train en Z2 (65-74%). Integrer 8 sprints alactiques de 10-12s : 4 departs arretes a fort couple (torque) en bosse grand braquet (50 rpm de depart) + 4 sprints lances haute velocite sur le plat (>130% FTP). 3 min de recup complete entre chaque."
+    duree_min: 300
+    description: "Sortie longue de 5h00 MAXIMUM en montagne. Cols au train en Z2 (65-74%), jamais au-dessus de 75% dans les montees : developpement plus court plutot que pousser. Integrer 8 sprints alactiques de 10-12s : 4 departs arretes a fort couple (torque) en bosse grand braquet (50 rpm de depart) + 4 sprints lances haute velocite sur le plat (>130% FTP). 3 min de recup complete entre chaque."
     intervalles:
       - { type: echauffement, duree_min: 20, cible: 60-70% }
-      - { type: continu, duree_min: 160, cible: 62-75% }
+      - { type: continu, duree_min: 190, cible: 62-75% }
       - { type: effort, repetitions: 8, duree_s: 15, cible: 130-160%, recup_min: 3, recup_cible: 50% }
       - { type: retour_calme, duree_min: 58, cible: 58-68% }
 
@@ -299,106 +296,8 @@ seances:
     sport: Run
     nom: Trail vallonné D+ + Côtes courtes
     duree_min: 90
-    description: "Trail dominical de 1h30 en colline / sentiers avec denivele. Allure souple en endurance fondamentale. Inclure en cours de sortie 6 accelerations courtes de 15s en montee dynamique."
+    description: "Trail dominical de 1h30 en colline / sentiers avec denivele. Allure souple en endurance fondamentale, FC sous 164 bpm : marcher les passages raides. Inclure en cours de sortie 6 accelerations courtes de 15s en montee dynamique."
     intervalles:
       - { type: continu, duree_min: 75, cible: Z2 }
       - { type: effort, repetitions: 6, duree_s: 15, cible: Z4, recup_min: 1, recup_cible: Z1 }
       - { type: retour_calme, duree_min: 3, cible: Z1 }
-
-  # =========================================================================
-  # SEMAINE 4 (Jours 22 a 28) — Volume velo : ~12h45
-  # =========================================================================
-  - jour: 22
-    sport: WeightTraining
-    nom: Renforcement S4 - Consolidation & Puissance basse
-    duree_min: 45
-    description: |
-      SEANCE 1 (Jour off velo) - 45 min : Consolidation Fondations
-      
-      1. Echauffement & Mobilite (8 min) :
-      - Cat-Cow + mobilite chevilles : 2x 10 reps
-      - Fentes avec ouverture thoracique : 2x 6 reps/cote
-      - Fire Hydrants : 2x 10 reps/cote
-      
-      2. Circuit Bas du corps (18 min) - 3 a 4 tours (recup 1'30) :
-      - Fentes arriere dynamiques : 3x 12 reps/jambe
-      - Single Leg Glute Bridge (maintien 3s en haut) : 3x 12 reps/jambe
-      - Mollets excentriques sur marche : 3x 15 reps lentes (tempo 4s descente)
-      - Squats isometriques contre le mur (Wall Sit) : 3x 40s
-      
-      3. Circuit Gainage & Tronc (14 min) - 3 tours (recup 1') :
-      - Planche ventrale active : 3x 60s
-      - Deadbug tendu lent : 3x 12 reps alternees
-      - Planche laterale : 3x 40s/cote
-      - Hollow Body Hold : 3x 35s
-      
-      4. Decompression (5 min) : Posture enfant + etirements complets.
-
-  - jour: 23
-    sport: Ride
-    nom: Vélotaf A/R Z2
-    duree_min: 130
-    description: "Velotaf A/R Z2 regulier sans sprint."
-    intervalles:
-      - { type: continu, duree_min: 130, cible: 60-72% }
-
-  - jour: 24
-    sport: Ride
-    nom: Vélotaf A/R Z2
-    duree_min: 130
-    description: "Velotaf A/R Z2 propre, cadence fluide."
-    intervalles:
-      - { type: continu, duree_min: 130, cible: 60-72% }
-
-  - jour: 25
-    sport: Ride
-    nom: Pause déj - Aérobie rythmée
-    duree_min: 110
-    description: "Sortie midi (1h50). Travail de braquet et de rythme en bosse tout en restant sous les 75% du FTP."
-    intervalles:
-      - { type: echauffement, duree_min: 20, cible: 60-70% }
-      - { type: continu, duree_min: 75, cible: 66-75% }
-      - { type: retour_calme, duree_min: 15, cible: 55-65% }
-
-  - jour: 25
-    sport: WeightTraining
-    nom: Renforcement S4 - Posture & Decompression
-    duree_min: 30
-    description: |
-      SEANCE 2 (Fin de journee apres velo) - 30 min : Cloture Posturale
-      
-      1. Echauffement express (5 min) :
-      - Rotations thoraciques : 2x 8 reps/cote
-      - Bird-Dog : 2x 8 reps
-      
-      2. Circuit Postural (20 min) - 3 tours (recup 1') :
-      - Squats au poids du corps tempo 3-1-1 : 3x 15 reps
-      - Y-T-W au sol a plat ventre : 3x 10 reps sur chaque lettre
-      - Pont fessier bilatéral avec maintien haut 5s : 3x 10 reps
-      - Planche avec touchers d'epaules : 3x 20 touches (10/bras)
-      - Gainage lateral : 3x 35s/cote
-      
-      3. Decompression (5 min) : Chaine posterieure, psoas et detente lombaire.
-
-  # Jour 26 : Repos complet (Vendredi)
-
-  - jour: 27
-    sport: Ride
-    nom: Sortie longue reine - Arrière-pays + 10 Sprints
-    duree_min: 300
-    description: "Sortie reine de 5h00 dans l'arriere-pays nicois. Constance sur les 5 heures, 100% Z2 dans les cols. Placer 10 sprints alactiques de 10-12s (>130% FTP) : 5 departs arretes / force explosive en cote + 5 sprints lances pleine vitesse sur le plat. 3 min de recup complete en Z1."
-    intervalles:
-      - { type: echauffement, duree_min: 25, cible: 60-70% }
-      - { type: continu, duree_min: 175, cible: 62-75% }
-      - { type: effort, repetitions: 10, duree_s: 15, cible: 130-160%, recup_min: 3, recup_cible: 50% }
-      - { type: retour_calme, duree_min: 60, cible: 58-68% }
-
-  - jour: 28
-    sport: Ride
-    nom: Clôture Bloc 1 - Endurance + 8 Sprints
-    duree_min: 120
-    description: "Pas de trail ce WE. 2h en endurance de base souple sur le littoral, avec une serie de 8 sprints courts alactiques lances de 10s (recup 3 min) pour clore le Bloc 1 avec un influx neuromusculaire au top."
-    intervalles:
-      - { type: echauffement, duree_min: 35, cible: 60-68% }
-      - { type: effort, repetitions: 8, duree_s: 15, cible: 130-160%, recup_min: 3, recup_cible: 50% }
-      - { type: retour_calme, duree_min: 53, cible: 56-66% }

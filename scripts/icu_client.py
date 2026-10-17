@@ -61,6 +61,9 @@ class IcuClient:
     def post(self, path: str, payload: dict) -> Any:
         return self._request("POST", path, json=payload)
 
+    def delete(self, path: str) -> Any:
+        return self._request("DELETE", path)
+
     # -- lecture ----------------------------------------------------------
 
     def athlete(self) -> dict:
@@ -121,6 +124,9 @@ class IcuClient:
     def create_event(self, payload: dict) -> dict:
         """Cree une seance planifiee. Appele uniquement par push_block.py."""
         return self.post(f"/athlete/{self.athlete_id}/events", payload)
+
+    def delete_event(self, event_id: int) -> None:
+        self.delete(f"/athlete/{self.athlete_id}/events/{event_id}")
 
 
 if __name__ == "__main__":

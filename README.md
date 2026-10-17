@@ -49,7 +49,7 @@ python scripts/build_profile.py
 Met à jour [athlete.yaml](athlete.yaml) (records réels, W/kg, volume moyen, modèle CP/W').
 
 ### Étape 2 : Cadrer les objectifs et les règles
-- **Objectif majeur (A) :** ex. **MERCAN’TOUR BONETTE** (13 juin 2027 — 177 km, 4 800 m D+).
+- **Objectif majeur (A) :** ex. **MERCAN’TOUR BONETTE DT SWISS** (13 juin 2027 — 177 km, 4 800 m D+).
 - **Objectifs secondaires (B) :** Paris-Nice Challenge, Madone-Peille, GFNY Cannes.
 - **Courses de préparation :** Lazardières Cannes, La Vençoise.
 - **Enveloppe de volume :** Entre **8h et 15h** par semaine, sorties en semaine plafonnées à **2h max sur pause déj**.
@@ -58,12 +58,12 @@ Met à jour [athlete.yaml](athlete.yaml) (records réels, W/kg, volume moyen, mo
   - **Semaine pré-course :** volume réduit de 40 à 50% avec piqûres d'intensité courtes pour viser un TSB positif (+5 à +15).
   - **Semaine post-course :** régénération active en Z1/Z2 sans travail dur (avec amorce rapide de la PMA en fin de semaine post-Paris-Nice pour enchaîner sur la Madone-Peille).
 
-### Étape 3 : Figer l'architecture des 9 blocs
-Le macrocycle est découpé en 4 grandes phases :
-1. **Fondations Hivernales & Force (Octobre – Décembre) :** Blocs 1 à 3 (reprise aérobie, force basse cadence 50-60 rpm, sprints courts alactiques le week-end, sweet spot base).
-2. **Seuil & Montagne (Janvier – Mi-Mars) :** Blocs 4 à 6 (sweet spot long, seuil Z4, over-unders, affûtage Paris-Nice).
-3. **PMA & Rythme Punchy (Mi-Mars – Début Mai) :** Blocs 7 et 8 (déblocage PMA Z5, Madone-Peille, GFNY Cannes, Lazardières, Vençoise).
-4. **Haute Montagne & Bonette (Mai – Juin) :** Bloc 9 (sorties reines 6h, 4 000 m D+, affûtage sur 2 semaines vers le 13 juin).
+### Étape 3 : Figer l'architecture des blocs
+*(Exemple de la saison 2026-2027, révisée le 17/10/2026)* :
+1. **Fondations & PMA (Octobre – Décembre) :** Blocs 1 à 3 (reprise aérobie 3 semaines, force basse cadence 50-60 rpm, bloc PMA concentré en décembre), puis décharge Paris & fêtes.
+2. **Seuil & Paris-Nice (Janvier – Mi-Mars) :** Blocs 4 à 6 (sweet spot long, seuil Z4, over-unders, entretien PMA le jeudi, mini-affûtage Paris-Nice).
+3. **Printemps (Mi-Mars – Début Mai) :** Blocs 7 et 8 (rappel PMA, Madone-Peille et GFNY Cannes en objectifs B, Lazardières et Vençoise courues dans la charge).
+4. **Haute Montagne & Bonette (Mai – Juin) :** Bloc 9 (chocs de cols, simulation samedi 6h + dimanche 4h, affûtage sur 2 semaines vers le 13 juin), puis un après-Bonette laissé ouvert (seul jalon connu : les Cimes du Mercantour).
 
 ---
 

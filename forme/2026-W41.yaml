@@ -1,0 +1,58 @@
+# Une semaine = un fichier. Nommage en semaines ISO.
+# Section "mesures" : generee par scripts/weekly.py, ne pas editer a la main.
+# Section "ressenti" : saisie manuelle, l'agent n'y ecrit jamais.
+# Section "analyse_coach" : analyse hebdomadaire formulee par l'IA et conservee.
+
+semaine: 2026-W41
+du: 2026-10-05
+au: 2026-10-11
+
+mesures:
+  maj: '2026-10-11'
+  ctl_fin: 61.8
+  atl_fin: 64.8
+  tsb_fin: -3.0
+  ramp_rate: 1.0206871
+  charge_totale: 472
+  heures: 10.1
+  distance_km: 193
+  denivele_m: 3486
+  seances: 7
+  sommeil_moyen_h: 8.3
+  hrv_moyenne: 55.3
+  fc_repos_moyenne: 53.3
+
+# saisie manuelle
+ressenti:
+  global: Tres bonne premiere semaine malgrés 1 seance de VT annulé a cause de la pluie. Bien respecté le programme sauf peut etre le trail un peu fort mais ca montait tellement (Mont chauve depuis aspremont)
+  jambes: Plutot bonnes pour une premiere semaine. Samedi un peu du mal a me mettre dedans et cardio haut mais longue montée col st Roch (22km 210W dont pas mal de descentes et 20min a 230W).
+  motivation: Tres bonne
+  sommeil: Plutot bon mais jeudi, vendrdi et samedi je me sentais un peu fatigué. J'ai l'impression d'avoir eu un petit coup de froid mercredi a cause de la pluie
+  seances_manquees: [Mercredi a caude du VT]
+  imprevus:
+  notes: Semaine bien structuré et motivation au top. J'aimerai peut etre que la seance de renfo de jeudi soit plus dur. Trail un peu fort mais par contre je sens que ca travaille enormement les cuisses et le bas du dos donc super pour le vélo.
+
+adaptations: []
+
+analyse_coach:
+  maj: '2026-10-11'
+  synthese: >
+    S1 Bloc-01 réussie. Volume 10h06 (+9% vs cible 9h15), charge maîtrisée
+    (Ramp Rate 1.02, TSB -3.0, TSS 472). Structure respectée malgré VT mercredi
+    annulé (pluie). Sommeil excellent (8h18), FC repos 53.3 bpm et HRV 55.3
+    enregistrées comme baseline. Motivation au top.
+    Vigilance : fatigue ressentie jeudi-samedi + impression de coup de froid
+    mercredi après la pluie. Cardio haut samedi sur Col St Roch (230W = 74% FTP)
+    avec jambes lentes à démarrer — hypothèse principale : découplage Pw:HR
+    classique de reprise post-coupure, mais croisement avec fatigue et coup de
+    froid impose surveillance renforcée en W42.
+    Trail Mont Chauve un peu fort (au-delà de Z2 conversationnel prescrit) —
+    rappel de polarisation. Renfo jeudi jugé trop facile par Cyril, durcissement
+    validé pour S2.
+  decision: >
+    Continuer progression S2 bloc-01 (volume ~10h15) sauf alerte santé.
+    Surveiller FC repos, HRV et énergie lundi-mardi W42. Si coup de froid
+    confirmé (FC repos > 58 bpm, HRV < 48-50, gorge irritée) : passer en
+    Z1/Z2 basse et reporter sprints du WE. Trail sur parcours moins pentu
+    ou marcher les sections raides pour rester Z2. Durcir renfo jeudi S2
+    (charges légères, tempos excentriques allongés, fentes bulgares).
