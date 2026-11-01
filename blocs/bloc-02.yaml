@@ -1,0 +1,382 @@
+# Bloc d'entrainement : Bloc 2 - Force Sous-Max & Couple (Torque)
+# Seances en JOURS RELATIFS (jour: 1 a 28). Jamais de dates absolues.
+# Cibles en % du FTP declare (310 W). Conversion en watts au moment du push.
+# Seances force : assis, mains en haut du cintre, buste calme, en col regulier (5-8 %).
+# Hors blocs de force : Z2 stricte, plafond 75 % FTP dans les cols.
+
+id: bloc-02
+nom: Force Sous-Max & Couple (Torque)
+duree_semaines: 4
+objectif: Developper la force musculaire en col (basse cadence sous-max) et le recrutement neuromusculaire en bosse (departs arretes), sur la base aerobie du bloc 1
+focus: [force_basse_cadence_jeudi, force_weekend, departs_arretes, sortie_longue_5h_5h30, renfo_poids_du_corps]
+valide_le: '2026-10-26'
+
+seances:
+  # =========================================================================
+  # SEMAINE 1 (Jours 1 a 7) — Volume velo : 12h50 — WE sans trail
+  # Force : jeudi + dimanche
+  # =========================================================================
+  - jour: 1
+    sport: WeightTraining
+    nom: Renfo B2S1 - Force bas du corps (poids du corps)
+    duree_min: 50
+    description: |
+      SEANCE FORCE (Jour off velo) - 50 min : Entree en force, poids du corps
+      Materiel : aucun (une chaise ou un canape, une marche). Intensite = RPE 7 (2-3 reps en reserve).
+      La difficulte vient du tempo et de l'unilateral : si c'est trop facile, ralentir la descente (4-5s) ou ajouter une pause en bas, jamais ajouter des reps.
+
+      1. Echauffement & Activation (8 min) :
+      - Cat-Cow + World's Greatest Stretch : 2x 6 reps/cote
+      - Pont fessier bilateral : 2x 12 reps
+      - Squat poids du corps : 2x 10 reps
+
+      2. Force (30 min) - recup 1'30 entre series :
+      - Squat tempo (descente 3s, pause 1s en bas) : 3x 15 reps
+      - Fentes bulgares, pied arriere sur chaise (descente 3s) : 3x 10 reps/jambe
+      - Souleve de terre roumain 1 jambe (lent, dos plat) : 3x 10 reps/jambe
+      - Hip Thrust 1 jambe, dos sur canape (maintien 2s en haut) : 3x 12 reps/jambe
+      - Mollets 1 jambe sur marche (descente 3s) : 3x 15 reps/cote
+
+      3. Gainage (8 min) - 2 tours :
+      - Planche ventrale : 60s
+      - Deadbug lent (expiration complete, lombaires plaquees) : 10 reps/cote
+      - Planche laterale : 40s/cote
+
+      4. Decompression (4 min) : psoas, ischios, fessiers.
+
+  - jour: 2
+    sport: Ride
+    nom: Vélotaf A/R Z2
+    duree_min: 130
+    description: "Velotaf aller-retour (55 km) en Z2 souple. Aucun sprint, aucune bosse appuyee. Si la nuit a fait moins de 6h30 : Z1 pure, FC sous 148."
+    intervalles:
+      - { type: continu, duree_min: 130, cible: 60-72% }
+
+  - jour: 3
+    sport: Ride
+    nom: Vélotaf A/R Z2
+    duree_min: 130
+    description: "Deuxieme journee velotaf en Z2 stable, cadence fluide. Veille de seance force : rester souple."
+    intervalles:
+      - { type: continu, duree_min: 130, cible: 60-72% }
+
+  - jour: 4
+    sport: Ride
+    nom: Pause déj - Force 5x5' basse cadence
+    duree_min: 90
+    description: "Sortie midi (1h30). Premiere seance force : 5 x 5 min a 82-87 % FTP a 55-60 rpm, assis, sur une montee reguliere. Recup 3 min en descente ou Z1. Genoux et dos : si douleur, remonter la cadence a 65 rpm. Le reste en Z2."
+    intervalles:
+      - { type: echauffement, duree_min: 20, cible: 60-70% }
+      - { type: effort, repetitions: 5, duree_min: 5, cible: 82-87%, cadence: 55-60, recup_min: 3, recup_cible: 50-55% }
+      - { type: continu, duree_min: 20, cible: 62-72% }
+      - { type: retour_calme, duree_min: 10, cible: 50-60% }
+
+  - jour: 4
+    sport: WeightTraining
+    nom: Renfo B2S1 - Posture & Haut du corps
+    duree_min: 30
+    description: |
+      SEANCE POSTURE (Fin de journee apres velo) - 30 min : pas de jambes lourdes
+
+      1. Echauffement express (5 min) :
+      - Rotations thoraciques : 2x 8 reps/cote
+      - Bird-Dog : 2x 8 reps
+
+      2. Circuit Postural (20 min) - 3 tours (recup 1') :
+      - Rowing inverse sous une table solide (genoux flechis) : 3x 10 reps
+      - Y-T-W au sol a plat ventre : 3x 10 reps par lettre
+      - Pompes : 3x 12 reps
+      - Planche commando : 3x 12 reps
+      - Gainage lateral avec abduction jambe : 3x 30s/cote
+
+      3. Decompression (5 min) : dos, pectoraux, psoas.
+
+  # Jour 5 : Repos complet (Vendredi)
+
+  - jour: 6
+    sport: Ride
+    nom: Sortie longue cols + 8 départs arrêtés
+    duree_min: 300
+    description: "Sortie longue de 5h00 en montagne. Cols au train en Z2 (65-75 %), plafond 232 W en montee : developpement plus court plutot que pousser. Apres 2h, 8 departs arretes de 10-12s en bosse, grand braquet, depart a 40-50 rpm, assis les 3 premieres secondes puis en danseuse. Recup complete 3 min en Z1."
+    intervalles:
+      - { type: echauffement, duree_min: 20, cible: 60-70% }
+      - { type: continu, duree_min: 190, cible: 62-75% }
+      - { type: effort, repetitions: 8, duree_s: 12, cible: 150-250%, recup_min: 3, recup_cible: 50% }
+      - { type: retour_calme, duree_min: 64, cible: 58-68% }
+
+  - jour: 7
+    sport: Ride
+    nom: Force 4x8' basse cadence
+    duree_min: 120
+    description: "Pas de trail ce WE. 2h dont 4 x 8 min a 80-85 % FTP a 55-60 rpm, assis, en montee reguliere. Recup 4 min Z1. Le lendemain de 5h : si les jambes sont vides au premier bloc (puissance impossible a tenir sans FC qui s'envole), faire 3 blocs et rentrer en Z2."
+    intervalles:
+      - { type: echauffement, duree_min: 25, cible: 60-70% }
+      - { type: effort, repetitions: 4, duree_min: 8, cible: 80-85%, cadence: 55-60, recup_min: 4, recup_cible: 50-55% }
+      - { type: continu, duree_min: 37, cible: 62-72% }
+      - { type: retour_calme, duree_min: 10, cible: 50-60% }
+
+  # =========================================================================
+  # SEMAINE 2 (Jours 8 a 14) — Volume velo/trail : 13h00 — WE trail
+  # Force : jeudi + samedi (dans la sortie longue)
+  # =========================================================================
+  - jour: 8
+    sport: WeightTraining
+    nom: Renfo B2S2 - Force bas du corps (poids du corps, tempo)
+    duree_min: 50
+    description: |
+      SEANCE FORCE (Jour off velo) - 50 min : Progression par le temps sous tension
+      Materiel : aucun (chaise, canape, marche). Intensite = RPE 8 (1-2 reps en reserve).
+      On durcit vs S1 par le tempo et les pauses, pas par les reps.
+
+      1. Echauffement & Activation (8 min) :
+      - Cat-Cow + World's Greatest Stretch : 2x 6 reps/cote
+      - Pont fessier bilateral : 2x 12 reps
+      - Squat poids du corps : 2x 10 reps
+
+      2. Force (30 min) - recup 1'30-2' entre series :
+      - Squat 1,5 rep (descente 3s, remontee a mi-hauteur, redescente, remontee complete) : 4x 10 reps
+      - Fentes bulgares, pied arriere sur chaise (descente 4s, pause 1s en bas) : 4x 10 reps/jambe
+      - Souleve de terre roumain 1 jambe (descente 4s) : 4x 10 reps/jambe
+      - Hip Thrust 1 jambe, dos sur canape (maintien 3s en haut) : 3x 12 reps/jambe
+      - Step-up sur chaise (descente controlee 3s) : 3x 10 reps/jambe
+
+      3. Gainage (8 min) - 2 tours :
+      - Planche ventrale bras tendus loin devant : 60s
+      - Deadbug lent (bras et jambe opposes, 3s par extension) : 12 reps/cote
+      - Planche laterale : 45s/cote
+
+      4. Decompression (4 min) : psoas, ischios, fessiers.
+
+  - jour: 9
+    sport: Ride
+    nom: Vélotaf A/R Z2
+    duree_min: 130
+    description: "Velotaf en Z2 souple (55 km). Si la nuit a fait moins de 6h30 : Z1 pure, FC sous 148."
+    intervalles:
+      - { type: continu, duree_min: 130, cible: 60-72% }
+
+  - jour: 10
+    sport: Ride
+    nom: Vélotaf A/R Z2
+    duree_min: 130
+    description: "Deuxieme journee velotaf en Z2 stable. Veille de seance force : rester souple."
+    intervalles:
+      - { type: continu, duree_min: 130, cible: 60-72% }
+
+  - jour: 11
+    sport: Ride
+    nom: Pause déj - Force 3x12' basse cadence
+    duree_min: 110
+    description: "Sortie midi (1h50). 3 x 12 min a 83-87 % FTP a 55-60 rpm, assis, en col regulier. Recup 4 min Z1. Le temps sous tension monte (36 min contre 25 en S1) : puissance reguliere du debut a la fin du bloc, pas de depart en surregime."
+    intervalles:
+      - { type: echauffement, duree_min: 20, cible: 60-70% }
+      - { type: effort, repetitions: 3, duree_min: 12, cible: 83-87%, cadence: 55-60, recup_min: 4, recup_cible: 50-55% }
+      - { type: continu, duree_min: 30, cible: 62-72% }
+      - { type: retour_calme, duree_min: 12, cible: 50-60% }
+
+  - jour: 11
+    sport: WeightTraining
+    nom: Renfo B2S2 - Posture & Haut du corps
+    duree_min: 30
+    description: |
+      SEANCE POSTURE (Fin de journee apres velo) - 30 min : pas de jambes lourdes
+
+      1. Echauffement express (5 min) :
+      - Rotations thoraciques : 2x 8 reps/cote
+      - Bird-Dog : 2x 8 reps
+
+      2. Circuit Postural (20 min) - 3 tours (recup 1') :
+      - Rowing inverse sous une table solide (maintien 1s en haut) : 3x 10 reps
+      - Y-T-W au sol (maintien 3s bras decolles) : 3x 8 reps par lettre
+      - Pompes tempo (descente 3s) : 3x 10 reps
+      - Planche commando : 3x 14 reps
+      - Gainage lateral avec abduction jambe : 3x 35s/cote
+
+      3. Decompression (5 min) : dos, pectoraux, psoas.
+
+  # Jour 12 : Repos complet (Vendredi)
+
+  - jour: 13
+    sport: Ride
+    nom: Sortie longue cols + Force 4x10' en col
+    duree_min: 330
+    description: "Sortie longue de 5h30. Trail demain : la force se fait aujourd'hui. Entre 1h et 3h de selle, 4 x 10 min a 78-82 % FTP a 55-60 rpm, assis, dans les cols. Recup 5 min Z1-Z2. En dehors des blocs : Z2 stricte, plafond 232 W en montee. Pas de sprints."
+    intervalles:
+      - { type: echauffement, duree_min: 30, cible: 60-70% }
+      - { type: continu, duree_min: 40, cible: 62-75% }
+      - { type: effort, repetitions: 4, duree_min: 10, cible: 78-82%, cadence: 55-60, recup_min: 5, recup_cible: 55-65% }
+      - { type: continu, duree_min: 140, cible: 62-75% }
+      - { type: retour_calme, duree_min: 60, cible: 58-68% }
+
+  - jour: 14
+    sport: Run
+    nom: Trail Z2 - alerte FC 160
+    duree_min: 80
+    description: "Trail de 1h20 en colline, endurance fondamentale. Regler une alerte FC a 160 bpm sur la Fenix et MARCHER des qu'elle sonne. Pas d'acceleration cette fois. Objectif : le benefice musculaire du trail sans en faire une seance dure. S'il derive encore, il comptera comme une seance dure dans le quota."
+    intervalles:
+      - { type: continu, duree_min: 80, cible: Z2 }
+
+  # =========================================================================
+  # SEMAINE 3 (Jours 15 a 21) — Volume velo : 13h40 — WE sans trail
+  # Force : jeudi + dimanche (semaine la plus intense du bloc)
+  # =========================================================================
+  - jour: 15
+    sport: WeightTraining
+    nom: Renfo B2S3 - Force bas du corps (unilateral dur)
+    duree_min: 50
+    description: |
+      SEANCE FORCE (Jour off velo) - 50 min : Pic d'intensite au poids du corps
+      Materiel : aucun (chaise, canape, marche, montant de porte). Intensite = RPE 8-9 (1 rep en reserve).
+      Moins de reps, exercices plus durs : l'unilateral remplace la charge.
+
+      1. Echauffement & Activation (8 min) :
+      - Cat-Cow + World's Greatest Stretch : 2x 6 reps/cote
+      - Pont fessier bilateral : 2x 12 reps
+      - Squat poids du corps : 2x 10 reps
+
+      2. Force (30 min) - recup 2' entre series :
+      - Squat 1 jambe assis-debout sur chaise (descente 4s, main au montant de porte si besoin) : 4x 6 reps/jambe
+      - Fentes bulgares 1,5 rep (pause 2s en bas) : 4x 8 reps/jambe
+      - Pont ischios 1 jambe, talon sur chaise (maintien 2s en haut) : 4x 8 reps/jambe
+      - Hip Thrust 1 jambe, dos sur canape (maintien 3s en haut) : 4x 12 reps/jambe
+      - Mollets 1 jambe excentriques sur marche (descente 4s) : 3x 15 reps/cote
+
+      3. Gainage (8 min) - 2 tours :
+      - Planche ventrale bras tendus loin devant : 60s
+      - Deadbug lent (3s par extension) : 12 reps/cote
+      - Planche laterale avec rotation : 45s/cote
+
+      4. Decompression (4 min) : psoas, ischios, fessiers.
+
+  - jour: 16
+    sport: Ride
+    nom: Vélotaf A/R Z2
+    duree_min: 130
+    description: "Velotaf en Z2 souple (55 km). Si la nuit a fait moins de 6h30 : Z1 pure, FC sous 148."
+    intervalles:
+      - { type: continu, duree_min: 130, cible: 60-72% }
+
+  - jour: 17
+    sport: Ride
+    nom: Vélotaf A/R Z2
+    duree_min: 130
+    description: "Deuxieme journee velotaf en Z2 stable. Veille de la seance la plus dure du bloc : rester souple."
+    intervalles:
+      - { type: continu, duree_min: 130, cible: 60-72% }
+
+  - jour: 18
+    sport: Ride
+    nom: Pause déj - Force 6x(4' 50 rpm + sprint)
+    duree_min: 110
+    description: "Sortie midi (1h50). 6 x 4 min a 88-92 % FTP a 50 rpm, assis, en col regulier, et chaque bloc se termine par un sprint libre de 10s (relance en danseuse, a fond). Recup 3 min Z1. Seance la plus exigeante du bloc : c'est le moment d'aller chercher loin."
+    intervalles:
+      - { type: echauffement, duree_min: 20, cible: 60-70% }
+      - { type: effort, repetitions: 6, duree_min: 4, cible: 88-92%, cadence: 50, recup_min: 3, recup_cible: 50-55% }
+      - { type: continu, duree_min: 38, cible: 62-72% }
+      - { type: retour_calme, duree_min: 10, cible: 50-60% }
+
+  - jour: 18
+    sport: WeightTraining
+    nom: Renfo B2S3 - Posture & Haut du corps
+    duree_min: 30
+    description: |
+      SEANCE POSTURE (Fin de journee apres velo) - 30 min : pas de jambes lourdes
+
+      1. Echauffement express (5 min) :
+      - Rotations thoraciques : 2x 8 reps/cote
+      - Bird-Dog : 2x 8 reps
+
+      2. Circuit Postural (20 min) - 3 tours (recup 1') :
+      - Rowing inverse sous une table solide, jambes tendues : 3x 10 reps
+      - Y-T-W au sol (maintien 3s bras decolles) : 3x 10 reps par lettre
+      - Pompes tempo (descente 3s) : 3x 12 reps
+      - Planche commando : 3x 16 reps
+      - Gainage lateral avec abduction jambe : 3x 40s/cote
+
+      3. Decompression (5 min) : dos, pectoraux, psoas.
+
+  # Jour 19 : Repos complet (Vendredi)
+
+  - jour: 20
+    sport: Ride
+    nom: Sortie longue cols + 10 départs arrêtés
+    duree_min: 330
+    description: "Sortie longue de 5h30 en montagne. Cols au train en Z2 (65-75 %), plafond 232 W en montee. Apres 2h, 10 departs arretes de 10s en bosse, grand braquet, depart a 40-50 rpm. Recup complete 3 min en Z1. Force demain : ne pas transformer les cols en tempo."
+    intervalles:
+      - { type: echauffement, duree_min: 20, cible: 60-70% }
+      - { type: continu, duree_min: 200, cible: 62-75% }
+      - { type: effort, repetitions: 10, duree_s: 10, cible: 150-250%, recup_min: 3, recup_cible: 50% }
+      - { type: retour_calme, duree_min: 78, cible: 58-68% }
+
+  - jour: 21
+    sport: Ride
+    nom: Force 6x3' @95% basse cadence
+    duree_min: 120
+    description: "Pas de trail ce WE. 2h dont 6 x 3 min a 93-97 % FTP a 50-55 rpm, assis, en montee reguliere. Recup 3 min Z1. Pont vers le bloc PMA. Le lendemain de 5h30 : si la puissance ne tient pas des le 2e bloc, s'arreter a 4 et rentrer en Z2."
+    intervalles:
+      - { type: echauffement, duree_min: 25, cible: 60-70% }
+      - { type: effort, repetitions: 6, duree_min: 3, cible: 93-97%, cadence: 50-55, recup_min: 3, recup_cible: 50-55% }
+      - { type: continu, duree_min: 49, cible: 62-72% }
+      - { type: retour_calme, duree_min: 10, cible: 50-60% }
+
+  # =========================================================================
+  # SEMAINE 4 (Jours 22 a 28) — Volume velo/trail : 10h20 — ASSIMILATION
+  # Fin de 6 semaines de charge consecutives : aucune intensite hors departs arretes du samedi.
+  # =========================================================================
+  - jour: 22
+    sport: WeightTraining
+    nom: Renfo B2S4 - Entretien léger
+    duree_min: 35
+    description: |
+      SEANCE ENTRETIEN (Jour off velo) - 35 min : assimilation, poids du corps
+      Intensite = RPE 5-6. On entretient le geste, on ne cree pas de fatigue.
+
+      1. Mobilite (8 min) : Cat-Cow, World's Greatest Stretch, Fire Hydrants.
+
+      2. Circuit (20 min) - 2 tours (recup 1'30) :
+      - Squat poids du corps (tempo normal) : 2x 12 reps
+      - Fentes arriere : 2x 8 reps/jambe
+      - Souleve de terre roumain 1 jambe : 2x 8 reps/jambe
+      - Pont fessier 1 jambe : 2x 10 reps/jambe
+      - Planche ventrale : 2x 45s
+      - Planche laterale : 2x 30s/cote
+
+      3. Decompression (7 min) : etirements doux complets.
+
+  - jour: 23
+    sport: Ride
+    nom: Vélotaf A/R Z2 souple
+    duree_min: 130
+    description: "Velotaf en Z2 basse (60-68 %), FC sous 150. Semaine d'assimilation : on roule pour recuperer."
+    intervalles:
+      - { type: continu, duree_min: 130, cible: 58-68% }
+
+  - jour: 24
+    sport: Ride
+    nom: Vélotaf A/R Z2 souple
+    duree_min: 130
+    description: "Velotaf en Z2 basse (60-68 %), FC sous 150."
+    intervalles:
+      - { type: continu, duree_min: 130, cible: 58-68% }
+
+  # Jour 25 : Repos velo (Jeudi) - assimilation
+  # Jour 26 : Repos complet (Vendredi)
+
+  - jour: 27
+    sport: Ride
+    nom: Sortie longue Z2 souple + 6 départs arrêtés
+    duree_min: 300
+    description: "Sortie longue de 5h en Z2 souple (60-72 %), cols au train sans jamais depasser 225 W. 6 departs arretes de 10s en bosse apres 2h, recup complete 3 min. Rien d'autre."
+    intervalles:
+      - { type: echauffement, duree_min: 20, cible: 58-68% }
+      - { type: continu, duree_min: 190, cible: 60-72% }
+      - { type: effort, repetitions: 6, duree_s: 10, cible: 150-250%, recup_min: 3, recup_cible: 50% }
+      - { type: retour_calme, duree_min: 71, cible: 55-65% }
+
+  - jour: 28
+    sport: Run
+    nom: Trail souple Z1-Z2
+    duree_min: 60
+    description: "Trail d'une heure en endurance tres souple. Alerte FC a 155 bpm, marcher toutes les montees raides. Fin du bloc 2."
+    intervalles:
+      - { type: continu, duree_min: 60, cible: Z2 }

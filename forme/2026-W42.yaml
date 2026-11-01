@@ -8,19 +8,19 @@ du: 2026-10-12
 au: 2026-10-18
 
 mesures:
-  maj: '2026-10-17'
-  ctl_fin: 64.4
-  atl_fin: 80.8
-  tsb_fin: -16.5
-  ramp_rate: 4.0863075
-  charge_totale: 486
-  heures: 12.6
-  distance_km: 290
-  denivele_m: 3943
-  seances: 9
+  maj: '2026-10-23'
+  ctl_fin: 64.8
+  atl_fin: 81.1
+  tsb_fin: -16.3
+  ramp_rate: 3.001976
+  charge_totale: 569
+  heures: 14.5
+  distance_km: 334
+  denivele_m: 4753
+  seances: 10
   sommeil_moyen_h: 7.9
-  hrv_moyenne: 62.7
-  fc_repos_moyenne: 51.0
+  hrv_moyenne: 62.3
+  fc_repos_moyenne: 51.1
 ressenti:
   global: Je lance l'analyse et saisis mon ressenti car on a changé les blocs et
     la semaine pro et la derniere semaine du bloc1. La sortie de samedi a été 
@@ -37,14 +37,14 @@ ressenti:
 adaptations: []
 
 analyse_coach:
-  maj: '2026-10-17'
+  maj: '2026-10-18'
   synthese: >
-    S2 BLOC-01 (analyse au samedi soir, dimanche non inclus) — 11h26 de selle
-    (hors 1h10 de renfo) pour 12h05 prévues dimanche compris : volume conforme
-    (l'en-tête « ~10h15 » de la S2 dans bloc-01.yaml est une erreur de somme).
-    Charge 486 TSS, CTL 61.8 → 64.4 (niveau pré-coupure retrouvé), ATL 80.8,
-    TSB -16.5 après la sortie de samedi (fatigue productive, loin du seuil -25),
-    Ramp Rate 4.1 (< 7).
+    S2 BLOC-01 (semaine complète, dimanche inclus) — 13h21 de selle (hors 1h10
+    de renfo) pour 12h05 prévues : +10 %, dû aux sorties allongées par la
+    découverte de nouvelles routes (l'en-tête « ~10h15 » de la S2 dans
+    bloc-01.yaml est une erreur de somme). Charge 569 TSS, 334 km, 4753 m D+.
+    CTL 60.3 → 64.8 (niveau pré-coupure retrouvé), ATL 81.1, TSB -16.3 (fatigue
+    productive, loin du seuil -25), Ramp Rate 3.0 (< 7).
 
     SANTÉ — Meilleurs marqueurs depuis la reprise. FC repos moyenne 51.0 bpm
     (W40 54.0, W41 53.3), plus bas historique à 50 bpm les 15 et 17/10. VFC
@@ -70,18 +70,23 @@ analyse_coach:
     pour 30'). Vérif mécanique 30' Z1 vendredi (jour de repos, 15 TSS, toléré).
     Rappel W41 : trail du 11/10 à FC moy. 175 (69 % en Z4-Z5) pour une séance
     prescrite en Z2.
-  decision: >
-    Dimanche 18/10 : si sec, 1h45-2h en Z2 basse (60-70 % FTP, FC < 150),
-    littoral plat, 6 sprints alactiques seulement si jambes vives ; si pluie,
-    repos complet sans compensation.
 
+    DIMANCHE 18/10 — Bord de mer avec nouvelles routes : 1h55, 44 km, 810 m D+
+    (plus que le plat prévu), NP 205 W (IF 0.66), VI 1.33, 83 TSS. FC moy. 140
+    (max 180, pic de sprint ou de bosse), 92 % du temps FC en Z1-Z2, sous le
+    plafond de 150 bpm prescrit. EF 1.46, meilleure valeur de la reprise
+    (1.34 → 1.35 → 1.41 → 1.40 → 1.46). Découplage 12.7 % non significatif (VI
+    élevé). Sprints faits. Réveil du matin au vert : FC repos 52, VFC 60, sommeil
+    8h12 (score 83). Aucune dérive après 4h49 la veille : la semaine est
+    absorbée.
+  decision: >
     S3 BLOC-01 (19-25/10), adaptée à la pluie annoncée mardi-mercredi (VT
     annulés) et validée avec Cyril : lundi midi Z2 basse 1h30 (2h si dimanche
     non roulé, pas de vélo si FC repos > 55 ou VFC < 50 au réveil), mardi repos
     vélo + renfo PPG, mercredi repos, jeudi midi 2x10' tempo 76-80 % + renfo
     posture, vendredi repos, samedi sortie longue 5h MAXIMUM avec cols sous
     232 W et 8 sprints, dimanche trail 1h30 en Z2 (FC < 164, marcher le raide).
-    Volume ~10h20 : -20 % vs W42, puis +16 % à l'entrée du bloc 2 (12h). Si
+    Volume ~10h20 : -23 % vs W42 (13h21), puis +16 % à l'entrée du bloc 2 (12h). Si
     mardi ou mercredi sont secs, ne pas rajouter de VT. Bilan du bloc 1
     (rituel 5) le 25 ou 26/10 avant d'écrire le bloc 2. Analyse à compléter
-    lundi avec la sortie de dimanche.
+    ce soir : sortie de dimanche intégrée, aucun signal d'alerte.

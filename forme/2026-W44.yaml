@@ -1,0 +1,91 @@
+# Une semaine = un fichier. Nommage en semaines ISO.
+# Section "mesures" : generee par scripts/weekly.py, ne pas editer a la main.
+# Section "ressenti" : saisie manuelle, l'agent n'y ecrit jamais.
+# Section "analyse_coach" : analyse hebdomadaire formulee par l'IA et conservee.
+
+semaine: 2026-W44
+du: 2026-10-26
+au: 2026-11-01
+
+mesures:
+  maj: '2026-11-01'
+  ctl_fin: 69.7
+  atl_fin: 90.7
+  tsb_fin: -21.0
+  ramp_rate: 2.5162659
+  charge_totale: 589
+  heures: 14.0
+  distance_km: 311
+  denivele_m: 5892
+  seances: 8
+  sommeil_moyen_h: 8.1
+  hrv_moyenne: 59.3
+  fc_repos_moyenne: 53.4
+
+# saisie manuelle
+ressenti:
+  global: Bonne semaine avec samedi surement une de mes plus grosses sorties. 5h a quasi 205W premiere fois que je tiens ca aussi longtemps avec en plus les longues descentes. Cardio en montée etait un peu plus haut mais peut etre lié au froid. J'avais tres froid surtout au pied. Je sens qu'on a passé un cap dans la prepa premiere semaine ou je sens que je force. C'est pas de la fatigue mais je sens que je travaille
+  jambes: Execlettes. Je monte en Z2 sans forcer sur les jambes, les seances de force passent trkl avec un cardio qui monte pas (notament seance de dimanche ou j'etais prochde des 260W mais avce un cardio de Z2)
+  motivation: Excellentes
+  sommeil: Bon et j'ai trouvé une sorte de rythme ou je m'endors direct a 22H30/23H et je me leve tout seul entre 7h et 7h30
+  seances_manquees: [Renfo de lundi replacé mercredi]
+  imprevus:
+  notes: La seance de mercredi n'etait pas du VT j'ai remplacé par une sortie Z2
+
+adaptations: []
+
+analyse_coach:
+  maj: '2026-11-01'
+  synthese: >
+    S1 BLOC-02 (Force sous-max) — Compliance complète : 12h46 de vélo pour
+    12h50 prescrites, renfo 72' pour 80' (force bas du corps déplacée du lundi
+    au mercredi). Charge 589 TSS, record de la reprise (+4 % vs W43). CTL
+    67.2 → 69.7, ATL 90.7 (pic à 92 samedi), TSB -21.0, Ramp Rate 2.5. Aucun
+    garde-fou rouge (TSB > -25, ramp < 7).
+
+    SANTÉ — Sommeil 8.1h de moyenne, le meilleur des trois dernières
+    semaines, scores 76 à 92, horaires réguliers : rien à redire. En
+    revanche la FC repos s'est installée sur un plateau à 53-54 bpm tous les
+    matins (moyenne 53.4 contre 51.3 en W43, plus aucun jour sous 53 depuis
+    le 25/10) et la VFC recule légèrement (59.3 ms contre 61.1, creux à 56
+    jeudi). Seuils d'assimilation anticipée (FC repos 56-57, VFC < 50) non
+    atteints. Lecture : empreinte normale d'une charge record, pas un signal
+    infectieux — la séance de dimanche le confirme (voir plus bas). Cohérent
+    avec le ressenti : « je sens que je travaille », pas de fatigue.
+
+    SÉANCES CLÉS — Jeudi force 5x5' : 4 x 4'50 à 267 W + 1 x 3'20 à 264 W
+    pour une cible de 254-270 W, haut de fourchette, EF 1.52. Dimanche force
+    4x8' : blocs à 251-268 W (cible 248-264 W), cadence moyenne 66 rpm, FC
+    moy. 137, 1 min seulement en Z3 FC, découplage 4.4 %, EF 1.53 = meilleur
+    de la reprise, au lendemain d'un 5h record. C'est la donnée la plus
+    solide de la semaine : la capacité sous-max progresse nettement.
+
+    SAMEDI — 5h00 / 118 km / 2759 m D+, moyenne 204 W, NP 215 W (IF 0.69),
+    237 TSS : record 5h sur 12 mois. Mais FC moy. 155 (+4 vs 24/10), EF 1.39
+    (1.45) et découplage 11.3 % contre -1.5 % samedi dernier à température
+    identique (13 °C) : le froid n'explique pas tout, la moyenne de puissance
+    plus haute (+14 W) et la FC repos à 54 ce matin-là non plus séparément,
+    les trois ensemble oui. Deux écarts à la prescription : 85 min au-dessus
+    de 234 W malgré le plafond de 232 W (deuxième samedi identique), et
+    départs arrêtés absents des données (2 s en Z7 sur la sortie).
+
+    ÉCARTS MINEURS — Mercredi : VT remplacé par une sortie de 2h01 / 943 m D+
+    avec 26 min au-dessus de 234 W et un sprint de 15 s à 683 W, pour une
+    consigne « aucun sprint, aucune bosse appuyée ». Renfo jambes mercredi
+    soir veille de la force jeudi : passé sans dommage cette fois.
+  decision: >
+    W45 = BLOC 02 S2 (13h, trail dimanche) — Feu vert, bloc maintenu tel que
+    prescrit. Assimilation toujours en S4 (W47) ; elle passe en S3 (W46) si
+    la FC repos atteint 56 deux matins de suite, si la VFC passe sous 50 ms,
+    ou si deux nuits tombent sous 7h / score 70.
+
+    CONSIGNES — Lundi : renfo force S2 le lundi, pas le mercredi, pour
+    arriver frais sur le 3x12' de jeudi. Mardi-mercredi : vélotaf strict Z2,
+    pas de sortie de remplacement avec D+ ni sprint. Jeudi 3x12' : 257-270 W,
+    régularité avant tout, ne pas dépasser 270 W. Samedi 5h30 : les 4x10' à
+    242-254 W sont la seule Z3 de la journée ; hors blocs, plafond 232 W non
+    négociable (troisième rappel), développement plus court plutôt que
+    pousser. Froid : couvre-chaussures et chaussettes laine, 70-90 g de
+    glucides par heure. Dimanche trail : alerte FC 160, marcher dès qu'elle
+    sonne. Départs arrêtés de samedi dernier : à confirmer avec Cyril. Pas
+    de proposition de FTP.

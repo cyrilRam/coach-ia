@@ -33,6 +33,8 @@ ZONES_DEFAUT = {
 }
 ZONES_FC = {"Z1", "Z2", "Z3", "Z4", "Z5", "Z6", "Z7"}
 SPORTS_CIBLE_FC = {"Run", "TrailRun"}
+TYPE_EFFORT = "effort"
+DECLENCHEMENT_LAP = "Press lap "
 
 
 def charger_ftp() -> int:
@@ -97,8 +99,12 @@ def etapes(seance: dict, ftp: int) -> list[str]:
     """
     lignes = []
     en_fc = seance.get("sport") in SPORTS_CIBLE_FC
-    for it in seance.get("intervalles", []):
+    intervalles = seance.get("intervalles", [])
+    for index, it in enumerate(intervalles):
         cible = cible_texte(it.get("cible"), ftp, en_fc)
+        avant_effort = index + 1 < len(intervalles) and intervalles[index + 1].get("type") == TYPE_EFFORT
+        lap_etape = DECLENCHEMENT_LAP if avant_effort else ""
+        lap_recup = DECLENCHEMENT_LAP if it.get("type") == TYPE_EFFORT else ""
 
         if "duree_s" in it:
             duree_str = f"{it['duree_s']}s"
@@ -122,14 +128,14 @@ def etapes(seance: dict, ftp: int) -> list[str]:
         if reps > 1:
             lignes.append("")
             lignes.append(f"{reps}x")
-            lignes.append(f"- {duree_str} {cible}{cadence}")
+            lignes.append(f"- {lap_etape}{duree_str} {cible}{cadence}")
             if recup_str:
-                lignes.append(f"- {recup_str} {cible_texte(it.get('recup_cible'), ftp, en_fc)}")
+                lignes.append(f"- {lap_recup}{recup_str} {cible_texte(it.get('recup_cible'), ftp, en_fc)}")
             lignes.append("")
         else:
-            lignes.append(f"- {duree_str} {cible}{cadence}")
+            lignes.append(f"- {lap_etape}{duree_str} {cible}{cadence}")
             if recup_str:
-                lignes.append(f"- {recup_str} {cible_texte(it.get('recup_cible'), ftp, en_fc)}")
+                lignes.append(f"- {lap_recup}{recup_str} {cible_texte(it.get('recup_cible'), ftp, en_fc)}")
     return lignes
 
 

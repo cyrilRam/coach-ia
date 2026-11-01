@@ -1,0 +1,86 @@
+# Une semaine = un fichier. Nommage en semaines ISO.
+# Section "mesures" : generee par scripts/weekly.py, ne pas editer a la main.
+# Section "ressenti" : saisie manuelle, l'agent n'y ecrit jamais.
+# Section "analyse_coach" : analyse hebdomadaire formulee par l'IA et conservee.
+
+semaine: 2026-W43
+du: 2026-10-19
+au: 2026-10-25
+
+mesures:
+  maj: '2026-10-26'
+  ctl_fin: 67.2
+  atl_fin: 86.9
+  tsb_fin: -19.7
+  ramp_rate: 2.3908844
+  charge_totale: 566
+  heures: 12.9
+  distance_km: 251
+  denivele_m: 5314
+  seances: 8
+  sommeil_moyen_h: 7.7
+  hrv_moyenne: 61.1
+  fc_repos_moyenne: 51.3
+ressenti:
+  global: Excellent. Samedi surement une de mes meilleurs sorties, dimanche le trail bcp plus facile qu'il y a 15jours alors que je suis allé plus vite.
+  jambes: Sortie de samedi je pensais pas avoir ces jambes. 5h a 220W normalisé avec mon record de d+ avec les cols  EZE - Madone - Berre depuis escarene - Chateneaneuf et Montchauve. Encore facile de mettre 235W sur le mont chauve
+  motivation: Peut pas etre meilleur
+  sommeil: Un peu difficile cette semaine sur certaines nuits mais rattrapés sur les autres nuits.  Le sommeil a été moins bon lundi soir car j'ai du me reveiller tres tot le lendemiain pour aller travailler et j'avais peur de pas me reveiller. Ensuite le mardi soir j'ai eu une mise en prod qui a terminé a 00h30. Par contre mercredi soir peut etre ma meilleur nuit.
+  seances_manquees: []
+  imprevus: mardi VT annulé a cause de la météo mais on l'avait prevu ensemble
+  notes:
+
+adaptations: []
+
+analyse_coach:
+  maj: '2026-10-26'
+  synthese: >
+    S3 BLOC-01 (semaine complète) — 11h26 de vélo/trail (+ 1h25 de renfo) pour
+    ~9h50 prescrites : écart dû au VT de mercredi (2h07) non prévu. Charge 566
+    TSS (= W42 569) pour -14 % de volume : semaine pas réellement allégée, le
+    D+ (5314 m, record de la reprise) a compensé les heures. CTL 64.8 → 67.2,
+    ATL 86.9, TSB -19.7 dimanche (-9.7 lundi matin), Ramp Rate 2.4. Aucun
+    garde-fou déclenché.
+
+    SANTÉ — Au vert. FC repos moyenne 51.3 bpm (W42 51.1), plus bas historique
+    à 48 le samedi 24/10, VFC moyenne 61.1 ms (W42 62.3), pic à 69 samedi.
+    Sommeil 7.7h : deux nuits courtes d'origine professionnelle (lun→mar 6h40
+    score 68, mar→mer 6h00 après mise en prod à 00h30), rattrapées dès
+    mer→jeu (8h42, score 92). Seule trace : VT de mercredi matin à FC moy. 150
+    contre 142-144 sur le même trajet en W42. Lundi 26/10 : sommeil 8h36
+    (score 87), FC repos 53, VFC 61. Ressenti et données convergent : pas
+    d'« illusion du tout va bien ».
+
+    SÉANCES — Samedi 4h57 / 112 km / 2885 m D+, NP 219 W (IF 0.70), 245 TSS,
+    FC moy. 151, 91 % du temps FC en Z1-Z2, découplage -1.5 % : meilleure
+    sortie longue de la reprise. Progression des sorties longues : EF 1.34 →
+    1.40 → 1.45, FC moy. 159 → 154 → 151, découplage 8 % → 13 % → -1.5 %
+    (12 °C contre 18 °C le 17/10, n'explique pas l'écart). Sprints faits
+    (jusqu'à 687 W sur 10 s). Écart : montées à 236-243 W (76-78 % FTP)
+    au-dessus du plafond de 232 W, 74 min de Z3 puissance (7 % seulement en
+    Z3 FC). Jeudi 2x10' tempo conformes, EF 1.45 (1.41 le jeudi précédent).
+    Lundi Z2 basse prescrite sur le plat, réalisée sur 778 m D+ / 29 km à
+    27 °C (découplage 30 % lié à la chaleur). Renfo fait 2 fois (47' et 38').
+
+    TRAIL — Dimanche 1h16 / 12 km / 447 m D+ : GAP 5'41/km pour FC moy. 162,
+    contre 5'49/km pour FC moy. 175 le 11/10. Gain aérobie net (plus vite,
+    -13 bpm, Z4-Z5 FC 69 % → 22 %). Mais 53 % du temps en Z3-Z4 FC pour une
+    séance prescrite FC < 164 avec 6 accélérations de 15 s : deuxième trail
+    sur deux au-dessus de la prescription.
+
+    BILAN BLOC 01 — CTL 60.8 → 67.2 en 3 semaines (472 → 569 → 566 TSS),
+    FC repos 54.0 → 51.3, VFC 51.6 → 61.1, EF en progression continue.
+    Objectif de reconstruction aérobie atteint. FTP déclaré inchangé (310 W),
+    aucun effort au seuil pour en juger.
+  decision: >
+    BLOC 02 (Force sous-max & couple) — Feu vert pour la S1 à ~12h. Lundi
+    26/10 repos vélo, renfo possible. Bilan du bloc 1 (rituel 5,
+    blocs/analyse/bloc-01.md) puis écriture de blocs/bloc-02.yaml avant la
+    première séance. Après 3 semaines de charge sans assimilation, assimilation
+    en S4 ; elle passe en S3 si le sommeil se dégrade, si la FC repos dépasse
+    56-57 bpm durablement ou si la VFC passe sous 50 ms.
+
+    CONSIGNES — Trail : alerte FC réglée à 160 bpm sur la Fenix, marcher dès
+    qu'elle sonne. Samedi : plafond de 232 W dans les cols maintenu, la Z3 se
+    fait le jeudi (force basse cadence), pas le samedi. Nuit de moins de 6h30 :
+    VT du lendemain en Z1 pure (FC < 148). Pas de proposition de FTP.

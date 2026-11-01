@@ -25,18 +25,18 @@ objectifs:
   secondaires:
   - nom: "Paris nice challenge"
     date: "2027-03-13"
-    priorite: B
+    priorite: C
     type: cyclo
     parcours: "150 KM – 3500 D+"
     profil: montagne
-    notes:
+    notes: "Non chronometree : courue dans la charge (jeudi Z2 souple + activation, vendredi repos). Repetition generale de Madone-Peille : cols a l'allure Madone, test nutrition, sans aller au bout de soi."
   - nom: "Mercan'Tour Madone-Peille"
     date: "2027-04-04"
     priorite: B
     type: cyclo
     parcours: "110 KM – 2800 D+"
     profil: montagne
-    notes: "Parcours 100% montagne : 3 grands cols (km 30-43 à 1000m, km 50-62 à 1200m, Madone finale km 88-100 avec 800m D+ d'un bloc). Gestion W/kg sur efforts longs (30-45 min) et gros D+ au km (26m/km)."
+    notes: "Premier vrai objectif de la saison (B renforce : blocs 06 et 07 orientes Madone, affutage 7 jours). Parcours 100% montagne : 3 grands cols (km 30-43 à 1000m, km 50-62 à 1200m, Madone finale km 88-100 avec 800m D+ d'un bloc). Gestion W/kg sur efforts longs (30-45 min) et gros D+ au km (26m/km)."
   - nom: "GFNY CANNES"
     date: "2027-04-11"
     priorite: B
@@ -58,6 +58,13 @@ objectifs:
     parcours: "147 KM – 2800 D+"
     profil: vallonne
     notes: "1 semaine apres la LAZARDIERES en général. Courue dans la charge comme sortie longue de qualité"
+  - nom: "CYCLOSPORTIVE DRAPOISE SOUVENIR RENE VIETTO"
+    date: "fin mai 2027 (a confirmer, probablement dimanche 30/05 ; edition 2025 le 01/06)"
+    priorite: B
+    type: cyclo
+    parcours: "117 KM – 2750 D+"
+    profil: montagne
+    notes: "Priorite juste apres la Bonette. Depart Drap (06), col de Braus par les deux versants, vallees du Paillon et de la Bevera, chrono jusqu'au sommet du col de Calaisson (104,5 km chronometres + 12,5 km de liaison). Petit parcours 86 km – 2000 D+. Tombe a J-14 de la Bonette : repetition generale pacing/nutrition. Source : https://cyclosportivevietto.com/parcours-cyclosportive-drapoise-souvenir-rene-vietto/"
   - nom: "Cimes Mercantour"
     date: "debut aout 2027"
     priorite: a definir apres la Bonette
@@ -96,6 +103,7 @@ blocs:
     focus: [force_basse_cadence_z3_jeudi, sprints_depart_arrete, sortie_longue_5h_5h30]
     volume_cible_h: [10, 13.5]
     rythme: "Cycle 3:1 -> S1 12h, S2 13h, S3 13h30, S4 assimilation 10h (premiere assimilation apres 6 semaines de charge : si sommeil/FC repos/VFC clignotent, S3 devient l'assimilation)"
+    fichier: blocs/bloc-02.yaml
 
   - id: bloc-03
     nom: PMA Concentrée
@@ -136,33 +144,33 @@ blocs:
     duree_semaines: 4
     objectif: elever le seuil et entrainer le recyclage du lactate en montagne
     focus: [seuil_z4, over_unders, entretien_pma_jeudi, resistance_dplus, test_controle_fevrier]
-    test: "Test 2 de contrôle 3 min + 12 min le samedi 20/02, en fin d'assimilation, pour valider la progression et fixer le pacing du Paris-Nice Challenge"
+    test: "Test 2 de contrôle 3 min + 12 min le samedi 20/02, en fin d'assimilation, pour valider la progression et fixer le pacing de Madone-Peille (et de la repetition au Paris-Nice Challenge)"
     volume_cible_h: [10, 14]
     rythme: "Cycle 3:1 -> S1 12h30, S2 13h30, S3 14h, S4 assimilation 10h + test. Week-ends alternes : A = samedi sortie longue 5-6h avec series seuil en col + dimanche trail ; B = samedi intensites en col 3h-3h30 + dimanche sortie longue sur fatigue 4h30-5h"
 
   - id: bloc-06
-    nom: Spécifique & Affûtage Paris-Nice
+    nom: Seuil Long en Col & Volume Montagne
     du: 2027-02-22
     au: 2027-03-14
     duree_semaines: 3
-    objectif: transformer les gains hivernaux en allure de course et reussir la premiere cyclo cible
-    focus: [pacing_montagne, specifique_course, entretien_pma, mini_affutage]
-    course: "Paris Nice Challenge (samedi 13 mars 2027 - 150 km, 3500 D+) - priorite B"
-    volume_cible_h: [11, 13.5]
-    rythme: "S1 12h30, S2 13h30 specifique et pacing -> S3 mini-affutage B (~11h course comprise, deblocage Z4 court jeudi, trail souple dimanche 07/03, TSB positif le 13 mars)"
+    objectif: allonger le seuil en col sur des efforts de 30-45 min (format Madone-Peille) et repeter l'allure de course sur le Paris-Nice Challenge
+    focus: [seuil_long_cols_30_45min, pacing_madone, entretien_pma, pnc_repetition_generale]
+    course: "Paris Nice Challenge (samedi 13 mars 2027 - 150 km, 3500 D+) - priorite C, courue dans la charge"
+    volume_cible_h: [12.5, 13.5]
+    rythme: "3 semaines de charge -> S1 12h30, S2 13h30 seuil long en col -> S3 ~13h course comprise (jeudi Z2 souple + activation courte, vendredi repos, PNC samedi aux allures Madone, dimanche Z1 court ou repos). Trail le WE du 06-07/03."
 
   - id: bloc-07
     nom: Montagne de Printemps, Madone & GFNY
     du: 2027-03-15
     au: 2027-04-11
     duree_semaines: 4
-    objectif: capitaliser sur l'endurance de col de Paris-Nice, rappel PMA concentre, puis enchainer deux objectifs B en 8 jours
-    focus: [recup_active_pnc, rappel_pma_concentre, seuil_cols_longs, mini_affutage_madone, fraicheur_gfny]
+    objectif: assimiler les 3 semaines de charge du bloc 06, rappel PMA concentre, puis arriver au pic sur Madone-Peille (premier objectif) et enchainer GFNY sur la fraicheur
+    focus: [assimilation_post_bloc06, rappel_pma_concentre, seuil_cols_longs, affutage_madone_7j, fraicheur_gfny]
     courses:
-      - "Mercan'Tour Madone-Peille (dimanche 04 avril 2027) - priorite B"
+      - "Mercan'Tour Madone-Peille (dimanche 04 avril 2027) - priorite B renforcee, premier objectif"
       - "GFNY Cannes (dimanche 11 avril 2027) - priorite B"
     volume_cible_h: [10, 12.5]
-    rythme: "S1 recuperation post-PNC (10h) -> S2 rappel PMA concentre (3 seances) & cols (12h30) -> S3 mini-affutage & Madone-Peille (~10h30 course comprise) -> S4 recup active lundi-mercredi, activation jeudi + samedi, GFNY (~10h course comprise)"
+    rythme: "S1 assimilation (10h, cloture le 3:1 du bloc 06 et du PNC) -> S2 rappel PMA concentre (3 seances) & cols au format Madone (12h30) -> S3 affutage 7 jours & Madone-Peille (~10h30 course comprise) -> S4 recup active lundi-mercredi, activation jeudi + samedi, GFNY (~10h course comprise)"
 
   - id: bloc-08
     nom: Charge Cyclos de Mai
@@ -183,11 +191,14 @@ blocs:
     au: 2027-06-13
     duree_semaines: 5
     objectif: pic de forme absolu pour le monument de la saison (177 km, 4800 D+)
-    focus: [chocs_montagne, pacing_bonette, nutrition_course, entretien_pma, affutage_deux_semaines]
-    course: "MERCAN’TOUR BONETTE DT SWISS (dimanche 13 juin 2027 - 177 km, 4800 D+) - priorite A"
+    focus: [choc_montagne, drapoise_repetition_generale, pacing_bonette, nutrition_course, entretien_pma, affutage_deux_semaines]
+    courses:
+      - "Cyclosportive Drapoise Souvenir René Vietto (dimanche 30 mai 2027 a confirmer - 117 km, 2750 D+) - priorite B, a J-14 de la Bonette"
+      - "MERCAN’TOUR BONETTE DT SWISS (dimanche 13 juin 2027 - 177 km, 4800 D+) - priorite A"
     test: "Test 3 optionnel 3 min + 12 min le samedi 15/05 (fin d'assimilation) pour caler le pacing Bonette, sinon donnees Madone-Peille"
-    volume_cible_h: [10.5, 15]
-    rythme: "S1 assimilation (10h30) -> S2 choc (13h30, samedi 6h + dimanche trail) -> S3 choc (15h, samedi 6h + dimanche 4h enchaines, simulation course) -> S4 affutage S-2 (11h, reconnaissance Bonette si route ouverte) -> S5 affutage final S-1 (~6h hors course, deblocages courts, TSB +10 le 13 juin)"
+    volume_cible_h: [10.5, 13.5]
+    rythme: "S1 assimilation (10h30) -> S2 choc unique (13h30, samedi 6h + dimanche trail) -> S3 semaine Drapoise (~13h course comprise : charge moderee lundi-jeudi avec seuil court jeudi, vendredi repos, samedi activation, dimanche Drapoise a fond = derniere grosse seance specifique et repetition generale pacing/nutrition, remplace la simulation 6h+4h) -> S4 affutage S-2 (~11h, lundi-mercredi Z1/Z2 souple post-Drapoise, reconnaissance Bonette si route ouverte) -> S5 affutage final S-1 (~6h hors course, deblocages courts, TSB +10 le 13 juin)"
+    decision: "2026-10-28 : Drapoise integree a J-14, validee par Cyril. On renonce au pic a 15h (S1 10h30 -> 15h hors regle des ±30 %) au profit d'une course de montagne suivie de 2 semaines d'assimilation/affutage"
     terrain: "haute montagne probablement fermee mi-mai : chocs sur Madone, Turini, Couillole, Colmiane, Valberg"
 
   - id: bloc-10
