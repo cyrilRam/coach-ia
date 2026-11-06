@@ -49,6 +49,23 @@ suivi_quotidien:
       (FC repos <= 55, VFC ignorée car nuit tronquée) : 3x12' maintenue si jambes sans courbatures
       au réveil. Ce soir : repos, dormir tôt, pas de séance additionnelle.
     ressenti_cyril: "Impression de ne pas forcer et j'avançais bien (sortie Z1 du vendredi)."
+  - date: '2026-11-06'
+    moment: soir
+    realise:
+      - {nom: "Tourner les jambes (VT, Z1)", duree_min: 81, tss: 45, np_w: null, fc_moy: 129, fc_max: 159, d_plus_m: 646}
+    charge: {ctl: 66.8, atl: 67.8, tsb: -1.0, heures_semaine: 6.7, heures_prevues: 12.75}
+    ecarts: >
+      Z1 prévue 1h à plat, FC < 130 : faite en 1h21 avec 646 m D+, FC moy 129 (pile sous le plafond),
+      max 159 sur les bosses. Pas de capteur de puissance, lecture à la FC. Pas de découplage mesurable.
+      Écart de volume et de D+ sans conséquence (TSS 45), aucune zone grise Z3 notable.
+    demain: "Samedi : sortie longue 5h30 + 3x12' à 257-270 W (55-60 rpm, récup 4' Z1), sous condition"
+    consigne: >
+      Ce soir : repos, dîner correct, coucher avant 22h30. Demain, vérifier au réveil FC repos <= 55
+      et jambes sans courbatures (VFC ignorée si nuit tronquée, sinon >= 50) : alors 3x12' maintenue,
+      265-270 W sur la 3e répétition si la 1re est propre, jamais > 270 W, hors blocs plafond 232 W.
+      Sinon 5h Z2 stricte sans blocs. Prévoir nutrition 70-90 g de glucides/h, équipement pluie/froid
+      (vérifier la météo de Nice au réveil ; si samedi pluvieux et dimanche sec, inversion trail/sortie longue).
+    ressenti_cyril:
 
 analyse_coach:
   maj: '2026-11-05'
