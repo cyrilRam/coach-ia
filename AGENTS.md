@@ -60,6 +60,7 @@ alimentent. Lis ce fichier avant toute intervention.
 | `forme/AAAA-Wxx.yaml` — section `mesures` | `weekly.py`                   | hebdo |
 | `forme/AAAA-Wxx.yaml` — section `ressenti` | Cyril                         | hebdo, à la main |
 | `forme/AAAA-Wxx.yaml` — section `analyse_coach` | toi, après validation         | hebdo |
+| `forme/AAAA-Wxx.yaml` — section `suivi_quotidien` | toi (routines cloud 8h et 21h, ou conversation) | quotidien |
 | `blocs/bloc-XX.yaml` | toi, après validation         | par bloc |
 | `blocs/analyse/bloc-XX.md` | toi, après validation         | en fin de bloc |
 | `data/cache/` | `sync.py`                     | avant tout calcul |
@@ -95,8 +96,16 @@ Lis impérativement dans cet ordre :
 5. `blocs/analyse/bloc-[N-1].md` (le bilan complet du bloc précédent : compliance, charge réelle, acquis, décisions)
 6. Les fichiers `forme/AAAA-Wxx.yaml` des semaines du bloc précédent (croisement métriques, ressentis réels et diagnostics `analyse_coach`). Accorde une attention toute particulière aux scores de santé (sommeil) et à la fatigue ressentie : un bloc ne peut être durci ou intensifié si le sommeil ou la récupération globale sont dégradés. N'ouvre pas l'historique antérieur sans question explicite.
 
+## Synchronisation git
+
+Le repo GitHub est la source de vérité partagée entre le Mac, le téléphone et les
+routines cloud. `git pull --rebase` avant tout, `git add <fichiers>` + commit +
+`git push` sur `master` après chaque écriture. Détail dans le skill `coach-ia`,
+section « Synchronisation git ». `data/cache/` et `dashboard/` ne sont pas versionnés.
+
 ## Environnement
 
-- Secrets dans `.env` (jamais commité). Voir `.env.example`.
+- Secrets dans `.env` (jamais commité). Voir `.env.example`. En cloud : variables
+  d'environnement `ICU_API_KEY` et `ICU_ATHLETE_ID`.
 - `pip install -r requirements.txt`
 - Ordre d'exécution habituel : `sync.py` → `build_profile.py` ou `weekly.py`.

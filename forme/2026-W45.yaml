@@ -1,0 +1,109 @@
+# Une semaine = un fichier. Nommage en semaines ISO.
+# Section "mesures" : generee par scripts/weekly.py, ne pas editer a la main.
+# Section "ressenti" : saisie manuelle, l'agent n'y ecrit jamais.
+# Section "analyse_coach" : analyse hebdomadaire formulee par l'IA et conservee.
+
+semaine: 2026-W45
+du: 2026-11-02
+au: 2026-11-08
+
+mesures:
+  maj: '2026-11-05'
+  ctl_fin: 69.6
+  atl_fin: 82.8
+  tsb_fin: -13.2
+  ramp_rate: 2.6296844
+  charge_totale: 176
+  heures: 4.5
+  distance_km: 110
+  denivele_m: 774
+  seances: 4
+  sommeil_moyen_h: 8.0
+  hrv_moyenne: 62.2
+  fc_repos_moyenne: 52.5
+
+# saisie manuelle
+ressenti:
+  global:
+  jambes:
+  motivation:
+  sommeil:
+  seances_manquees: []
+  imprevus:
+  notes:
+
+adaptations: []
+
+suivi_quotidien: []
+
+analyse_coach:
+  maj: '2026-11-05'
+  synthese: >
+    POINT MI-SEMAINE (lun-mer) — S2 BLOC-02. Réalisé : 4 VT (2 A/R, 4h32,
+    176 TSS, sans capteur de puissance, lecture à la FC). Renfo force du lundi
+    sauté (manque de temps). CTL 69.6, ATL 82.8, TSB -13.2 (-21.0 dimanche),
+    Ramp Rate 2.6. Aucun garde-fou déclenché.
+
+    SANTÉ — Lundi et mardi : VFC 67 et 70 ms contre 59.3 de moyenne en W44
+    (+13 à +18 %), FC repos 53 puis 52 : le plateau à 53-54 de la semaine
+    dernière se casse. Lecture : absorption du samedi record 5h + force de
+    dimanche, aidée par le lundi sans séance. Mercredi : VFC 52 ms (-12 %),
+    nuit de 7h22 (score 82), lever tôt et stress de la veille. Cause
+    identifiée, FC repos stable à 52, et VT du matin sous la pluie à FC 147
+    (4 min en Z3 FC), identique aux VT des semaines précédentes : pas de
+    dérive. Jeudi : VFC 60, FC repos 53, 8h07 de sommeil = retour à la
+    ligne de base en 24h. Creux aigu et expliqué, pas un signal infectieux.
+    Seuils d'assimilation anticipée (FC repos 56 deux matins, VFC < 50, deux
+    nuits < 7h / score 70) non atteints.
+
+    CONTRAINTE — Pluie forte jeudi et vendredi, pas de home trainer : la
+    force 3x12' de jeudi midi ne peut pas se faire dehors.
+
+    MAJ VENDREDI 06/11 — Renfo jambes S2 fait jeudi 14h52 (53'). Ce matin :
+    VFC 51 ms (-14 % vs ligne de base ~60), FC repos 54 (+1 à +2), sommeil
+    8h56 score 87. Précision de Cyril : la montre a clos la nuit à 6h30 alors
+    qu'il a dormi jusqu'à 8h, la VFC est donc calculée sans la dernière 1h30
+    de sommeil. Valeur peu comparable aux autres nuits, à ne pas lire comme
+    un deuxième creux. FC repos quasi stable et sommeil excellent : aucun
+    signal infectieux. Le report de la 3x12' tient sur les autres arguments
+    (renfo excentrique de la veille, enchaînement avant la grosse semaine).
+  decision: >
+    BLOC MAINTENU, FIN DE SEMAINE RÉORGANISÉE. Jeudi : pas de vélo, renfo
+    force bas du corps S2 à la place de la sortie midi (le plus tôt possible,
+    pour garder 48h avant samedi), 3 séries au lieu de 4 sur squat 1,5,
+    fentes bulgares et SDT roumain. Vendredi : repos vélo + renfo posture et
+    haut du corps 30' (aucune jambe) : les 2 renfos de la semaine sont
+    tenus. Samedi : sortie longue 5h30, la 3x12' à 83-87 % (257-270 W, 55-60
+    rpm, récup 4' Z1) remplace la 4x10' à 78-82 %, placée entre 1h et 2h30
+    dans le premier grand col. Avec TSB autour de -5 samedi, c'est la séance
+    à frapper fort : puissance plate, viser 265-270 W sur la 3e répétition
+    si la 1re est propre, jamais au-dessus de 270 W. Hors blocs : plafond
+    232 W (4e rappel), pas de sprint. On ne cumule pas 3x12' et 4x10' dans
+    la même sortie. Dimanche : trail obligatoire (dernier le 25/10), 1h20,
+    alerte FC 160, marcher dès qu'elle sonne. Météo : si samedi pluvieux et
+    dimanche sec, trail samedi et sortie longue avec la 3x12' dimanche ; si
+    pluie les deux jours, sortie raccourcie à 3h-3h30 avec la 3x12', pas de
+    5h30 sous la pluie froide. Volume attendu ~11h20 (-13 % vs 13h prévues),
+    une seule séance de force vélo : la séance perdue n'est pas reportée en
+    S3. Assimilation toujours en S4 (W47), mêmes déclencheurs.
+
+    MAJ 06/11 — Pas de 3x12' vendredi midi malgré l'arrêt de la pluie :
+    jambes à moins de 24h d'un renfo excentrique, et la faire aujourd'hui
+    collerait force + 5h30 + trail sur trois jours avant la plus grosse
+    semaine du bloc. Vendredi midi : 1h Z1 à plat (moins de 60 % FTP, FC sous
+    130), pas de bosse, optionnelle ; repos complet si courbatures marquées
+    ou temps instable (pas de risque de se faire tremper avant le WE). Samedi : 3x12'
+    dans la sortie longue maintenue SI au réveil FC repos ≤ 55 et jambes sans
+    courbatures, VFC ≥ 50 sur une nuit mesurée en entier (sinon on ne tient
+    pas compte de la VFC) ; sinon 5h Z2 stricte sans blocs, plafond 232 W.
+    Volume W45 attendu ~12h20 avec la Z1 du jour : les 14h40 de la W46 restent
+    sous +30 %.
+
+    RÉALISÉ VENDREDI 06/11 — Sortie sur VT (sans capteur de puissance) : 1h21,
+    30 km, 646 m D+, FC moy. 129 / max 159, 14 min en Z2 FC, reste en Z1, 13 °C
+    et pluie légère. Écart à la prescription : +21 min et 646 m D+ pour un
+    plat prévu, FC moyenne pile sous le plafond de 130. Ressenti de Cyril :
+    « impression de pas forcer et j'avançais bien » : FC basse pour l'effort,
+    cohérent avec une forme réelle correcte, pas de signe d'alerte. Volume
+    W45 réel attendu ~12h45 : W46 à 14h40 = +15 %, largement sous la limite
+    de +30 %, la Z2 de jeudi 12 reste en l'état.

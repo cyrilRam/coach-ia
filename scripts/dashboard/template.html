@@ -1,0 +1,825 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coach · Programme & stats</title>
+<style>
+:root {
+  color-scheme: light;
+  --page: #f9f9f7;
+  --surface-1: #fcfcfb;
+  --surface-2: #f0efec;
+  --text-primary: #0b0b0b;
+  --text-secondary: #52514e;
+  --text-muted: #898781;
+  --grid: #e1e0d9;
+  --axis: #c3c2b7;
+  --border: rgba(11, 11, 11, 0.10);
+  --series-1: #2a78d6;
+  --series-2: #eb6834;
+  --series-1-wash: rgba(42, 120, 214, 0.10);
+  --accent-soft: #cde2fb;
+  --good: #0ca30c;
+  --good-text: #006300;
+  --warning: #fab219;
+  --critical: #d03b3b;
+  --past: #e1e0d9;
+}
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme="light"])) {
+    color-scheme: dark;
+    --page: #0d0d0d;
+    --surface-1: #1a1a19;
+    --surface-2: #242422;
+    --text-primary: #f0efec;
+    --text-secondary: #c3c2b7;
+    --text-muted: #898781;
+    --grid: #2c2c2a;
+    --axis: #383835;
+    --border: rgba(255, 255, 255, 0.10);
+    --series-1: #3987e5;
+    --series-2: #d95926;
+    --series-1-wash: rgba(57, 135, 229, 0.14);
+    --accent-soft: #184f95;
+    --good-text: #0ca30c;
+    --past: #2c2c2a;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #0d0d0d;
+  --surface-1: #1a1a19;
+  --surface-2: #242422;
+  --text-primary: #f0efec;
+  --text-secondary: #c3c2b7;
+  --text-muted: #898781;
+  --grid: #2c2c2a;
+  --axis: #383835;
+  --border: rgba(255, 255, 255, 0.10);
+  --series-1: #3987e5;
+  --series-2: #d95926;
+  --series-1-wash: rgba(57, 135, 229, 0.14);
+  --accent-soft: #184f95;
+  --good-text: #0ca30c;
+  --past: #2c2c2a;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--page); color: var(--text-primary); font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+a { color: inherit; }
+.topbar { position: sticky; top: 0; z-index: 5; display: flex; align-items: center; gap: 24px; padding: 12px 24px; background: var(--surface-1); border-bottom: 1px solid var(--border); }
+.brand { font-weight: 600; }
+.topbar nav { display: flex; gap: 4px; }
+.topbar nav a { padding: 6px 12px; border-radius: 8px; text-decoration: none; color: var(--text-secondary); }
+.topbar nav a.active { background: var(--surface-2); color: var(--text-primary); font-weight: 600; }
+.meta { margin-left: auto; color: var(--text-muted); font-size: 12px; text-align: right; }
+main { max-width: 1240px; margin: 0 auto; padding: 24px; }
+h1 { font-size: 22px; margin: 0 0 16px; }
+h2 { font-size: 16px; margin: 0 0 12px; }
+h3 { font-size: 14px; margin: 0; }
+.sub { margin: 2px 0 8px; color: var(--text-secondary); font-size: 12px; }
+.card { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 16px; margin-bottom: 16px; min-width: 0; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { border: 1px solid var(--border); background: var(--surface-1); color: var(--text-secondary); border-radius: 999px; padding: 4px 10px; font-size: 12px; cursor: pointer; font: inherit; font-size: 12px; }
+.chip.static { cursor: default; }
+.chip.active { background: var(--text-primary); color: var(--surface-1); border-color: var(--text-primary); }
+.timeline-scroll { overflow-x: auto; }
+.timeline { position: relative; min-width: 760px; height: 130px; }
+.timeline .block { position: absolute; z-index: 1; top: 36px; height: 40px; border-radius: 6px; background: var(--surface-2); border: 1px solid var(--border); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 600; color: var(--text-secondary); padding: 0 4px; }
+.timeline .block.past { background: var(--past); color: var(--text-muted); }
+.timeline .block.current { background: var(--series-1); color: #ffffff; border-color: var(--series-1); }
+.timeline .block.selected { outline: 2px solid var(--text-primary); outline-offset: 1px; }
+.timeline .today { position: absolute; z-index: 0; top: 16px; height: 68px; width: 2px; background: var(--text-primary); }
+.timeline .today span { position: absolute; top: -16px; left: -30px; font-size: 11px; color: var(--text-primary); white-space: nowrap; }
+.timeline .race { position: absolute; top: 68px; transform: translateX(-50%); font-size: 11px; color: var(--text-secondary); text-align: center; white-space: nowrap; }
+.timeline .race b { display: block; width: 18px; height: 18px; line-height: 16px; margin: 0 auto 2px; border-radius: 50%; background: var(--text-primary); color: var(--surface-1); font-size: 10px; border: 1px solid var(--text-primary); }
+.timeline .race.approximate b { background: var(--surface-1); color: var(--text-primary); border-style: dashed; }
+.timeline .month { position: absolute; top: 18px; font-size: 11px; color: var(--text-muted); border-left: 1px solid var(--grid); padding-left: 4px; height: 64px; line-height: 1; }
+.block-detail { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); }
+.block-detail p { margin: 4px 0; color: var(--text-secondary); }
+.races { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.races li { display: grid; grid-template-columns: 120px 28px 1fr; gap: 8px; align-items: baseline; }
+.races .when { color: var(--text-secondary); font-variant-numeric: tabular-nums; }
+.badge { display: inline-block; min-width: 22px; text-align: center; border-radius: 6px; padding: 1px 6px; font-size: 11px; font-weight: 700; background: var(--surface-2); color: var(--text-secondary); }
+.badge.A { background: var(--text-primary); color: var(--surface-1); }
+.races .course { color: var(--text-muted); font-size: 12px; }
+.program-head p { margin: 4px 0 10px; color: var(--text-secondary); }
+.weeks { margin: 12px 0; }
+.days { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 8px; }
+.day { border: 1px solid var(--border); border-radius: 10px; padding: 10px; background: var(--surface-1); min-width: 0; }
+.day.today { border: 2px solid var(--series-1); padding: 9px; }
+.day.past { background: var(--page); }
+.day-head { display: flex; justify-content: space-between; color: var(--text-secondary); font-size: 12px; margin-bottom: 8px; }
+.day-head b { color: var(--text-primary); }
+.session { margin-bottom: 8px; }
+.session-name { font-weight: 600; font-size: 13px; overflow-wrap: anywhere; }
+.session-meta { color: var(--text-muted); font-size: 12px; }
+.session details { margin-top: 4px; }
+.session summary { cursor: pointer; color: var(--text-secondary); font-size: 12px; }
+.session ul { margin: 6px 0; padding-left: 16px; font-size: 12px; color: var(--text-secondary); }
+.session pre { white-space: pre-wrap; font: inherit; font-size: 12px; color: var(--text-secondary); margin: 6px 0 0; }
+.rest { color: var(--text-muted); font-size: 12px; }
+.done { margin-top: 6px; padding-top: 6px; border-top: 1px dashed var(--border); font-size: 12px; }
+.done .ok { color: var(--good-text); font-weight: 600; }
+.done .miss { color: var(--text-muted); }
+.done .partial { color: var(--text-secondary); font-weight: 600; }
+.done .extra { color: var(--text-secondary); font-weight: 600; }
+.done div { overflow-wrap: anywhere; }
+.toolbar { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
+.toolbar span { color: var(--text-secondary); font-size: 12px; }
+.tiles { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 12px; margin-bottom: 16px; }
+.tile { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; }
+.tile .label { color: var(--text-secondary); font-size: 12px; }
+.tile .value { font-size: 26px; font-weight: 600; margin-top: 2px; }
+.tile .unit { font-size: 13px; font-weight: 400; color: var(--text-secondary); margin-left: 3px; }
+.tile .delta { color: var(--text-muted); font-size: 12px; }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.grid .card { margin-bottom: 0; }
+.chart { position: relative; width: 100%; height: 220px; }
+.chart svg { display: block; overflow: visible; }
+.legend { display: flex; gap: 14px; flex-wrap: wrap; margin: 6px 0 4px; font-size: 12px; color: var(--text-secondary); }
+.legend i { display: inline-block; width: 14px; height: 2px; vertical-align: middle; margin-right: 6px; border-radius: 1px; }
+.legend i.dot { width: 8px; height: 8px; border-radius: 50%; }
+.tick { fill: var(--text-muted); font-size: 11px; font-variant-numeric: tabular-nums; }
+.end-label { fill: var(--text-primary); font-size: 11px; font-weight: 600; }
+.ref-label { fill: var(--text-secondary); font-size: 11px; pointer-events: none; }
+.tooltip { position: fixed; z-index: 10; pointer-events: none; background: var(--surface-1); border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; font-size: 12px; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12); min-width: 140px; }
+.tooltip .t-date { color: var(--text-secondary); margin-bottom: 4px; }
+.tooltip .t-row { display: flex; align-items: center; gap: 6px; }
+.tooltip .t-row i { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+.tooltip .t-row b { margin-left: auto; font-variant-numeric: tabular-nums; }
+.table-wrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 12px; font-variant-numeric: tabular-nums; }
+th, td { padding: 6px 8px; text-align: right; border-bottom: 1px solid var(--grid); white-space: nowrap; }
+th:first-child, td:first-child { text-align: left; }
+th { color: var(--text-secondary); font-weight: 600; }
+.decision { white-space: pre-wrap; color: var(--text-secondary); margin: 8px 0 0; }
+.empty { color: var(--text-muted); font-size: 12px; padding: 24px 0; text-align: center; }
+@media (max-width: 1000px) {
+  .days { grid-template-columns: 1fr; }
+  .day.empty-day { display: none; }
+  .tiles { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  main { padding: 16px; }
+  .topbar { padding: 10px 16px; gap: 12px; flex-wrap: wrap; }
+  .meta { width: 100%; text-align: left; margin-left: 0; }
+  .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .races li { grid-template-columns: 96px 28px 1fr; }
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">Coach</div>
+  <nav>
+    <a href="#programme" data-page="programme">Programme</a>
+    <a href="#stats" data-page="stats">Stats</a>
+  </nav>
+  <div class="meta" id="meta"></div>
+</header>
+<main>
+  <section id="page-programme" class="page">
+    <h1 id="season-title"></h1>
+    <div class="card">
+      <h2>Saison</h2>
+      <div class="timeline-scroll"><div class="timeline" id="timeline"></div></div>
+      <div class="block-detail" id="block-detail"></div>
+    </div>
+    <div class="card" id="program-card">
+      <div class="program-head" id="program-head"></div>
+      <div class="chips weeks" id="week-tabs"></div>
+      <div class="days" id="week-days"></div>
+    </div>
+    <div class="card">
+      <h2>Courses</h2>
+      <ul class="races" id="races"></ul>
+    </div>
+  </section>
+  <section id="page-stats" class="page" hidden>
+    <div class="toolbar">
+      <span>Période</span>
+      <div class="chips" id="range"></div>
+    </div>
+    <div class="tiles" id="tiles"></div>
+    <div class="grid">
+      <div class="card"><h3>Charge d'entraînement</h3><p class="sub">CTL (forme de fond) et ATL (fatigue), en TSS/jour</p><div id="legend-load"></div><div class="chart" id="chart-load"></div></div>
+      <div class="card"><h3>Fraîcheur (TSB)</h3><p class="sub">CTL − ATL. Sous la ligne d'alerte : fatigue aiguë</p><div class="chart" id="chart-tsb"></div></div>
+      <div class="card"><h3>VFC</h3><p class="sub">Valeur de la nuit et moyenne glissante 7 jours, en ms</p><div id="legend-hrv"></div><div class="chart" id="chart-hrv"></div></div>
+      <div class="card"><h3>FC repos</h3><p class="sub">En bpm, ligne d'alerte d'assimilation anticipée</p><div class="chart" id="chart-rhr"></div></div>
+      <div class="card"><h3>Sommeil</h3><p class="sub">Durée par nuit, en heures (score au survol)</p><div class="chart" id="chart-sleep"></div></div>
+      <div class="card"><h3>Volume hebdomadaire</h3><p class="sub">Heures d'entraînement par semaine ISO</p><div class="chart" id="chart-hours"></div></div>
+      <div class="card"><h3>Charge hebdomadaire</h3><p class="sub">TSS total par semaine ISO</p><div class="chart" id="chart-tss"></div></div>
+      <div class="card"><h3>Dernière décision coach</h3><div id="last-decision"></div></div>
+    </div>
+    <div class="card" style="margin-top:16px">
+      <h3>Semaines</h3>
+      <div class="table-wrap"><table id="weeks-table"></table></div>
+    </div>
+  </section>
+</main>
+<div class="tooltip" id="tooltip" hidden></div>
+<script id="dashboard-data" type="application/json">__DASHBOARD_DATA__</script>
+<script>
+const DATA = JSON.parse(document.getElementById("dashboard-data").textContent);
+const DAY_MS = 86400000;
+const WEEKDAYS = ["Lun", "Mar", "Mer", "Jeu", "Ven", "Sam", "Dim"];
+const SPORT_LABELS = { Ride: "Vélo", Run: "Course", TrailRun: "Trail", WeightTraining: "Renfo", Workout: "Séance", Hike: "Rando" };
+const STRENGTH = "WeightTraining";
+const RANGES = [{ days: 30, label: "30 j" }, { days: 90, label: "90 j" }, { days: 180, label: "6 mois" }, { days: 365, label: "1 an" }];
+const DEFAULT_RANGE = 90;
+const OPEN_BLOCK_DISPLAY_DAYS = 56;
+const CHART_HEIGHT = 220;
+const MARGIN = { top: 12, right: 52, bottom: 24, left: 36 };
+const MIN_LABEL_GAP = 14;
+const BAR_MAX = 24;
+const RANGE_STORAGE_KEY = "coach-range";
+const RACE_MARKER_MIN_GAP = 22;
+const RACE_MARKER_ROW_HEIGHT = 22;
+
+const state = { selectedBlockId: null, selectedWeek: null, rangeDays: readRange() };
+const tooltip = document.getElementById("tooltip");
+
+function readRange() {
+  try { return Number(localStorage.getItem(RANGE_STORAGE_KEY)) || DEFAULT_RANGE; } catch (error) { return DEFAULT_RANGE; }
+}
+function writeRange(days) {
+  try { localStorage.setItem(RANGE_STORAGE_KEY, String(days)); } catch (error) { return; }
+}
+function toDate(iso) { return new Date(`${String(iso).slice(0, 10)}T00:00:00`); }
+function addDays(date, days) { return new Date(date.getTime() + days * DAY_MS); }
+function isoOf(date) { return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`; }
+function formatDay(iso, options) { return toDate(iso).toLocaleDateString("fr-FR", options || { day: "numeric", month: "short" }); }
+function formatDuration(minutes) {
+  if (!minutes) return "0'";
+  const hours = Math.floor(minutes / 60);
+  const rest = Math.round(minutes % 60);
+  return hours ? `${hours}h${String(rest).padStart(2, "0")}` : `${rest}'`;
+}
+function formatNumber(value, digits) { return value === null || value === undefined ? "–" : Number(value).toLocaleString("fr-FR", { maximumFractionDigits: digits ?? 0, minimumFractionDigits: digits ?? 0 }); }
+function node(tag, className, text) {
+  const element = document.createElement(tag);
+  if (className) element.className = className;
+  if (text !== undefined && text !== null) element.textContent = text;
+  return element;
+}
+function svgNode(tag, attributes) {
+  const element = document.createElementNS("http://www.w3.org/2000/svg", tag);
+  Object.entries(attributes || {}).forEach(([key, value]) => element.setAttribute(key, value));
+  return element;
+}
+function shortBlockLabel(block) {
+  const match = block.id.match(/^bloc-0*(\d+)$/);
+  return match ? `B${match[1]}` : block.name.split(" ")[0];
+}
+function blockEnd(block) { return block.end ? toDate(block.end) : addDays(toDate(block.start), OPEN_BLOCK_DISPLAY_DAYS - 1); }
+function cssVar(name) { return getComputedStyle(document.documentElement).getPropertyValue(name).trim(); }
+
+function renderMeta() {
+  const fetched = DATA.cache_fetched_at ? new Date(DATA.cache_fetched_at).toLocaleString("fr-FR", { dateStyle: "short", timeStyle: "short" }) : "inconnue";
+  document.getElementById("meta").textContent = `Données Intervals : ${fetched} · page générée ${new Date(DATA.generated_at).toLocaleString("fr-FR", { dateStyle: "short", timeStyle: "short" })}`;
+}
+
+function route() {
+  showPage(location.hash === "#stats" ? "stats" : "programme");
+}
+
+function currentPage() {
+  return document.getElementById("page-stats").hidden ? "programme" : "stats";
+}
+
+function showPage(page) {
+  document.querySelectorAll(".page").forEach(section => { section.hidden = section.id !== `page-${page}`; });
+  document.querySelectorAll(".topbar nav a").forEach(link => link.classList.toggle("active", link.dataset.page === page));
+  if (page === "stats") renderStats();
+  else renderTimeline();
+}
+
+function renderTimeline() {
+  const container = document.getElementById("timeline");
+  container.replaceChildren();
+  const blocks = DATA.season.blocks;
+  const start = toDate(blocks[0].start);
+  const end = blocks.reduce((latest, block) => blockEnd(block) > latest ? blockEnd(block) : latest, start);
+  const totalDays = (end - start) / DAY_MS + 1;
+  const position = date => `${((date - start) / DAY_MS) / totalDays * 100}%`;
+  const today = toDate(DATA.today);
+  for (let month = new Date(start.getFullYear(), start.getMonth() + 1, 1); month <= end; month = new Date(month.getFullYear(), month.getMonth() + 1, 1)) {
+    const tick = node("div", "month", month.toLocaleDateString("fr-FR", { month: "short" }));
+    tick.style.left = position(month);
+    container.append(tick);
+  }
+  blocks.forEach(block => {
+    const blockStart = toDate(block.start);
+    const element = node("button", "block", shortBlockLabel(block));
+    const isCurrent = block.id === DATA.season.current_block_id;
+    if (isCurrent) element.classList.add("current");
+    else if (blockEnd(block) < today) element.classList.add("past");
+    if (block.id === state.selectedBlockId) element.classList.add("selected");
+    element.style.left = position(blockStart);
+    element.style.width = `calc(${((blockEnd(block) - blockStart) / DAY_MS + 1) / totalDays * 100}% - 3px)`;
+    element.title = `${block.name} · ${formatDay(block.start)} → ${block.end ? formatDay(block.end) : "à construire"}`;
+    element.addEventListener("click", () => selectBlock(block.id));
+    container.append(element);
+    if (element.scrollWidth > element.clientWidth) element.textContent = "";
+  });
+  if (today >= start && today <= end) {
+    const marker = node("div", "today");
+    marker.style.left = position(today);
+    marker.append(node("span", null, "Aujourd'hui"));
+    container.append(marker);
+  }
+  const rowEnds = [];
+  DATA.season.races.filter(race => race.day && toDate(race.day) >= start && toDate(race.day) <= end).forEach(race => {
+    const marker = node("div", race.approximate ? "race approximate" : "race");
+    const pixel = ((toDate(race.day) - start) / DAY_MS) / totalDays * container.clientWidth;
+    let row = rowEnds.findIndex(lastPixel => pixel - lastPixel >= RACE_MARKER_MIN_GAP);
+    if (row === -1) row = rowEnds.length;
+    rowEnds[row] = pixel;
+    marker.style.left = position(toDate(race.day));
+    marker.style.top = `${84 + row * RACE_MARKER_ROW_HEIGHT}px`;
+    marker.title = `${race.name} · ${race.approximate ? race.date_label : formatDay(race.day, { day: "numeric", month: "long", year: "numeric" })}`;
+    marker.append(node("b", null, race.priority.charAt(0)));
+    container.append(marker);
+  });
+}
+
+function renderBlockDetail() {
+  const block = DATA.season.blocks.find(item => item.id === state.selectedBlockId);
+  const container = document.getElementById("block-detail");
+  container.replaceChildren();
+  if (!block) return;
+  const title = node("h3", null, `${shortBlockLabel(block)} · ${block.name}`);
+  const dates = node("p", null, `${formatDay(block.start, { day: "numeric", month: "long" })} → ${block.end ? formatDay(block.end, { day: "numeric", month: "long", year: "numeric" }) : "à construire"}${block.target_hours.length ? ` · volume cible ${block.target_hours.join(" à ")} h/sem.` : ""}`);
+  const objective = node("p", null, block.objective);
+  const rhythm = node("p", null, block.rhythm);
+  const focus = node("div", "chips");
+  block.focus.forEach(item => focus.append(node("span", "chip static", item.replaceAll("_", " "))));
+  container.append(title, dates, objective, rhythm, focus);
+}
+
+function renderRaces() {
+  const list = document.getElementById("races");
+  list.replaceChildren();
+  DATA.season.races.forEach(race => {
+    const item = node("li");
+    const when = node("span", "when", race.day && !race.approximate ? formatDay(race.day, { day: "numeric", month: "short", year: "numeric" }) : race.day ? `~ ${formatDay(race.day, { month: "short", year: "numeric" })}` : race.date_label);
+    when.title = race.date_label;
+    item.append(when);
+    const badge = node("span", `badge ${race.priority.charAt(0)}`, race.priority.length <= 2 ? race.priority : "?");
+    badge.title = `Priorité ${race.priority}`;
+    item.append(badge);
+    const text = node("div");
+    text.append(node("div", null, race.name), node("div", "course", race.course));
+    item.append(text);
+    list.append(item);
+  });
+}
+
+function selectBlock(blockId) {
+  state.selectedBlockId = blockId;
+  state.selectedWeek = defaultWeek(DATA.programs[blockId]);
+  renderTimeline();
+  renderBlockDetail();
+  renderProgram();
+}
+
+function defaultWeek(program) {
+  if (!program) return null;
+  const current = program.weeks.find(week => week.start <= DATA.today && DATA.today <= week.end);
+  return current ? current.number : 1;
+}
+
+function renderProgram() {
+  const card = document.getElementById("program-card");
+  const program = DATA.programs[state.selectedBlockId];
+  card.hidden = !program;
+  if (!program) return;
+  const head = document.getElementById("program-head");
+  head.replaceChildren(node("h2", null, program.name), node("p", null, program.objective));
+  const tabs = document.getElementById("week-tabs");
+  tabs.replaceChildren();
+  program.weeks.forEach(week => {
+    const chip = node("button", "chip", `S${week.number} · ${formatDay(week.start)} → ${formatDay(week.end)} · ${week.done_minutes ? `${formatDuration(week.done_minutes)} / ` : ""}${formatDuration(week.planned_minutes)}`);
+    chip.classList.toggle("active", week.number === state.selectedWeek);
+    chip.title = week.done_minutes ? "Réalisé / prévu (hors renfo)" : "Volume prévu (hors renfo)";
+    chip.addEventListener("click", () => { state.selectedWeek = week.number; renderProgram(); });
+    tabs.append(chip);
+  });
+  const week = program.weeks.find(item => item.number === state.selectedWeek) || program.weeks[0];
+  const days = document.getElementById("week-days");
+  days.replaceChildren(...week.days.map(renderDay));
+}
+
+function renderDay(day) {
+  const card = node("div", "day");
+  const isPast = day.date < DATA.today;
+  if (day.date === DATA.today) card.classList.add("today");
+  else if (isPast) card.classList.add("past");
+  if (!day.sessions.length && !day.activities.length) card.classList.add("empty-day");
+  const head = node("div", "day-head");
+  const weekday = WEEKDAYS[(toDate(day.date).getDay() + 6) % 7];
+  const label = node("span");
+  label.append(node("b", null, `${weekday} ${formatDay(day.date)}`));
+  head.append(label, node("span", null, `J${day.day_number}`));
+  card.append(head);
+  if (!day.sessions.length) card.append(node("div", "rest", "Repos"));
+  day.sessions.forEach(session => card.append(renderSession(session)));
+  const done = renderDone(day, isPast);
+  if (done) card.append(done);
+  return card;
+}
+
+function renderSession(session) {
+  const element = node("div", "session");
+  element.append(node("div", "session-name", session.name));
+  element.append(node("div", "session-meta", `${SPORT_LABELS[session.sport] || session.sport} · ${formatDuration(session.duration_minutes)}`));
+  if (session.steps.length || session.description) {
+    const details = node("details");
+    details.append(node("summary", null, "Détail"));
+    if (session.steps.length) {
+      const list = node("ul");
+      session.steps.forEach(step => list.append(node("li", null, step)));
+      details.append(list);
+    }
+    if (session.description) details.append(node("pre", null, session.description));
+    element.append(details);
+  }
+  return element;
+}
+
+function renderDone(day, isPast) {
+  const plannedRide = day.sessions.some(session => session.sport !== STRENGTH);
+  const doneRide = day.activities.some(activity => activity.sport !== STRENGTH);
+  if (!day.activities.length) {
+    if (!isPast || !day.sessions.length) return null;
+    const missed = node("div", "done");
+    missed.append(node("div", "miss", plannedRide ? "○ Non réalisé" : "○ Renfo non enregistré"));
+    return missed;
+  }
+  const done = node("div", "done");
+  if (!day.sessions.length) done.append(node("div", "extra", "+ Hors programme"));
+  else if (plannedRide && !doneRide) done.append(node("div", "partial", "◐ Partiel : séance vélo non réalisée"));
+  else done.append(node("div", "ok", "✓ Réalisé"));
+  day.activities.forEach(activity => {
+    const parts = [formatDuration(activity.moving_minutes)];
+    if (activity.load) parts.push(`${activity.load} TSS`);
+    if (activity.elevation_m) parts.push(`${activity.elevation_m} m D+`);
+    if (activity.normalized_power_w) parts.push(`NP ${activity.normalized_power_w} W`);
+    if (activity.average_hr_bpm) parts.push(`FC ${activity.average_hr_bpm}`);
+    done.append(node("div", null, `${activity.name} · ${parts.join(" · ")}`));
+  });
+  return done;
+}
+
+function renderRangeChips() {
+  const container = document.getElementById("range");
+  container.replaceChildren();
+  RANGES.forEach(range => {
+    const chip = node("button", "chip", range.label);
+    chip.classList.toggle("active", range.days === state.rangeDays);
+    chip.addEventListener("click", () => { state.rangeDays = range.days; writeRange(range.days); renderStats(); });
+    container.append(chip);
+  });
+}
+
+function healthInRange() {
+  const cutoff = isoOf(addDays(toDate(DATA.today), -state.rangeDays));
+  return DATA.health.filter(row => row.date >= cutoff);
+}
+function weeksInRange() {
+  const cutoff = isoOf(addDays(toDate(DATA.today), -state.rangeDays));
+  return DATA.weeks.filter(week => String(week.end) >= cutoff && week.heures !== null && week.heures !== undefined);
+}
+
+function average(rows, key) {
+  const values = rows.map(row => row[key]).filter(value => value !== null && value !== undefined);
+  return values.length ? values.reduce((sum, value) => sum + value, 0) / values.length : null;
+}
+
+function renderTiles() {
+  const rows = DATA.health;
+  const latest = [...rows].reverse().find(row => row.ctl !== null) || {};
+  const last7 = rows.slice(-7);
+  const previous7 = rows.slice(-14, -7);
+  const tiles = [
+    { label: "CTL", value: latest.ctl, digits: 1, note: "forme de fond" },
+    { label: "ATL", value: latest.atl, digits: 1, note: "fatigue" },
+    { label: "TSB", value: latest.tsb, digits: 1, note: latest.tsb !== undefined && latest.tsb < DATA.thresholds.tsb_alert ? "⚠ sous l'alerte" : "fraîcheur" },
+    { label: "FC repos · 7 j", value: average(last7, "resting_hr"), digits: 1, unit: "bpm", previous: average(previous7, "resting_hr") },
+    { label: "VFC · 7 j", value: average(last7, "hrv"), digits: 1, unit: "ms", previous: average(previous7, "hrv") },
+    { label: "Sommeil · 7 j", value: average(last7, "sleep_hours"), digits: 1, unit: "h", previous: average(previous7, "sleep_hours") },
+  ];
+  const container = document.getElementById("tiles");
+  container.replaceChildren(...tiles.map(tile => {
+    const element = node("div", "tile");
+    element.append(node("div", "label", tile.label));
+    const value = node("div", "value", formatNumber(tile.value, tile.digits));
+    if (tile.unit) value.append(node("span", "unit", tile.unit));
+    element.append(value);
+    const note = tile.previous !== undefined ? `7 j précédents : ${formatNumber(tile.previous, tile.digits)}` : tile.note;
+    element.append(node("div", "delta", note));
+    return element;
+  }));
+}
+
+function niceTicks(min, max, count) {
+  const span = max - min || 1;
+  const rawStep = span / count;
+  const magnitude = Math.pow(10, Math.floor(Math.log10(rawStep)));
+  const step = [1, 2, 2.5, 5, 10].map(factor => factor * magnitude).find(candidate => candidate >= rawStep);
+  const ticks = [];
+  for (let value = Math.floor(min / step) * step; value <= max + step * 0.001; value += step) ticks.push(Math.round(value * 1000) / 1000);
+  return ticks;
+}
+
+function chartFrame(container, rows, values, references, options) {
+  container.replaceChildren();
+  const width = Math.max(container.clientWidth, 260);
+  const height = CHART_HEIGHT;
+  const svg = svgNode("svg", { width, height, viewBox: `0 0 ${width} ${height}`, role: "img", "aria-label": options.label });
+  container.append(svg);
+  const finite = values.filter(value => value !== null && value !== undefined && !Number.isNaN(value));
+  const referenceValues = references.map(reference => reference.value);
+  let low = Math.min(...finite, ...referenceValues, options.floor ?? Infinity);
+  let high = Math.max(...finite, ...referenceValues);
+  if (options.zeroBased) low = Math.min(0, low);
+  const padding = (high - low) * 0.08 || 1;
+  if (!options.zeroBased) low -= padding;
+  high += padding;
+  const ticks = niceTicks(low, high, 4);
+  low = Math.min(low, ticks[0]);
+  high = Math.max(high, ticks[ticks.length - 1]);
+  const plotWidth = width - MARGIN.left - MARGIN.right;
+  const plotHeight = height - MARGIN.top - MARGIN.bottom;
+  const y = value => MARGIN.top + plotHeight - (value - low) / (high - low) * plotHeight;
+  ticks.forEach(tick => {
+    svg.append(svgNode("line", { x1: MARGIN.left, x2: width - MARGIN.right, y1: y(tick), y2: y(tick), stroke: cssVar("--grid"), "stroke-width": 1 }));
+    const label = svgNode("text", { x: MARGIN.left - 6, y: y(tick) + 4, "text-anchor": "end", class: "tick" });
+    label.textContent = formatNumber(tick, Number.isInteger(tick) ? 0 : 1);
+    svg.append(label);
+  });
+  return { svg, width, height, plotWidth, plotHeight, y, low, high };
+}
+
+function drawReferences(frame, references, labelOutside) {
+  references.forEach(reference => {
+    const position = frame.y(reference.value);
+    frame.svg.append(svgNode("line", { x1: MARGIN.left, x2: frame.width - MARGIN.right, y1: position, y2: position, stroke: cssVar("--text-secondary"), "stroke-width": 1, "stroke-dasharray": "4 3", "pointer-events": "none" }));
+    const label = labelOutside ? svgNode("text", { x: frame.width - MARGIN.right + 4, y: position + 4, class: "ref-label" }) : svgNode("text", { x: MARGIN.left + 4, y: position - 4, class: "ref-label" });
+    label.textContent = labelOutside ? reference.label : `alerte ${reference.label}`;
+    frame.svg.append(label);
+  });
+}
+
+function drawDateAxis(frame, rows, x) {
+  if (!rows.length) return;
+  const first = toDate(rows[0].date);
+  const last = toDate(rows[rows.length - 1].date);
+  const spanDays = (last - first) / DAY_MS;
+  const stepDays = spanDays > 200 ? 0 : spanDays > 60 ? 14 : 7;
+  const ticks = [];
+  if (stepDays === 0) {
+    for (let month = new Date(first.getFullYear(), first.getMonth() + 1, 1); month <= last; month = new Date(month.getFullYear(), month.getMonth() + 1, 1)) ticks.push(month);
+  } else {
+    const offset = (8 - first.getDay()) % 7;
+    for (let date = addDays(first, offset); date <= last; date = addDays(date, stepDays)) ticks.push(date);
+  }
+  frame.svg.append(svgNode("line", { x1: MARGIN.left, x2: frame.width - MARGIN.right, y1: frame.height - MARGIN.bottom, y2: frame.height - MARGIN.bottom, stroke: cssVar("--axis"), "stroke-width": 1 }));
+  const minSpacing = 48;
+  let lastPosition = -Infinity;
+  ticks.forEach(date => {
+    const position = x(isoOf(date));
+    if (position - lastPosition < minSpacing) return;
+    lastPosition = position;
+    const label = svgNode("text", { x: position, y: frame.height - 6, "text-anchor": "middle", class: "tick" });
+    label.textContent = stepDays === 0 ? date.toLocaleDateString("fr-FR", { month: "short" }) : date.toLocaleDateString("fr-FR", { day: "numeric", month: "short" });
+    frame.svg.append(label);
+  });
+}
+
+function linePath(rows, key, x, y) {
+  let path = "";
+  let drawing = false;
+  rows.forEach(row => {
+    const value = row[key];
+    if (value === null || value === undefined) { drawing = false; return; }
+    path += `${drawing ? "L" : "M"}${x(row.date).toFixed(1)},${y(value).toFixed(1)}`;
+    drawing = true;
+  });
+  return path;
+}
+
+function renderLegend(containerId, series) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+  container.className = "legend";
+  container.replaceChildren(...series.map(item => {
+    const entry = node("span");
+    const swatch = node("i", item.kind === "dots" ? "dot" : null);
+    swatch.style.background = cssVar(item.color);
+    entry.append(swatch, document.createTextNode(item.name));
+    return entry;
+  }));
+}
+
+function showTooltip(event, title, rows) {
+  tooltip.replaceChildren(node("div", "t-date", title));
+  rows.forEach(row => {
+    const line = node("div", "t-row");
+    const swatch = node("i");
+    swatch.style.background = row.color ? cssVar(row.color) : "transparent";
+    line.append(swatch, document.createTextNode(row.name), node("b", null, row.value));
+    tooltip.append(line);
+  });
+  tooltip.hidden = false;
+  const box = tooltip.getBoundingClientRect();
+  const left = Math.min(event.clientX + 14, window.innerWidth - box.width - 8);
+  const top = Math.max(8, event.clientY - box.height - 12);
+  tooltip.style.left = `${left}px`;
+  tooltip.style.top = `${top}px`;
+}
+function hideTooltip() { tooltip.hidden = true; }
+
+function renderLineChart(containerId, rows, options) {
+  const container = document.getElementById(containerId);
+  if (!rows.length) { container.replaceChildren(node("div", "empty", "Pas de données sur la période")); return; }
+  const references = options.references || [];
+  const values = options.series.flatMap(series => rows.map(row => row[series.key]));
+  if (!values.some(value => value !== null && value !== undefined)) { container.replaceChildren(node("div", "empty", "Pas de données sur la période")); return; }
+  const frame = chartFrame(container, rows, values, references, options);
+  const first = toDate(rows[0].date).getTime();
+  const last = toDate(rows[rows.length - 1].date).getTime();
+  const x = iso => MARGIN.left + (last === first ? frame.plotWidth / 2 : (toDate(iso).getTime() - first) / (last - first) * frame.plotWidth);
+  drawDateAxis(frame, rows, x);
+  if (options.baseline !== undefined) frame.svg.append(svgNode("line", { x1: MARGIN.left, x2: frame.width - MARGIN.right, y1: frame.y(options.baseline), y2: frame.y(options.baseline), stroke: cssVar("--axis"), "stroke-width": 1 }));
+  drawReferences(frame, references);
+  const surface = cssVar("--surface-1");
+  const endLabels = [];
+  options.series.forEach(series => {
+    const color = cssVar(series.color);
+    if (series.kind === "dots") {
+      rows.forEach(row => {
+        if (row[series.key] === null || row[series.key] === undefined) return;
+        frame.svg.append(svgNode("circle", { cx: x(row.date), cy: frame.y(row[series.key]), r: rows.length > 120 ? 2.5 : 4, fill: color, stroke: surface, "stroke-width": rows.length > 120 ? 1 : 2 }));
+      });
+      return;
+    }
+    frame.svg.append(svgNode("path", { d: linePath(rows, series.key, x, frame.y), fill: "none", stroke: color, "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round" }));
+    const lastRow = [...rows].reverse().find(row => row[series.key] !== null && row[series.key] !== undefined);
+    if (lastRow) {
+      frame.svg.append(svgNode("circle", { cx: x(lastRow.date), cy: frame.y(lastRow[series.key]), r: 4, fill: color, stroke: surface, "stroke-width": 2 }));
+      endLabels.push({ y: frame.y(lastRow[series.key]), text: formatNumber(lastRow[series.key], options.digits ?? 0), x: x(lastRow.date) });
+    }
+  });
+  const sortedLabels = [...endLabels].sort((a, b) => a.y - b.y);
+  const collide = sortedLabels.some((label, index) => index > 0 && label.y - sortedLabels[index - 1].y < MIN_LABEL_GAP);
+  if (!collide) endLabels.forEach(label => {
+    const text = svgNode("text", { x: label.x + 8, y: label.y + 4, class: "end-label" });
+    text.textContent = label.text;
+    frame.svg.append(text);
+  });
+  const crosshair = svgNode("line", { y1: MARGIN.top, y2: frame.height - MARGIN.bottom, stroke: cssVar("--axis"), "stroke-width": 1, visibility: "hidden" });
+  frame.svg.append(crosshair);
+  const overlay = svgNode("rect", { x: MARGIN.left, y: MARGIN.top, width: frame.plotWidth, height: frame.plotHeight, fill: "transparent" });
+  frame.svg.append(overlay);
+  overlay.addEventListener("pointermove", event => {
+    const bounds = frame.svg.getBoundingClientRect();
+    const pointer = event.clientX - bounds.left;
+    const row = rows.reduce((best, candidate) => Math.abs(x(candidate.date) - pointer) < Math.abs(x(best.date) - pointer) ? candidate : best, rows[0]);
+    crosshair.setAttribute("x1", x(row.date));
+    crosshair.setAttribute("x2", x(row.date));
+    crosshair.setAttribute("visibility", "visible");
+    const lines = options.series.map(series => ({ name: series.name, color: series.color, value: `${formatNumber(row[series.key], options.digits ?? 0)}${options.unit ? ` ${options.unit}` : ""}` }));
+    (options.extraTooltip || []).forEach(extra => lines.push({ name: extra.name, value: extra.format(row) }));
+    showTooltip(event, formatDay(row.date, { weekday: "short", day: "numeric", month: "short" }), lines);
+  });
+  overlay.addEventListener("pointerleave", () => { crosshair.setAttribute("visibility", "hidden"); hideTooltip(); });
+}
+
+function roundedTopBar(x, y, width, height) {
+  const radius = Math.min(4, width / 2, height);
+  return `M${x},${y + height}V${y + radius}Q${x},${y} ${x + radius},${y}H${x + width - radius}Q${x + width},${y} ${x + width},${y + radius}V${y + height}Z`;
+}
+
+function renderBarChart(containerId, rows, options) {
+  const container = document.getElementById(containerId);
+  if (!rows.length) { container.replaceChildren(node("div", "empty", "Pas de données sur la période")); return; }
+  const references = options.references || [];
+  const values = rows.map(options.value);
+  const frame = chartFrame(container, rows, values, references, { ...options, zeroBased: true });
+  const band = frame.plotWidth / rows.length;
+  const gap = band > 4 ? 2 : 0.5;
+  const barWidth = Math.max(1, Math.min(BAR_MAX, band - gap));
+  const color = cssVar(options.color);
+  const baseline = frame.y(0);
+  frame.svg.append(svgNode("line", { x1: MARGIN.left, x2: frame.width - MARGIN.right, y1: baseline, y2: baseline, stroke: cssVar("--axis"), "stroke-width": 1 }));
+  let lastLabelPosition = -Infinity;
+  rows.forEach((row, index) => {
+    const center = MARGIN.left + band * index + band / 2;
+    if (center - lastLabelPosition >= (options.labelSpacing || 40)) {
+      lastLabelPosition = center;
+      const label = svgNode("text", { x: center, y: frame.height - 6, "text-anchor": "middle", class: "tick" });
+      label.textContent = options.axisLabel(row);
+      frame.svg.append(label);
+    }
+  });
+  rows.forEach((row, index) => {
+    const value = options.value(row);
+    if (value === null || value === undefined) return;
+    const center = MARGIN.left + band * index + band / 2;
+    const top = frame.y(value);
+    const bar = svgNode("path", { d: roundedTopBar(center - barWidth / 2, top, barWidth, Math.max(0.5, baseline - top)), fill: color });
+    if (options.highlight && !options.highlight(row)) bar.setAttribute("fill-opacity", "0.55");
+    frame.svg.append(bar);
+    const hit = svgNode("rect", { x: MARGIN.left + band * index, y: MARGIN.top, width: band, height: frame.plotHeight, fill: "transparent" });
+    hit.addEventListener("pointermove", event => showTooltip(event, options.tooltipTitle(row), options.tooltipRows(row)));
+    hit.addEventListener("pointerleave", hideTooltip);
+    frame.svg.append(hit);
+  });
+  drawReferences(frame, references, true);
+  const lastRow = [...rows].reverse().find(row => options.value(row) !== null && options.value(row) !== undefined);
+  if (lastRow && band >= 10) {
+    const index = rows.indexOf(lastRow);
+    const label = svgNode("text", { x: MARGIN.left + band * index + band / 2, y: frame.y(options.value(lastRow)) - 6, "text-anchor": "middle", class: "end-label" });
+    label.textContent = formatNumber(options.value(lastRow), options.digits ?? 0);
+    frame.svg.append(label);
+  }
+}
+
+function renderCharts() {
+  const health = healthInRange();
+  const weeks = weeksInRange();
+  const thresholds = DATA.thresholds;
+  const loadSeries = [{ key: "ctl", name: "CTL", color: "--series-1" }, { key: "atl", name: "ATL", color: "--series-2" }];
+  renderLegend("legend-load", loadSeries);
+  renderLineChart("chart-load", health, { label: "CTL et ATL", series: loadSeries, digits: 0 });
+  renderLineChart("chart-tsb", health, { label: "TSB", series: [{ key: "tsb", name: "TSB", color: "--series-1" }], baseline: 0, references: [{ value: thresholds.tsb_alert, label: `${thresholds.tsb_alert}` }], digits: 0 });
+  const hrvSeries = [{ key: "hrv", name: "Nuit", color: "--text-muted", kind: "dots" }, { key: "hrv_rolling", name: "Moyenne 7 j", color: "--series-1" }];
+  renderLegend("legend-hrv", hrvSeries);
+  renderLineChart("chart-hrv", health, { label: "VFC", series: hrvSeries, references: [{ value: thresholds.hrv_alert_ms, label: `${thresholds.hrv_alert_ms} ms` }], unit: "ms", digits: 0 });
+  renderLineChart("chart-rhr", health, { label: "FC repos", series: [{ key: "resting_hr", name: "FC repos", color: "--series-1" }], references: [{ value: thresholds.resting_hr_alert_bpm, label: `${thresholds.resting_hr_alert_bpm} bpm` }], unit: "bpm", digits: 0 });
+  const sleepRows = health.filter(row => row.sleep_hours !== null);
+  renderBarChart("chart-sleep", sleepRows, { label: "Sommeil", color: "--series-1", value: row => row.sleep_hours, digits: 1, references: [{ value: thresholds.sleep_alert_hours, label: `${thresholds.sleep_alert_hours} h` }], axisLabel: row => formatDay(row.date), labelSpacing: 56, tooltipTitle: row => formatDay(row.date, { weekday: "short", day: "numeric", month: "short" }), tooltipRows: row => [{ name: "Durée", color: "--series-1", value: formatDuration(Math.round(row.sleep_hours * 60)) }, { name: "Score", value: formatNumber(row.sleep_score, 0) }] });
+  const isCurrentWeek = week => String(week.start) <= DATA.today && DATA.today <= String(week.end);
+  const weekTooltipTitle = week => `${week.week} · ${formatDay(week.start)} → ${formatDay(week.end)}${isCurrentWeek(week) ? " (en cours)" : ""}`;
+  renderBarChart("chart-hours", weeks, { label: "Volume hebdomadaire", color: "--series-1", value: week => week.heures, digits: 1, axisLabel: week => week.week.split("-")[1], highlight: week => !isCurrentWeek(week), tooltipTitle: weekTooltipTitle, tooltipRows: week => [{ name: "Heures", color: "--series-1", value: formatNumber(week.heures, 1) }, { name: "Séances", value: formatNumber(week.seances, 0) }, { name: "D+", value: `${formatNumber(week.denivele_m, 0)} m` }] });
+  renderBarChart("chart-tss", weeks, { label: "Charge hebdomadaire", color: "--series-2", value: week => week.charge_totale, digits: 0, axisLabel: week => week.week.split("-")[1], highlight: week => !isCurrentWeek(week), tooltipTitle: weekTooltipTitle, tooltipRows: week => [{ name: "TSS", color: "--series-2", value: formatNumber(week.charge_totale, 0) }, { name: "Ramp rate", value: formatNumber(week.ramp_rate, 1) }, { name: "TSB fin", value: formatNumber(week.tsb_fin, 1) }] });
+}
+
+function renderWeeksTable() {
+  const columns = [["Semaine", week => week.week], ["Du", week => formatDay(week.start)], ["Heures", week => formatNumber(week.heures, 1)], ["TSS", week => formatNumber(week.charge_totale, 0)], ["Km", week => formatNumber(week.distance_km, 0)], ["D+ (m)", week => formatNumber(week.denivele_m, 0)], ["CTL", week => formatNumber(week.ctl_fin, 1)], ["ATL", week => formatNumber(week.atl_fin, 1)], ["TSB", week => formatNumber(week.tsb_fin, 1)], ["Ramp", week => formatNumber(week.ramp_rate, 1)], ["Sommeil (h)", week => formatNumber(week.sommeil_moyen_h, 1)], ["VFC (ms)", week => formatNumber(week.hrv_moyenne, 1)], ["FC repos", week => formatNumber(week.fc_repos_moyenne, 1)]];
+  const table = document.getElementById("weeks-table");
+  const head = node("thead");
+  const headRow = node("tr");
+  columns.forEach(([title]) => headRow.append(node("th", null, title)));
+  head.append(headRow);
+  const body = node("tbody");
+  [...DATA.weeks].reverse().filter(week => week.heures !== null && week.heures !== undefined).forEach(week => {
+    const row = node("tr");
+    columns.forEach(([, value]) => row.append(node("td", null, value(week))));
+    body.append(row);
+  });
+  table.replaceChildren(head, body);
+}
+
+function renderLastDecision() {
+  const container = document.getElementById("last-decision");
+  const week = [...DATA.weeks].reverse().find(item => item.coach_decision);
+  container.replaceChildren();
+  if (!week) { container.append(node("div", "empty", "Aucune décision enregistrée")); return; }
+  container.append(node("p", "sub", `${week.week} · mise à jour ${week.coach_updated_on ? formatDay(week.coach_updated_on, { day: "numeric", month: "long" }) : "?"}`));
+  container.append(node("p", "decision", week.coach_decision));
+}
+
+function renderStats() {
+  renderRangeChips();
+  renderTiles();
+  renderCharts();
+  renderWeeksTable();
+  renderLastDecision();
+}
+
+function init() {
+  document.getElementById("season-title").textContent = `Saison ${DATA.season.name}`;
+  renderMeta();
+  renderRaces();
+  const firstWithProgram = DATA.season.blocks.find(block => DATA.programs[block.id]);
+  selectBlock(DATA.season.current_block_id || (firstWithProgram ? firstWithProgram.id : DATA.season.blocks[0].id));
+  window.addEventListener("hashchange", route);
+  document.querySelectorAll(".topbar nav a").forEach(link => link.addEventListener("click", event => { event.preventDefault(); showPage(link.dataset.page); try { history.replaceState(null, "", `#${link.dataset.page}`); } catch (error) { return; } }));
+  let resizeTimer = null;
+  window.addEventListener("resize", () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => { if (currentPage() === "stats") renderCharts(); else renderTimeline(); }, 150);
+  });
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => { if (currentPage() === "stats") renderCharts(); });
+  route();
+}
+
+init();
+</script>
+</body>
+</html>

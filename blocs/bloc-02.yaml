@@ -217,8 +217,9 @@ seances:
       - { type: continu, duree_min: 80, cible: Z2 }
 
   # =========================================================================
-  # SEMAINE 3 (Jours 15 a 21) — Volume velo : 13h40 — WE sans trail
-  # Force : jeudi + dimanche (semaine la plus intense du bloc)
+  # SEMAINE 3 (Jours 15 a 21) — Volume velo : 14h40 — WE sans trail — plus grosse semaine du bloc avant l'assimilation
+  # Mercredi 11/11 ferie : la force du jeudi passe dans une sortie longue le mercredi, jeudi Z2 souple 1h
+  # Force : mercredi + dimanche (semaine la plus intense du bloc)
   # =========================================================================
   - jour: 15
     sport: WeightTraining
@@ -252,28 +253,29 @@ seances:
     sport: Ride
     nom: Vélotaf A/R Z2
     duree_min: 130
-    description: "Velotaf en Z2 souple (55 km). Si la nuit a fait moins de 6h30 : Z1 pure, FC sous 148."
+    description: "Velotaf en Z2 souple (55 km). Si la nuit a fait moins de 6h30 : Z1 pure, FC sous 148. Veille de la seance la plus dure du bloc : rester souple."
     intervalles:
       - { type: continu, duree_min: 130, cible: 60-72% }
 
   - jour: 17
     sport: Ride
-    nom: Vélotaf A/R Z2
-    duree_min: 130
-    description: "Deuxieme journee velotaf en Z2 stable. Veille de la seance la plus dure du bloc : rester souple."
+    nom: Férié - Sortie longue 4h + Force 6x(4' 50 rpm + sprint)
+    duree_min: 240
+    description: "Mercredi ferie : la force du jeudi passe ici, le velotaf saute. Sortie de 4h en montagne. Apres 1h, dans le premier grand col : 6 x 4 min a 88-92 % FTP a 50 rpm, assis, en col regulier, et chaque bloc se termine par un sprint libre de 10s (relance en danseuse, a fond). Recup 3 min Z1. Seance la plus exigeante du bloc : c'est le moment d'aller chercher loin. Hors blocs : Z2 stricte, plafond 232 W en montee, pas d'autre sprint. Si pluie : pas de sortie mercredi, renfo posture a la place, et la force revient jeudi midi en sortie de 1h50 (20' echauffement + 6 x (4' + sprint) + 38' Z2 + 10' retour au calme)."
     intervalles:
-      - { type: continu, duree_min: 130, cible: 60-72% }
+      - { type: echauffement, duree_min: 20, cible: 60-70% }
+      - { type: continu, duree_min: 40, cible: 62-75% }
+      - { type: effort, repetitions: 6, duree_min: 4, cible: 88-92%, cadence: 50, recup_min: 3, recup_cible: 50-55% }
+      - { type: continu, duree_min: 128, cible: 62-75% }
+      - { type: retour_calme, duree_min: 10, cible: 50-60% }
 
   - jour: 18
     sport: Ride
-    nom: Pause déj - Force 6x(4' 50 rpm + sprint)
-    duree_min: 110
-    description: "Sortie midi (1h50). 6 x 4 min a 88-92 % FTP a 50 rpm, assis, en col regulier, et chaque bloc se termine par un sprint libre de 10s (relance en danseuse, a fond). Recup 3 min Z1. Seance la plus exigeante du bloc : c'est le moment d'aller chercher loin."
+    nom: Pause déj - Z2 souple 1h
+    duree_min: 60
+    description: "Lendemain de la seance la plus dure du bloc : 1h de Z2 souple sur terrain plat ou faux-plat, pas de col. Plafond 70 % FTP, aucune bosse appuyee, aucun sprint. Limitee a 1h : au-dela, la semaine depasse +30 % de volume par rapport a la W45. Si pluie : on saute, pas de rattrapage."
     intervalles:
-      - { type: echauffement, duree_min: 20, cible: 60-70% }
-      - { type: effort, repetitions: 6, duree_min: 4, cible: 88-92%, cadence: 50, recup_min: 3, recup_cible: 50-55% }
-      - { type: continu, duree_min: 38, cible: 62-72% }
-      - { type: retour_calme, duree_min: 10, cible: 50-60% }
+      - { type: continu, duree_min: 60, cible: 60-70% }
 
   - jour: 18
     sport: WeightTraining

@@ -49,6 +49,8 @@ ressenti:
 
 adaptations: []
 
+suivi_quotidien: []
+
 analyse_coach:
   maj: null
   synthese: null
