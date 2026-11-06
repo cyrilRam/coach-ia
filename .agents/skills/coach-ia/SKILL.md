@@ -37,7 +37,7 @@ Le repo GitHub `cyrilRam/coach-ia` est la seule source de vérité : Cyril trava
 
 - **Fuseau** : préfixer toute commande qui dépend de la date par `TZ=Europe/Paris` (le cloud tourne en UTC).
 - **Avant tout** (premier geste de chaque conversation ou routine) : `git pull --rebase --autostash`.
-- **Environnement cloud** : si `import ruamel` échoue, `pip install -q -r requirements.txt`. Les secrets `ICU_API_KEY` et `ICU_ATHLETE_ID` viennent des variables d'environnement, jamais d'un fichier commité.
+- **Environnement cloud** : si `import ruamel` échoue, `python -m pip install -q -r requirements.txt` (jamais `pip` seul : il vise un autre Python dans le cloud). Les secrets `ICU_API_KEY` et `ICU_ATHLETE_ID` viennent des variables d'environnement, jamais d'un fichier commité.
 - **Données** : `data/cache/` n'est pas versionné. Lancer `TZ=Europe/Paris python scripts/sync.py --jours 90` avant toute lecture de métriques.
 - **Après chaque écriture** dans un fichier du repo (`forme/`, `blocs/`, `saison-*.yaml`, `blocs/analyse/`) : `git add <les fichiers modifiés, nommément>`, `git commit -m "<objet court>"`, `git push` sur `master`. Jamais `git add -A` ni `git add .`.
 - **Push refusé** : `git pull --rebase` puis `git push`. En cas de conflit, la section `# saisie manuelle` garde toujours la version distante (celle de Cyril) ; réappliquer ta modification par-dessus et le signaler.

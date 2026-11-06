@@ -5,7 +5,7 @@ Tu tournes seul dans le cloud, Cyril dort ou vient de se lever. Tu appliques le 
 ## 1. Préparer
 
 1. `git pull --rebase --autostash`
-2. `python -c "import ruamel"` ; en cas d'échec : `pip install -q -r requirements.txt`
+2. `python -c "import ruamel"` ; en cas d'échec : `python -m pip install -q -r requirements.txt` (le `pip` seul vise un autre Python dans le cloud)
 3. `TZ=Europe/Paris python scripts/sync.py --jours 90`
 4. Date du jour : `TZ=Europe/Paris date +%F` et semaine ISO : `TZ=Europe/Paris date +%G-W%V`.
 
