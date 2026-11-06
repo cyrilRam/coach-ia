@@ -109,3 +109,4 @@ section « Synchronisation git ». `data/cache/` et `dashboard/` ne sont pas ver
   d'environnement `ICU_API_KEY` et `ICU_ATHLETE_ID`.
 - `pip install -r requirements.txt`
 - Ordre d'exécution habituel : `sync.py` → `build_profile.py` ou `weekly.py`.
+- Sur le Mac, en début de séance : `./coach.sh` (pull des routines, sync, tableau de bord ouvert dans le navigateur).
