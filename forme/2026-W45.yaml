@@ -34,7 +34,21 @@ ressenti:
 
 adaptations: []
 
-suivi_quotidien: []
+suivi_quotidien:
+  - date: '2026-11-06'
+    moment: matin
+    nuit: {sommeil_h: 8.94, score: 87, vfc_ms: 51, vfc_moy7: 60.4, fc_repos: 54, fc_repos_moy7: 53.0}
+    charge: {ctl: 66.8, atl: 67.8, tsb: -1.0}
+    seance_prevue: "Vendredi : 1h Z1 à plat optionnelle (FC < 130, < 60 % FTP). Samedi : sortie longue 5h30 + 3x12' à 257-270 W sous condition"
+    verdict: vert
+    consigne: >
+      Routine passée tardivement (cache synchronisé à 18h28) : la Z1 du jour est déjà faite
+      (1h21, FC moy 129, 646 m D+, dans le plafond). Nuit excellente (8h56, score 87), FC repos 54
+      stable. VFC 51 (-16 %) non comparable : montre coupée à 6h30 alors que Cyril a dormi
+      jusqu'à 8h ; pas de signal infectieux. Conditions de samedi remplies à ce stade
+      (FC repos <= 55, VFC ignorée car nuit tronquée) : 3x12' maintenue si jambes sans courbatures
+      au réveil. Ce soir : repos, dormir tôt, pas de séance additionnelle.
+    ressenti_cyril: "Impression de ne pas forcer et j'avançais bien (sortie Z1 du vendredi)."
 
 analyse_coach:
   maj: '2026-11-05'
