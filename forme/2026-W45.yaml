@@ -82,6 +82,27 @@ suivi_quotidien:
       Trail demain maintenu, alerte FC 160. Note : CTL/ATL du jour dans le cache incluent la séance
       planifiée, les valeurs ci-dessus sont celles de la veille.
     ressenti_cyril:
+  - date: '2026-11-07'
+    moment: soir
+    realise:
+      - {nom: "Sortie longue Z2 + force", duree_min: 319, tss: 241, np_w: 210, fc_moy: 153, fc_max: 183, d_plus_m: 2895}
+    charge: {ctl: 70.9, atl: 90.9, tsb: -20.0, heures_semaine: 12.1, heures_prevues: 12.75}
+    ecarts: >
+      Consigne du matin (orange) : Z2 stricte, sans blocs, plafond 232 W. Réalisé : 4 efforts à 255-257 W
+      (10'04, 8'54, 3', 2x5'47, soit ~34 min, 82 % FTP), 67 min en Z3, 22 min en sweet spot, 9 min en Z4,
+      pic FC 183. Le 3x12' n'a pas été fait tel quel mais le plafond a sauté : zone grise non
+      planifiée, malgré une VFC à 48. Découplage 8,8 % (sous 10 %), EF 1,37, NP 210 W,
+      VI 1,08 : pas de dérive anormale. TSS 241 pour 5h19 / 2895 m D+. TSB -20 : sous le seuil
+      d'alerte (-25) mais en zone de fatigue aiguë. Volume semaine 12,1 h, W46 prévue 14h40 : +15 %,
+      sous la limite de +30 %.
+    demain: "Dimanche : trail obligatoire 1h20, alerte FC 160, marcher dès qu'elle sonne"
+    consigne: >
+      Demain, le trail reste prévu mais en Z2 strict : allure de footing lent, marche dès l'alerte
+      160, aucune accélération. Au réveil : FC repos >= 56 ou VFC < 50 une 3e fois ou jambes
+      lourdes = marche 45' ou repos, trail reporté. Ce soir : repas riche en glucides, protéines,
+      coucher avant 22h30. Assimilation prévue en W47 (S4) : la VFC basse + TSB -20 après une
+      sortie à 241 TSS confirment que la semaine de décharge ne se négocie pas. Lundi : repos.
+    ressenti_cyril:
 
 analyse_coach:
   maj: '2026-11-05'
