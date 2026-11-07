@@ -82,6 +82,10 @@ suivi_quotidien:
       reprend dimanche ou en S3 si VFC >= 55. Si FC repos >= 56 demain ou VFC < 50 une 3e nuit :
       assimilation anticipée. Note : le ctl/atl du jour dans le cache intègre la séance planifiée
       (256), chiffres de charge repris d'hier.
+      MAJ après échange : Cyril tient à la force. Décision commune : 3x12' à 250 W max (~80 % FTP, 55-60 rpm,
+      récup 4' Z1) dans la sortie longue, pas de montée à 265-270 ; arrêt des blocs si la 1re répétition
+      est lourde ou la FC dérive ; hors blocs Z2 stricte, plafond 232 W. Dimanche : trail court et souple
+      ou récup selon VFC et FC repos du réveil.
     ressenti_cyril:
 
 analyse_coach:
