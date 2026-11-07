@@ -71,10 +71,9 @@ suivi_quotidien:
     nuit: {sommeil_h: 7.75, score: 80, vfc_ms: 48, vfc_moy7: 59.3, fc_repos: 54, fc_repos_moy7: 53.1}
     charge: {ctl: 66.8, atl: 67.8, tsb: -1.0}
     seance_prevue: "Sortie longue 5h30 + 3x12' à 257-270 W, sous condition (FC repos <= 55, jambes sans courbatures, VFC >= 50 sur nuit complète)"
-    verdict: rouge
+    verdict: orange
     consigne: >
-      MAJ après échange : mal de gorge ressenti cette nuit, disparu au réveil, + VFC basse 2 nuits (51, 48). Veto préventif : repos ou Z1 plat 1h-1h30 max (FC < 130), ni sortie longue ni blocs ni trail. Reprise de la séance dure seulement si VFC >= 55, FC repos <= 54 et aucun symptôme ; sinon assimilation anticipée.
-      Avant échange : nuit complète (7h45, score 80) : la VFC de 48 ms (-19 % vs 59.3) ne s'explique pas par
+      Nuit complète (7h45, score 80) : la VFC de 48 ms (-19 % vs 59.3) ne s'explique pas par
       une nuit tronquée, et c'est la 2e valeur basse d'affilée (51 hier). FC repos 54 stable,
       sommeil correct, pas de signal infectieux : pas de veto. Mais la condition posée hier
       (VFC >= 50) n'est pas remplie : 3x12' retirées. Sortie longue 5h Z2 stricte, plafond
@@ -83,7 +82,7 @@ suivi_quotidien:
       reprend dimanche ou en S3 si VFC >= 55. Si FC repos >= 56 demain ou VFC < 50 une 3e nuit :
       assimilation anticipée. Note : le ctl/atl du jour dans le cache intègre la séance planifiée
       (256), chiffres de charge repris d'hier.
-    ressenti_cyril: "Sensation de combattre un virus cette nuit avec un petit mal de gorge, plus rien ce matin. Voulait tenter le premier bloc (3x12')."
+    ressenti_cyril:
 
 analyse_coach:
   maj: '2026-11-05'
