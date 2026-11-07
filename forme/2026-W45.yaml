@@ -66,6 +66,22 @@ suivi_quotidien:
       Sinon 5h Z2 stricte sans blocs. Prévoir nutrition 70-90 g de glucides/h, équipement pluie/froid
       (vérifier la météo de Nice au réveil ; si samedi pluvieux et dimanche sec, inversion trail/sortie longue).
     ressenti_cyril:
+  - date: '2026-11-07'
+    moment: matin
+    nuit: {sommeil_h: 7.75, score: 80, vfc_ms: 48, vfc_moy7: 59.3, fc_repos: 54, fc_repos_moy7: 53.1}
+    charge: {ctl: 66.8, atl: 67.8, tsb: -1.0}
+    seance_prevue: "Sortie longue 5h30 + 3x12' à 257-270 W (sous condition FC repos <= 55, VFC >= 50)"
+    verdict: orange
+    consigne: >
+      Nuit correcte (7h45, score 80) et FC repos 54 stable, mais VFC 48 ms (-19 % vs moy7 59.3),
+      sous le seuil de 50 posé hier comme condition des 3x12', sur une nuit cette fois mesurée en
+      entier ; 2e matin de VFC basse (51 puis 48) sans cause identifiée. Pas de signal infectieux
+      (FC repos stable, sommeil bon), donc pas de veto, mais la condition n'est pas remplie : sortie
+      longue en Z2 stricte, sans blocs 3x12', plafond 232 W, pas de sprint, durée 4h30-5h selon les
+      jambes. Si tu te sens frais et que tu veux tenter le bloc, on en parle ici avant de partir.
+      Trail demain maintenu, alerte FC 160. Note : CTL/ATL du jour dans le cache incluent la séance
+      planifiée, les valeurs ci-dessus sont celles de la veille.
+    ressenti_cyril:
 
 analyse_coach:
   maj: '2026-11-05'
