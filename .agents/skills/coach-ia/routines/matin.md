@@ -1,6 +1,16 @@
-# Routine du matin — 8h (Europe/Paris), tous les jours
+# Routine du matin — 7h, 8h, 9h, 10h (Europe/Paris), tous les jours
 
 Tu tournes seul dans le cloud, Cyril dort ou vient de se lever. Tu appliques le skill `coach-ia` (posture, règles d'or, synchronisation git) et `AGENTS.md`. Ton travail : lui dire en une ligne si la séance du jour tient, et pourquoi.
+
+## 0. Garde-fous de relance (la routine se lance 4 fois par matin : 7h03, 8h03, 9h03, 10h03)
+
+Ordre strict, dès le `git pull --rebase --autostash` et le `sync.py` faits :
+
+1. **Analyse déjà faite ?** `forme/<semaine ISO>.yaml > suivi_quotidien` contient une entrée `moment: matin` datée d'aujourd'hui (Europe/Paris) → **STOP** : rien à écrire, rien à committer, rien à notifier. Une ligne : « analyse du matin déjà faite ».
+2. **Données de la nuit dispo ?** Dans `data/cache/wellness.json`, l'entrée `id` = aujourd'hui a `sleepSecs` et `sleepScore` renseignés.
+   - Non, et il est avant 10h (Paris) → **STOP** : rien écrire, committer ni notifier. Une ligne : « nuit pas encore synchronisée, nouvelle tentative à l'heure suivante ».
+   - Non, et il est 10h ou plus (dernière tentative) → continuer avec un **verdict conditionnel** (« si tu as dormi 7h et que tu te sens bien : … »), aucun chiffre inventé, le dire dans l'entrée et la notification.
+3. Sinon (analyse non faite et nuit dispo) → routine normale ci-dessous.
 
 ## 1. Préparer
 
