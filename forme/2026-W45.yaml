@@ -171,6 +171,23 @@ suivi_quotidien:
       avec toi selon la
       FC repos de demain.
     ressenti_cyril:
+  - date: '2026-11-08'
+    moment: soir
+    realise: []
+    charge: {ctl: 71.2, atl: 89.4, tsb: -18.3, heures_semaine: 12.1, heures_prevues: 12.75}
+    ecarts: >
+      Trail 1h20 annulé sur veto du matin (VFC 46, FC repos 57) : conforme à la
+      consigne rouge, aucune activité enregistrée aujourd'hui, rien à rattraper.
+      Semaine W45 : 12,1 h, 471 TSS, CTL 71,2, TSB -18,3, Ramp Rate 1,4. Volume
+      W46 (assimilation) très inférieur à W45 : limite +30 % sans objet.
+    demain: "Lundi : repos complet. W46 = assimilation (mardi VT Z2 souple seulement si FC repos <= 55)."
+    consigne: >
+      Ce soir : repas riche en glucides et protéines, coucher avant 22h30, pas de
+      séance additionnelle. Demain lundi : repos complet. Au réveil, note FC repos
+      et VFC : le retour à FC repos <= 54 et VFC >= 52 conditionne la reprise ;
+      FC repos >= 57 avec un symptôme (gorge, courbatures, frissons) = 48h de repos
+      complet. Mardi : VT Z2 souple uniquement si FC repos <= 55, transports si pluie.
+    ressenti_cyril:
 
 analyse_coach:
   maj: '2026-11-08'
