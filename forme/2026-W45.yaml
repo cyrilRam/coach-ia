@@ -105,19 +105,19 @@ suivi_quotidien:
     ressenti_cyril: "Ce matin j'ai fait le 4 x 10min force vers les 260 W. Ça c'est plutôt bien passé, les jambes étaient bonnes mais j'ai eu froid et chaud. Je suis passé de 5 à 20 degrés et j'étais couvert pour 5 degrés. Franchement je pensais pas avoir de bonnes jambes au début. J'ai fait une bonne sieste d'une heure en rentrant qui m'a fait bcp de bien. Je me sens bcp mieux qu'hier et le réveil. Je pense que la sortie d'une heure hier m'a donné froid et j'ai pas fait assez d'intensités cette semaine avec la météo."
   - date: '2026-11-08'
     moment: matin
-    nuit: {sommeil_h: null, score: null, vfc_ms: null, vfc_moy7: 58.0, fc_repos: null, fc_repos_moy7: 53.1}
-    charge: {ctl: 70.9, atl: 90.9, tsb: -20.0}
+    nuit: {sommeil_h: 8.25, score: 78, vfc_ms: 46, vfc_moy7: 58.0, fc_repos: 57, fc_repos_moy7: 53.1}
+    charge: {ctl: 71.2, atl: 89.4, tsb: -18.3}
     seance_prevue: "Trail Z2 1h20, alerte FC 160, marcher dès qu'elle sonne"
-    verdict: orange
+    verdict: rouge
     consigne: >
-      Donnée de la nuit absente (montre pas encore synchronisée à 7h Paris) : verdict conditionnel.
-      Veille lourde (241 TSS, 5h19, 2895 m D+, plafond Z2 dépassé : 67 min en Z3), TSB -20, VFC 48
-      hier et 51 avant-hier (moy7 58). Ressenti de Cyril bon et FC repos stable à 54 : pas de
-      veto, mais aucune marge pour du Z3 gris. Trail maintenu en Z2 strict si FC repos <= 55,
-      VFC >= 50 et jambes sans lourdeur : allure footing lent, marche dès l'alerte 160, aucune
-      accélération, durée 1h00-1h20 selon les jambes. Si FC repos >= 56, VFC < 50 une 3e fois ou
-      jambes lourdes : marche 45' ou repos, trail reporté. Ensuite lundi repos complet, l'assimilation
-      de W47 ne se négocie pas.
+      Nuit désormais synchronisée (mise à jour de l'entrée conditionnelle de 7h) : sommeil correct
+      (8h15, score 78) mais VFC 46 ms (-21 % vs moy7 58, 3e matin sous 52, 2e sous 50) et FC repos 57
+      (+4 vs moy7 53, seuil 56 franchi), au lendemain d'une sortie à 241 TSS avec Z3 non planifiée,
+      TSB -18. Les deux conditions posées hier soir sont déclenchées : veto. Froid/chaud de la veille +
+      VFC et FC repos qui dérivent = signal précurseur à ne pas masquer par les bonnes sensations.
+      Trail annulé. Marche tranquille 30-45' au plus, ou repos complet. Repas riche, coucher avant
+      22h30. Lundi repos, l'assimilation de W47 ne se négocie pas ; reprise décidée avec toi selon la
+      FC repos de demain.
     ressenti_cyril:
 
 analyse_coach:
