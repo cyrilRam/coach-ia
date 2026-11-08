@@ -103,6 +103,7 @@ blocs:
     focus: [force_basse_cadence_z3_jeudi, sprints_depart_arrete, sortie_longue_5h_5h30]
     volume_cible_h: [10, 13.5]
     rythme: "Cycle 3:1 -> S1 12h, S2 13h, S3 13h30, S4 assimilation 10h (premiere assimilation apres 6 semaines de charge : si sommeil/FC repos/VFC clignotent, S3 devient l'assimilation)"
+    ajustement: "08/11 : clause appliquee. S3 (W46) = assimilation (VFC en baisse, FC repos 57, meteo pluvieuse) ; S4 (W47) = passerelle force courte Z4-Z5 vers le bloc PMA, sous condition sante. Dates du bloc inchangees."
     fichier: blocs/bloc-02.yaml
 
   - id: bloc-03

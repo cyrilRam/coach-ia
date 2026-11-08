@@ -8,26 +8,24 @@ du: 2026-11-02
 au: 2026-11-08
 
 mesures:
-  maj: '2026-11-05'
-  ctl_fin: 69.6
-  atl_fin: 82.8
-  tsb_fin: -13.2
-  ramp_rate: 2.6296844
-  charge_totale: 176
-  heures: 4.5
-  distance_km: 110
-  denivele_m: 774
-  seances: 4
-  sommeil_moyen_h: 8.0
-  hrv_moyenne: 62.2
-  fc_repos_moyenne: 52.5
-
-# saisie manuelle
+  maj: '2026-11-08'
+  ctl_fin: 71.2
+  atl_fin: 89.4
+  tsb_fin: -18.3
+  ramp_rate: 1.4452133
+  charge_totale: 471
+  heures: 12.1
+  distance_km: 265
+  denivele_m: 4315
+  seances: 8
+  sommeil_moyen_h: 8.1
+  hrv_moyenne: 56.3
+  fc_repos_moyenne: 53.6
 ressenti:
-  global:
-  jambes:
-  motivation:
-  sommeil:
+  global: Resssenti mitigé car la meteo a gache la semaine. mercredi VT sous la pluie. Jeudi seance de orce annulée et vendredi 1h dehors mais froid et humide. Sorti de samedi bonne j'ai pu faire le 4x10 min a 260W en force. Dimanche trail annulé a cause des stats de santé qui derivent. Au final j'ai l'impression d'avoit faire seulement une sortie qualitative sur la semaine
+  jambes: Bonnes samedi
+  motivation: Un peu degouté d'avoir seulement une bonne seance dans la semaine. Aujourd'hui dimanhe je me sens un peu fatigué quand meme.
+  sommeil: RAS
   seances_manquees: []
   imprevus:
   notes:
@@ -37,91 +35,145 @@ adaptations: []
 suivi_quotidien:
   - date: '2026-11-06'
     moment: matin
-    nuit: {sommeil_h: 8.94, score: 87, vfc_ms: 51, vfc_moy7: 60.4, fc_repos: 54, fc_repos_moy7: 53.0}
+    nuit: {sommeil_h: 8.94, score: 87, vfc_ms: 51, vfc_moy7: 60.4, fc_repos: 54, 
+        fc_repos_moy7: 53.0}
     charge: {ctl: 66.8, atl: 67.8, tsb: -1.0}
-    seance_prevue: "Vendredi : 1h Z1 à plat optionnelle (FC < 130, < 60 % FTP). Samedi : sortie longue 5h30 + 3x12' à 257-270 W sous condition"
+    seance_prevue: "Vendredi : 1h Z1 à plat optionnelle (FC < 130, < 60 % FTP). Samedi
+      : sortie longue 5h30 + 3x12' à 257-270 W sous condition"
     verdict: vert
     consigne: >
-      Routine passée tardivement (cache synchronisé à 18h28) : la Z1 du jour est déjà faite
-      (1h21, FC moy 129, 646 m D+, dans le plafond). Nuit excellente (8h56, score 87), FC repos 54
-      stable. VFC 51 (-16 %) non comparable : montre coupée à 6h30 alors que Cyril a dormi
+      Routine passée tardivement (cache synchronisé à 18h28) : la Z1 du jour est déjà
+      faite
+      (1h21, FC moy 129, 646 m D+, dans le plafond). Nuit excellente (8h56, score
+      87), FC repos 54
+      stable. VFC 51 (-16 %) non comparable : montre coupée à 6h30 alors que Cyril
+      a dormi
       jusqu'à 8h ; pas de signal infectieux. Conditions de samedi remplies à ce stade
-      (FC repos <= 55, VFC ignorée car nuit tronquée) : 3x12' maintenue si jambes sans courbatures
+      (FC repos <= 55, VFC ignorée car nuit tronquée) : 3x12' maintenue si jambes
+      sans courbatures
       au réveil. Ce soir : repos, dormir tôt, pas de séance additionnelle.
-    ressenti_cyril: "Impression de ne pas forcer et j'avançais bien (sortie Z1 du vendredi)."
+    ressenti_cyril: "Impression de ne pas forcer et j'avançais bien (sortie Z1 du
+      vendredi)."
   - date: '2026-11-06'
     moment: soir
     realise:
-      - {nom: "Tourner les jambes (VT, Z1)", duree_min: 81, tss: 45, np_w: null, fc_moy: 129, fc_max: 159, d_plus_m: 646}
-    charge: {ctl: 66.8, atl: 67.8, tsb: -1.0, heures_semaine: 6.7, heures_prevues: 12.75}
+      - {nom: "Tourner les jambes (VT, Z1)", duree_min: 81, tss: 45, np_w: null, 
+          fc_moy: 129, fc_max: 159, d_plus_m: 646}
+    charge: {ctl: 66.8, atl: 67.8, tsb: -1.0, heures_semaine: 6.7, 
+        heures_prevues: 12.75}
     ecarts: >
-      Z1 prévue 1h à plat, FC < 130 : faite en 1h21 avec 646 m D+, FC moy 129 (pile sous le plafond),
-      max 159 sur les bosses. Pas de capteur de puissance, lecture à la FC. Pas de découplage mesurable.
+      Z1 prévue 1h à plat, FC < 130 : faite en 1h21 avec 646 m D+, FC moy 129 (pile
+      sous le plafond),
+      max 159 sur les bosses. Pas de capteur de puissance, lecture à la FC. Pas de
+      découplage mesurable.
       Écart de volume et de D+ sans conséquence (TSS 45), aucune zone grise Z3 notable.
-    demain: "Samedi : sortie longue 5h30 + 3x12' à 257-270 W (55-60 rpm, récup 4' Z1), sous condition"
+    demain: "Samedi : sortie longue 5h30 + 3x12' à 257-270 W (55-60 rpm, récup 4'
+      Z1), sous condition"
     consigne: >
-      Ce soir : repos, dîner correct, coucher avant 22h30. Demain, vérifier au réveil FC repos <= 55
-      et jambes sans courbatures (VFC ignorée si nuit tronquée, sinon >= 50) : alors 3x12' maintenue,
-      265-270 W sur la 3e répétition si la 1re est propre, jamais > 270 W, hors blocs plafond 232 W.
-      Sinon 5h Z2 stricte sans blocs. Prévoir nutrition 70-90 g de glucides/h, équipement pluie/froid
-      (vérifier la météo de Nice au réveil ; si samedi pluvieux et dimanche sec, inversion trail/sortie longue).
+      Ce soir : repos, dîner correct, coucher avant 22h30. Demain, vérifier au réveil
+      FC repos <= 55
+      et jambes sans courbatures (VFC ignorée si nuit tronquée, sinon >= 50) : alors
+      3x12' maintenue,
+      265-270 W sur la 3e répétition si la 1re est propre, jamais > 270 W, hors blocs
+      plafond 232 W.
+      Sinon 5h Z2 stricte sans blocs. Prévoir nutrition 70-90 g de glucides/h, équipement
+      pluie/froid
+      (vérifier la météo de Nice au réveil ; si samedi pluvieux et dimanche sec, inversion
+      trail/sortie longue).
     ressenti_cyril:
   - date: '2026-11-07'
     moment: matin
-    nuit: {sommeil_h: 7.75, score: 80, vfc_ms: 48, vfc_moy7: 59.3, fc_repos: 54, fc_repos_moy7: 53.1}
+    nuit: {sommeil_h: 7.75, score: 80, vfc_ms: 48, vfc_moy7: 59.3, fc_repos: 54, 
+        fc_repos_moy7: 53.1}
     charge: {ctl: 66.8, atl: 67.8, tsb: -1.0}
-    seance_prevue: "Sortie longue 5h30 + 3x12' à 257-270 W (sous condition FC repos <= 55, VFC >= 50)"
+    seance_prevue: "Sortie longue 5h30 + 3x12' à 257-270 W (sous condition FC repos
+      <= 55, VFC >= 50)"
     verdict: orange
     consigne: >
-      Nuit correcte (7h45, score 80) et FC repos 54 stable, mais VFC 48 ms (-19 % vs moy7 59.3),
-      sous le seuil de 50 posé hier comme condition des 3x12', sur une nuit cette fois mesurée en
-      entier ; 2e matin de VFC basse (51 puis 48) sans cause identifiée. Pas de signal infectieux
-      (FC repos stable, sommeil bon), donc pas de veto, mais la condition n'est pas remplie : sortie
-      longue en Z2 stricte, sans blocs 3x12', plafond 232 W, pas de sprint, durée 4h30-5h selon les
-      jambes. Si tu te sens frais et que tu veux tenter le bloc, on en parle ici avant de partir.
-      Trail demain maintenu, alerte FC 160. Note : CTL/ATL du jour dans le cache incluent la séance
+      Nuit correcte (7h45, score 80) et FC repos 54 stable, mais VFC 48 ms (-19 %
+      vs moy7 59.3),
+      sous le seuil de 50 posé hier comme condition des 3x12', sur une nuit cette
+      fois mesurée en
+      entier ; 2e matin de VFC basse (51 puis 48) sans cause identifiée. Pas de signal
+      infectieux
+      (FC repos stable, sommeil bon), donc pas de veto, mais la condition n'est pas
+      remplie : sortie
+      longue en Z2 stricte, sans blocs 3x12', plafond 232 W, pas de sprint, durée
+      4h30-5h selon les
+      jambes. Si tu te sens frais et que tu veux tenter le bloc, on en parle ici avant
+      de partir.
+      Trail demain maintenu, alerte FC 160. Note : CTL/ATL du jour dans le cache incluent
+      la séance
       planifiée, les valeurs ci-dessus sont celles de la veille.
     ressenti_cyril:
   - date: '2026-11-07'
     moment: soir
     realise:
-      - {nom: "Sortie longue Z2 + force", duree_min: 319, tss: 241, np_w: 210, fc_moy: 153, fc_max: 183, d_plus_m: 2895}
-    charge: {ctl: 70.9, atl: 90.9, tsb: -20.0, heures_semaine: 12.1, heures_prevues: 12.75}
+      - {nom: "Sortie longue Z2 + force", duree_min: 319, tss: 241, np_w: 210, 
+          fc_moy: 153, fc_max: 183, d_plus_m: 2895}
+    charge: {ctl: 70.9, atl: 90.9, tsb: -20.0, heures_semaine: 12.1, 
+        heures_prevues: 12.75}
     ecarts: >
-      Consigne du matin (orange) : Z2 stricte, sans blocs, plafond 232 W. Réalisé : 4 efforts à 255-257 W
-      (10'04, 8'54, 3', 2x5'47, soit ~34 min, 82 % FTP), 67 min en Z3, 22 min en sweet spot, 9 min en Z4,
-      pic FC 183. Le 3x12' n'a pas été fait tel quel mais le plafond a sauté : zone grise non
-      planifiée, malgré une VFC à 48. Découplage 8,8 % (sous 10 %), EF 1,37, NP 210 W,
-      VI 1,08 : pas de dérive anormale. TSS 241 pour 5h19 / 2895 m D+. TSB -20 : sous le seuil
-      d'alerte (-25) mais en zone de fatigue aiguë. Volume semaine 12,1 h, W46 prévue 14h40 : +15 %,
+      Consigne du matin (orange) : Z2 stricte, sans blocs, plafond 232 W. Réalisé
+      : 4 efforts à 255-257 W
+      (10'04, 8'54, 3', 2x5'47, soit ~34 min, 82 % FTP), 67 min en Z3, 22 min en sweet
+      spot, 9 min en Z4,
+      pic FC 183. Le 3x12' n'a pas été fait tel quel mais le plafond a sauté : zone
+      grise non
+      planifiée, malgré une VFC à 48. Découplage 8,8 % (sous 10 %), EF 1,37, NP 210
+      W,
+      VI 1,08 : pas de dérive anormale. TSS 241 pour 5h19 / 2895 m D+. TSB -20 : sous
+      le seuil
+      d'alerte (-25) mais en zone de fatigue aiguë. Volume semaine 12,1 h, W46 prévue
+      14h40 : +15 %,
       sous la limite de +30 %.
-    demain: "Dimanche : trail obligatoire 1h20, alerte FC 160, marcher dès qu'elle sonne"
+    demain: "Dimanche : trail obligatoire 1h20, alerte FC 160, marcher dès qu'elle
+      sonne"
     consigne: >
-      Demain, le trail reste prévu mais en Z2 strict : allure de footing lent, marche dès l'alerte
-      160, aucune accélération. Au réveil : FC repos >= 56 ou VFC < 50 une 3e fois ou jambes
-      lourdes = marche 45' ou repos, trail reporté. Ce soir : repas riche en glucides, protéines,
-      coucher avant 22h30. Assimilation prévue en W47 (S4) : la VFC basse + TSB -20 après une
-      sortie à 241 TSS confirment que la semaine de décharge ne se négocie pas. Lundi : repos.
-    ressenti_cyril: "Ce matin j'ai fait le 4 x 10min force vers les 260 W. Ça c'est plutôt bien passé, les jambes étaient bonnes mais j'ai eu froid et chaud. Je suis passé de 5 à 20 degrés et j'étais couvert pour 5 degrés. Franchement je pensais pas avoir de bonnes jambes au début. J'ai fait une bonne sieste d'une heure en rentrant qui m'a fait bcp de bien. Je me sens bcp mieux qu'hier et le réveil. Je pense que la sortie d'une heure hier m'a donné froid et j'ai pas fait assez d'intensités cette semaine avec la météo."
+      Demain, le trail reste prévu mais en Z2 strict : allure de footing lent, marche
+      dès l'alerte
+      160, aucune accélération. Au réveil : FC repos >= 56 ou VFC < 50 une 3e fois
+      ou jambes
+      lourdes = marche 45' ou repos, trail reporté. Ce soir : repas riche en glucides,
+      protéines,
+      coucher avant 22h30. Assimilation prévue en W47 (S4) : la VFC basse + TSB -20
+      après une
+      sortie à 241 TSS confirment que la semaine de décharge ne se négocie pas. Lundi
+      : repos.
+    ressenti_cyril: "Ce matin j'ai fait le 4 x 10min force vers les 260 W. Ça c'est
+      plutôt bien passé, les jambes étaient bonnes mais j'ai eu froid et chaud. Je
+      suis passé de 5 à 20 degrés et j'étais couvert pour 5 degrés. Franchement je
+      pensais pas avoir de bonnes jambes au début. J'ai fait une bonne sieste d'une
+      heure en rentrant qui m'a fait bcp de bien. Je me sens bcp mieux qu'hier et
+      le réveil. Je pense que la sortie d'une heure hier m'a donné froid et j'ai pas
+      fait assez d'intensités cette semaine avec la météo."
   - date: '2026-11-08'
     moment: matin
-    nuit: {sommeil_h: 8.25, score: 78, vfc_ms: 46, vfc_moy7: 58.0, fc_repos: 57, fc_repos_moy7: 53.1}
+    nuit: {sommeil_h: 8.25, score: 78, vfc_ms: 46, vfc_moy7: 58.0, fc_repos: 57, 
+        fc_repos_moy7: 53.1}
     charge: {ctl: 71.2, atl: 89.4, tsb: -18.3}
     seance_prevue: "Trail Z2 1h20, alerte FC 160, marcher dès qu'elle sonne"
     verdict: rouge
     consigne: >
-      Nuit désormais synchronisée (mise à jour de l'entrée conditionnelle de 7h) : sommeil correct
-      (8h15, score 78) mais VFC 46 ms (-21 % vs moy7 58, 3e matin sous 52, 2e sous 50) et FC repos 57
-      (+4 vs moy7 53, seuil 56 franchi), au lendemain d'une sortie à 241 TSS avec Z3 non planifiée,
-      TSB -18. Les deux conditions posées hier soir sont déclenchées : veto. Froid/chaud de la veille +
-      VFC et FC repos qui dérivent = signal précurseur à ne pas masquer par les bonnes sensations.
-      Trail annulé. Marche tranquille 30-45' au plus, ou repos complet. Repas riche, coucher avant
-      22h30. Lundi repos, l'assimilation de W47 ne se négocie pas ; reprise décidée avec toi selon la
+      Nuit désormais synchronisée (mise à jour de l'entrée conditionnelle de 7h) :
+      sommeil correct
+      (8h15, score 78) mais VFC 46 ms (-21 % vs moy7 58, 3e matin sous 52, 2e sous
+      50) et FC repos 57
+      (+4 vs moy7 53, seuil 56 franchi), au lendemain d'une sortie à 241 TSS avec
+      Z3 non planifiée,
+      TSB -18. Les deux conditions posées hier soir sont déclenchées : veto. Froid/chaud
+      de la veille +
+      VFC et FC repos qui dérivent = signal précurseur à ne pas masquer par les bonnes
+      sensations.
+      Trail annulé. Marche tranquille 30-45' au plus, ou repos complet. Repas riche,
+      coucher avant
+      22h30. Lundi repos, l'assimilation de W47 ne se négocie pas ; reprise décidée
+      avec toi selon la
       FC repos de demain.
     ressenti_cyril:
 
 analyse_coach:
-  maj: '2026-11-05'
+  maj: '2026-11-08'
   synthese: >
     POINT MI-SEMAINE (lun-mer) — S2 BLOC-02. Réalisé : 4 VT (2 A/R, 4h32,
     176 TSS, sans capteur de puissance, lecture à la FC). Renfo force du lundi
@@ -151,7 +203,34 @@ analyse_coach:
     un deuxième creux. FC repos quasi stable et sommeil excellent : aucun
     signal infectieux. Le report de la 3x12' tient sur les autres arguments
     (renfo excentrique de la veille, enchaînement avant la grosse semaine).
-  decision: >
+
+    BILAN DE SEMAINE (08/11) — 12,1 h, 471 TSS, 265 km, 4315 m D+, 8
+    séances (-7 % vs ~13 h prévues). CTL 71,2 (+1,4), ATL 89,4, TSB -18,3,
+    Ramp Rate 1,4 : aucun garde-fou de charge déclenché. Une seule séance
+    de force vélo : renfo du lundi sauté, force du jeudi remplacée par le
+    renfo en salle (pluie, pas de home trainer), trail du dimanche annulé
+    sur veto santé. Samedi : 5h19, 241 TSS, 2895 m D+, NP 210 W, 4 efforts
+    à 255-257 W (82-83 % FTP, ~34 min, au-dessus des 78-82 % de la 4x10'
+    initiale) malgré une consigne orange (Z2 stricte), plus 67 min de Z3
+    hors blocs = zone grise non planifiée. Physio propre (découplage 8,8 %,
+    EF 1,37), mais coût visible le lendemain.
+
+    SANTÉ — VFC 67, 70, 52, 60, 51, 48, 46 ms (moyenne 56,3 contre ~59 en
+    W44) et FC repos 52 → 57 en cinq jours (+5 bpm), alors que le sommeil
+    reste bon (8,1 h de moyenne, scores 78-87). Trois matins de VFC en
+    baisse consécutive, deux sous 50, FC repos au-dessus du seuil de 56 ce
+    dimanche. Lecture : charge cumulée + stress thermique (froid humide
+    vendredi, 5 → 20 °C trop couvert samedi) + 241 TSS sur une VFC déjà
+    basse. Pas de symptôme déclaré, mais c'est le profil « tout va bien » à
+    ne pas masquer : 6 semaines de charge sans coupure depuis le 05/10.
+
+    RESSENTI DE CYRIL — Semaine mitigée, gâchée par la météo, impression
+    de n'avoir fait qu'une seule séance qualitative ; jambes bonnes samedi ;
+    un peu dégoûté ; un peu fatigué ce dimanche ; sommeil RAS. Il juge
+    lui-même que l'assimilation est la meilleure option, la saison étant
+    encore très jeune. Il estime le bloc force moins prioritaire que prévu :
+    il roule en montagne toute l'année avec beaucoup de D+, et chaque VT
+    comporte environ 10 min de raidars en force.
     BLOC MAINTENU, FIN DE SEMAINE RÉORGANISÉE. Jeudi : pas de vélo, renfo
     force bas du corps S2 à la place de la sortie midi (le plus tôt possible,
     pour garder 48h avant samedi), 3 séries au lieu de 4 sur squat 1,5,
@@ -191,3 +270,30 @@ analyse_coach:
     cohérent avec une forme réelle correcte, pas de signe d'alerte. Volume
     W45 réel attendu ~12h45 : W46 à 14h40 = +15 %, largement sous la limite
     de +30 %, la Z2 de jeudi 12 reste en l'état.
+
+    DÉCISION DE FIN DE SEMAINE (08/11), validée avec Cyril — ASSIMILATION
+    AVANCÉE EN W46. Application de la clause de la saison : « si sommeil/FC
+    repos/VFC clignotent, S3 devient l'assimilation ». Météo très pluvieuse
+    annoncée sur la W46 : la grosse semaine (14h40, force du férié et du
+    dimanche) n'aurait de toute façon pas pu se faire correctement sans home
+    trainer. W46 : lundi repos complet ; mardi VT Z2 souple si FC repos ≤ 55,
+    transports si pluie ; mercredi férié 2h Z2 souple à plat ou renfo
+    d'entretien si pluie ; jeudi renfo d'entretien ; vendredi repos ; WE :
+    sortie longue Z2 souple 4h30-5h (plafond 225 W, 6 départs arrêtés) le
+    jour le plus sec, réduite à 2h30-3h ou supprimée sous pluie froide, et
+    trail souple 1h (alerte FC 155) l'autre jour, prioritaire sur le vélo
+    (dernier trail le 25/10). Pas de plancher de volume, rien n'est
+    rattrapé. Aucune intensité avant deux matins consécutifs à FC repos ≤ 54
+    et VFC ≥ 52 ; FC repos ≥ 57 avec un symptôme = 48h de repos complet.
+    W47, validée avec Cyril : passerelle vers le bloc PMA, force courte en
+    Z4-Z5, lancée seulement après deux matins consécutifs à FC repos ≤ 54 et
+    VFC ≥ 52. Lundi renfo force (RPE 7-8) ; mardi et mercredi VT Z2 ; jeudi
+    midi 6x3' à 93-97 % FTP à 50-55 rpm + renfo posture ; vendredi repos ;
+    samedi 4h30 avec 2x5x1' à 110-115 % FTP à 65-75 rpm ; dimanche
+    optionnel 6x(4' à 88-92 % à 50 rpm + sprint 10 s), supprimé au moindre
+    signal santé. Volume plafonné à +30 % du réel de la W46 (on raccourcit
+    d'abord le samedi, puis on supprime le dimanche). Prochain trail le
+    29/11. Bloc 3 PMA au 23/11 inchangé. La séance de force perdue en W45
+    n'est pas rattrapée. Rappel polarisation :
+    les raidars du VT se montent assis, sans chercher la puissance ; ils ne
+    comptent pas comme travail de force.
