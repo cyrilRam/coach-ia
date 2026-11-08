@@ -284,10 +284,10 @@ seances:
       - { type: continu, duree_min: 60, cible: Z2 }
 
   # =========================================================================
-  # SEMAINE 4 (Jours 22 a 28) — Volume velo : ~12h max — PASSERELLE FORCE COURTE Z4-Z5 vers le bloc PMA (decision du 08/11)
+  # SEMAINE 4 (Jours 22 a 28) — Volume : ~5h15 a ~9h35 — PASSERELLE FORCE COURTE Z4-Z5 vers le bloc PMA (decision du 08/11)
   # Condition de lancement : deux matins consecutifs a FC repos <= 54 et VFC >= 52 en fin de S3, sinon decalage.
-  # Volume reel plafonne a +30 % du reel de la S3 : on raccourcit d'abord la sortie du samedi, puis on supprime le dimanche.
-  # Seances cles : jeudi (couple Z4) + samedi (premiere touche Z5). Dimanche optionnel. WE sans trail (prochain le 29/11).
+  # Formation possiblement en presentiel toute la semaine : velotafs supprimes les jours de presentiel (fixe le lundi 16).
+  # WE avec le frere de Cyril : pas de sortie longue, deux sorties de 2h avec une seance cle chacune. WE sans trail (prochain le 29/11).
   # =========================================================================
   - jour: 22
     sport: WeightTraining
@@ -319,7 +319,7 @@ seances:
     sport: Ride
     nom: Vélotaf A/R Z2
     duree_min: 130
-    description: "Velotaf en Z2 souple (60-72 %). Raidars montes assis, sans chercher la puissance : ils ne comptent pas comme travail de force."
+    description: "Velotaf en Z2 souple (60-72 %). SUPPRIME si formation en presentiel ce jour. Raidars montes assis, sans chercher la puissance : ils ne comptent pas comme travail de force."
     intervalles:
       - { type: continu, duree_min: 130, cible: 60-72% }
 
@@ -327,27 +327,16 @@ seances:
     sport: Ride
     nom: Vélotaf A/R Z2
     duree_min: 130
-    description: "Velotaf en Z2 souple (60-72 %). Veille de la seance de couple : rester souple, raidars assis sans appuyer."
+    description: "Velotaf en Z2 souple (60-72 %). SUPPRIME si formation en presentiel ce jour. Raidars assis sans appuyer."
     intervalles:
       - { type: continu, duree_min: 130, cible: 60-72% }
-
-  - jour: 25
-    sport: Ride
-    nom: Pause déj - Couple 6x3' @95% basse cadence
-    duree_min: 100
-    description: "Sortie midi (1h40). 6 x 3 min a 93-97 % FTP a 50-55 rpm, assis, en montee reguliere. Recup 3 min Z1. Premiere seance dure apres l'assimilation : puissance plate, si elle ne tient pas des le 2e bloc, s'arreter a 4 et rentrer en Z2. Si pluie : decalage au premier midi sec de la semaine, jamais la veille du samedi."
-    intervalles:
-      - { type: echauffement, duree_min: 20, cible: 60-70% }
-      - { type: effort, repetitions: 6, duree_min: 3, cible: 93-97%, cadence: 50-55, recup_min: 3, recup_cible: 50-55% }
-      - { type: continu, duree_min: 34, cible: 62-72% }
-      - { type: retour_calme, duree_min: 10, cible: 50-60% }
 
   - jour: 25
     sport: WeightTraining
     nom: Renfo B2S4 - Posture & Haut du corps
     duree_min: 30
     description: |
-      SEANCE POSTURE (Fin de journee apres velo) - 30 min : pas de jambes lourdes
+      SEANCE POSTURE (Jeudi soir, a la maison) - 30 min : pas de jambes lourdes, 48h avant le WE
 
       1. Echauffement express (5 min) :
       - Rotations thoraciques : 2x 8 reps/cote
@@ -366,25 +355,26 @@ seances:
 
   - jour: 27
     sport: Ride
-    nom: Sortie longue 4h30 + 2x5x1' Z5
-    duree_min: 270
-    description: "Sortie longue de 4h30 en montagne. Apres 1h30, dans un col regulier : 2 series de 5 x 1 min a 110-115 % FTP a 65-75 rpm, assis ou danseuse, recup 1 min Z1, 8 min Z1-Z2 entre les series. Premiere touche de PMA avant le bloc 3 : chaque minute a la meme puissance, la derniere aussi forte que la premiere. Hors series : Z2 stricte, plafond 232 W en montee, pas de sprint."
+    nom: 2h + 2x5x1' Z5
+    duree_min: 120
+    description: "Sortie de 2h, depart tot pour rentrer en fin de matinee (WE avec le frere). Apres 30 min d'echauffement, dans un col regulier : 2 series de 5 x 1 min a 110-115 % FTP a 65-75 rpm, assis ou danseuse, recup 1 min Z1, 8 min Z1-Z2 entre les series. Premiere touche de PMA avant le bloc 3 : chaque minute a la meme puissance, la derniere aussi forte que la premiere. Hors series : Z2 stricte, plafond 232 W en montee, pas de sprint."
     intervalles:
       - { type: echauffement, duree_min: 20, cible: 60-70% }
-      - { type: continu, duree_min: 70, cible: 62-75% }
+      - { type: continu, duree_min: 10, cible: 62-75% }
       - { type: effort, repetitions: 5, duree_min: 1, cible: 110-115%, cadence: 65-75, recup_min: 1, recup_cible: 50-55% }
       - { type: continu, duree_min: 8, cible: 55-65% }
       - { type: effort, repetitions: 5, duree_min: 1, cible: 110-115%, cadence: 65-75, recup_min: 1, recup_cible: 50-55% }
-      - { type: continu, duree_min: 112, cible: 62-75% }
-      - { type: retour_calme, duree_min: 40, cible: 58-68% }
+      - { type: continu, duree_min: 52, cible: 62-75% }
+      - { type: retour_calme, duree_min: 10, cible: 55-65% }
 
   - jour: 28
     sport: Ride
-    nom: Optionnel - Force 6x(4' 50 rpm + sprint)
+    nom: 2h + Couple 6x3' @95% basse cadence
     duree_min: 120
-    description: "OPTIONNELLE. 2h dont 6 x 4 min a 88-92 % FTP a 50 rpm, assis, en col regulier, chaque bloc termine par un sprint libre de 10s en danseuse. Recup 3 min Z1. Supprimee si au reveil FC repos >= 56, VFC < 50, jambes lourdes, ou si le volume de la semaine depasse deja +30 % de la S3 : alors 2h Z2 souple ou repos. Fin du bloc 2."
+    description: "Sortie de 2h, depart tot (WE avec le frere). 6 x 3 min a 93-97 % FTP a 50-55 rpm, assis, en montee reguliere. Recup 3 min Z1. Si la seance de samedi s'est mal passee, si au reveil FC repos >= 56 ou VFC < 50, ou si la puissance ne tient pas des le 2e bloc : 2h de Z2 souple a la place. Fin du bloc 2."
     intervalles:
       - { type: echauffement, duree_min: 20, cible: 60-70% }
-      - { type: effort, repetitions: 6, duree_min: 4, cible: 88-92%, cadence: 50, recup_min: 3, recup_cible: 50-55% }
-      - { type: continu, duree_min: 48, cible: 62-72% }
+      - { type: continu, duree_min: 10, cible: 62-72% }
+      - { type: effort, repetitions: 6, duree_min: 3, cible: 93-97%, cadence: 50-55, recup_min: 3, recup_cible: 50-55% }
+      - { type: continu, duree_min: 44, cible: 62-72% }
       - { type: retour_calme, duree_min: 10, cible: 50-60% }
