@@ -79,6 +79,21 @@ suivi_quotidien:
       « je prefere faire du volume en velo que du trail dimanche, comme je cours
       mercredi »
 
+  - date: '2026-11-09'
+    moment: soir
+    realise: []
+    charge: {ctl: 67.6, atl: 68.3, tsb: -0.7, heures_semaine: 0.0, heures_prevues: 0.0}
+    ecarts: >
+      Conforme : repos complet prévu, aucune activité enregistrée. Pas de volume à
+      comparer à S2 (semaine W45 : sortie longue 5h18, TSS 241), limite +30 % sans objet.
+    demain: "Repos, pas de vélotaf sous la pluie (semaine réorganisée avec Cyril)"
+    consigne: >
+      Demain mardi : repos complet, pas de vélo. Coucher avant 22h30 pour confirmer
+      la bonne nuit d'aujourd'hui. Au réveil, note FC repos et VFC : mercredi, footing
+      souple FC < 150 puis renfo seulement si FC repos <= 55 et sans symptôme (gorge,
+      courbatures, frissons) mardi et mercredi. Sinon, on garde le repos.
+    ressenti_cyril:
+
 analyse_coach:
   maj: null
   synthese: null
