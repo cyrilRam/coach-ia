@@ -1,7 +1,7 @@
 # Plan de Saison 2026 / 2027 — Cyril
 
 Document de référence et synthèse du macrocycle d'entraînement.
-Révisé le 17/10/2026 (bloc 1 à 3 semaines, bloc PMA concentré en décembre, hiérarchie A/B/C des courses).
+Révisé le 17/10/2026 (bloc 1 à 3 semaines, bloc PMA concentré en décembre, hiérarchie A/B/C des courses), puis le 09/11/2026 (dates exactes des courses de printemps, Drapoise en B+, blocs 8 et 9 recalés).
 
 ---
 
@@ -57,8 +57,8 @@ Reprise officielle après coupure : **Lundi 5 octobre 2026** (36 semaines jusqu'
 | | **Bloc 5 : Seuil Z4 & Over-Unders**<br>25/01/27 – 21/02/27 | 4 sem | 12h30 ➔ 13h30 ➔ 14h ➔ **10h↓** | ⚡ **WEEK-ENDS ALTERNÉS :**<br>• **A** : samedi sortie longue 5-6h avec séries seuil en col + dimanche trail<br>• **B** : samedi intensités col 3h-3h30 (Seuil, Over-Unders) + dimanche longue sur fatigue 4h30-5h<br>• Jeudi : entretien PMA | 🧪 **TEST 2 (sam. 20/02) :**<br>3' + 12' en fin d'assimilation, calage du pacing Madone |
 | | **Bloc 6 : Seuil Long en Col & Volume Montagne**<br>22/02/27 – 14/03/27 | 3 sem | 12h30 ➔ 13h30 ➔ ~13h *(course comprise)* | • S1 & S2 : seuil long en col (30-45 min, format Madone), entretien PMA<br>• S3 : semaine de charge, jeudi Z2 souple + activation, vendredi repos<br>• PNC aux allures Madone + test nutrition, trail le WE du 06-07/03 | 🔁 **Paris-Nice Challenge (C)**<br>*(Samedi 13 mars 2027, répétition générale)* |
 | **Phase 3 : Printemps** | **Bloc 7 : Montagne, Madone & GFNY**<br>15/03/27 – 11/04/27 | 4 sem | **10h↓** ➔ 12h30 ➔ ~10h30 ➔ ~10h | • S1 : assimilation (clôt le 3:1 du bloc 6 + PNC)<br>• **S2 : rappel PMA concentré (3 séances)** & cols format Madone<br>• **S3 : affûtage 7 jours** ➔ Madone-Peille<br>• S4 : récup lundi-mercredi, activation jeudi + samedi ➔ GFNY | 🏁 **Madone-Peille (B+, premier objectif)** *(dim. 04 avril)*<br><br>🏁 **GFNY Cannes (B)** *(dim. 11 avril)* |
-| | **Bloc 8 : Charge Cyclos de Mai**<br>12/04/27 – 09/05/27 | 4 sem | **10h↓** ➔ 12h30 ➔ 13h30 ➔ 14h | • S1 : assimilation post-Madone/GFNY<br>• S2-S4 : volume de cols, entretien PMA<br>• Lazardières et Vençoise courues dans la charge comme séances clés | 🔁 **Lazardières (C)** *(début mai)*<br><br>🔁 **La Vençoise (C)** *(mi-mai)* |
-| **Phase 4 : Bonette** | **Bloc 9 : Haute Montagne & Bonette**<br>10/05/27 – 13/06/27 | 5 sem | **10h30↓** ➔ 13h30 ➔ 15h ➔ 11h ➔ course | • S1 : assimilation<br>• S2 : choc (samedi 6h + dimanche trail)<br>• **S3 : choc simulation (samedi 6h + dimanche 4h enchaînés)**, nutrition 90g/h<br>• **S4 : affûtage S-2 (11h)**, reconnaissance Bonette si route ouverte<br>• **S5 : affûtage final S-1** : déblocages courts, **TSB +10**<br>*Haute montagne probablement fermée mi-mai : chocs sur Madone, Turini, Couillole, Colmiane, Valberg* | 🧪 *Test 3 optionnel (sam. 15/05)*<br><br>🏆 **MERCAN’TOUR BONETTE DT SWISS (A)**<br>*(Dimanche 13 juin 2027)* |
+| | **Bloc 8 : Lazaridès & Charge Cyclos de Mai**<br>12/04/27 – 09/05/27 | 4 sem | ~10h30 ➔ **10-11h↓** ➔ 12h30 ➔ 13h30 | • S1 : récup GFNY lundi-mercredi, déblocages jeudi, vendredi repos ➔ Lazaridès samedi<br>• **S2 : assimilation** (clôt Madone + GFNY + Lazaridès en 14 jours), samedi 5h Z2<br>• S3-S4 : seuil long en col, entretien PMA<br>• Vençoise courue dans la charge comme sortie longue de qualité<br>*Garde-fou : GFNY trop coûteux (sommeil, FC repos, VFC) ➔ Lazaridès en contrôle ou abandonnée* | 🔁 **Lazaridès (C)** *(sam. 17 avril)*<br><br>🔁 **La Vençoise (C)** *(sam. 8 mai)* |
+| **Phase 4 : Drapoise & Bonette** | **Bloc 9 : Drapoise & Bonette**<br>10/05/27 – 13/06/27 | 5 sem | 14h ➔ ~11h ➔ 12h30 ➔ 10h30 ➔ course | • S1 : dernière grosse semaine, cols longs format Drapoise/Bonette<br>• **S2 : affûtage 7 jours ➔ Drapoise à fond** (ferme le 3:1)<br>• **S3 : récup lundi-mercredi, dernier choc samedi 29/05** (5h30-6h allure Bonette, nutrition 90 g/h)<br>• **S4 : affûtage S-2 (10h30)**, reconnaissance Bonette si route ouverte<br>• **S5 : affûtage final S-1** : déblocages courts, **TSB +10**<br>*Haute montagne probablement fermée mi-mai : chocs sur Madone, Turini, Couillole, Colmiane, Valberg* | 🏁 **Drapoise (B+)** *(dim. 23 mai, J-21)*<br><br>🏆 **MERCAN’TOUR BONETTE DT SWISS (A)**<br>*(Dimanche 13 juin 2027)* |
 | **Phase 5 : Après-Bonette** | **Bloc 10 : à construire**<br>à partir du 14/06/27 | — | — | • Programme ouvert : autres courses décidées plus tard selon l'emploi du temps et les performances | 🏁 **Cimes du Mercantour** *(début août, seul jalon connu)* |
 
 ---
@@ -72,7 +72,7 @@ Reprise officielle après coupure : **Lundi 5 octobre 2026** (36 semaines jusqu'
 5. **PMA en bloc :** bloc concentré en décembre, entretien court le jeudi tous les 7-10 jours de janvier à mars, rappel concentré en S2 du bloc 7, entretien jusqu'à la Bonette.
 6. **Récupération active post-course :** régénération en Z1/Z2 souple. Le Paris-Nice Challenge étant couru dans la charge, la semaine qui suit est l'assimilation du bloc 6, avant le rappel PMA.
 7. **Sprints en Phase 1 (hiver) :** sprints courts alactiques (10-15s à fond, récup complète 3-4 min) et départs arrêtés à fort couple.
-8. **Tests de terrain 3' + 12' :** 02-03/01, 20/02, 15/05 (optionnel).
+8. **Tests de terrain 3' + 12' :** 02-03/01, 20/02. La Drapoise sert de référence pour le pacing Bonette.
 9. **Maladie :** aucune séance rattrapée. Une semaine de charge touchée par 3 jours de maladie ou plus devient une assimilation ; si le calendrier coince, on retire une semaine de charge, jamais une assimilation.
 10. **Contraintes de vie respectées :**
    * Lundi & Vendredi : repos vélo systématique.

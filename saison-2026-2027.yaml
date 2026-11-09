@@ -33,7 +33,7 @@ objectifs:
     notes: "Non chronometree : courue dans la charge (jeudi Z2 souple + activation, vendredi repos). Repetition generale de Madone-Peille : cols a l'allure Madone, test nutrition, sans aller au bout de soi."
   - nom: "Mercan'Tour Madone-Peille"
     date: "2027-04-04"
-    priorite: B
+    priorite: B+
     type: cyclo
     parcours: "110 KM – 2800 D+"
     profil: montagne
@@ -175,17 +175,19 @@ blocs:
     rythme: "S1 assimilation (10h, cloture le 3:1 du bloc 06 et du PNC) -> S2 rappel PMA concentre (3 seances) & cols au format Madone (12h30) -> S3 affutage 7 jours & Madone-Peille (~10h30 course comprise) -> S4 recup active lundi-mercredi, activation jeudi + samedi, GFNY (~10h course comprise)"
 
   - id: bloc-08
-    nom: Charge Cyclos de Mai
+    nom: Lazaridès & Charge Cyclos de Mai
     du: 2027-04-12
     au: 2027-05-09
     duree_semaines: 4
-    objectif: reconstruire le volume de montagne en utilisant les deux courses C comme seances cles
-    focus: [assimilation_post_gfny, volume_cols, entretien_pma, courses_c_dans_la_charge]
+    objectif: clore le triptyque d'avril (Madone, GFNY, Lazarides en 14 jours), assimiler, puis reconstruire le volume de montagne vers la Drapoise
+    focus: [recup_activation_post_gfny, lazarides_c, assimilation_triptyque, seuil_long_cols, entretien_pma, vencoise_sortie_longue]
     courses:
-      - "Lazardieres Cannes (debut mai 2027) - priorite C"
-      - "Grandfondo La Vencoise (2e WE mai 2027) - priorite C"
-    volume_cible_h: [10, 14]
-    rythme: "S1 assimilation post-Madone/GFNY (10h) -> S2 charge (12h30) -> S3 charge & Lazardieres (13h30) -> S4 charge & La Vencoise en sortie longue de qualite (14h)"
+      - "La Lazarides Cannes (samedi 17 avril 2027) - priorite C, 6 jours apres le GFNY"
+      - "Granfondo La Vencoise (samedi 8 mai 2027) - priorite C"
+    volume_cible_h: [10, 13.5]
+    rythme: "S1 (12-18/04, ~10h30 course comprise) : recup GFNY lundi-mercredi (velotaf Z2 souple), jeudi Z2 court + deblocages, vendredi repos, Lazarides samedi, dimanche Z2 souple 2-3h -> S2 (19-25/04) assimilation 10-11h, aucune intensite, samedi 5h Z2 -> S3 (26/04-02/05) charge 12h30, seuil long en col + entretien PMA jeudi -> S4 (03-09/05) charge 13h30, Vencoise samedi en sortie longue de qualite, dimanche Z2 2-3h"
+    garde_fous: "si le GFNY a vide Cyril (sommeil, FC repos, VFC), la Lazarides se court en controle ou est abandonnee : c'est une C, elle passe apres la Drapoise et la Bonette"
+    decision: "2026-11-09 : dates exactes recues, Lazarides avancee au 17/04. L'assimilation passe en S2 (apres 3 courses en 14 jours), les 3 semaines de charge glissent du 26/04 au 16/05. Valide par Cyril."
 
   - id: bloc-09
     nom: Spécifique Haute Montagne & Affûtage Bonette
@@ -193,14 +195,14 @@ blocs:
     au: 2027-06-13
     duree_semaines: 5
     objectif: pic de forme absolu pour le monument de la saison (177 km, 4800 D+)
-    focus: [choc_montagne, drapoise_repetition_generale, pacing_bonette, nutrition_course, entretien_pma, affutage_deux_semaines]
+    focus: [cols_longs_format_drapoise, drapoise_b_plus, choc_final_bonette, pacing_bonette, nutrition_course, entretien_pma, affutage_deux_semaines]
     courses:
-      - "Cyclosportive Drapoise Souvenir René Vietto (dimanche 30 mai 2027 a confirmer - 117 km, 2750 D+) - priorite B, a J-14 de la Bonette"
+      - "Cyclosportive Drapoise Souvenir René Vietto (dimanche 23 mai 2027 - 117 km, 2750 D+) - priorite B+, a J-21 de la Bonette, sur les routes d'entrainement"
       - "MERCAN’TOUR BONETTE DT SWISS (dimanche 13 juin 2027 - 177 km, 4800 D+) - priorite A"
-    test: "Test 3 optionnel 3 min + 12 min le samedi 15/05 (fin d'assimilation) pour caler le pacing Bonette, sinon donnees Madone-Peille"
-    volume_cible_h: [10.5, 13.5]
-    rythme: "S1 assimilation (10h30) -> S2 choc unique (13h30, samedi 6h + dimanche trail) -> S3 semaine Drapoise (~13h course comprise : charge moderee lundi-jeudi avec seuil court jeudi, vendredi repos, samedi activation, dimanche Drapoise a fond = derniere grosse seance specifique et repetition generale pacing/nutrition, remplace la simulation 6h+4h) -> S4 affutage S-2 (~11h, lundi-mercredi Z1/Z2 souple post-Drapoise, reconnaissance Bonette si route ouverte) -> S5 affutage final S-1 (~6h hors course, deblocages courts, TSB +10 le 13 juin)"
-    decision: "2026-10-28 : Drapoise integree a J-14, validee par Cyril. On renonce au pic a 15h (S1 10h30 -> 15h hors regle des ±30 %) au profit d'une course de montagne suivie de 2 semaines d'assimilation/affutage"
+    test: "Test 3 supprime : la Drapoise courue a fond (Braus puis chrono jusqu'a Calaisson) et Madone-Peille servent de reference pour le pacing Bonette"
+    volume_cible_h: [10.5, 14]
+    rythme: "S1 (10-16/05) derniere grosse semaine 14h, cols longs au format Drapoise/Bonette -> S2 (17-23/05) affutage 7 jours (deblocages courts, vendredi repos, samedi activation) et Drapoise a fond (~11h course comprise) -> S3 (24-30/05) recup lundi-mercredi, seuil court jeudi, dernier choc samedi 29 (5h30-6h a l'allure Bonette, nutrition 90 g/h), dimanche Z2 2-3h (~12h30) -> S4 (31/05-06/06) affutage S-2 (~10h30), reconnaissance Bonette si route ouverte -> S5 (07-13/06) affutage final S-1 (~6h hors course, deblocages courts, TSB +10 le 13 juin)"
+    decision: "2026-10-28 : Drapoise integree a J-14, on renonce au pic a 15h. 2026-11-09 : date exacte au 23/05 (J-21), Drapoise passee en B+ ; S1 devient la derniere semaine de charge (l'assimilation a glisse au 19/04), la semaine d'affutage Drapoise ferme le 3:1, un dernier choc s'insere a J-15 avant les 2 semaines d'affutage. Valide par Cyril."
     terrain: "haute montagne probablement fermee mi-mai : chocs sur Madone, Turini, Couillole, Colmiane, Valberg"
 
   - id: bloc-10
@@ -226,12 +228,12 @@ synthese_construction:
     Règles physiologiques cardinales du plan :
     1. Structure des mésocycles : cycle 3:1 (3 semaines de charge progressive, 1 semaine d'assimilation à ~10h). La semaine d'assimilation garde la sortie du samedi (5h en Z2 souple, sprints alactiques autorisés) et supprime toute autre intensité. Pics de charge plafonnés à 14h (15h uniquement en choc Bonette) pour que la variation hebdomadaire reste dans ±30 %, à la hausse comme à la baisse. Exceptions : bloc 1 (3 semaines sans assimilation, sortie de coupure) et bloc 3 PMA (assimilation assurée par la décharge Paris/fêtes).
     2. Volume d'une semaine de course : la course compte dans le volume. La fraîcheur s'obtient en baissant l'intensité, pas en effondrant le volume.
-    3. Hiérarchie des courses et affûtage : A (Bonette) = affûtage 2 semaines, TSB ~+10 ; B (Paris-Nice, Madone-Peille, GFNY Cannes) = mini-affûtage 5-7 jours (déblocages courts, vendredi repos, samedi activation) ; C (Lazardières, Vençoise) = courue dans la charge avec 2 jours de fraîcheur, utilisée comme séance clé.
+    3. Hiérarchie des courses et affûtage : A (Bonette) = affûtage 2 semaines, TSB ~+10 ; B+ (Madone-Peille, Drapoise) = affûtage 7 jours complet, blocs précédents orientés course ; B (GFNY Cannes) = mini-affûtage 5-7 jours (déblocages courts, vendredi repos, samedi activation) ; C (Paris-Nice, Lazaridès, Vençoise) = courue dans la charge avec 2 jours de fraîcheur, utilisée comme séance clé.
     4. PMA en bloc : un bloc PMA concentré en décembre (bloc 3, jusqu'à 3 séances/semaine dans la limite de 3 séances dures et 2 jours durs consécutifs), entretien court le jeudi tous les 7 à 10 jours de janvier à mars, rappel concentré d'une semaine en S2 du bloc 7 (post Paris-Nice), entretien sur le bloc Bonette.
     5. Récupération post-course : régénération active en Z1/Z2 souple. Post-Paris-Nice : une semaine de récupération avant le rappel PMA. Entre Madone-Peille et GFNY : récupération lundi-mercredi, activation jeudi et samedi.
     6. Sprints en Phase 1 (hiver) : rappels de sprints courts alactiques (10-15s max, récup complète 3-4 min) en fin de sortie Z2 et départs arrêtés à fort couple en bosse.
     7. Intégration stricte des contraintes : 2 jours de repos/semaine (lundi/vendredi), vélotaf mardi/mercredi (2h10 AR) toujours en Z2, séance du jeudi plafonnée à 2h sur la pause déjeuner, sortie longue 5-6h chaque semaine, renforcement musculaire 2x/semaine tout l'hiver (hors quota selle). Trail un dimanche sur deux, supprimé les week-ends de course (décision de Cyril : le trail est secondaire).
     8. Week-ends alternés à partir du bloc 5 : A = samedi sortie longue 5-6h avec séries de seuil ou d'allure course en col + dimanche trail ; B = samedi intensités spécifiques en col 3h-3h30 + dimanche sortie longue de volume sur fatigue 4h30-5h.
-    9. Protocole de tests terrain 3 min + 12 min en côte (20 min Z1 entre les deux) : 02-03/01/2027 (bloc 4), 20/02/2027 (fin bloc 5), 15/05/2027 optionnel (bloc 9).
+    9. Protocole de tests terrain 3 min + 12 min en côte (20 min Z1 entre les deux) : 02-03/01/2027 (bloc 4), 20/02/2027 (fin bloc 5). Le test optionnel du 15/05 est supprimé (révision du 09/11/2026) : la Drapoise sert de référence pour le pacing Bonette.
     10. Maladie : aucune séance rattrapée. Une semaine de charge touchée par 3 jours de maladie ou plus devient une semaine d'assimilation ; si le calendrier coince, on retire une semaine de charge, jamais une assimilation.
     11. Rôle de canalisateur du coach : exigence maximale sur les blocs de charge et les intensités ciblées (bloc PMA, seuil, chocs de cols) ; fermeté sur la facilité des séances Z2/vélotaf, l'assimilation post-choc et le veto dès que des signaux inquiétants apparaissent (sommeil bas, dérive cardiaque anormale, FC repos en hausse, VFC en chute).
