@@ -57,6 +57,27 @@ suivi_quotidien:
     ressenti_cyril: >
       Réponse de 9 nov : on reste sur la semaine d'assimilation, la météo de la
       semaine est catastrophique.
+  - date: '2026-11-09'
+    moment: conversation
+    nuit: {sommeil_h: 8.15, score: 78, vfc_ms: 65, vfc_moy7: 56.3, fc_repos: 52, fc_repos_moy7: 53.6}
+    charge: {ctl: 67.6, atl: 68.3, tsb: -0.7}
+    seance_prevue: "Semaine W46 réorganisée avec Cyril (pluie jusqu'à jeudi inclus)"
+    verdict: vert
+    consigne: >
+      Semaine validée avec Cyril, elle prime sur bloc-02 S3 (~10h, aucune intensité).
+      Lundi 9 : repos complet. Mardi 10 : repos, pas de vélotaf sous la pluie.
+      Mercredi 11 : footing souple FC < 150 puis renfo B2S3 entretien. Jeudi 12 :
+      renfo B2S3 entretien. Vendredi 13 : vélo Z1-Z2 basse à plat, 1h max, aucun
+      rattrapage des vélotafs perdus. Samedi 14 : sortie longue 4h30-5h Z2 souple
+      (60-72 %, jamais > 225 W en col) + 6 départs arrêtés de 10s après 2h.
+      Dimanche 15 : 2h de vélo Z1-Z2 souple à la place du trail, choix de Cyril
+      (il court mercredi) ; écart assumé à la règle trail de contraintes.yaml,
+      dernier trail le 25/10, prochain prévu le 29/11. Conditions : footing de
+      mercredi seulement si FC repos <= 55 et sans symptôme mardi et mercredi.
+    ressenti_cyril: >
+      « je pense que les stats sont tres bonnes ce matin j'ai bien recup » ;
+      « je prefere faire du volume en velo que du trail dimanche, comme je cours
+      mercredi »
 
 analyse_coach:
   maj: null
