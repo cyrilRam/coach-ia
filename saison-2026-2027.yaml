@@ -54,11 +54,11 @@ objectifs:
     notes: "Samedi, 6 jours apres le GFNY et 13 jours apres Madone-Peille : 3e course du triptyque d'avril, courue sans affutage sur la fraicheur post-GFNY"
   - nom: "GRANFONDO LA VENCOISE"
     date: "2027-05-08"
-    priorite: C
+    priorite: B
     type: cyclo
     parcours: "147 KM – 2800 D+"
     profil: vallonne
-    notes: "Samedi. Courue dans la charge comme sortie longue de qualite"
+    notes: "Samedi. Passee en B le 09/11/2026 : 3 semaines apres la Lazarides, assimilation faite, objectif de performance. Mini-affutage 7 jours sans couper le volume (derniere seance dure le samedi 01/05)"
   - nom: "CYCLOSPORTIVE DRAPOISE SOUVENIR RENE VIETTO"
     date: "2027-05-23"
     priorite: B+
@@ -179,15 +179,15 @@ blocs:
     du: 2027-04-12
     au: 2027-05-09
     duree_semaines: 4
-    objectif: clore le triptyque d'avril (Madone, GFNY, Lazarides en 14 jours), assimiler, puis reconstruire le volume de montagne vers la Drapoise
-    focus: [recup_activation_post_gfny, lazarides_c, assimilation_triptyque, seuil_long_cols, entretien_pma, vencoise_sortie_longue]
+    objectif: clore le triptyque d'avril (Madone, GFNY, Lazarides en 14 jours), assimiler, recharger puis faire une performance sur la Vencoise
+    focus: [recup_activation_post_gfny, lazarides_c, assimilation_triptyque, seuil_long_cols, entretien_pma, vencoise_b]
     courses:
       - "La Lazarides Cannes (samedi 17 avril 2027) - priorite C, 6 jours apres le GFNY"
-      - "Granfondo La Vencoise (samedi 8 mai 2027) - priorite C"
-    volume_cible_h: [10, 13.5]
-    rythme: "S1 (12-18/04, ~10h30 course comprise) : recup GFNY lundi-mercredi (velotaf Z2 souple), jeudi Z2 court + deblocages, vendredi repos, Lazarides samedi, dimanche Z2 souple 2-3h -> S2 (19-25/04) assimilation 10-11h, aucune intensite, samedi 5h Z2 -> S3 (26/04-02/05) charge 12h30, seuil long en col + entretien PMA jeudi -> S4 (03-09/05) charge 13h30, Vencoise samedi en sortie longue de qualite, dimanche Z2 2-3h"
+      - "Granfondo La Vencoise (samedi 8 mai 2027) - priorite B"
+    volume_cible_h: [10, 12.5]
+    rythme: "S1 (12-18/04, ~10h30 course comprise) : recup GFNY lundi-mercredi (velotaf Z2 souple), jeudi Z2 court + deblocages, vendredi repos, Lazarides samedi, dimanche Z2 souple 2-3h -> S2 (19-25/04) assimilation 10-11h, aucune intensite, samedi 5h Z2 -> S3 (26/04-02/05) charge 12h30, PMA jeudi, samedi 01/05 seuil long en col = derniere seance dure, dimanche Z2 souple -> S4 (03-09/05) mini-affutage Vencoise ~12h30 course comprise : velotaf Z2, jeudi deblocages courts, vendredi repos, Vencoise samedi a fond, dimanche Z2 souple 2h"
     garde_fous: "si le GFNY a vide Cyril (sommeil, FC repos, VFC), la Lazarides se court en controle ou est abandonnee : c'est une C, elle passe apres la Drapoise et la Bonette"
-    decision: "2026-11-09 : dates exactes recues, Lazarides avancee au 17/04. L'assimilation passe en S2 (apres 3 courses en 14 jours), les 3 semaines de charge glissent du 26/04 au 16/05. Valide par Cyril."
+    decision: "2026-11-09 : dates exactes recues, Lazarides avancee au 17/04. L'assimilation passe en S2 (apres 3 courses en 14 jours), les 3 semaines de charge glissent du 26/04 au 16/05. Valide par Cyril. 2026-11-09 : Vencoise passee en B a la demande de Cyril ; la semaine du 03/05 devient un mini-affutage qui garde le volume (la course compte), la charge du bloc 9 S1 (14h) reste en place."
 
   - id: bloc-09
     nom: Spécifique Haute Montagne & Affûtage Bonette
@@ -228,7 +228,7 @@ synthese_construction:
     Règles physiologiques cardinales du plan :
     1. Structure des mésocycles : cycle 3:1 (3 semaines de charge progressive, 1 semaine d'assimilation à ~10h). La semaine d'assimilation garde la sortie du samedi (5h en Z2 souple, sprints alactiques autorisés) et supprime toute autre intensité. Pics de charge plafonnés à 14h (15h uniquement en choc Bonette) pour que la variation hebdomadaire reste dans ±30 %, à la hausse comme à la baisse. Exceptions : bloc 1 (3 semaines sans assimilation, sortie de coupure) et bloc 3 PMA (assimilation assurée par la décharge Paris/fêtes).
     2. Volume d'une semaine de course : la course compte dans le volume. La fraîcheur s'obtient en baissant l'intensité, pas en effondrant le volume.
-    3. Hiérarchie des courses et affûtage : A (Bonette) = affûtage 2 semaines, TSB ~+10 ; B+ (Madone-Peille, Drapoise) = affûtage 7 jours complet, blocs précédents orientés course ; B (GFNY Cannes) = mini-affûtage 5-7 jours (déblocages courts, vendredi repos, samedi activation) ; C (Paris-Nice, Lazaridès, Vençoise) = courue dans la charge avec 2 jours de fraîcheur, utilisée comme séance clé.
+    3. Hiérarchie des courses et affûtage : A (Bonette) = affûtage 2 semaines, TSB ~+10 ; B+ (Madone-Peille, Drapoise) = affûtage 7 jours complet, blocs précédents orientés course ; B (GFNY Cannes, Vençoise) = mini-affûtage 5-7 jours (déblocages courts, vendredi repos, samedi activation ou course) ; C (Paris-Nice, Lazaridès) = courue dans la charge avec 2 jours de fraîcheur, utilisée comme séance clé.
     4. PMA en bloc : un bloc PMA concentré en décembre (bloc 3, jusqu'à 3 séances/semaine dans la limite de 3 séances dures et 2 jours durs consécutifs), entretien court le jeudi tous les 7 à 10 jours de janvier à mars, rappel concentré d'une semaine en S2 du bloc 7 (post Paris-Nice), entretien sur le bloc Bonette.
     5. Récupération post-course : régénération active en Z1/Z2 souple. Post-Paris-Nice : une semaine de récupération avant le rappel PMA. Entre Madone-Peille et GFNY : récupération lundi-mercredi, activation jeudi et samedi.
     6. Sprints en Phase 1 (hiver) : rappels de sprints courts alactiques (10-15s max, récup complète 3-4 min) en fin de sortie Z2 et départs arrêtés à fort couple en bosse.
