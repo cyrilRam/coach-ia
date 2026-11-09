@@ -1,0 +1,46 @@
+# Une semaine = un fichier. Nommage en semaines ISO.
+# Section "mesures" : generee par scripts/weekly.py, ne pas editer a la main.
+# Section "ressenti" : saisie manuelle, l'agent n'y ecrit jamais.
+# Section "analyse_coach" : analyse hebdomadaire formulee par l'IA et conservee.
+
+semaine: 2026-W46
+du: 2026-11-09
+au: 2026-11-15
+
+mesures: {}
+
+# saisie manuelle
+ressenti:
+  global:
+  jambes:
+  motivation:
+  sommeil:
+  seances_manquees: []
+  imprevus:
+  notes:
+
+adaptations: []
+
+suivi_quotidien:
+  - date: '2026-11-09'
+    moment: matin
+    nuit: {sommeil_h: null, score: null, vfc_ms: null, vfc_moy7: 56.3, fc_repos: null, fc_repos_moy7: 53.6}
+    charge: {ctl: 67.6, atl: 68.3, tsb: -0.7}
+    seance_prevue: "Repos complet (W46 = assimilation avancée)"
+    verdict: rouge
+    consigne: >
+      Nuit du 08 au 09 pas encore synchronisée (montre) : aucune valeur de sommeil,
+      VFC ni FC repos, je n'en invente pas. Hier : VFC 46 ms (-18 % vs moy7 56),
+      FC repos 57 (+3,4 vs moy7 53,6), 3e matin sous 52 ms de VFC. Repos complet
+      aujourd'hui, c'est la consigne d'assimilation, quelle que soit la nuit : ni vélo,
+      ni renfo. Marche tranquille 30' au plus, repas riches, coucher avant 22h30.
+      Au réveil, note FC repos et VFC : reprise (mardi VT Z2 souple) seulement si
+      FC repos <= 55 ; FC repos >= 57 avec un symptôme (gorge, courbatures,
+      frissons) = 48h de repos complet. Aucune intensité avant deux matins
+      consécutifs à FC repos <= 54 et VFC >= 52.
+    ressenti_cyril:
+
+analyse_coach:
+  maj: null
+  synthese: null
+  decision: null
