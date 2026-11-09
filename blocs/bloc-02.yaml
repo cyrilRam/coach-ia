@@ -225,27 +225,21 @@ seances:
 
   # Jour 15 : Repos complet (Lundi)
 
-  - jour: 16
-    sport: Ride
-    nom: Vélotaf A/R Z2 souple
-    duree_min: 130
-    description: "Velotaf en Z2 basse (58-68 %), FC sous 150, raidars assis sans chercher la puissance. Seulement si FC repos <= 55 au reveil, sinon repos. Si pluie : transports, pas de velotaf trempe et froid cette semaine, pas de rattrapage."
-    intervalles:
-      - { type: continu, duree_min: 130, cible: 58-68% }
+  # Jour 16 : Repos (Mardi, pluie : pas de velotaf, semaine reorganisee avec Cyril le 09/11)
 
   - jour: 17
-    sport: Ride
-    nom: Férié - Z2 souple 2h à plat
-    duree_min: 120
-    description: "Mercredi ferie : 2h de Z2 souple (58-68 %) sur terrain plat ou faux-plat, FC sous 150, aucun col, aucun sprint. Si pluie : pas de sortie, renfo d'entretien du jeudi fait aujourd'hui (et refait jeudi)."
+    sport: Run
+    nom: Férié - Footing souple
+    duree_min: 45
+    description: "Footing de 45' en endurance tres souple, FC sous 150, sous la pluie si besoin. Seulement si FC repos <= 55 et sans symptome mardi et mercredi matin, sinon repos. Renfo d'entretien juste apres."
     intervalles:
-      - { type: continu, duree_min: 120, cible: 58-68% }
+      - { type: continu, duree_min: 45, cible: Z2 }
 
-  - jour: 18
+  - jour: 17
     sport: WeightTraining
     nom: Renfo B2S3 - Entretien léger
     duree_min: 35
-    description: |
+    description: &renfo_b2s3 |
       SEANCE ENTRETIEN (Jour off velo) - 35 min : assimilation, poids du corps
       Intensite = RPE 5-6. On entretient le geste, on ne cree pas de fatigue.
       Si pluie mercredi : cette seance est faite les deux jours (2 renfos dans la semaine).
@@ -262,7 +256,19 @@ seances:
 
       3. Decompression (7 min) : etirements doux complets.
 
-  # Jour 19 : Repos complet (Vendredi)
+  - jour: 18
+    sport: WeightTraining
+    nom: Renfo B2S3 - Entretien léger
+    duree_min: 35
+    description: *renfo_b2s3
+
+  - jour: 19
+    sport: Ride
+    nom: Tourner les jambes Z1-Z2 à plat
+    duree_min: 60
+    description: "1h maximum a plat, Z1-Z2 basse (55-65 %), FC sous 140, aucune bosse appuyee. Veille de sortie longue : on tourne les jambes, on ne rattrape pas les velotafs perdus."
+    intervalles:
+      - { type: continu, duree_min: 60, cible: 55-65% }
 
   - jour: 20
     sport: Ride
@@ -276,12 +282,12 @@ seances:
       - { type: retour_calme, duree_min: 71, cible: 55-65% }
 
   - jour: 21
-    sport: Run
-    nom: Trail souple Z1-Z2
-    duree_min: 60
-    description: "Trail d'une heure en endurance tres souple. Alerte FC a 155 bpm, marcher toutes les montees raides. Prioritaire sur la sortie velo si un seul jour est jouable (dernier trail le 25/10). Maintenu sous une pluie douce."
+    sport: Ride
+    nom: Volume Z1-Z2 souple 2h
+    duree_min: 120
+    description: "2h de velo en Z1-Z2 souple (56-68 %), FC sous 145, cols au train sans appuyer. Remplace le trail a la demande de Cyril (footing le mercredi) : dernier trail le 25/10, prochain le 29/11."
     intervalles:
-      - { type: continu, duree_min: 60, cible: Z2 }
+      - { type: continu, duree_min: 120, cible: 56-68% }
 
   # =========================================================================
   # SEMAINE 4 (Jours 22 a 28) — Volume : ~5h15 a ~9h35 — PASSERELLE FORCE COURTE Z4-Z5 vers le bloc PMA (decision du 08/11)
