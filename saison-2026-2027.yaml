@@ -11,6 +11,7 @@ federations:
 
 # Hierarchie des courses :
 #   A : pic de forme, affutage 2 semaines
+#   B+ : B renforce, blocs precedents orientes course, affutage 7 jours complet
 #   B : mini-affutage 5-7 jours
 #   C : courue dans la charge, 2 jours de fraicheur (vendredi repos + samedi court)
 objectifs:
@@ -44,27 +45,27 @@ objectifs:
     parcours: "110 KM – 2000 D+"
     profil: vallonne
     notes: "objectif B, une semaine apres Madone-Peille"
-  - nom: "LAZARDIERES CANNES"
-    date: "premier WE Mai 2027 "
+  - nom: "LA LAZARIDES CANNES"
+    date: "2027-04-17"
     priorite: C
     type: cyclo
     parcours: "112 KM – 1800 D+"
     profil: vallonne
-    notes: "course de préparation, courue dans la charge"
-  - nom: "GRANDFONDO LA VENCOISE"
-    date: "2eme we Mai 2027"
+    notes: "Samedi, 6 jours apres le GFNY et 13 jours apres Madone-Peille : 3e course du triptyque d'avril, courue sans affutage sur la fraicheur post-GFNY"
+  - nom: "GRANFONDO LA VENCOISE"
+    date: "2027-05-08"
     priorite: C
     type: cyclo
     parcours: "147 KM – 2800 D+"
     profil: vallonne
-    notes: "1 semaine apres la LAZARDIERES en général. Courue dans la charge comme sortie longue de qualité"
+    notes: "Samedi. Courue dans la charge comme sortie longue de qualite"
   - nom: "CYCLOSPORTIVE DRAPOISE SOUVENIR RENE VIETTO"
-    date: "fin mai 2027 (a confirmer, probablement dimanche 30/05 ; edition 2025 le 01/06)"
-    priorite: B
+    date: "2027-05-23"
+    priorite: B+
     type: cyclo
     parcours: "117 KM – 2750 D+"
     profil: montagne
-    notes: "Priorite juste apres la Bonette. Depart Drap (06), col de Braus par les deux versants, vallees du Paillon et de la Bevera, chrono jusqu'au sommet du col de Calaisson (104,5 km chronometres + 12,5 km de liaison). Petit parcours 86 km – 2000 D+. Tombe a J-14 de la Bonette : repetition generale pacing/nutrition. Source : https://cyclosportivevietto.com/parcours-cyclosportive-drapoise-souvenir-rene-vietto/"
+    notes: "Dimanche. Priorite juste apres la Bonette, sur les routes d'entrainement de Cyril (B+ : affutage 7 jours complet, blocs orientes). Depart Drap (06), col de Braus par les deux versants, vallees du Paillon et de la Bevera, chrono jusqu'au sommet du col de Calaisson (104,5 km chronometres + 12,5 km de liaison). Petit parcours 86 km – 2000 D+. Tombe a J-21 de la Bonette. Source : https://cyclosportivevietto.com/parcours-cyclosportive-drapoise-souvenir-rene-vietto/"
   - nom: "Cimes Mercantour"
     date: "debut aout 2027"
     priorite: a definir apres la Bonette

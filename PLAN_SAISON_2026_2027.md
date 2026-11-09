@@ -31,11 +31,13 @@ Cyril vise la performance dès début avril (Madone-Peille, premier objectif), a
 | 🔁 **C** | **Paris-Nice Challenge** | Sam. 13 mars 2027 | 150 km / 3 500 m D+ | Montagne | Non chronométrée : courue dans la charge, répétition générale de Madone-Peille |
 | 🏁 **B+** | **Mercan'Tour Madone-Peille** | Dim. 4 avril 2027 | 110 km / 2 800 m D+ | Montagne | Premier objectif : blocs 6-7 orientés Madone, affûtage 7 jours |
 | 🏁 **B** | **GFNY Cannes** | Dim. 11 avril 2027 | 110 km / 2 000 m D+ | Vallonné / Punchy | Récup + activation (8 jours après Madone) |
-| 🔁 **C** | **Lazardières Cannes** | Début mai 2027 | 112 km / 1 800 m D+ | Vallonné | Courue dans la charge |
-| 🔁 **C** | **Grandfondo La Vençoise** | 2e WE mai 2027 | 147 km / 2 800 m D+ | Vallonné | Courue dans la charge (sortie longue de qualité) |
+| 🔁 **C** | **La Lazaridès Cannes** | Sam. 17 avril 2027 | 112 km / 1 800 m D+ | Vallonné | 6 jours après le GFNY, sans affûtage |
+| 🔁 **C** | **Granfondo La Vençoise** | Sam. 8 mai 2027 | 147 km / 2 800 m D+ | Vallonné | Courue dans la charge (sortie longue de qualité) |
+| 🏁 **B+** | **Drapoise Souvenir René Vietto** | Dim. 23 mai 2027 | 117 km / 2 750 m D+ | Montagne | Routes d'entraînement, affûtage 7 jours, J-21 de la Bonette |
 | 🏁 *À définir* | **Cimes du Mercantour** | Début août 2027 | 100 km / 2 800 m D+ | Montagne | Seul jalon connu après la Bonette |
 
 * **A** : pic de forme, affûtage sur 2 semaines.
+* **B+** : B renforcé, blocs précédents orientés course, affûtage 7 jours complet.
 * **B** : mini-affûtage de 5 à 7 jours (déblocages courts, vendredi repos, samedi activation).
 * **C** : pas d'affûtage, 2 jours de fraîcheur (vendredi repos + samedi court). La course sert de séance clé.
 
