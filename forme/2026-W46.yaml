@@ -92,7 +92,8 @@ suivi_quotidien:
       la bonne nuit d'aujourd'hui. Au réveil, note FC repos et VFC : mercredi, footing
       souple FC < 150 puis renfo seulement si FC repos <= 55 et sans symptôme (gorge,
       courbatures, frissons) mardi et mercredi. Sinon, on garde le repos.
-    ressenti_cyril:
+    ressenti_cyril: >
+      « Je me sentais bien aujourd'hui j'avais envie de sortir et ça va être dur de pas rouler jusqu'à vendredi »
 
 analyse_coach:
   maj: null
