@@ -54,7 +54,9 @@ suivi_quotidien:
       reprise d'intensité : demain, VT Z2 souple seulement si FC repos <= 55 et
       sans symptôme ; intensité après deux matins consécutifs à FC repos <= 54
       et VFC >= 52.
-    ressenti_cyril:
+    ressenti_cyril: >
+      Réponse de 9 nov : on reste sur la semaine d'assimilation, la météo de la
+      semaine est catastrophique.
 
 analyse_coach:
   maj: null
