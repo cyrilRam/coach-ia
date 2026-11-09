@@ -39,6 +39,22 @@ suivi_quotidien:
       frissons) = 48h de repos complet. Aucune intensité avant deux matins
       consécutifs à FC repos <= 54 et VFC >= 52.
     ressenti_cyril:
+  - date: '2026-11-09'
+    moment: matin
+    nuit: {sommeil_h: 8.15, score: 78, vfc_ms: 65, vfc_moy7: 56.3, fc_repos: 52, fc_repos_moy7: 53.6}
+    charge: {ctl: 67.6, atl: 68.3, tsb: -0.7}
+    seance_prevue: "Repos complet (W46 = assimilation avancée)"
+    verdict: vert
+    consigne: >
+      Mise à jour de 8h : la nuit est synchronisée et elle est bonne. 8h09, score 78,
+      VFC 65 ms (+15 % vs moy7 56), FC repos 52 (-1,6 vs moy7). L'alerte d'hier
+      (VFC 46, FC 57) s'efface : l'assimilation a fonctionné, aucun veto santé. Repos
+      complet maintenu quand même, c'est la séance du jour : ni vélo, ni renfo,
+      marche tranquille 30' au plus. Un seul bon matin ne suffit pas pour la
+      reprise d'intensité : demain, VT Z2 souple seulement si FC repos <= 55 et
+      sans symptôme ; intensité après deux matins consécutifs à FC repos <= 54
+      et VFC >= 52.
+    ressenti_cyril:
 
 analyse_coach:
   maj: null
