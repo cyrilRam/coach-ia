@@ -34,7 +34,8 @@ Cyril vise la performance dès début avril (Madone-Peille, premier objectif), a
 | 🔁 **C** | **La Lazaridès Cannes** | Sam. 17 avril 2027 | 112 km / 1 800 m D+ | Vallonné | 6 jours après le GFNY, sans affûtage |
 | 🏁 **B** | **Granfondo La Vençoise** | Sam. 8 mai 2027 | 147 km / 2 800 m D+ | Vallonné | Mini-affûtage 7 jours, volume conservé |
 | 🏁 **B+** | **Drapoise Souvenir René Vietto** | Dim. 23 mai 2027 | 117 km / 2 750 m D+ | Montagne | Routes d'entraînement, affûtage 7 jours, J-21 de la Bonette |
-| 🏁 *À définir* | **Cimes du Mercantour** | Début août 2027 | 100 km / 2 800 m D+ | Montagne | Seul jalon connu après la Bonette |
+| 🏁 *À définir* | **Cimes du Mercantour** | Début août 2027 | 100 km / 2 800 m D+ | Montagne | Après la Bonette |
+| 🏁 *À définir* | **Mercan'Tour Turini** | Dim. 22 août 2027 | À confirmer (nouvelle épreuve) | Montagne | Après la Bonette |
 
 * **A** : pic de forme, affûtage sur 2 semaines.
 * **B+** : B renforcé, blocs précédents orientés course, affûtage 7 jours complet.
@@ -59,7 +60,7 @@ Reprise officielle après coupure : **Lundi 5 octobre 2026** (36 semaines jusqu'
 | **Phase 3 : Printemps** | **Bloc 7 : Montagne, Madone & GFNY**<br>15/03/27 – 11/04/27 | 4 sem | **10h↓** ➔ 12h30 ➔ ~10h30 ➔ ~10h | • S1 : assimilation (clôt le 3:1 du bloc 6 + PNC)<br>• **S2 : rappel PMA concentré (3 séances)** & cols format Madone<br>• **S3 : affûtage 7 jours** ➔ Madone-Peille<br>• S4 : récup lundi-mercredi, activation jeudi + samedi ➔ GFNY | 🏁 **Madone-Peille (B+, premier objectif)** *(dim. 04 avril)*<br><br>🏁 **GFNY Cannes (B)** *(dim. 11 avril)* |
 | | **Bloc 8 : Lazaridès & Charge Cyclos de Mai**<br>12/04/27 – 09/05/27 | 4 sem | ~10h30 ➔ **10-11h↓** ➔ 12h30 ➔ ~12h30 *(course comprise)* | • S1 : récup GFNY lundi-mercredi, déblocages jeudi, vendredi repos ➔ Lazaridès samedi<br>• **S2 : assimilation** (clôt Madone + GFNY + Lazaridès en 14 jours), samedi 5h Z2<br>• S3 : charge, PMA jeudi, seuil long en col samedi 01/05 (dernière séance dure)<br>• **S4 : mini-affûtage** : vélotaf Z2, déblocages jeudi, vendredi repos ➔ Vençoise à fond<br>*Garde-fou : GFNY trop coûteux (sommeil, FC repos, VFC) ➔ Lazaridès en contrôle ou abandonnée* | 🔁 **Lazaridès (C)** *(sam. 17 avril)*<br><br>🏁 **La Vençoise (B)** *(sam. 8 mai)* |
 | **Phase 4 : Drapoise & Bonette** | **Bloc 9 : Drapoise & Bonette**<br>10/05/27 – 13/06/27 | 5 sem | 14h ➔ ~11h ➔ 12h30 ➔ 10h30 ➔ course | • S1 : dernière grosse semaine, cols longs format Drapoise/Bonette<br>• **S2 : affûtage 7 jours ➔ Drapoise à fond** (ferme le 3:1)<br>• **S3 : récup lundi-mercredi, dernier choc samedi 29/05** (5h30-6h allure Bonette, nutrition 90 g/h)<br>• **S4 : affûtage S-2 (10h30)**, reconnaissance Bonette si route ouverte<br>• **S5 : affûtage final S-1** : déblocages courts, **TSB +10**<br>*Haute montagne probablement fermée mi-mai : chocs sur Madone, Turini, Couillole, Colmiane, Valberg* | 🏁 **Drapoise (B+)** *(dim. 23 mai, J-21)*<br><br>🏆 **MERCAN’TOUR BONETTE DT SWISS (A)**<br>*(Dimanche 13 juin 2027)* |
-| **Phase 5 : Après-Bonette** | **Bloc 10 : à construire**<br>à partir du 14/06/27 | — | — | • Programme ouvert : autres courses décidées plus tard selon l'emploi du temps et les performances | 🏁 **Cimes du Mercantour** *(début août, seul jalon connu)* |
+| **Phase 5 : Après-Bonette** | **Bloc 10 : à construire**<br>à partir du 14/06/27 | — | — | • Programme ouvert : autres courses décidées plus tard selon l'emploi du temps et les performances | 🏁 **Cimes du Mercantour** *(début août)*<br><br>🏁 **Mercan'Tour Turini** *(dim. 22 août)* |
 
 ---
 

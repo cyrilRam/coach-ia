@@ -72,6 +72,13 @@ objectifs:
     type: cyclo
     parcours: "100 KM – 2800 D+"
     profil: montagne
+  - nom: "Mercan'Tour Turini"
+    date: "2027-08-22"
+    priorite: a definir apres la Bonette
+    type: cyclo
+    parcours: "a confirmer (nouvelle epreuve, parcours non publie au 09/11/2026)"
+    profil: montagne
+    notes: "Dimanche. Epreuve creee pour 2027, ajoutee le 09/11/2026"
   commentaires : "je vais peut etre pas toutes les faires et aussi integrer des courses FFC/FSGT"
 
 indisponibilites_connues:
@@ -211,7 +218,7 @@ blocs:
     au: null
     objectif: a definir apres la Bonette selon emploi du temps et performances
     focus: [recuperation_post_bonette]
-    rythme: "seul jalon connu : Cimes du Mercantour (debut aout 2027). Autres courses eventuelles decidees plus tard par Cyril. Structure a construire le moment venu."
+    rythme: "jalons connus : Cimes du Mercantour (debut aout 2027) et Mercan'Tour Turini (dimanche 22 aout 2027). Autres courses eventuelles decidees plus tard par Cyril. Structure a construire le moment venu."
 
 # Synthese validee de la session de construction du programme.
 # C'est le document de reference : l'agent s'y appuie pour construire
