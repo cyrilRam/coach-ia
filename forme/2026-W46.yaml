@@ -129,7 +129,9 @@ suivi_quotidien:
       repos et pas de footing. Coucher avant 22h30, vêtements de pluie prêts,
       hydratation et repas riches ce soir. Pas d'intensité avant deux matins
       consécutifs à FC repos <= 54 et VFC >= 52.
-    ressenti_cyril:
+    ressenti_cyril: >
+      « Météo s'améliore pour demain. 2 à 3h de vélo Z2 pour demain c'est ok ?
+      Des exos de force ou pas ? »
 
 analyse_coach:
   maj: null
