@@ -96,6 +96,24 @@ suivi_quotidien:
       « Je me sentais bien aujourd'hui j'avais envie de sortir et ça va être dur de pas rouler jusqu'à vendredi »
       « Ma femme est malade aujourd'hui, est-ce que c'est moi qui ai pu lui filer. J'ai juste été asymptomatique »
 
+  - date: '2026-11-10'
+    moment: matin
+    nuit: {sommeil_h: 7.77, score: 79, vfc_ms: 58, vfc_moy7: 56.0, fc_repos: 54, fc_repos_moy7: 53.4}
+    charge: {ctl: 66.1, atl: 59.2, tsb: 6.9}
+    seance_prevue: "Repos complet, pas de vélotaf sous la pluie (semaine W46 réorganisée avec Cyril)"
+    verdict: vert
+    consigne: >
+      Nuit correcte : 7h46, score 79, VFC 58 ms (+3,6 % vs moy7 56), FC repos 54
+      (+0,6 vs moy7 53,4). Deuxième bon matin d'affilée côté VFC (65 puis 58), FC repos
+      sous le seuil de 55 ; aucun voyant de veto, TSB à +6,9. Repos complet maintenu :
+      pas de vélo, c'est la séance du jour, ni renfo. Seul point de vigilance, ta
+      conjointe est malade : au moindre symptôme (gorge, courbatures, frissons) ce
+      soir ou demain matin, on garde le repos et on laisse tomber le footing de mercredi.
+      Sinon, footing souple FC < 150 puis renfo B2S3 d'entretien demain si FC repos
+      <= 55. Coucher avant 22h30. Pas d'intensité avant deux matins consécutifs à
+      FC repos <= 54 et VFC >= 52 (ce matin 54 et 58 : un matin de plus à valider).
+    ressenti_cyril:
+
 analyse_coach:
   maj: null
   synthese: null
