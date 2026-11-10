@@ -114,6 +114,23 @@ suivi_quotidien:
       FC repos <= 54 et VFC >= 52 (ce matin 54 et 58 : un matin de plus à valider).
     ressenti_cyril:
 
+  - date: '2026-11-10'
+    moment: soir
+    realise: []
+    charge: {ctl: 66.1, atl: 59.2, tsb: 6.9, heures_semaine: 0.0, heures_prevues: 0.0}
+    ecarts: >
+      Conforme : repos complet prévu (pluie, pas de vélotaf), aucune activité
+      enregistrée. Limite +30 % de volume sans objet cette semaine.
+    demain: "Footing souple FC < 150 puis renfo B2S3 entretien, si FC repos <= 55 et sans symptôme"
+    consigne: >
+      Demain mercredi : footing souple FC < 150 (alerte à 150, pas de zone grise),
+      puis renfo B2S3 d'entretien, seulement si FC repos <= 55 et aucun symptôme
+      (gorge, courbatures, frissons), ta conjointe étant malade. Au moindre doute,
+      repos et pas de footing. Coucher avant 22h30, vêtements de pluie prêts,
+      hydratation et repas riches ce soir. Pas d'intensité avant deux matins
+      consécutifs à FC repos <= 54 et VFC >= 52.
+    ressenti_cyril:
+
 analyse_coach:
   maj: null
   synthese: null
