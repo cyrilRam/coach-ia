@@ -133,6 +133,27 @@ suivi_quotidien:
       « Météo s'améliore pour demain. 2 à 3h de vélo Z2 pour demain c'est ok ?
       Des exos de force ou pas ? »
 
+  - date: '2026-11-11'
+    moment: matin
+    nuit: {sommeil_h: null, score: null, vfc_ms: null, vfc_moy7: 56.7, fc_repos: null, fc_repos_moy7: 53.3}
+    charge: {ctl: 65.6, atl: 57.3, tsb: 8.2}
+    seance_prevue: "Footing souple 45' FC < 150 puis renfo B2S3 entretien (semaine W46 réorganisée avec Cyril)"
+    verdict: orange
+    consigne: >
+      Nuit du 10 au 11 pas encore synchronisée (montre) : aucune valeur de sommeil,
+      VFC ni FC repos, je n'en invente pas. Verdict conditionnel. Hier : 7h46, score 79,
+      VFC 58, FC repos 54 ; TSB +8,2, rien d'inquiétant dans les chiffres. Le point de
+      vigilance reste ta conjointe malade. Si FC repos <= 55 et aucun symptôme (gorge,
+      courbatures, frissons, nez) : footing 45' FC < 150 (alerte à 150, pas de zone grise)
+      puis renfo B2S3 d'entretien RPE 5-6, vert. Si FC repos >= 56 ou le moindre symptôme :
+      repos complet, pas de footing. Sur ta question des 2-3h de vélo Z2 : non aujourd'hui.
+      Après 3 jours de repos et une exposition à la maladie, on ne teste pas l'immunité
+      avec du volume. Le plan validé garde le vélo vendredi (1h) et samedi (4h30-5h Z2
+      souple + 6 départs arrêtés), c'est là que le volume revient. Si ce matin est bon et
+      demain aussi, on peut rediscuter d'une sortie Z2 plus longue vendredi. Intensité
+      seulement après deux matins consécutifs à FC repos <= 54 et VFC >= 52.
+    ressenti_cyril:
+
 analyse_coach:
   maj: null
   synthese: null
