@@ -135,23 +135,21 @@ suivi_quotidien:
 
   - date: '2026-11-11'
     moment: matin
-    nuit: {sommeil_h: null, score: null, vfc_ms: null, vfc_moy7: 56.7, fc_repos: null, fc_repos_moy7: 53.3}
+    nuit: {sommeil_h: 8.07, score: 84, vfc_ms: 48, vfc_moy7: 54.3, fc_repos: 55, fc_repos_moy7: 53.0}
     charge: {ctl: 65.6, atl: 57.3, tsb: 8.2}
     seance_prevue: "Footing souple 45' FC < 150 puis renfo B2S3 entretien (semaine W46 réorganisée avec Cyril)"
     verdict: orange
     consigne: >
-      Nuit du 10 au 11 pas encore synchronisée (montre) : aucune valeur de sommeil,
-      VFC ni FC repos, je n'en invente pas. Verdict conditionnel. Hier : 7h46, score 79,
-      VFC 58, FC repos 54 ; TSB +8,2, rien d'inquiétant dans les chiffres. Le point de
-      vigilance reste ta conjointe malade. Si FC repos <= 55 et aucun symptôme (gorge,
-      courbatures, frissons, nez) : footing 45' FC < 150 (alerte à 150, pas de zone grise)
-      puis renfo B2S3 d'entretien RPE 5-6, vert. Si FC repos >= 56 ou le moindre symptôme :
-      repos complet, pas de footing. Sur ta question des 2-3h de vélo Z2 : non aujourd'hui.
-      Après 3 jours de repos et une exposition à la maladie, on ne teste pas l'immunité
-      avec du volume. Le plan validé garde le vélo vendredi (1h) et samedi (4h30-5h Z2
-      souple + 6 départs arrêtés), c'est là que le volume revient. Si ce matin est bon et
-      demain aussi, on peut rediscuter d'une sortie Z2 plus longue vendredi. Intensité
-      seulement après deux matins consécutifs à FC repos <= 54 et VFC >= 52.
+      Sommeil très bon (8h04, score 84) mais la récupération autonome clignote : VFC 48 ms
+      (-12 % vs moy7 54,3, sous le seuil de 50) et FC repos 55 (+2 vs moy7 53, 3e matin à
+      54-55 après 52). Creux de VFC déjà vu les 7-8 nov puis rebond à 65, donc pas encore
+      un veto, mais avec ta conjointe malade on ne force pas. Si aucun symptôme (gorge,
+      courbatures, frissons, nez) : footing raccourci à 30' en Z1 stricte, FC < 140 (au lieu
+      de 45' < 150), puis renfo B2S3 d'entretien allégé RPE 4-5, 2 séries au lieu de 3.
+      Au moindre symptôme : repos complet, rien d'autre. Pas de vélo Z2 long aujourd'hui.
+      Demain, FC repos >= 56 ou VFC < 50 à nouveau = repos préventif 48 h (veto) et on
+      revoit vendredi/samedi. Intensité seulement après deux matins consécutifs à
+      FC repos <= 54 et VFC >= 52. Coucher avant 22h30.
     ressenti_cyril:
 
 analyse_coach:
