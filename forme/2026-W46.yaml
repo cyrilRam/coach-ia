@@ -150,7 +150,9 @@ suivi_quotidien:
       Demain, FC repos >= 56 ou VFC < 50 à nouveau = repos préventif 48 h (veto) et on
       revoit vendredi/samedi. Intensité seulement après deux matins consécutifs à
       FC repos <= 54 et VFC >= 52. Coucher avant 22h30.
-    ressenti_cyril:
+    ressenti_cyril: >
+      « S'il pleut pas je vais rouler 2h max mais je pense que là je combats le virus
+      de ma femme avec ces stats ? »
 
 analyse_coach:
   maj: null
