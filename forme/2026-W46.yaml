@@ -178,6 +178,25 @@ suivi_quotidien:
       vêtements secs après la pluie d'aujourd'hui.
     ressenti_cyril:
 
+  - date: '2026-11-12'
+    moment: matin
+    nuit: {sommeil_h: null, score: null, vfc_ms: null, vfc_moy7: 53.7, fc_repos: null, fc_repos_moy7: 53.4}
+    charge: {ctl: 64.0, atl: 50.4, tsb: 13.7}
+    seance_prevue: "Renfo B2S3 entretien, conditionnel (semaine W46 réorganisée avec Cyril)"
+    verdict: orange
+    consigne: >
+      Nuit du 11 au 12 pas encore synchronisée (montre) : aucune valeur de sommeil, VFC ni
+      FC repos, je n'en invente pas. Dernier relevé (11 nov) : VFC 48 ms (-11 % vs moy7 53,7),
+      FC repos 55 (+1,6 vs moy7 53,4), conjointe malade, et footing d'hier à FC moy 155 au
+      lieu de < 140. Verdict conditionnel. Au réveil, note FC repos et VFC d'abord. FC repos
+      >= 56, ou VFC < 50, ou moindre symptôme (gorge, nez, courbatures, frissons) : rouge,
+      repos complet 48 h, ni renfo ni vélo (veto santé). Si FC repos <= 55, VFC >= 50 et rien
+      à signaler : renfo d'entretien léger RPE 4-5, 2 séries, ou au plus 1h de vélo Z1 stricte
+      (< 60 % FTP) si la météo le permet, jamais 2-3 h de Z2. Aucune intensité. Samedi (sortie
+      longue Z2 souple) se décide vendredi matin selon deux matins stables. TSB à +13,7 : la
+      fraîcheur est là, ne la gâche pas à vouloir la tester. Coucher avant 22h30.
+    ressenti_cyril:
+
 analyse_coach:
   maj: null
   synthese: null
