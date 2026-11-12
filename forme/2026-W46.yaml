@@ -214,7 +214,8 @@ suivi_quotidien:
       +13,6 : la fraîcheur est là, on la protège. Samedi (sortie longue) se décide vendredi
       matin : il faudra FC repos <= 54 et VFC >= 52 pour envisager du Z2 souple, sinon Z1 courte
       ou repos.
-    ressenti_cyril:
+    ressenti_cyril: >
+      « Je me sens pas malade du tout, tu penses que je combats ? »
 
 analyse_coach:
   maj: null
