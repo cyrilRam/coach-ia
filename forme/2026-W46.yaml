@@ -197,6 +197,25 @@ suivi_quotidien:
       fraîcheur est là, ne la gâche pas à vouloir la tester. Coucher avant 22h30.
     ressenti_cyril:
 
+  - date: '2026-11-12'
+    moment: matin
+    nuit: {sommeil_h: 9.36, score: 75, vfc_ms: 43, vfc_moy7: 53.7, fc_repos: 56, fc_repos_moy7: 53.4}
+    charge: {ctl: 64.0, atl: 50.4, tsb: 13.6}
+    seance_prevue: "Renfo B2S3 entretien, conditionnel (semaine W46 réorganisée avec Cyril)"
+    verdict: rouge
+    consigne: >
+      Mise à jour : la nuit est synchronisée et elle confirme l'alerte. 9h22 de sommeil
+      (long, score 75), VFC 43 ms (-20 % vs moy7 53,7, sous 50), FC repos 56 (+2,6 vs moy7
+      53,4, 2e matin de hausse après 55). Sommeil allongé + VFC qui s'effondre + FC repos qui
+      monte, avec ta conjointe malade et le footing d'hier à 155 de moyenne : c'est le profil
+      d'un virus qui couve, même sans symptôme. Veto ferme : repos complet 48 h (aujourd'hui
+      et demain), ni renfo, ni vélo, ni footing. Marche tranquille au plus, hydratation, repas
+      riches, coucher avant 22h30. Gorge, nez, courbatures ou frissons : dis-le ici. TSB à
+      +13,6 : la fraîcheur est là, on la protège. Samedi (sortie longue) se décide vendredi
+      matin : il faudra FC repos <= 54 et VFC >= 52 pour envisager du Z2 souple, sinon Z1 courte
+      ou repos.
+    ressenti_cyril:
+
 analyse_coach:
   maj: null
   synthese: null
