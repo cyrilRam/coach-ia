@@ -236,7 +236,8 @@ suivi_quotidien:
       courbatures, frissons, fièvre. Samedi se décide vendredi matin : Z2 souple seulement
       si symptômes disparus et FC repos <= 54 / VFC >= 52 deux matins de suite ; sinon
       Z1 courte ou repos. Aucun rattrapage de volume.
-    ressenti_cyril:
+    ressenti_cyril: >
+      « Ça va beaucoup mieux j'ai rien fait de la journée je me sens super reposé ! »
 
 analyse_coach:
   maj: null
