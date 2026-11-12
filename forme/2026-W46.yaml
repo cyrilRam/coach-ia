@@ -222,6 +222,22 @@ suivi_quotidien:
       repos complet jusqu'à disparition des symptômes (24-48 h) et FC repos <= 54 /
       VFC >= 52 deux matins de suite ; samedi quasi annulé, décision vendredi matin.
 
+  - date: '2026-11-12'
+    moment: soir
+    realise: []
+    charge: {ctl: 64.0, atl: 50.4, tsb: 13.6, heures_semaine: 1.3, heures_prevues: 1.3}
+    ecarts: >
+      Conforme : repos complet (veto santé du matin), aucune activité enregistrée.
+      Limite +30 % de volume sans objet cette semaine.
+    demain: "Vendredi 13 : repos complet, aucun vélo, aucun renfo (48 h de veto, jour 2)"
+    consigne: >
+      Demain : repos complet, ni vélo ni renfo. Coucher avant 22h30, pas d'écran tard,
+      hydratation, repas riches. Au réveil, note FC repos et VFC et surveille nez, gorge,
+      courbatures, frissons, fièvre. Samedi se décide vendredi matin : Z2 souple seulement
+      si symptômes disparus et FC repos <= 54 / VFC >= 52 deux matins de suite ; sinon
+      Z1 courte ou repos. Aucun rattrapage de volume.
+    ressenti_cyril:
+
 analyse_coach:
   maj: null
   synthese: null
