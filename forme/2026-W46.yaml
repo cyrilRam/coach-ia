@@ -239,6 +239,25 @@ suivi_quotidien:
     ressenti_cyril: >
       « Ça va beaucoup mieux j'ai rien fait de la journée je me sens super reposé ! »
 
+  - date: '2026-11-13'
+    moment: matin
+    nuit: {sommeil_h: null, score: null, vfc_ms: null, vfc_moy7: 51.3, fc_repos: null, fc_repos_moy7: 53.9}
+    charge: {ctl: 63.4, atl: 48.5, tsb: 14.9}
+    seance_prevue: "Repos complet, jour 2 du veto santé (semaine W46 réorganisée avec Cyril ; vélo Z1-Z2 1h max prévu avant le veto)"
+    verdict: rouge
+    consigne: >
+      Nuit du 12 au 13 pas encore synchronisée (montre) : aucune valeur de sommeil, VFC ni
+      FC repos, je n'en invente pas. Dernier relevé (12 nov) : 9h22, VFC 43 ms (-16 % vs moy7
+      51,3), FC repos 56, avec symptôme nasal déclaré hier soir. Le veto santé tient jusqu'à
+      preuve du contraire : repos complet aujourd'hui, ni vélo ni renfo ni footing (la
+      sortie Z1 d'1h initialement prévue vendredi saute, aucun rattrapage). Marche tranquille
+      au plus, hydratation, repas riches, coucher avant 22h30. Tu dis aller beaucoup mieux
+      après une journée de repos : bon signe, mais un ressenti seul ne lève pas le veto.
+      Conditions pour que samedi existe : nez et fatigue disparus, FC repos <= 54 et VFC
+      >= 52 deux matins de suite. Un seul bon matin (ce matin) = Z1 courte samedi au plus,
+      pas de sortie longue Z2. TSB à +14,9 : la fraîcheur est là, ne la gâche pas.
+    ressenti_cyril:
+
 analyse_coach:
   maj: null
   synthese: null
