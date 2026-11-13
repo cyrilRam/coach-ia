@@ -258,6 +258,26 @@ suivi_quotidien:
       pas de sortie longue Z2. TSB à +14,9 : la fraîcheur est là, ne la gâche pas.
     ressenti_cyril:
 
+  - date: '2026-11-13'
+    moment: matin
+    nuit: {sommeil_h: 8.73, score: 85, vfc_ms: 44, vfc_moy7: 51.3, fc_repos: 56, fc_repos_moy7: 53.9}
+    charge: {ctl: 63.4, atl: 48.5, tsb: 14.9}
+    seance_prevue: "Repos complet, jour 2 du veto santé (semaine W46 réorganisée avec Cyril ; vélo Z1-Z2 1h max prévu avant le veto)"
+    verdict: rouge
+    consigne: >
+      Mise à jour : la nuit est synchronisée. Sommeil bon (8h44, score 85) mais la
+      récupération autonome ne revient pas : VFC 44 ms (-14 % vs moy7 51,3, sous 50) et
+      FC repos 56 pour la 2e matinée de suite (+2,1 vs moy7 53,9, seuil >= 56 atteint deux
+      matins). Un bon sommeil ne compense pas : le système nerveux reste en retrait, avec
+      un nez gêné déclaré hier et ta conjointe malade. Veto maintenu, jour 2 : repos complet
+      aujourd'hui, ni vélo ni renfo ni footing, aucun rattrapage. Marche tranquille au plus,
+      hydratation, repas riches, coucher avant 22h30. Tu te sens mieux et reposé : bon signe,
+      mais les chiffres ne l'ont pas encore confirmé. Samedi : sortie longue Z2 exclue ;
+      Z1 courte (< 60 % FTP, 1h max) seulement si nez et fatigue disparus et FC repos <= 55
+      demain matin ; sinon repos. Intensité seulement après deux matins consécutifs à
+      FC repos <= 54 et VFC >= 52. TSB à +14,9 : la fraîcheur est là, on la protège.
+    ressenti_cyril:
+
 analyse_coach:
   maj: null
   synthese: null
