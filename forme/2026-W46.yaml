@@ -282,6 +282,11 @@ suivi_quotidien:
       (VFC 44, FC repos 56 deux matins) ; décision de rouler prise par Cyril. Limitation de
       dégâts proposée : 1h max, plat, Z1 stricte < 171 W (55 % FTP 310), FC < 140, seul,
       arrêt au moindre symptôme.
+      Capture Garmin « État de santé » du 13 nov 08h02 (envoyée par Cyril) : respiration
+      14,3 brpm (au-dessus de sa plage 12,4-14,2, seule valeur aberrante), FC 61 (plage
+      54-64), VFC 44 ms (plage 44-72, bas de plage), température de peau -0,1° (plage
+      -0,5/+0,6), SpO2 98 %. Pas de signal de fièvre ni de désaturation ; veto maintenu
+      sur FC repos 56 x2 et VFC < 50.
 
 analyse_coach:
   maj: null
