@@ -276,7 +276,12 @@ suivi_quotidien:
       Z1 courte (< 60 % FTP, 1h max) seulement si nez et fatigue disparus et FC repos <= 55
       demain matin ; sinon repos. Intensité seulement après deux matins consécutifs à
       FC repos <= 54 et VFC >= 52. TSB à +14,9 : la fraîcheur est là, on la protège.
-    ressenti_cyril:
+    ressenti_cyril: >
+      « Non je vais rouler aujourd'hui, je me sens très bien. Je pense que tout remonte
+      parce que je fais rien depuis samedi. On verra bien. » Veto maintenu par le coach
+      (VFC 44, FC repos 56 deux matins) ; décision de rouler prise par Cyril. Limitation de
+      dégâts proposée : 1h max, plat, Z1 stricte < 171 W (55 % FTP 310), FC < 140, seul,
+      arrêt au moindre symptôme.
 
 analyse_coach:
   maj: null
