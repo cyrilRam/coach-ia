@@ -287,6 +287,11 @@ suivi_quotidien:
       54-64), VFC 44 ms (plage 44-72, bas de plage), température de peau -0,1° (plage
       -0,5/+0,6), SpO2 98 %. Pas de signal de fièvre ni de désaturation ; veto maintenu
       sur FC repos 56 x2 et VFC < 50.
+      Décision de Cyril (13 nov) : la sortie longue passe de samedi à dimanche 15 (jour de
+      repos de plus, meilleure météo). Compatible avec contraintes.yaml (sortie longue
+      samedi ou dimanche). Conditions du coach : décision dimanche matin ; Z2 souple sans
+      séries, 3-4 h plutôt que 5-6 h, seulement si nez dégagé, FC repos <= 54 et VFC >= 52
+      samedi ET dimanche ; sinon Z1 courte ou repos. Rien modifié sur Intervals.
 
 analyse_coach:
   maj: null
