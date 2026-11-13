@@ -293,6 +293,33 @@ suivi_quotidien:
       séries, 3-4 h plutôt que 5-6 h, seulement si nez dégagé, FC repos <= 54 et VFC >= 52
       samedi ET dimanche ; sinon Z1 courte ou repos. Rien modifié sur Intervals.
 
+  - date: '2026-11-13'
+    moment: soir
+    realise:
+      - {nom: "Reprise sous le soleil (vélo)", duree_min: 109, tss: 73, np_w: 198, w_moy: 171, fc_moy: 151, fc_max: 176, d_plus_m: 836, decouplage_pct: 15.7, ef: 1.31, temps_zones_puissance_min: "Z1 35 / Z2 58 / Z3 14 / Z4+ 2", temps_zones_fc_min: "Z1 42 / Z2 46 / Z3 18 / Z4 3"}
+      - {nom: "Muscul. (sync tardive, séance du 12/11 à 18h57)", duree_min: 23, tss: 3, fc_moy: 87, fc_max: 121}
+    charge: {ctl: 65.1, atl: 58.5, tsb: 6.6, heures_semaine: 3.5, heures_prevues: 0.0}
+    ecarts: >
+      Écart net au veto santé : repos complet prescrit (jour 2), sortie faite par choix de
+      Cyril. Et hors du cadre de limitation de dégâts proposé (1h max, plat, Z1 < 171 W, FC < 140) :
+      1h49, 836 m D+, NP 198 W, FC moy 151 / max 176, 14' en Z3 et 2' au-dessus, TSS 73.
+      Découplage Pw:HR 15,7 % (seuil d'alerte 10 %), FC haute pour la puissance : signal de
+      dérive cardiaque anormale, dans un contexte VFC 44 / FC repos 56 deux matins, nez gêné
+      et conjointe malade. Deuxième fois en 3 jours (footing du 11 à FC moy 155). Note : la
+      muscul. du 12/11 soir (23', TSS 3) est apparue après la routine d'hier, qui notait
+      « repos complet » : séance légère, sans conséquence de charge.
+    demain: "Samedi 14 : repos complet. Sortie longue déjà reportée à dimanche 15, sous conditions"
+    consigne: >
+      Demain samedi : repos complet, ni vélo ni renfo. Après une sortie à 15,7 % de découplage
+      avec FC repos 56 et VFC 44, on ne roule pas deux jours de suite sur un terrain
+      sanitaire fragile : c'est l'illusion du tout va bien. Au réveil, note FC repos, VFC,
+      nez, gorge, courbatures, température. Si FC repos >= 56 ou VFC < 50 ou symptôme qui
+      s'aggrave : veto 48 h supplémentaires, dimanche annulé. Dimanche (décision au réveil) :
+      Z2 souple 3-4 h sans série seulement si nez dégagé, FC repos <= 54 et VFC >= 52 samedi ET
+      dimanche ; sinon Z1 courte ou repos. Coucher avant 22h30, hydratation, repas riches,
+      pas d'écran tard. Aucun rattrapage de volume.
+    ressenti_cyril:
+
 analyse_coach:
   maj: null
   synthese: null
