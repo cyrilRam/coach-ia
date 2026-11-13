@@ -318,7 +318,15 @@ suivi_quotidien:
       Z2 souple 3-4 h sans série seulement si nez dégagé, FC repos <= 54 et VFC >= 52 samedi ET
       dimanche ; sinon Z1 courte ou repos. Coucher avant 22h30, hydratation, repas riches,
       pas d'écran tard. Aucun rattrapage de volume.
-    ressenti_cyril:
+    ressenti_cyril: >
+      « Non là je crois que sur toutes tes bases y a un pb. Je pense que dès que je
+      m'arrête ma fc et ma vfc augmente naturellement. Et là ça m'a vraiment fait bcp de
+      bien de rouler. Pas du tout fatigué je me sens mieux aussi dans la tête ».
+      Réponse du coach : hypothèse recevable (VFC 65 > 44 et FC repos 52 > 56 pendant le
+      repos), non tranchée vu le nez gêné et la conjointe malade. Test : matin du 14, FC
+      repos <= 54 et VFC >= 52 = hypothèse de Cyril confortée, alerte abaissée ; FC repos
+      >= 56 ou nez aggravé = repos 48 h. Samedi : Z1-Z2 souple 1h-1h30 sans Z3 possible si
+      nez dégagé et FC repos <= 55. Dimanche inchangé, décision au réveil.
 
 analyse_coach:
   maj: null
