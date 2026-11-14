@@ -397,6 +397,33 @@ suivi_quotidien:
       corps si au final c'est le repos qui a fait tout remonter. Si je tombe malade tant
       pis je suis au début de la saison autant améliorer le système. »
 
+  - date: '2026-11-14'
+    moment: soir
+    realise:
+      - {nom: "Z1 touriste (vélo)", duree_min: 158, tss: 103, np_w: 195, w_moy: 166, fc_moy: 146, fc_max: 172, d_plus_m: 927, decouplage_pct: 3.1, ef: 1.34, temps_zones_puissance_min: "Z1 58 / Z2 75 / Z3 20 / Z4+ 5", temps_zones_fc_min: "Z1 79 / Z2 75 / Z3 3,7"}
+    charge: {ctl: 65.2, atl: 60.3, tsb: 4.9, heures_semaine: 6.1, heures_prevues: 1.0}
+    ecarts: >
+      Écart net au cadre posé (test : seul, plat, 1h max, Z1 stricte < 171 W, FC < 140) :
+      2h38 au lieu de 1h, 927 m D+, NP 195 W, FC moy 146 / max 172, 20' en Z3 et 5' au-dessus,
+      TSS 103. Deuxième sortie hors cadre en deux jours, malgré le veto. Point positif :
+      découplage Pw:HR 3,1 % (propre) et EF 1,34, donc pas de dérive cardiaque anormale ce
+      jour. Mais la lecture santé de la nuit reste défavorable : FC repos 58 (ressortie ce soir
+      dans le wellness, +3,9 vs moy7 54,1, 3e matin de hausse après 56, 56), VFC 42, score 67.
+      Limite +30 % de volume : sans objet, semaine W46 en assimilation, volume très inférieur
+      à W45.
+    demain: "Dimanche 15 : repos complet par défaut ; Z1 courte 1h max seulement si FC repos <= 54, VFC >= 52 et aucun symptôme"
+    consigne: >
+      Le test que tu voulais a une réponse partielle : la FC repos de la nuit est à 58, pas à 54.
+      Ce n'est pas le repos qui a « tout fait remonter » : c'est l'inverse, la FC repos monte
+      encore (56, 56, 58) avec VFC 42. Le découplage propre de la sortie ne lève pas ça. Tu as
+      roulé 2h38 au lieu d'1h, TSS 103 : la fraîcheur du matin (TSB +14,9 mercredi) est
+      consommée, TSB +4,9. Demain dimanche : repos complet par défaut, pas de sortie longue.
+      Au réveil, FC repos, VFC, température, nez, gorge, courbatures. Z1 courte 1h max
+      seulement si FC repos <= 54, VFC >= 52 et rien à signaler ; FC repos >= 56 ou symptôme :
+      repos complet 48 h. Ce soir : repas riches, hydratation, coucher avant 22h, pas d'écran
+      tard. Aucun rattrapage de volume ; une grippe coûte dix jours, une journée de repos coûte rien.
+    ressenti_cyril:
+
 analyse_coach:
   maj: null
   synthese: null
