@@ -357,6 +357,27 @@ suivi_quotidien:
       série. Coucher avant 22h30.
     ressenti_cyril:
 
+  - date: '2026-11-14'
+    moment: matin
+    nuit: {sommeil_h: 8.45, score: 67, vfc_ms: 42, vfc_moy7: 50.3, fc_repos: null, fc_repos_moy7: 54.1}
+    charge: {ctl: 68.4, atl: 78.0, tsb: -9.6}
+    seance_prevue: "Z1-Z2 souple 1h-1h30 sans Z3, conditionnelle (décision du 13/11 ; sortie longue reportée à dimanche, sous conditions)"
+    verdict: rouge
+    consigne: >
+      Mise à jour : la nuit est synchronisée, FC repos pas encore. Durée correcte (8h27) mais
+      score 67 (85 hier, < 70) et VFC 42 ms, soit -16 % vs moy7 (50,3) : 4e matin sur 5 sous
+      50 ms (48, 43, 44, 42), seuil de veto franchi. Avec FC repos à 56 deux matins de suite
+      (12 et 13), une conjointe malade et une sortie de 1h49 / 836 m D+ hors cadre hier, le
+      faisceau est celui d'une infection qui couve : l'envie de rouler ne prouve pas que tout va
+      bien. Veto ferme : pas de vélo aujourd'hui, repos complet (marche tranquille 30' max),
+      repas riches, hydratation, coucher avant 22h. Note FC repos au réveil : la valeur ne
+      change pas le verdict du jour. Dimanche : annulé par défaut ; Z1 courte 1h max seulement
+      si demain FC repos <= 54, VFC >= 52 et aucun symptôme (nez, gorge, courbatures, frissons).
+      Symptôme ou FC repos >= 56 : repos complet encore 48h. Aucune intensité, aucune sortie
+      longue avant deux matins consécutifs FC repos <= 54 et VFC >= 52. Le volume se rattrape,
+      pas dix jours cloué au lit.
+    ressenti_cyril:
+
 analyse_coach:
   maj: null
   synthese: null
