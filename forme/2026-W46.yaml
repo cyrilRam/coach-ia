@@ -378,6 +378,25 @@ suivi_quotidien:
       pas dix jours cloué au lit.
     ressenti_cyril:
 
+  - date: '2026-11-14'
+    moment: conversation
+    nuit: {sommeil_h: 8.45, score: 67, vfc_ms: 42, vfc_moy7: 50.3, fc_repos: null, fc_repos_moy7: 54.1}
+    charge: {ctl: 68.4, atl: 78.0, tsb: -9.6}
+    seance_prevue: "Sortie vélo décidée par Cyril malgré le veto, cadrée en test de son hypothèse (Z1 stricte, 1h max)"
+    verdict: rouge
+    consigne: >
+      Veto maintenu (VFC 42, score 67), décision de rouler prise par Cyril, assumée comme
+      test : le repos a-t-il tout fait remonter ? Cadre : seul, plat, 1h max, Z1 stricte
+      < 171 W (55 % FTP 310), FC < 140, habillé léger, arrêt au moindre symptôme (gorge,
+      frissons, courbatures, nez) ou FC anormalement haute pour la puissance. Lire la FC
+      repos de la montre avant de partir ; >= 56 = on ne roule pas. Lecture du test demain
+      matin : FC repos <= 54 et VFC >= 52 = hypothèse de Cyril confortée, alerte abaissée ;
+      sinon repos complet 48 h, dimanche annulé. Pas de Z3, pas de rattrapage.
+    ressenti_cyril: >
+      « Je vais rouler quand même je me sens reposé pas mal. On va tester pour connaître mon
+      corps si au final c'est le repos qui a fait tout remonter. Si je tombe malade tant
+      pis je suis au début de la saison autant améliorer le système. »
+
 analyse_coach:
   maj: null
   synthese: null
