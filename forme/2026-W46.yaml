@@ -337,6 +337,26 @@ suivi_quotidien:
       deux matins, conjointe malade). Samedi : Z1-Z2 souple 1h-1h30 si FC repos <= 55 ;
       dimanche : Z2 souple 3-4 h possible si samedi correct ; pas de Z3 ni de série.
 
+  - date: '2026-11-14'
+    moment: matin
+    nuit: {sommeil_h: null, score: null, vfc_ms: null, vfc_moy7: 50.3, fc_repos: null, fc_repos_moy7: 54.1}
+    charge: {ctl: 68.4, atl: 78.0, tsb: -9.6}
+    seance_prevue: "Z1-Z2 souple 1h-1h30 sans Z3, conditionnelle (décision du 13/11 ; sortie longue du bloc-02 reportée à dimanche, sous conditions)"
+    verdict: orange
+    consigne: >
+      Nuit du 13 au 14 pas encore synchronisée (montre) : aucune valeur de sommeil, VFC ni
+      FC repos, je n'en invente pas. Derniers relevés : 13 nov VFC 44 ms, FC repos 56 (2e matin
+      de suite), moy7 VFC 50,3 et FC repos 54,1. Hier : 1h49, 836 m D+, TSS 73 (TSB passé de
+      +14,9 à -9,6), hors du cadre posé, avec la chaleur comme facteur confondant. Verdict
+      conditionnel. Au réveil, note FC repos et VFC d'abord. FC repos <= 54 et VFC >= 52, rien
+      à signaler : hypothèse de Cyril confortée, sortie Z1-Z2 souple 1h-1h30, plat ou vallonné
+      doux, < 60-68 % FTP (< 210 W), FC < 140, jamais de Z3, habillé léger. FC repos 55 : Z1
+      stricte 1h max (< 171 W). FC repos >= 56 ou VFC < 50 ou symptôme (nez, gorge, courbatures,
+      frissons) : rouge, repos complet, dimanche annulé. Samedi ne se rattrape pas : la sortie
+      longue de dimanche reste conditionnée à samedi ET dimanche corrects, 3-4 h Z2 souple sans
+      série. Coucher avant 22h30.
+    ressenti_cyril:
+
 analyse_coach:
   maj: null
   synthese: null
