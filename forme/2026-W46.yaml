@@ -7,14 +7,27 @@ semaine: 2026-W46
 du: 2026-11-09
 au: 2026-11-15
 
-mesures: {}
+mesures:
+  maj: '2026-11-15'
+  ctl_fin: 69.7
+  atl_fin: 86.5
+  tsb_fin: -16.8
+  ramp_rate: 0.39994812
+  charge_totale: 410
+  heures: 10.5
+  distance_km: 216
+  denivele_m: 3486
+  seances: 6
+  sommeil_moyen_h: 8.3
+  hrv_moyenne: 49.6
+  fc_repos_moyenne: 55.3
 
 # saisie manuelle
 ressenti:
-  global:
-  jambes:
-  motivation:
-  sommeil:
+  global: Semaine ou j'ai suivi le plan initial mais pas du tout ton retour sur les routines quotidiennes. J'ai des stats de santé qui fortement baissé cette semaine, je pense que je reagis tres vite au repos et que ma FC remonte et ma VFC baisse. Je me suis enormment reposé jusqu'a jeudi, bcp de sommeil, des siestes...
+  jambes: Vendredi et samedi FC a l'effort un peu haute mais j'ai fait expres de rouler vendredi et samedi pour rehabituer le corps avant la sortie de dimanche. Dimanche j'ai vraiment fait de la Z1 bas Z2, et j'ai jamais une FC aussi basse en col. Plus d'une heure a 220W avec une FC vers les 150 bpm. Sortie de dimanche un peu perturbee j'ai eu une enorme averse et je suis rentré au bout de 30min pour ressortir 2h plus tard.
+  motivation: Dur cette semaine sans intensité et surtout la meteo une cata
+  sommeil: Tres bien
   seances_manquees: []
   imprevus:
   notes:
@@ -24,7 +37,8 @@ adaptations: []
 suivi_quotidien:
   - date: '2026-11-09'
     moment: matin
-    nuit: {sommeil_h: null, score: null, vfc_ms: null, vfc_moy7: 56.3, fc_repos: null, fc_repos_moy7: 53.6}
+    nuit: {sommeil_h: null, score: null, vfc_ms: null, vfc_moy7: 56.3, fc_repos: 
+        null, fc_repos_moy7: 53.6}
     charge: {ctl: 67.6, atl: 68.3, tsb: -0.7}
     seance_prevue: "Repos complet (W46 = assimilation avancée)"
     verdict: rouge
@@ -32,7 +46,8 @@ suivi_quotidien:
       Nuit du 08 au 09 pas encore synchronisée (montre) : aucune valeur de sommeil,
       VFC ni FC repos, je n'en invente pas. Hier : VFC 46 ms (-18 % vs moy7 56),
       FC repos 57 (+3,4 vs moy7 53,6), 3e matin sous 52 ms de VFC. Repos complet
-      aujourd'hui, c'est la consigne d'assimilation, quelle que soit la nuit : ni vélo,
+      aujourd'hui, c'est la consigne d'assimilation, quelle que soit la nuit : ni
+      vélo,
       ni renfo. Marche tranquille 30' au plus, repas riches, coucher avant 22h30.
       Au réveil, note FC repos et VFC : reprise (mardi VT Z2 souple) seulement si
       FC repos <= 55 ; FC repos >= 57 avec un symptôme (gorge, courbatures,
@@ -41,12 +56,14 @@ suivi_quotidien:
     ressenti_cyril:
   - date: '2026-11-09'
     moment: matin
-    nuit: {sommeil_h: 8.15, score: 78, vfc_ms: 65, vfc_moy7: 56.3, fc_repos: 52, fc_repos_moy7: 53.6}
+    nuit: {sommeil_h: 8.15, score: 78, vfc_ms: 65, vfc_moy7: 56.3, fc_repos: 52, 
+        fc_repos_moy7: 53.6}
     charge: {ctl: 67.6, atl: 68.3, tsb: -0.7}
     seance_prevue: "Repos complet (W46 = assimilation avancée)"
     verdict: vert
     consigne: >
-      Mise à jour de 8h : la nuit est synchronisée et elle est bonne. 8h09, score 78,
+      Mise à jour de 8h : la nuit est synchronisée et elle est bonne. 8h09, score
+      78,
       VFC 65 ms (+15 % vs moy7 56), FC repos 52 (-1,6 vs moy7). L'alerte d'hier
       (VFC 46, FC 57) s'efface : l'assimilation a fonctionné, aucun veto santé. Repos
       complet maintenu quand même, c'est la séance du jour : ni vélo, ni renfo,
@@ -59,7 +76,8 @@ suivi_quotidien:
       semaine est catastrophique.
   - date: '2026-11-09'
     moment: conversation
-    nuit: {sommeil_h: 8.15, score: 78, vfc_ms: 65, vfc_moy7: 56.3, fc_repos: 52, fc_repos_moy7: 53.6}
+    nuit: {sommeil_h: 8.15, score: 78, vfc_ms: 65, vfc_moy7: 56.3, fc_repos: 52, 
+        fc_repos_moy7: 53.6}
     charge: {ctl: 67.6, atl: 68.3, tsb: -0.7}
     seance_prevue: "Semaine W46 réorganisée avec Cyril (pluie jusqu'à jeudi inclus)"
     verdict: vert
@@ -82,10 +100,12 @@ suivi_quotidien:
   - date: '2026-11-09'
     moment: soir
     realise: []
-    charge: {ctl: 67.6, atl: 68.3, tsb: -0.7, heures_semaine: 0.0, heures_prevues: 0.0}
+    charge: {ctl: 67.6, atl: 68.3, tsb: -0.7, heures_semaine: 0.0, 
+        heures_prevues: 0.0}
     ecarts: >
       Conforme : repos complet prévu, aucune activité enregistrée. Pas de volume à
-      comparer à S2 (semaine W45 : sortie longue 5h18, TSS 241), limite +30 % sans objet.
+      comparer à S2 (semaine W45 : sortie longue 5h18, TSS 241), limite +30 % sans
+      objet.
     demain: "Repos, pas de vélotaf sous la pluie (semaine réorganisée avec Cyril)"
     consigne: >
       Demain mardi : repos complet, pas de vélo. Coucher avant 22h30 pour confirmer
@@ -93,19 +113,25 @@ suivi_quotidien:
       souple FC < 150 puis renfo seulement si FC repos <= 55 et sans symptôme (gorge,
       courbatures, frissons) mardi et mercredi. Sinon, on garde le repos.
     ressenti_cyril: >
-      « Je me sentais bien aujourd'hui j'avais envie de sortir et ça va être dur de pas rouler jusqu'à vendredi »
-      « Ma femme est malade aujourd'hui, est-ce que c'est moi qui ai pu lui filer. J'ai juste été asymptomatique »
+      « Je me sentais bien aujourd'hui j'avais envie de sortir et ça va être dur de
+      pas rouler jusqu'à vendredi »
+      « Ma femme est malade aujourd'hui, est-ce que c'est moi qui ai pu lui filer.
+      J'ai juste été asymptomatique »
 
   - date: '2026-11-10'
     moment: matin
-    nuit: {sommeil_h: 7.77, score: 79, vfc_ms: 58, vfc_moy7: 56.0, fc_repos: 54, fc_repos_moy7: 53.4}
+    nuit: {sommeil_h: 7.77, score: 79, vfc_ms: 58, vfc_moy7: 56.0, fc_repos: 54, 
+        fc_repos_moy7: 53.4}
     charge: {ctl: 66.1, atl: 59.2, tsb: 6.9}
-    seance_prevue: "Repos complet, pas de vélotaf sous la pluie (semaine W46 réorganisée avec Cyril)"
+    seance_prevue: "Repos complet, pas de vélotaf sous la pluie (semaine W46 réorganisée
+      avec Cyril)"
     verdict: vert
     consigne: >
       Nuit correcte : 7h46, score 79, VFC 58 ms (+3,6 % vs moy7 56), FC repos 54
-      (+0,6 vs moy7 53,4). Deuxième bon matin d'affilée côté VFC (65 puis 58), FC repos
-      sous le seuil de 55 ; aucun voyant de veto, TSB à +6,9. Repos complet maintenu :
+      (+0,6 vs moy7 53,4). Deuxième bon matin d'affilée côté VFC (65 puis 58), FC
+      repos
+      sous le seuil de 55 ; aucun voyant de veto, TSB à +6,9. Repos complet maintenu
+      :
       pas de vélo, c'est la séance du jour, ni renfo. Seul point de vigilance, ta
       conjointe est malade : au moindre symptôme (gorge, courbatures, frissons) ce
       soir ou demain matin, on garde le repos et on laisse tomber le footing de mercredi.
@@ -117,11 +143,13 @@ suivi_quotidien:
   - date: '2026-11-10'
     moment: soir
     realise: []
-    charge: {ctl: 66.1, atl: 59.2, tsb: 6.9, heures_semaine: 0.0, heures_prevues: 0.0}
+    charge: {ctl: 66.1, atl: 59.2, tsb: 6.9, heures_semaine: 0.0, heures_prevues: 
+        0.0}
     ecarts: >
       Conforme : repos complet prévu (pluie, pas de vélotaf), aucune activité
       enregistrée. Limite +30 % de volume sans objet cette semaine.
-    demain: "Footing souple FC < 150 puis renfo B2S3 entretien, si FC repos <= 55 et sans symptôme"
+    demain: "Footing souple FC < 150 puis renfo B2S3 entretien, si FC repos <= 55
+      et sans symptôme"
     consigne: >
       Demain mercredi : footing souple FC < 150 (alerte à 150, pas de zone grise),
       puis renfo B2S3 d'entretien, seulement si FC repos <= 55 et aucun symptôme
@@ -135,19 +163,27 @@ suivi_quotidien:
 
   - date: '2026-11-11'
     moment: matin
-    nuit: {sommeil_h: 8.07, score: 84, vfc_ms: 48, vfc_moy7: 54.3, fc_repos: 55, fc_repos_moy7: 53.0}
+    nuit: {sommeil_h: 8.07, score: 84, vfc_ms: 48, vfc_moy7: 54.3, fc_repos: 55, 
+        fc_repos_moy7: 53.0}
     charge: {ctl: 65.6, atl: 57.3, tsb: 8.2}
-    seance_prevue: "Footing souple 45' FC < 150 puis renfo B2S3 entretien (semaine W46 réorganisée avec Cyril)"
+    seance_prevue: "Footing souple 45' FC < 150 puis renfo B2S3 entretien (semaine
+      W46 réorganisée avec Cyril)"
     verdict: orange
     consigne: >
-      Sommeil très bon (8h04, score 84) mais la récupération autonome clignote : VFC 48 ms
-      (-12 % vs moy7 54,3, sous le seuil de 50) et FC repos 55 (+2 vs moy7 53, 3e matin à
-      54-55 après 52). Creux de VFC déjà vu les 7-8 nov puis rebond à 65, donc pas encore
+      Sommeil très bon (8h04, score 84) mais la récupération autonome clignote : VFC
+      48 ms
+      (-12 % vs moy7 54,3, sous le seuil de 50) et FC repos 55 (+2 vs moy7 53, 3e
+      matin à
+      54-55 après 52). Creux de VFC déjà vu les 7-8 nov puis rebond à 65, donc pas
+      encore
       un veto, mais avec ta conjointe malade on ne force pas. Si aucun symptôme (gorge,
-      courbatures, frissons, nez) : footing raccourci à 30' en Z1 stricte, FC < 140 (au lieu
-      de 45' < 150), puis renfo B2S3 d'entretien allégé RPE 4-5, 2 séries au lieu de 3.
+      courbatures, frissons, nez) : footing raccourci à 30' en Z1 stricte, FC < 140
+      (au lieu
+      de 45' < 150), puis renfo B2S3 d'entretien allégé RPE 4-5, 2 séries au lieu
+      de 3.
       Au moindre symptôme : repos complet, rien d'autre. Pas de vélo Z2 long aujourd'hui.
-      Demain, FC repos >= 56 ou VFC < 50 à nouveau = repos préventif 48 h (veto) et on
+      Demain, FC repos >= 56 ou VFC < 50 à nouveau = repos préventif 48 h (veto) et
+      on
       revoit vendredi/samedi. Intensité seulement après deux matins consécutifs à
       FC repos <= 54 et VFC >= 52. Coucher avant 22h30.
     ressenti_cyril: >
@@ -490,6 +526,71 @@ suivi_quotidien:
     ressenti_cyril:
 
 analyse_coach:
-  maj: null
-  synthese: null
-  decision: null
+  maj: '2026-11-15'
+  synthese: >
+    BILAN W46 (09-15/11), ASSIMILATION AVANCÉE FAITE À MOITIÉ. 10,5 h, 410 TSS,
+    216 km, 3486 m D+, 6 séances (W45 : 12,1 h, 471 TSS). CTL 69,7, ATL 86,5,
+    TSB -16,8, Ramp Rate 0,4. Lundi à jeudi : repos quasi complet (CAP Z2 50',
+    2 renfos légers), TSB monté à +15. Vendredi à dimanche : 356 TSS en 3 jours
+    (73, 103, 180), TSB redescendu à -16,8. Volume prévu 1 h, réalisé 10,5 h :
+    l'assimilation n'a eu lieu que de lundi à jeudi.
+
+    SANTÉ. Sommeil 8,3 h de moyenne (scores 67 à 85), pas de dégradation. VFC
+    65, 58, 48, 43, 44, 42, 47 (moyenne 49,6 contre 56,3 en W45), FC repos 52,
+    54, 55, 56, 56, 58, 56 (moyenne 55,3 contre 53,6). Aucun symptôme déclaré
+    (nez gêné retiré par Cyril), conjointe malade. Veto santé posé du 12 au 15/11
+    par les routines, non respecté sur 3 sorties.
+
+    HYPOTHÈSE DE CYRIL TESTÉE (le corps réagit au repos : FC repos qui monte,
+    VFC qui baisse). Recevable sur 90 jours de wellness. En charge (10/10-06/11)
+    VFC ~61 et FC repos ~52 ; en coupure W39-W40 VFC ~47 et FC repos ~56 (creux
+    VFC 32 le 25/09) sans maladie ensuite ; W46 VFC 42-48 et FC repos 56-58.
+    Corrélations : charge des 3 jours précédents / VFC r = +0,43 ; TSB / VFC
+    r = -0,41 ; TSB / FC repos r = +0,33. Les seuils fixes des routines (FC
+    repos <= 54, VFC >= 52) ont été calés sur des semaines de charge et se
+    déclenchent mécaniquement en assimilation. Réserves : deux épisodes
+    seulement, facteurs confondants (déménagement et alcool en septembre,
+    conjointe malade cette semaine), incubation encore possible quelques jours.
+
+    SÉANCES. Dimanche 4h21, 1666 m D+, NP 201 W, FC moy 143, EF 1,41 (meilleur
+    de la semaine ; W44 1,39, W45 1,37), découplage 8,0 %. Vendredi 1h49,
+    découplage 15,7 % mais trop habillé (chaleur, facteur confondant). Samedi
+    2h38, découplage 3,1 %, EF 1,34. Aucune dérive cardiaque anormale hors
+    chaleur : dimanche ne ressemble pas à un début d'infection.
+
+    Z2. FC médiane à puissance stable sur 6 sorties longues (17/10-15/11) :
+    200-239 W = 156-161 bpm, 240-249 W = 162-164, 250 W et plus = 168-170. Z2
+    cardiaque (<= 164) tenue jusqu'à environ 240 W, dérive de 1 à 3 bpm entre
+    début et fin de sortie. Le plafond théorique de 233 W (75 % de 310) est
+    dépassé sans sortir de la Z2 cardiaque. Une partie des minutes comptées
+    « Z3 hors blocs » étaient à 236-240 W avec une FC de Z2 : la vraie zone grise
+    est au-delà de 250 W et reste marginale. Données par 12-18 °C, peu
+    d'échantillons au-dessus de 240 W. zones.yaml non modifié (fichier de Cyril).
+
+    RESSENTI. Cyril a suivi son plan initial et non les consignes des routines,
+    estime réagir très vite au repos, jambes bonnes, FC basse en col dimanche
+    (plus d'une heure à 220 W pour ~150 bpm), motivation entamée par l'absence
+    d'intensité et la météo, sommeil très bon.
+  decision: >
+    W47, passerelle vers le bloc PMA (bloc 3 au 23/11 inchangé). Formation du
+    lundi 16 en présentiel ou en distanciel : à trancher lundi soir avec Cyril.
+    Présentiel : lundi repos, pas de vélotaf, renfo force mercredi soir (72 h
+    avant samedi), samedi et dimanche inchangés. Distanciel : lundi repos, mardi
+    et mercredi Z2 de 1h à 1h30 à midi, renfo force lundi soir ou mercredi.
+    Samedi 2 h avec 2x5x1' à 110-115 % FTP (341-357 W), dimanche 2 h avec 6x3'
+    à 93-97 % FTP (288-301 W) à 50-55 rpm, supprimé si samedi a été dur ou au
+    moindre signal santé.
+
+    Plafond Z2 proposé : <= 240 W et FC <= 164, la FC commande ; au vélotaf sans
+    capteur, FC seule. Garde-fou santé proposé à la place de « deux matins FC
+    repos <= 54 et VFC >= 52 », à valider lundi soir : veto sur symptôme, ou FC
+    repos >= 58 deux matins de suite, ou VFC < 42 deux matins de suite, ou dérive
+    à l'effort (découplage > 10 % sans chaleur en cause, ou FC +8 bpm pour la
+    même puissance au vélotaf). Les seuils des routines du matin et du soir ne
+    sont pas encore adaptés.
+
+    Test de l'hypothèse de Cyril : après 3-4 jours de reprise, VFC attendue vers
+    55-60 et FC repos vers 52-53 ; si mercredi la VFC est toujours < 48 et la FC
+    repos >= 56, c'est de la fatigue réelle et on allège avant le 23/11. Rappel
+    polarisation : Z2 et vélotaf restent souples, pas de Z3 non planifiée
+    au-dessus de 250 W. Pas de proposition de FTP. Rien modifié sur Intervals.
