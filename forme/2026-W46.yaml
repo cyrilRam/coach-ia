@@ -444,6 +444,27 @@ suivi_quotidien:
       de formation qui commence lundi : coucher avant 22h, repas riches, hydratation.
     ressenti_cyril:
 
+  - date: '2026-11-15'
+    moment: matin
+    nuit: {sommeil_h: 7.27, score: 77, vfc_ms: 47, vfc_moy7: 49.4, fc_repos: 56, fc_repos_moy7: 54.7}
+    charge: {ctl: 65.4, atl: 62.5, tsb: 2.9}
+    seance_prevue: "Repos complet par défaut ; Z1 courte 1h max seulement si FC repos <= 54, VFC >= 52 et aucun symptôme (décision du 14/11 soir)"
+    verdict: rouge
+    consigne: >
+      Mise à jour : la nuit est synchronisée et elle ne lève pas l'alerte. 7h16, score 77
+      (correct), mais FC repos 56 (+1,3 vs moy7 54,7, 4e matin à 56 ou plus sur 5 : 56, 56, 58,
+      56) et VFC 47 ms (-5 % vs moy7 49,4, 6e matin sur 7 sous 50). Les deux conditions de la
+      Z1 courte (FC repos <= 54, VFC >= 52) ne sont pas remplies, même de loin : veto ferme,
+      repos complet aujourd'hui, ni vélo ni footing, marche tranquille 30' max. Le score de
+      sommeil remonte, mais ni la FC repos ni la VFC ne reviennent après deux jours de repos
+      relatif et deux sorties hors cadre : signal compatible avec une infection qui couve
+      (conjointe malade), pas avec une fatigue qui se résorbe. Si nez, gorge, courbatures,
+      frissons ou température : repos complet 48 h de plus. Repas riches, hydratation,
+      coucher avant 22h avant la semaine de formation de lundi. Reprise : Z1 courte seulement
+      après deux matins consécutifs FC repos <= 54 et VFC >= 52 ; aucune intensité, aucun
+      rattrapage de volume (CTL 65, TSB +2,9 : rien à perdre à attendre).
+    ressenti_cyril:
+
 analyse_coach:
   maj: null
   synthese: null
