@@ -424,6 +424,26 @@ suivi_quotidien:
       tard. Aucun rattrapage de volume ; une grippe coûte dix jours, une journée de repos coûte rien.
     ressenti_cyril:
 
+  - date: '2026-11-15'
+    moment: matin
+    nuit: {sommeil_h: null, score: null, vfc_ms: null, vfc_moy7: 49.4, fc_repos: null, fc_repos_moy7: 54.7}
+    charge: {ctl: 65.4, atl: 62.5, tsb: 2.9}
+    seance_prevue: "Repos complet par défaut ; Z1 courte 1h max seulement si FC repos <= 54, VFC >= 52 et aucun symptôme (décision du 14/11 soir). Bloc-02 j21 initial : vélo Z1-Z2 souple 2h"
+    verdict: rouge
+    consigne: >
+      Nuit du 14 au 15 pas encore synchronisée (montre) : aucune valeur de sommeil, VFC ni
+      FC repos, je n'en invente pas. Derniers relevés (14 nov) : FC repos 58 (3e matin de
+      hausse : 56, 56, 58 ; moy7 54,7), VFC 42 ms (5e matin sur 6 sous 50 ; moy7 49,4), score
+      sommeil 67. Sorties de jeudi et samedi hors cadre (TSS 73 puis 103), conjointe malade.
+      Verdict conditionnel, rouge par défaut : repos complet, pas de sortie longue, pas de 2h
+      Z1-Z2. Au réveil, note FC repos et VFC. Seule exception : FC repos <= 54, VFC >= 52 et
+      rien à signaler (nez, gorge, courbatures, frissons, température) = Z1 courte 1h max,
+      plat, < 171 W (55 % FTP 310), FC < 140, habillé léger, seul. FC repos >= 56, VFC < 50
+      ou symptôme : repos complet 48 h de plus, veto ferme. Aucune intensité, aucun rattrapage
+      de volume avant deux matins consécutifs FC repos <= 54 et VFC >= 52. Pense à la semaine
+      de formation qui commence lundi : coucher avant 22h, repas riches, hydratation.
+    ressenti_cyril:
+
 analyse_coach:
   maj: null
   synthese: null
