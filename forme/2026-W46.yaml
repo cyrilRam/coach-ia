@@ -465,6 +465,30 @@ suivi_quotidien:
       rattrapage de volume (CTL 65, TSB +2,9 : rien à perdre à attendre).
     ressenti_cyril:
 
+  - date: '2026-11-15'
+    moment: soir
+    realise:
+      - {nom: "Vélo Z1-Z2 (2 sorties, averse entre les deux)", duree_min: 261, tss: 180, np_w: 201, w_moy: 179, fc_moy: 143, fc_max: 173, d_plus_m: 1666, decouplage_pct: 8.0, ef: 1.41, temps_zones_puissance_min: "Z1 74 / Z2 149 / Z3 33 / Z4+ 5", temps_zones_fc_min: "Z1 133 / Z2 123 / Z3 5"}
+    charge: {ctl: 69.7, atl: 86.5, tsb: -16.8, heures_semaine: 10.5, heures_prevues: 1.0}
+    ecarts: >
+      Veto du matin (repos complet, FC repos 56, VFC 47) non respecté : 4h21 de vélo, TSS 180,
+      1666 m D+, 33' en Z3 et 5' au-dessus, soit la plus grosse charge de la semaine un jour
+      de repos prescrit. Troisième sortie hors cadre en quatre jours (73, 103, 180). Découplage
+      Pw:HR 8,0 % (limite basse de la zone d'alerte à 10 %), EF 1,41. TSB passé de +2,9 à
+      -16,8 en une journée. Volume semaine 10,5 h pour une semaine d'assimilation prévue à
+      1 h ; la limite +30 % est sans objet (W45 plus chargée), mais l'assimilation de W46 n'a
+      pas eu lieu.
+    demain: "Lundi 16 : formation, jour 22 du bloc 2 (renfo B2S4 force bas du corps prévu). Repos jambes, aucune séance dure"
+    consigne: >
+      Tu as roulé 4h20 alors que le matin disait repos : la FC repos reste à 56-58 et la VFC
+      à 42-47 depuis quatre jours, avec une conjointe malade. C'est exactement le cas où la
+      motivation donne l'illusion que tout va bien. Demain lundi : pas de renfo jambes (la
+      séance B2S4 est supprimée, pas décalée), pas de vélotaf si tu es en présentiel, marche
+      ou rien. Au réveil : FC repos, VFC, nez, gorge, courbatures. FC repos >= 56 ou VFC < 50
+      ou symptôme : repos complet 48 h. Pas d'intensité avant deux matins FC repos <= 54 et
+      VFC >= 52. Ce soir : repas riches, hydratation, coucher avant 22h.
+    ressenti_cyril:
+
 analyse_coach:
   maj: null
   synthese: null
