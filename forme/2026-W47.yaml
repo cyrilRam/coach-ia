@@ -59,6 +59,29 @@ suivi_quotidien:
       courbatures), c'est le second matin qui ouvre la reprise (Z2 souple, FC qui commande,
       pas de Z3). Sinon repos 48 h de plus. Coucher avant 22h, repas riches, hydratation.
     ressenti_cyril:
+  - date: '2026-11-16'
+    moment: conversation
+    nuit: {sommeil_h: 8.3, score: 78, vfc_ms: 51, vfc_moy7: 47.6, fc_repos: 54, fc_repos_moy7: 55.6}
+    charge: {ctl: 68.0, atl: 75.0, tsb: -7.0}
+    seance_prevue: "Pas de formation lundi : Cyril demande vélo ou renfo B2S4 force bas du corps"
+    verdict: orange
+    consigne: >
+      Vélo souple oui, renfo force non aujourd'hui. Le matin est en détente (FC repos 54,
+      VFC 51 à 1 ms du seuil de 52, sommeil 8h19 score 78), aucun veto, mais les jambes
+      sortent de 4h21 / 180 TSS hier et de 356 TSS en trois jours : le B2S4 à RPE 7-8
+      (fentes bulgares, squats 1 jambe) empilerait une fatigue musculaire sur des jambes
+      déjà chargées. Vélo : 1h30 à 2h max, plat ou vallonné doux, seul, FC <= 150 quelle
+      que soit la puissance, pas de Z3, pas de sprint, TSS visé 60 à 90 (pas 180 comme
+      hier). Pas de départ au moindre symptôme (nez, gorge, courbatures, frissons) ; FC
+      au-dessus de 150 plus de 5 min ou FC qui dérive à puissance égale : on lève le pied
+      ou demi-tour. Renfo B2S4 replacé mercredi soir (au moins 72 h avant samedi) si FC
+      repos <= 55 et VFC >= 50 mercredi matin, renfo posture jeudi soir. Mardi : vélotaf Z2
+      souple ou Z2 de 1h à 1h30 à midi, décision au réveil selon FC repos <= 55 et VFC >= 50.
+      Vendredi repos, samedi et dimanche conditionnés à ces trois matins. Rien modifié sur
+      Intervals.
+    ressenti_cyril: >
+      « Ma journée de lundi s'est libérée, pas de formation. Est-ce que je sors rouler,
+      séance de force ? »
 
 analyse_coach:
   maj: null
