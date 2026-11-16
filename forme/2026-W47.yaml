@@ -1,0 +1,50 @@
+# Une semaine = un fichier. Nommage en semaines ISO.
+# Section "mesures" : generee par scripts/weekly.py, ne pas editer a la main.
+# Section "ressenti" : saisie manuelle, l'agent n'y ecrit jamais.
+# Section "analyse_coach" : analyse hebdomadaire formulee par l'IA et conservee.
+
+semaine: 2026-W47
+du: 2026-11-16
+au: 2026-11-22
+
+mesures: {}
+
+# saisie manuelle
+ressenti:
+  global:
+  jambes:
+  motivation:
+  sommeil:
+  seances_manquees: []
+  imprevus:
+  notes:
+
+adaptations: []
+
+suivi_quotidien:
+  - date: '2026-11-16'
+    moment: matin
+    nuit: {sommeil_h: null, score: null, vfc_ms: null, vfc_moy7: 49.6, fc_repos: null, fc_repos_moy7: 55.3}
+    charge: {ctl: 68.0, atl: 75.0, tsb: -6.9}
+    seance_prevue: "Renfo B2S4 force bas du corps (jour 22, formation lundi) : supprimée par la consigne du 15/11 soir, repos jambes"
+    verdict: rouge
+    consigne: >
+      Nuit du 15 au 16 pas encore synchronisée (montre) : aucune valeur de sommeil, VFC ni
+      FC repos, je n'en invente pas. Derniers relevés (15 nov) : FC repos 56, VFC 47 ms,
+      moy7 VFC 49,6 et FC repos 55,3 ; VFC sous 50 sur 6 matins sur 7, FC repos à 56-58
+      depuis quatre jours. Hier 4h21, TSS 180 un jour de repos prescrit (356 TSS en trois
+      jours, TSB passé de +14,9 à -6,9). Verdict conditionnel, rouge par défaut : pas de
+      renfo jambes, pas de vélo, pas de vélotaf si présentiel ; marche tranquille au plus.
+      Le renfo B2S4 n'est pas décalé ce soir : il se replace mercredi, si les chiffres
+      le permettent. Au réveil, note FC repos et VFC. Si FC repos <= 54 et VFC >= 52 et rien
+      à signaler : rien ne change aujourd'hui, mais c'est le premier des deux matins
+      qui ouvrent la reprise. FC repos >= 56, VFC < 50 ou symptôme (nez, gorge, courbatures,
+      frissons) : repos complet 48 h de plus, passerelle de la semaine à revoir. Coucher
+      avant 22h, repas riches, hydratation. Présentiel ou distanciel : à trancher ce soir
+      avec toi, ainsi que les garde-fous santé proposés dans l'analyse W46.
+    ressenti_cyril:
+
+analyse_coach:
+  maj: null
+  synthese: null
+  decision: null
