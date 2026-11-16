@@ -43,6 +43,22 @@ suivi_quotidien:
       avant 22h, repas riches, hydratation. Présentiel ou distanciel : à trancher ce soir
       avec toi, ainsi que les garde-fous santé proposés dans l'analyse W46.
     ressenti_cyril:
+  - date: '2026-11-16'
+    moment: matin
+    nuit: {sommeil_h: 8.3, score: 78, vfc_ms: 51, vfc_moy7: 47.6, fc_repos: 54, fc_repos_moy7: 55.6}
+    charge: {ctl: 68.0, atl: 75.0, tsb: -7.0}
+    seance_prevue: "Renfo B2S4 force bas du corps (jour 22, formation lundi) : supprimée par la consigne du 15/11 soir, repos jambes"
+    verdict: orange
+    consigne: >
+      Nuit synchronisée : 8h19, score 78, VFC 51 ms (moy7 47,6), FC repos 54 (moy7 55,6).
+      Premier signe de détente après quatre matins à 56-58 et VFC 42-47, aucun seuil de veto
+      franchi, mais la VFC reste sous 52 et un seul matin ne fait pas une tendance, après
+      les 180 TSS d'hier un jour de repos. Orange : la séance du jour reste supprimée
+      (pas de renfo jambes, pas de vélo, pas de vélotaf si présentiel), marche tranquille
+      au plus. Demain, si FC repos <= 54 et VFC >= 52 et aucun symptôme (nez, gorge,
+      courbatures), c'est le second matin qui ouvre la reprise (Z2 souple, FC qui commande,
+      pas de Z3). Sinon repos 48 h de plus. Coucher avant 22h, repas riches, hydratation.
+    ressenti_cyril:
 
 analyse_coach:
   maj: null
