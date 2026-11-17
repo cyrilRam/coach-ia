@@ -137,6 +137,26 @@ suivi_quotidien:
       et souple (1h max), à toi de juger au ressenti des jambes. Présentiel : pas de vélotaf.
       Charge : TSB -9,6, 356 TSS sur trois jours, donc rien de dur aujourd'hui.
     ressenti_cyril:
+  - date: '2026-11-17'
+    moment: matin
+    nuit: {sommeil_h: 8.3, score: 55, vfc_ms: 62, vfc_moy7: 48.1, fc_repos: 54, fc_repos_moy7: 55.6}
+    charge: {ctl: 68.6, atl: 78.2, tsb: -9.6}
+    seance_prevue: "Jour 23 : vélotaf A/R Z2 60-72 % (186-223 W), supprimé si présentiel ; sinon Z2 midi 1h-1h30"
+    verdict: orange
+    consigne: >
+      Nuit enfin synchronisée : 8h17 mais score 55 (qualité 4, nuit probablement hachée malgré
+      la durée), VFC 62 ms (moy7 48,1, nettement au-dessus), FC repos 54 (moy7 55,6). Les deux
+      conditions posées hier sont remplies (FC repos <= 55, VFC >= 50) : aucun seuil de veto
+      franchi, le score de sommeil isolé ne fait pas un veto (il en faut deux de suite sous 70,
+      hier 78). Mais deuxième matin seulement de détente après des FC repos à 56-58, 356 TSS en
+      trois jours, TSB -9,6 et un découplage de 22,7 % hier : orange, la reprise reste douce.
+      Vélotaf ou Z2 de 1h à 1h15 maximum (pas les 2h10 du bloc), 186-223 W, FC <= 148, zéro Z3,
+      bosses montées assises. Départ uniquement si rien à signaler (nez, gorge, courbatures,
+      frissons) ; présentiel : pas de vélotaf. Si les jambes sont lourdes au bout de 15 min :
+      demi-tour. Coucher avant 22h. Renfo B2S4 toujours conditionné à mercredi matin
+      (FC repos <= 55, VFC >= 50, et un score de sommeil correct ce soir). Si le score reste
+      sous 70 deux nuits de suite, veto.
+    ressenti_cyril:
 
 analyse_coach:
   maj: null
