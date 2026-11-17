@@ -195,6 +195,24 @@ suivi_quotidien:
       « Je n'ai pas arrêté de rêver cette nuit, j'ai eu beaucoup envie de pisser, et hier
       soir ce n'était pas la même routine : d'habitude j'arrête les écrans vers 20h et je me
       repose avec ma femme. Hier j'ai bossé jusqu'à 22h. »
+  - date: '2026-11-17'
+    moment: soir
+    realise: []
+    charge: {ctl: 66.4, atl: 65.7, tsb: 0.7, heures_semaine: 1.8, heures_prevues: 7.4}
+    ecarts: >
+      Aucune activité enregistrée aujourd'hui : vélotaf / Z2 prévu (conditionnel, verdict vert
+      pour de l'endurance) non fait ou non synchronisé. Constaté, sans rattrapage. Une journée
+      sans charge après 356 TSS en trois jours : ATL redescendue à 65,7, TSB à +0,7 (CTL 66,4).
+      Semaine : 1,8 h sur 5h15-9h35 prévues. Le score de sommeil 55 de cette nuit avait une cause
+      connue (routine cassée), pas un signal de santé.
+    demain: "Mercredi, jour 24 : vélotaf A/R Z2 60-72 % (186-223 W, FC <= 148) ; renfo B2S4 bas du corps conditionné au matin"
+    consigne: >
+      Écrans coupés vers 20h, routine habituelle, moins de liquide en fin de soirée, coucher avant 22h
+      pour valider que le score remonte. Demain matin : FC repos <= 55, VFC >= 50, aucun symptôme (nez,
+      gorge, courbatures) et score de sommeil correct (>= 70) : vélotaf Z2 souple, 186-223 W, zéro Z3,
+      bosses assises ; renfo B2S4 force bas du corps le soir (au moins 72 h avant samedi). Score < 70
+      deux nuits de suite : veto, repos ou Z1. Le TSB neutre ne justifie pas de durcir : Z2 reste Z2.
+    ressenti_cyril:
 
 analyse_coach:
   maj: null
