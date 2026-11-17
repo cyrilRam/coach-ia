@@ -157,6 +157,24 @@ suivi_quotidien:
       (FC repos <= 55, VFC >= 50, et un score de sommeil correct ce soir). Si le score reste
       sous 70 deux nuits de suite, veto.
     ressenti_cyril:
+  - date: '2026-11-17'
+    moment: conversation
+    nuit: {sommeil_h: 8.3, score: 55, vfc_ms: 62, vfc_moy7: 48.1, fc_repos: 54, fc_repos_moy7: 55.6}
+    charge: {ctl: 68.6, atl: 78.2, tsb: -9.6}
+    seance_prevue: "Jour 23 : vélotaf A/R Z2 60-72 %, supprimé si présentiel"
+    verdict: orange
+    consigne: >
+      Cyril corrige la lecture de la semaine passée : chez lui, en phase de récupération,
+      la FC repos monte et la VFC baisse. Vérification sur 90 jours : du 10 au 14/11, après
+      0, 0, 0, 51 et 3 TSS les veilles, FC repos 52 -> 58 et VFC 65 -> 42 ; dès la reprise
+      du vélo (103 TSS le 14, 180 le 15) FC repos 56 -> 54 et VFC 47 -> 62 le 17. Le schéma
+      colle à son récit, avec deux réserves : échantillon court, et symptôme nasal déclaré
+      le 12/11. Conséquence : les seuils FC repos >= 56 et VFC < 50 ne valent pas veto
+      sanitaire chez lui après plusieurs jours de repos. Les seuils de matin.md ne sont pas
+      modifiés, à décider avec lui. Séance du jour inchangée en intensité (Z2 stricte, FC <= 148).
+    ressenti_cyril: >
+      « Toutes tes analyses de la semaine dernière étaient fausses. En récup j'ai une hausse
+      de la FC et une baisse de la VFC. »
 
 analyse_coach:
   maj: null
