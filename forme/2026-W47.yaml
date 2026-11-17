@@ -175,6 +175,26 @@ suivi_quotidien:
     ressenti_cyril: >
       « Toutes tes analyses de la semaine dernière étaient fausses. En récup j'ai une hausse
       de la FC et une baisse de la VFC. »
+  - date: '2026-11-17'
+    moment: conversation
+    nuit: {sommeil_h: 8.3, score: 55, vfc_ms: 62, vfc_moy7: 48.1, fc_repos: 54, fc_repos_moy7: 55.6}
+    charge: {ctl: 68.6, atl: 78.2, tsb: -9.6}
+    seance_prevue: "Jour 23 : vélotaf A/R Z2 60-72 %, supprimé si présentiel"
+    verdict: vert
+    consigne: >
+      Score de sommeil 55 expliqué : routine cassée (travail jusqu'à 22h au lieu d'écrans
+      coupés vers 20h), rêves continus, réveils pour uriner. Creux isolé avec cause connue,
+      durée correcte (8h17), VFC 62 et FC repos 54 bons : pas un signal de santé. Verdict
+      relevé à vert pour une séance d'endurance : vélotaf ou Z2 jusqu'à la durée du bloc
+      si les jambes vont bien, 186-223 W, FC <= 148, zéro Z3, bosses assises, demi-tour si
+      jambes lourdes après 15 min, pas de départ au moindre symptôme. Ce soir : écrans coupés
+      vers 20h, routine habituelle, moins de liquide en fin de soirée. Si les nuits restent
+      sous 70 malgré la routine rétablie, on en reparle. Renfo B2S4 toujours conditionné à
+      mercredi matin.
+    ressenti_cyril: >
+      « Je n'ai pas arrêté de rêver cette nuit, j'ai eu beaucoup envie de pisser, et hier
+      soir ce n'était pas la même routine : d'habitude j'arrête les écrans vers 20h et je me
+      repose avec ma femme. Hier j'ai bossé jusqu'à 22h. »
 
 analyse_coach:
   maj: null
