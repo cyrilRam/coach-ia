@@ -121,6 +121,22 @@ suivi_quotidien:
       VFC < 50 ou symptôme : repos, rien d'autre. Présentiel : pas de vélotaf. Coucher avant
       22h, repas riches, hydratation. Renfo B2S4 toujours conditionné à mercredi matin.
     ressenti_cyril:
+  - date: '2026-11-17'
+    moment: matin
+    nuit: {sommeil_h: null, score: null, vfc_ms: null, vfc_moy7: 47.6, fc_repos: null, fc_repos_moy7: 55.6}
+    charge: {ctl: 68.6, atl: 78.2, tsb: -9.6}
+    seance_prevue: "Jour 23 : vélotaf A/R Z2 60-72 % (186-223 W), supprimé si présentiel ; sinon Z2 midi 1h-1h30"
+    verdict: orange
+    consigne: >
+      Seconde passe de 8h : la nuit du 16 au 17 n'est toujours pas remontée d'Intervals
+      (sommeil, VFC, FC repos vides), je ne la devine pas. Le premier verdict du matin reste donc
+      valable, conditionnel. Dès que la montre se synchronise : FC repos <= 55, VFC >= 50,
+      aucun symptôme (nez, gorge, courbatures, frissons) : vélotaf ou Z2 1h-1h30, 186-223 W,
+      FC <= 148, zéro Z3, bosses montées assises. FC repos >= 56, VFC < 50 ou symptôme :
+      repos, rien d'autre. Montre non synchronisée et rien à signaler au réveil : Z2 courte
+      et souple (1h max), à toi de juger au ressenti des jambes. Présentiel : pas de vélotaf.
+      Charge : TSB -9,6, 356 TSS sur trois jours, donc rien de dur aujourd'hui.
+    ressenti_cyril:
 
 analyse_coach:
   maj: null
