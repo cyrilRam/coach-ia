@@ -102,6 +102,25 @@ suivi_quotidien:
       zéro bosse appuyée, zéro Z3. Si FC repos >= 56, VFC < 50 ou symptôme : repos, rien d'autre.
       Coucher avant 22h, repas riches, hydratation. Renfo B2S4 toujours conditionné à mercredi matin.
     ressenti_cyril:
+  - date: '2026-11-17'
+    moment: matin
+    nuit: {sommeil_h: null, score: null, vfc_ms: null, vfc_moy7: 47.6, fc_repos: null, fc_repos_moy7: 55.6}
+    charge: {ctl: 68.6, atl: 78.2, tsb: -9.6}
+    seance_prevue: "Jour 23 : vélotaf A/R Z2 60-72 % (186-223 W), supprimé si présentiel ; sinon Z2 midi 1h-1h30 selon la décision de la veille"
+    verdict: orange
+    consigne: >
+      Nuit du 16 au 17 pas encore synchronisée (montre) : ni sommeil, ni VFC, ni FC repos,
+      je n'en invente pas. Dernier relevé (16 nov) : FC repos 54, VFC 51 ms, sommeil 8h19
+      score 78 ; moyennes 7 jours VFC 47,6 et FC repos 55,6. Charge : CTL 68,6, ATL 78,2,
+      TSB -9,6 ; 356 TSS sur les trois derniers jours (103, 180, 73). Hier : 1h48 à 73 TSS,
+      mais 21 min en Z3 de puissance malgré la consigne et découplage Pw:HR 22,7 % : point
+      de vigilance, pas un feu vert. Verdict conditionnel, orange. Au réveil, note FC repos
+      et VFC. Si FC repos <= 55, VFC >= 50 et aucun symptôme (nez, gorge, courbatures,
+      frissons) : vélotaf ou Z2 de 1h à 1h30, 186-223 W, FC <= 148, zéro bosse appuyée,
+      zéro Z3 (les bosses se montent assises, sans chercher la puissance). Si FC repos >= 56,
+      VFC < 50 ou symptôme : repos, rien d'autre. Présentiel : pas de vélotaf. Coucher avant
+      22h, repas riches, hydratation. Renfo B2S4 toujours conditionné à mercredi matin.
+    ressenti_cyril:
 
 analyse_coach:
   maj: null
