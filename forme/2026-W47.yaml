@@ -234,6 +234,20 @@ suivi_quotidien:
       des jambes. Présentiel : pas de vélotaf. Écrans coupés vers 20h hier soir ? C'est ce
       que dira le score.
     ressenti_cyril:
+  - date: '2026-11-18'
+    moment: matin
+    nuit: {sommeil_h: 8.5, score: 91, vfc_ms: 62, vfc_moy7: 50.1, fc_repos: 53, fc_repos_moy7: 55.3}
+    charge: {ctl: 67.0, atl: 69.5, tsb: -2.5}
+    seance_prevue: "Jour 24 : vélotaf A/R Z2 60-72 % (186-223 W, 130 min au bloc), supprimé si présentiel ; renfo B2S4 bas du corps ce soir"
+    verdict: vert
+    consigne: >
+      Nuit enfin synchronisée : 8h31, score 91, VFC 62 (moyenne 7 jours 50,1), FC repos 53
+      (moyenne 7 jours 55,3). Les trois conditions posées ce matin sont remplies (FC <= 55,
+      VFC >= 50, score >= 70) : la nuit du 17 au 18 efface le creux à 55. Vélotaf Z2 maintenu,
+      186-223 W, FC <= 148, zéro Z3, bosses assises ; présentiel : pas de vélotaf. Renfo B2S4
+      bas du corps ce soir maintenu, RPE 7-8, au moins 72 h avant samedi. Seul garde-fou : aucun
+      symptôme (nez, gorge, courbatures) en cours de journée, sinon on coupe.
+    ressenti_cyril:
 
 analyse_coach:
   maj: null
