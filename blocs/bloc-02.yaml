@@ -290,7 +290,7 @@ seances:
       - { type: continu, duree_min: 120, cible: 56-68% }
 
   # =========================================================================
-  # SEMAINE 4 (Jours 22 a 28) — Volume : ~5h15 a ~9h35 — PASSERELLE FORCE COURTE Z4-Z5 vers le bloc PMA (decision du 08/11)
+  # SEMAINE 4 (Jours 22 a 28) — Volume : ~5h50 (ajuste 18/11, formation a distance) — PASSERELLE FORCE COURTE Z4-Z5 vers le bloc PMA (decision du 08/11)
   # Condition de lancement : deux matins consecutifs a FC repos <= 54 et VFC >= 52 en fin de S3, sinon decalage.
   # Formation possiblement en presentiel toute la semaine : velotafs supprimes les jours de presentiel (fixe le lundi 16).
   # WE avec le frere de Cyril : pas de sortie longue, deux sorties de 2h avec une seance cle chacune. WE sans trail (prochain le 29/11).
@@ -331,18 +331,21 @@ seances:
 
   - jour: 24
     sport: Ride
-    nom: Vélotaf A/R Z2
-    duree_min: 130
-    description: "Velotaf en Z2 souple (60-72 %). SUPPRIME si formation en presentiel ce jour. Raidars assis sans appuyer."
+    nom: 1h Force 4x5' @90% basse cadence
+    duree_min: 60
+    description: "Ajustement 18/11 (formation a distance, pas de velotaf). 1h dans un col regulier : 4 x 5 min a 88-93 % FTP a 55-60 rpm, assis, mains en haut du cintre, buste calme. Recup 3 min Z1. Hors series : Z2 stricte."
     intervalles:
-      - { type: continu, duree_min: 130, cible: 60-72% }
+      - { type: echauffement, duree_min: 15, cible: 60-70% }
+      - { type: continu, duree_min: 5, cible: 62-72% }
+      - { type: effort, repetitions: 4, duree_min: 5, cible: 88-93%, cadence: 55-60, recup_min: 3, recup_cible: 50-55% }
+      - { type: retour_calme, duree_min: 8, cible: 50-60% }
 
-  - jour: 25
+  - jour: 24
     sport: WeightTraining
     nom: Renfo B2S4 - Posture & Haut du corps
     duree_min: 30
     description: |
-      SEANCE POSTURE (Jeudi soir, a la maison) - 30 min : pas de jambes lourdes, 48h avant le WE
+      SEANCE POSTURE (Mercredi soir, a la maison) - 30 min : pas de jambes
 
       1. Echauffement express (5 min) :
       - Rotations thoraciques : 2x 8 reps/cote
@@ -356,6 +359,17 @@ seances:
       - Gainage lateral avec abduction jambe : 3x 40s/cote
 
       3. Decompression (5 min) : dos, pectoraux, psoas.
+
+  - jour: 25
+    sport: Ride
+    nom: 1h Couple 6x3' @95% basse cadence
+    duree_min: 60
+    description: "Ajustement 18/11 (couple du dimanche avance). 1h en montee reguliere : 6 x 3 min a 93-97 % FTP a 50-55 rpm, assis. Recup 3 min Z1. Condition : FC repos <= 55 au reveil et jambes correctes, sinon 1h Z2 souple. Si la puissance ne tient pas des la 3e rep : arreter les series, finir en Z2."
+    intervalles:
+      - { type: echauffement, duree_min: 15, cible: 60-70% }
+      - { type: continu, duree_min: 3, cible: 62-72% }
+      - { type: effort, repetitions: 6, duree_min: 3, cible: 93-97%, cadence: 50-55, recup_min: 3, recup_cible: 50-55% }
+      - { type: retour_calme, duree_min: 6, cible: 50-60% }
 
   # Jour 26 : Repos complet (Vendredi)
 
@@ -374,13 +388,27 @@ seances:
       - { type: retour_calme, duree_min: 10, cible: 55-65% }
 
   - jour: 28
-    sport: Ride
-    nom: 2h + Couple 6x3' @95% basse cadence
-    duree_min: 120
-    description: "Sortie de 2h, depart tot (WE avec le frere). 6 x 3 min a 93-97 % FTP a 50-55 rpm, assis, en montee reguliere. Recup 3 min Z1. Si la seance de samedi s'est mal passee, si au reveil FC repos >= 56 ou VFC < 50, ou si la puissance ne tient pas des le 2e bloc : 2h de Z2 souple a la place. Fin du bloc 2."
-    intervalles:
-      - { type: echauffement, duree_min: 20, cible: 60-70% }
-      - { type: continu, duree_min: 10, cible: 62-72% }
-      - { type: effort, repetitions: 6, duree_min: 3, cible: 93-97%, cadence: 50-55, recup_min: 3, recup_cible: 50-55% }
-      - { type: continu, duree_min: 44, cible: 62-72% }
-      - { type: retour_calme, duree_min: 10, cible: 50-60% }
+    sport: WeightTraining
+    nom: Renfo B2S4 - Force bas du corps
+    duree_min: 45
+    description: |
+      SEANCE FORCE (Dimanche, pluie annoncee) - 45 min. Si le temps est sec : 2h de Z2 souple avec le frere a la place, sans intensite, puis cette seance le soir ou lundi. Pas de rattrapage. Fin du bloc 2.
+      Materiel : aucun (chaise, canape, marche, montant de porte). Intensite = RPE 7-8 (2 reps en reserve).
+
+      1. Echauffement & Activation (8 min) :
+      - Cat-Cow + World's Greatest Stretch : 2x 6 reps/cote
+      - Pont fessier bilateral : 2x 12 reps
+      - Squat poids du corps : 2x 10 reps
+
+      2. Force (25 min) - recup 2' entre series :
+      - Squat 1 jambe assis-debout sur chaise (descente 4s, main au montant de porte si besoin) : 3x 6 reps/jambe
+      - Fentes bulgares (pause 2s en bas) : 3x 8 reps/jambe
+      - Pont ischios 1 jambe, talon sur chaise (maintien 2s en haut) : 3x 8 reps/jambe
+      - Mollets 1 jambe excentriques sur marche (descente 4s) : 3x 12 reps/cote
+
+      3. Gainage (8 min) - 2 tours :
+      - Planche ventrale : 60s
+      - Deadbug lent (3s par extension) : 10 reps/cote
+      - Planche laterale : 45s/cote
+
+      4. Decompression (4 min) : psoas, ischios, fessiers.

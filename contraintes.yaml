@@ -38,7 +38,8 @@ charge:
   seances_intensives_max_par_semaine: 3
   jours_durs_consecutifs_max: 2
   variation_volume_hebdo_max_pct: 30
-
+  variation_volume_reference: moyenne_3_semaines_precedentes
+  
 indisponibilites: []
   # - du: 2026-12-24
   #   au: 2027-01-02

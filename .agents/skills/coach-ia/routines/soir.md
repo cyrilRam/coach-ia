@@ -15,7 +15,7 @@ Comme la routine du matin (`routines/matin.md`, étape 1) : pull, dépendances, 
 
 ## 3. Situer la charge
 
-CTL, ATL, TSB du soir ; heures de la semaine réalisées contre prévues ; respect de la limite de +30 % de volume par rapport à la semaine précédente (`contraintes.yaml`).
+CTL, ATL, TSB du soir ; heures de la semaine réalisées contre prévues ; respect de la limite de +30 % de volume par rapport à la moyenne des 3 semaines précédentes (`contraintes.yaml > charge`).
 
 ## 4. Préparer demain
 
