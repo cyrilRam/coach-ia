@@ -248,6 +248,27 @@ suivi_quotidien:
       bas du corps ce soir maintenu, RPE 7-8, au moins 72 h avant samedi. Seul garde-fou : aucun
       symptôme (nez, gorge, courbatures) en cours de journée, sinon on coupe.
     ressenti_cyril:
+  - date: '2026-11-18'
+    moment: conversation
+    nuit: {sommeil_h: 8.5, score: 91, vfc_ms: 62, vfc_moy7: 50.1, fc_repos: 53, fc_repos_moy7: 55.3}
+    charge: {ctl: 67.0, atl: 69.5, tsb: -2.5}
+    seance_prevue: "Distanciel, pas de vélotaf. Cyril propose 1h midi + 1h jeudi matin, deux séances de force"
+    verdict: vert
+    consigne: >
+      Récupération confirmée (FC repos 53, VFC 62, score 91, VFC qui remonte avec la reprise
+      comme Cyril l'a décrit). Force oui aujourd'hui, pas deux jours de suite : samedi (2x5x1'
+      Z5) et dimanche (couple 6x3') sont déjà deux séances dures, une force mercredi et une jeudi
+      ferait quatre, au-delà du plafond de trois de contraintes.yaml. Mercredi midi 1h : 15 min
+      Z2, 4x5' à 88-93 % (273-288 W) à 55-60 rpm, assis, montée régulière, récup 3' Z1, retour
+      Z2 ; puissance égale sur les quatre blocs. Ce soir renfo B2S4 bas du corps, RPE 7-8 :
+      jour dur complet, jambes au repos ensuite. Jeudi matin 1h Z2 souple 186-223 W, FC <= 148,
+      zéro Z3, bosses assises (dérouille les jambes du renfo) ; renfo posture le soir. Vendredi
+      repos. Week-end inchangé. Alternative si Cyril tient à la force jeudi : dimanche passe en
+      2h Z2 et le renfo B2S4 de ce soir glisse à mardi prochain. Rien modifié sur Intervals.
+    ressenti_cyril: >
+      « J'ai pleinement récupéré et tu vois mes stats reviennent à la normale avec l'activité.
+      Pas de vt car distanciel pour la formation. J'ai une heure ce midi pour rouler. Et demain
+      matin aussi. Je fais 2 séances de force d'une heure. »
 
 analyse_coach:
   maj: null
