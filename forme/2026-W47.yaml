@@ -345,7 +345,7 @@ suivi_quotidien:
     charge: {ctl: 67.1, atl: 70.3, tsb: -3.2, heures_semaine: 4.2, heures_prevues: 5.8}
     ecarts: >
       Vélo midi fait (1h, TSS 61, NP 243 W), découplage 0,5 % : propre, bien meilleur que les 22,7 %
-      de lundi. FC max 186 et 7 min en FC zone 4 (19 min en puissance Z4 + Z5/Z6 cumulés ~13 min) :
+      de lundi. FC max 186, 19 min en FC zone 4 (puissance : 9 min Z4, 3 min Z5-Z6, 13 min Z3) :
       le détail par répétition n'est pas lu ici, à vérifier sur Intervals si besoin ; les 4x5' à
       273-288 W paraissent tenues dans l'ensemble. Écart : course à pied de 40 min à 17h, non prévue
       au plan (trail uniquement le dimanche), FC moy 151, 2 min 25 en FC zone 3, TSS 35 : une séance
