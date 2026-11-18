@@ -287,6 +287,20 @@ suivi_quotidien:
       lundi sur des jambes fraîches. Rien modifié sur Intervals.
     ressenti_cyril: >
       « Cette semaine on va faire 4 séances c'est pas grave j'ai pas de sortie longue ce we »
+  - date: '2026-11-18'
+    moment: conversation
+    nuit: {sommeil_h: 8.5, score: 91, vfc_ms: 62, vfc_moy7: 50.1, fc_repos: 53, fc_repos_moy7: 55.3}
+    charge: {ctl: 67.0, atl: 69.5, tsb: -2.5}
+    seance_prevue: "Dimanche : 2h Z2 avec le frère, renfo B2S4 bas du corps le soir ; météo annoncée mauvaise"
+    verdict: vert
+    consigne: >
+      Dimanche sans vélo si la pluie se confirme : renfo B2S4 bas du corps à la maison, pas de
+      rattrapage. La semaine reste à trois séances dures (force mercredi, couple jeudi, Z5 samedi),
+      plan inchangé ailleurs. Volume estimé autour de 6h ; la S1 du bloc 3 est plafonnée à +30 %
+      du réel de la W47, soit environ 7h30-8h au lieu de 12h, à reprendre lors de la construction
+      du bloc 3. Rien modifié sur Intervals.
+    ressenti_cyril: >
+      « Surtout dimanche je vais sûrement pas pouvoir rouler la météo a pas l'air bonne »
 analyse_coach:
   maj: null
   synthese: null
