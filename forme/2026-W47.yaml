@@ -301,6 +301,23 @@ suivi_quotidien:
       du bloc 3. Rien modifié sur Intervals.
     ressenti_cyril: >
       « Surtout dimanche je vais sûrement pas pouvoir rouler la météo a pas l'air bonne »
+  - date: '2026-11-18'
+    moment: conversation
+    nuit: {sommeil_h: 8.5, score: 91, vfc_ms: 62, vfc_moy7: 50.1, fc_repos: 53, fc_repos_moy7: 55.3}
+    charge: {ctl: 67.0, atl: 69.5, tsb: -2.5}
+    seance_prevue: "Question du plafond +30 % pour la S1 du bloc 3"
+    verdict: vert
+    consigne: >
+      Sur le fond Cyril a en partie raison : après W46 (assimilation) et une W47 légère, la
+      fatigue est basse et un S1 à 12h ferait monter la CTL d'environ 5 points, sous le plafond
+      de 7 du ramp rate. Mais le +30 % est dans contraintes.yaml et dans la décision du 08/11
+      qu'il a validée : le coach ne le contourne pas. S'il veut une exception, c'est à lui de
+      modifier contraintes.yaml (par exemple référence sur la moyenne 4 semaines ou la CTL plutôt
+      que la seule semaine précédente) ; la décision sur la S1 se prend à la construction du
+      bloc 3, après lecture de sa W47 réelle. Levier immédiat conforme : allonger le Z2 de samedi.
+    ressenti_cyril: >
+      « Après si je dépasse les 30 % on s'en fout, cette semaine n'aura pas été fatigante et
+      m'aura permis de récup encore avant le gros bloc de PMA »
 analyse_coach:
   maj: null
   synthese: null
