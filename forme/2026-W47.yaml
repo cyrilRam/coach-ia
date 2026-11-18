@@ -213,6 +213,27 @@ suivi_quotidien:
       bosses assises ; renfo B2S4 force bas du corps le soir (au moins 72 h avant samedi). Score < 70
       deux nuits de suite : veto, repos ou Z1. Le TSB neutre ne justifie pas de durcir : Z2 reste Z2.
     ressenti_cyril:
+  - date: '2026-11-18'
+    moment: matin
+    nuit: {sommeil_h: null, score: null, vfc_ms: null, vfc_moy7: 48.1, fc_repos: null, fc_repos_moy7: 55.6}
+    charge: {ctl: 66.4, atl: 65.7, tsb: 0.7}
+    seance_prevue: "Jour 24 : vélotaf A/R Z2 60-72 % (186-223 W, 130 min au bloc), supprimé si présentiel ; renfo B2S4 bas du corps ce soir, conditionné à ce matin"
+    verdict: orange
+    consigne: >
+      Nuit du 17 au 18 pas encore synchronisée (montre) : ni sommeil, ni score, ni VFC, ni
+      FC repos, je n'en invente pas. Dernier relevé (17 nov) : 8h17 mais score 55 (routine
+      cassée, cause connue), VFC 62, FC repos 54 ; moyennes 7 jours VFC 48,1 et FC repos 55,6.
+      Charge réelle au 17 : CTL 66,4, ATL 65,7, TSB +0,7, aucune séance faite hier ; les
+      chiffres du 18 affichés par Intervals (ATL 69,5) sont une projection du vélotaf prévu,
+      pas du réalisé. Verdict conditionnel, orange. Au réveil : si FC repos <= 55, VFC >= 50,
+      score >= 70 et aucun symptôme (nez, gorge, courbatures, frissons) : vélotaf Z2 souple,
+      186-223 W, FC <= 148, zéro Z3, bosses assises, 1h à 1h30 pour une reprise (le TSB neutre
+      ne justifie pas de durcir) ; renfo B2S4 bas du corps ce soir, RPE 7-8, au moins 72 h
+      avant samedi. Score < 70 une deuxième nuit de suite ou symptôme : repos ou Z1 courte, pas
+      de renfo. Montre non synchronisée et rien à signaler : Z2 courte de 1h max, au ressenti
+      des jambes. Présentiel : pas de vélotaf. Écrans coupés vers 20h hier soir ? C'est ce
+      que dira le score.
+    ressenti_cyril:
 
 analyse_coach:
   maj: null
