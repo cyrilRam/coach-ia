@@ -337,6 +337,30 @@ suivi_quotidien:
     ressenti_cyril: >
       « J'aimerais que tu changes la règle des 30 % sur la semaine et que ça soit sur la
       moyenne des 3 dernières semaines, comme ça je peux commencer le bloc 4 avec du volume »
+  - date: '2026-11-18'
+    moment: soir
+    realise:
+      - {nom: "Force avec premières intensités (vélo midi)", duree_min: 60, tss: 61, np_w: 243, fc_moy: 156, fc_max: 186, d_plus_m: 531}
+      - {nom: "Nice Course à pied (non prévue)", duree_min: 40, tss: 35, fc_moy: 151, fc_max: 172, d_plus_m: 57}
+    charge: {ctl: 67.1, atl: 70.3, tsb: -3.2, heures_semaine: 4.2, heures_prevues: 5.8}
+    ecarts: >
+      Vélo midi fait (1h, TSS 61, NP 243 W), découplage 0,5 % : propre, bien meilleur que les 22,7 %
+      de lundi. FC max 186 et 7 min en FC zone 4 (19 min en puissance Z4 + Z5/Z6 cumulés ~13 min) :
+      le détail par répétition n'est pas lu ici, à vérifier sur Intervals si besoin ; les 4x5' à
+      273-288 W paraissent tenues dans l'ensemble. Écart : course à pied de 40 min à 17h, non prévue
+      au plan (trail uniquement le dimanche), FC moy 151, 2 min 25 en FC zone 3, TSS 35 : une séance
+      de plus sur un jour déjà dur, sans rattrapage à compenser mais à ne pas répéter. Renfo posture
+      du soir non vu dans les données (pas encore synchronisé ou non fait). Semaine : 4,2 h sur
+      environ 5h50 projetées, rien à rattraper.
+    demain: "Jeudi, jour 25 : 1h matin, 15' Z2 puis 6x3' à 93-97 % (288-301 W), 50-55 rpm, assis, récup 3' Z1, si FC repos <= 55 et jambes correctes ; sinon 1h Z2 souple"
+    consigne: >
+      Demain matin, condition posée : FC repos <= 55, VFC >= 50, jambes correctes, aucun symptôme.
+      Sinon 1h Z2 souple (186-223 W, FC <= 148, zéro Z3). Si la puissance ne tient pas dès la 3e
+      répétition, on arrête les séries et on finit en Z2. Aujourd'hui tu as fait vélo dur et
+      course à pied : demain c'est la dernière séance dure avant samedi, pas de course à pied en
+      plus. Coucher avant 22h, écrans coupés vers 20h comme la nuit à 91, repas riches en glucides
+      ce soir. Vendredi repos complet.
+    ressenti_cyril:
 analyse_coach:
   maj: null
   synthese: null
