@@ -318,6 +318,25 @@ suivi_quotidien:
     ressenti_cyril: >
       « Après si je dépasse les 30 % on s'en fout, cette semaine n'aura pas été fatigante et
       m'aura permis de récup encore avant le gros bloc de PMA »
+  - date: '2026-11-18'
+    moment: conversation
+    nuit: {sommeil_h: 8.5, score: 91, vfc_ms: 62, vfc_moy7: 50.1, fc_repos: 53, fc_repos_moy7: 55.3}
+    charge: {ctl: 67.0, atl: 69.5, tsb: -2.5}
+    seance_prevue: "Formation à distance, peu de temps : 1h de force aujourd'hui, 1h de force demain, samedi inchangé, dimanche probablement sans vélo (pluie)"
+    verdict: vert
+    consigne: >
+      Mercredi 1h : 4x5' à 88-93 % en 55-60 rpm, récup 3' Z1. Jeudi 1h : 6x3' à 93-97 % en
+      50-55 rpm assis, récup 3' Z1, si FC repos <= 55 et jambes correctes. Samedi 2h + 2x5x1'
+      à 110-115 % inchangé. Dimanche renfo B2S4 bas du corps si pluie, pas de rattrapage.
+      Projection W47 autour de 5h50. Cyril demande de calculer la limite de variation de volume
+      sur la moyenne des 3 dernières semaines au lieu de la seule semaine précédente : moyenne
+      W45-W47 = (12,1 + 10,5 + 5,8) / 3 = 9,5h, plafond +30 % = 12,3h, la S1 du bloc 3 à 12h
+      passe. Le ramp rate CTL <= 7 reste le second garde-fou. La règle vit dans
+      contraintes.yaml, que seul Cyril modifie : nouvelle règle appliquée dès qu'il l'y a
+      inscrite. Rien modifié sur Intervals.
+    ressenti_cyril: >
+      « J'aimerais que tu changes la règle des 30 % sur la semaine et que ça soit sur la
+      moyenne des 3 dernières semaines, comme ça je peux commencer le bloc 4 avec du volume »
 analyse_coach:
   maj: null
   synthese: null
