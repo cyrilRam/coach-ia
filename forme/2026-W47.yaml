@@ -270,6 +270,23 @@ suivi_quotidien:
       Pas de vt car distanciel pour la formation. J'ai une heure ce midi pour rouler. Et demain
       matin aussi. Je fais 2 séances de force d'une heure. »
 
+  - date: '2026-11-18'
+    moment: conversation
+    nuit: {sommeil_h: 8.5, score: 91, vfc_ms: 62, vfc_moy7: 50.1, fc_repos: 53, fc_repos_moy7: 55.3}
+    charge: {ctl: 67.0, atl: 69.5, tsb: -2.5}
+    seance_prevue: "Cyril veut 4 séances dures cette semaine (force mercredi et jeudi + samedi + dimanche), faute de sortie longue"
+    verdict: orange
+    consigne: >
+      Quatre séances dures, non : le plafond de trois vient de contraintes.yaml, que seul Cyril
+      modifie, et la semaine sans sortie longue était déjà prévue dans l'ajustement du 08/11.
+      Plan à trois qui garde les deux forces : mercredi midi 4x5' à 88-93 % (273-288 W), 55-60 rpm,
+      soir renfo posture ; jeudi matin le couple de dimanche avancé, 15' Z2 puis 6x3' à 93-97 %
+      (288-301 W), 50-55 rpm, assis, récup 3' Z1, si FC repos <= 55 et jambes correctes ;
+      vendredi repos ; samedi 2h + 2x5x1' à 110-115 % (341-357 W) inchangé ; dimanche 2h Z2
+      souple avec le frère, renfo B2S4 bas du corps le soir (ou lundi, jour off). Bloc 3 démarre
+      lundi sur des jambes fraîches. Rien modifié sur Intervals.
+    ressenti_cyril: >
+      « Cette semaine on va faire 4 séances c'est pas grave j'ai pas de sortie longue ce we »
 analyse_coach:
   maj: null
   synthese: null
