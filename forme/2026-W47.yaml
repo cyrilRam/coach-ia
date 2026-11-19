@@ -379,6 +379,34 @@ suivi_quotidien:
       avec toi, rien n'est déplacé sur Intervals. Demain FC repos >= 56 de nouveau, ou score
       < 70 : repos franc. Écrans coupés vers 20h, coucher avant 22h, vendredi repos complet.
     ressenti_cyril:
+  - date: '2026-11-19'
+    moment: soir
+    realise:
+      - {nom: "Force (vélo midi)", duree_min: 61, tss: 60, np_w: 241, fc_moy: 156, fc_max: 188, d_plus_m: 510}
+      - {nom: "Nice Course à pied (non prévue)", duree_min: 31, tss: 8, fc_moy: 109, fc_max: 127, d_plus_m: 8}
+    charge: {ctl: 67.1, atl: 70.0, tsb: -2.9, heures_semaine: 5.7, heures_prevues: 5.8}
+    ecarts: >
+      Écart avec la consigne du matin (orange : 1h Z2 souple, FC <= 148, zéro Z3, pas de 6x3') :
+      le vélo de midi est une séance de force, pas du Z2. NP 241 W, FC moyenne 156, FC max 188 ;
+      temps en puissance : Z3 9 min, Z4 13 min, Z5-Z6 3 min, seulement 17 min en Z2 ; 19 min en FC
+      zone 4. Découplage Pw:HR 12,1 % (> 10 %), contre 0,5 % hier. Le détail par répétition
+      n'est pas lu ici (à vérifier sur Intervals), mais l'intensité a été faite malgré le creux du
+      matin (FC repos 56, VFC 50 après 62). Course à pied de 31 min à 17h, non prévue : FC moyenne
+      109, tout en Z1, TSS 8, sans conséquence en soi, mais deuxième jour de suite. Semaine : 5,7 h
+      sur environ 5h50 projetées, rien à rattraper. Deuxième jour dur d'affilée (force hier,
+      force aujourd'hui) avec une FC repos remontée et une VFC au plancher : signal à surveiller,
+      pas un veto (un seul matin, score 78, TSB -2,9).
+    demain: "Vendredi, jour 26 : repos complet. Samedi, jour 27 : 2h + 2x5x1' à 110-115 % (341-357 W), conditionné au matin"
+    consigne: >
+      Demain repos complet, sans vélo ni course à pied : c'est là que les deux jours durs
+      s'assimilent. Coucher avant 22h, écrans coupés vers 20h, repas riches en glucides,
+      hydratation. Samedi matin : la séance 2x5x1' est maintenue si FC repos <= 55, VFC >= 50,
+      score de sommeil >= 70 et aucun symptôme (nez, gorge, courbatures, frissons). Si FC repos
+      >= 56 deux matins de suite (jeudi et samedi) ou VFC < 50 ou symptôme : on retire les
+      séries, 2h Z2 stricte au plus, ou repos. Dimanche : pas de renfo B2S4 bas du corps
+      s'il reste de la fatigue samedi, décision avec toi. Météo non consultée ce soir. Rien
+      modifié sur Intervals.
+    ressenti_cyril:
 analyse_coach:
   maj: null
   synthese: null
