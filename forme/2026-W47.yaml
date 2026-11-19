@@ -361,6 +361,27 @@ suivi_quotidien:
       plus. Coucher avant 22h, écrans coupés vers 20h comme la nuit à 91, repas riches en glucides
       ce soir. Vendredi repos complet.
     ressenti_cyril:
+  - date: '2026-11-19'
+    moment: matin
+    nuit: {sommeil_h: null, score: null, vfc_ms: null, vfc_moy7: 52.0, fc_repos: null, fc_repos_moy7: 54.9}
+    charge: {ctl: 66.8, atl: 68.4, tsb: -1.6}
+    seance_prevue: "Jour 25 : 1h matin, 15' Z2 puis 6x3' à 93-97 % (288-301 W), 50-55 rpm, assis, récup 3' Z1 ; condition posée hier : FC repos <= 55, VFC >= 50, jambes correctes, aucun symptôme ; sinon 1h Z2 souple"
+    verdict: orange
+    consigne: >
+      Nuit du 18 au 19 pas encore synchronisée (montre) : ni sommeil, ni score, ni VFC, ni
+      FC repos, je n'en invente pas. Dernier relevé (18 nov) : 8h31, score 91, VFC 62,
+      FC repos 53 ; moyennes 7 jours VFC 52,0 et FC repos 54,9. Charge : CTL 66,8, ATL 68,4,
+      TSB -1,6 (valeur du jour, projection comprise) ; hier vélo 61 TSS + course à pied non
+      prévue 35 TSS, 73 / 5 / 96 TSS sur trois jours, rien d'alarmant. Verdict conditionnel,
+      orange par défaut. Au réveil : FC repos <= 55, VFC >= 50, jambes correctes, aucun
+      symptôme (nez, gorge, courbatures, frissons) : couple 6x3' à 288-301 W maintenu,
+      50-55 rpm assis, vise le haut de la fourchette, même puissance sur les six ; si la
+      puissance ne tient plus à la 3e répétition, on finit en Z2. Montre non synchronisée
+      et jambes lourdes ou symptôme : 1h Z2 souple, 186-223 W, FC <= 148, zéro Z3. FC repos
+      >= 56 deux matins de suite, ou score < 70 deux nuits de suite : repos. Pas de course à
+      pied en plus aujourd'hui, c'est la dernière séance dure avant samedi. Écrans coupés vers
+      20h ce soir, coucher avant 22h, vendredi repos complet.
+    ressenti_cyril:
 analyse_coach:
   maj: null
   synthese: null
