@@ -439,6 +439,33 @@ suivi_quotidien:
       sautent : cette sortie ne doit pas en être la cause. Rien modifié sur Intervals.
     ressenti_cyril: >
       « Un peu de temps et super météo je vais faire 1h30 de z1/z2 comme dimanche il fait moche »
+  - date: '2026-11-20'
+    moment: soir
+    realise:
+      - {nom: "Full court (vélo route, sortie de récupération)", duree_min: 86, tss: 65, np_w: 210, fc_moy: 144, fc_max: 171, d_plus_m: 661}
+    charge: {ctl: 67.1, atl: 69.3, tsb: -2.3, heures_semaine: 7.2, heures_prevues: 5.8}
+    ecarts: >
+      Repos complet prescrit le matin, remplacé par la sortie de récupération négociée avec toi
+      (1h à 1h15 max, Z1 stricte <= 171 W, FC <= 148, zéro bosse appuyée, zéro Z3). Réalisé :
+      1h26 (au-dessus du plafond de 1h15), TSS 65, NP 210 W (plafond Z1 171 W dépassé), FC moyenne
+      144 (sous 148 en moyenne, pic 171). Temps en puissance : Z1 23 min, Z2 36 min, Z3 23 min
+      (interdit), Z4 3 min, Z5-Z7 1 min ; 661 m de D+. FC : 44 min en zone 1, 42 min en zone 2,
+      rien au-dessus. Découplage Pw:HR 21,2 %, EF 1,46 : très au-dessus de 10 %, à lire avec
+      prudence sur parcours vallonné, mais comme lundi (22,7 %). Semaine : 7,2 h réalisées contre
+      5,8 h prévues. Les 23 min de Z3 sont de la zone grise non planifiée, sur un jour dédié à
+      l'assimilation entre deux jours de force et les séries de samedi. Pas de veto santé, mais
+      la sortie n'a pas été une récupération.
+    demain: "Samedi, jour 27 : 2h + 2x5x1' à 110-115 % (341-357 W), conditionné au matin"
+    consigne: >
+      Demain matin, dans cet ordre : FC repos, VFC, score de sommeil, symptômes. Séries 2x5x1'
+      maintenues seulement si FC repos <= 55, VFC >= 50, score >= 70 et rien à signaler (nez, gorge,
+      courbatures, frissons) ; sinon 2h Z2 stricte ou repos. Hors séries : Z2 stricte, plafond 232 W,
+      pas de bosse poussée. Avec la sortie d'aujourd'hui en plus, la fraîcheur n'est pas acquise : si
+      les jambes sont lourdes à l'échauffement, on supprime les séries sans discuter. Coucher avant 22h,
+      écrans coupés vers 20h, repas riches en glucides ce soir, petit-déjeuner solide, 60-90 g de glucides
+      par heure. Équipement et météo de Nice non consultés ce soir. Dimanche : jour pluvieux, pas de renfo
+      B2S4 bas du corps si fatigue samedi, décision avec toi. Rien modifié sur Intervals.
+    ressenti_cyril:
 analyse_coach:
   maj: null
   synthese: null
