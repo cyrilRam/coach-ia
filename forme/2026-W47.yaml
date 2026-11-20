@@ -424,6 +424,21 @@ suivi_quotidien:
       matin FC repos <= 55, VFC >= 50, score >= 70 et aucun symptôme (nez, gorge, courbatures,
       frissons) ; la tendance est bonne, à confirmer au réveil. Rien modifié sur Intervals.
     ressenti_cyril:
+  - date: '2026-11-20'
+    moment: conversation
+    nuit: {sommeil_h: 8.64, score: 81, vfc_ms: 55, vfc_moy7: 52.7, fc_repos: 55, fc_repos_moy7: 55.1}
+    charge: {ctl: 65.5, atl: 60.7, tsb: 4.8}
+    seance_prevue: "Jour 26 : repos complet ; Cyril propose 1h30 Z1/Z2 (beau temps, dimanche pluvieux)"
+    verdict: orange
+    consigne: >
+      Pas de veto santé (nuit 8h38 score 81, VFC 55, FC repos 55, TSB +4,8), mais le repos du
+      jour est le temps d'assimilation après deux jours de force et avant 2x5x1' samedi.
+      Compromis : sortie de récupération 1h à 1h15 max, Z1 stricte (<= 171 W, FC <= 148),
+      plat ou vallonné doux, zéro bosse appuyée, zéro Z3, pas de course à pied en plus.
+      Pas de départ au moindre symptôme. Si FC repos >= 56 samedi matin, les séries
+      sautent : cette sortie ne doit pas en être la cause. Rien modifié sur Intervals.
+    ressenti_cyril: >
+      « Un peu de temps et super météo je vais faire 1h30 de z1/z2 comme dimanche il fait moche »
 analyse_coach:
   maj: null
   synthese: null
