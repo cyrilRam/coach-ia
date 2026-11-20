@@ -408,6 +408,22 @@ suivi_quotidien:
       modifié sur Intervals.
     ressenti_cyril: >
       « Franchement super jambes sur la sortie j'étais au dessus 300W sur toutes les séries »
+  - date: '2026-11-20'
+    moment: matin
+    nuit: {sommeil_h: 8.64, score: 81, vfc_ms: 55, vfc_moy7: 52.7, fc_repos: 55, fc_repos_moy7: 55.1}
+    charge: {ctl: 65.5, atl: 60.7, tsb: 4.8}
+    seance_prevue: "Jour 26 : repos complet, sans vélo ni course à pied"
+    verdict: vert
+    consigne: >
+      Nuit de 8h38, score 81, VFC 55 ms (50 hier, moyenne 7 jours 52,7), FC repos 55 (56 hier,
+      moyenne 55,1) : le creux d'hier se referme, aucun seuil de veto franchi, TSB +4,8 (169 TSS
+      sur les trois derniers jours dont 96 mercredi, 68 hier). Repos complet maintenu : ni vélo
+      ni course à pied, même si les jambes sont bonnes, c'est aujourd'hui que force et couple
+      s'assimilent. Marche tranquille, repas riches en glucides, hydratation, coucher avant 22h,
+      écrans coupés vers 20h. Samedi : 2h + 2x5x1' à 110-115 % (341-357 W) maintenue si demain
+      matin FC repos <= 55, VFC >= 50, score >= 70 et aucun symptôme (nez, gorge, courbatures,
+      frissons) ; la tendance est bonne, à confirmer au réveil. Rien modifié sur Intervals.
+    ressenti_cyril:
 analyse_coach:
   maj: null
   synthese: null
