@@ -494,8 +494,7 @@ suivi_quotidien:
     charge: {ctl: 69.0, atl: 80.2, tsb: -11.2, heures_semaine: 10.2, heures_prevues: 5.8}
     ecarts: >
       Plus long et plus chargé que prescrit : 2h59 au lieu de 2h, 1421 m D+, TSS 151, trois séries
-      annoncées au titre contre deux prévues. Séries tenues : 8 efforts à 357 W (haut de la
-      fourchette 341-357 W) et 5 à 339 W. Découplage 3,8 % (bon), cadence moyenne 71 rpm. Hors séries :
+      annoncées au titre contre deux prévues. Précision de Cyril : 3 x 5 x 1 min à ~350 W, dernier effort (15e) à 400 W (~129 % FTP, au-dessus de la fourchette 110-115 %). Détection auto : 8 efforts à 357 W et 5 à 339 W. Découplage 3,8 % (bon), cadence moyenne 71 rpm. Hors séries :
       Z3 11,6 min + 6,2 min de sweet spot (3 % du temps en Z4-Z5 FC), la Z2 stricte n'a pas été
       respectée sur tout le temps hors séries. Semaine à 10,2 h réalisées contre 5,8 h projetées :
       le plafond de +30 % (12,3 h) n'est pas franchi.
@@ -507,7 +506,7 @@ suivi_quotidien:
       en plus. Si sec : 1h30 de Z1 stricte au plus (<= 171 W, FC <= 148). Ce soir : glucides, coucher
       avant 22h30. Lundi le bloc 3 démarre : S1 plafonnée à 12,3 h, vérifier le matin avant toute série.
       Météo et équipement de Nice non consultés. Rien modifié sur Intervals.
-    ressenti_cyril:
+    ressenti_cyril: "J'ai fait 3 fois 5x1min à 350W et encore la dernière donc le 15eme. J'ai réussi à tenir 400W"
 analyse_coach:
   maj: null
   synthese: null
