@@ -487,6 +487,27 @@ suivi_quotidien:
       pas de course à pied en plus. Dimanche pluvieux : pas de renfo B2S4 bas du corps si les jambes
       sont marquées, décision avec toi ce soir. Rien modifié sur Intervals.
     ressenti_cyril:
+  - date: '2026-11-21'
+    moment: soir
+    realise:
+      - {nom: "Force 3 x 5 x 1min vo2 max (col)", duree_min: 179, tss: 151, np_w: 222, fc_moy: 147, fc_max: 187, d_plus_m: 1421}
+    charge: {ctl: 69.0, atl: 80.2, tsb: -11.2, heures_semaine: 10.2, heures_prevues: 5.8}
+    ecarts: >
+      Plus long et plus chargé que prescrit : 2h59 au lieu de 2h, 1421 m D+, TSS 151, trois séries
+      annoncées au titre contre deux prévues. Séries tenues : 8 efforts à 357 W (haut de la
+      fourchette 341-357 W) et 5 à 339 W. Découplage 3,8 % (bon), cadence moyenne 71 rpm. Hors séries :
+      Z3 11,6 min + 6,2 min de sweet spot (3 % du temps en Z4-Z5 FC), la Z2 stricte n'a pas été
+      respectée sur tout le temps hors séries. Semaine à 10,2 h réalisées contre 5,8 h projetées :
+      le plafond de +30 % (12,3 h) n'est pas franchi.
+    demain: "Dimanche, jour 28, pluie : renfo B2S4 bas du corps 45 min, allégé ou supprimé selon le matin"
+    consigne: >
+      Série clé réussie, et c'est elle qui compte : maintenant on assimile. Demain, fin de bloc, avant
+      le bloc PMA de lundi : renfo seulement si FC repos <= 55, VFC >= 50 et jambes correctes au réveil,
+      et alors à RPE 6 (3 reps en réserve), 30 min, sinon repos complet. Pas de vélo ni de course à pied
+      en plus. Si sec : 1h30 de Z1 stricte au plus (<= 171 W, FC <= 148). Ce soir : glucides, coucher
+      avant 22h30. Lundi le bloc 3 démarre : S1 plafonnée à 12,3 h, vérifier le matin avant toute série.
+      Météo et équipement de Nice non consultés. Rien modifié sur Intervals.
+    ressenti_cyril:
 analyse_coach:
   maj: null
   synthese: null
