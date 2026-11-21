@@ -467,6 +467,26 @@ suivi_quotidien:
       B2S4 bas du corps si fatigue samedi, décision avec toi. Rien modifié sur Intervals.
     ressenti_cyril: >
       « C'était les meilleurs que j'ai eu sur un col. J'étais à 240/250 W pour 150 bpm ce midi »
+  - date: '2026-11-21'
+    moment: matin
+    nuit: {sommeil_h: 7.47, score: 82, vfc_ms: 65, vfc_moy7: 56.0, fc_repos: 53, fc_repos_moy7: 54.4}
+    charge: {ctl: 67.1, atl: 69.3, tsb: -2.3}
+    seance_prevue: "Jour 27 : 2h + 2x5x1' à 110-115 % (341-357 W), 65-75 rpm, dans un col régulier ; hors séries Z2 stricte, plafond 232 W"
+    verdict: vert
+    consigne: >
+      Nuit de 7h28, score 82, VFC 65 ms (moyenne 7 jours 56,0, au plus haut de la semaine), FC repos 53
+      (moyenne 54,4) : les quatre conditions posées hier sont remplies (FC repos <= 55, VFC >= 50,
+      score >= 70, durée > 7h), aucun seuil de veto franchi. Charge de référence au 20 au soir (réalisé) :
+      CTL 67,1, ATL 69,3, TSB -2,3 ; 229 TSS sur les trois derniers jours (96, 68, 65). Les chiffres du 21
+      affichés par Intervals (ATL 74,1) projettent la séance prévue, pas du réalisé. Séance clé maintenue :
+      2x5x1' à 110-115 % (341-357 W), vise le haut de la fourchette sur la première minute et sors la
+      dernière à la même puissance. Échauffement complet de 30 min, et si les jambes sont lourdes dans
+      les 10 premières minutes, on supprime les séries sans discuter. Hors séries : Z2 stricte, plafond
+      232 W, pas de bosse poussée (hier 23 min de Z3 sur une sortie de récupération). Aucun départ au
+      moindre symptôme (nez, gorge, courbatures, frissons). Après : manger 60-90 g de glucides par heure,
+      pas de course à pied en plus. Dimanche pluvieux : pas de renfo B2S4 bas du corps si les jambes
+      sont marquées, décision avec toi ce soir. Rien modifié sur Intervals.
+    ressenti_cyril:
 analyse_coach:
   maj: null
   synthese: null
