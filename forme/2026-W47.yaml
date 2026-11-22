@@ -509,25 +509,23 @@ suivi_quotidien:
     ressenti_cyril: "J'ai fait 3 fois 5x1min à 350W et encore la dernière donc le 15eme. J'ai réussi à tenir 400W"
   - date: '2026-11-22'
     moment: matin
-    nuit: {sommeil_h: null, score: null, vfc_ms: null, vfc_moy7: 57.5, fc_repos: 58, fc_repos_moy7: 54.7}
+    nuit: {sommeil_h: 8.15, score: 89, vfc_ms: 48, vfc_moy7: 56.1, fc_repos: 55, fc_repos_moy7: 54.4}
     charge: {ctl: 67.4, atl: 69.5, tsb: -2.1}
     seance_prevue: "Jour 28 (fin du bloc 2), pluie : renfo B2S4 bas du corps 45 min, seulement si FC repos <= 55, VFC >= 50 et jambes correctes ; sinon repos complet"
-    verdict: rouge
+    verdict: orange
     consigne: >
-      Nuit du 21 au 22 pas encore synchronisée (montre) : ni durée, ni score de sommeil, ni VFC,
-      je n'en invente pas. Seule la FC repos est remontée : 58, soit +5 bpm sur hier (53) et sur
-      la moyenne 7 jours (54,7), et au-dessus de la condition posée hier soir (<= 55) pour le
-      renfo. Ça vient après 3h de séance VO2max hier (TSS 151, 400 W sur le 15e effort, ATL de
-      69,3 à 80,2) : peut-être la simple trace de l'effort, mais c'est aussi la forme que prend
-      « l'illusion du tout va bien » quand une infection couve. Un matin isolé n'est pas un veto
-      santé, c'est un renfo supprimé : repos complet aujourd'hui, ni renfo bas du corps, ni vélo,
-      ni course à pied, marche tranquille au plus. C'est le jour d'assimilation de la semaine
-      choc, rien à rattraper. Repas riches en glucides, hydratation, coucher avant 22h.
-      Au réveil définitif, note dans cet ordre : FC repos au calme, VFC, symptômes (nez, gorge,
-      courbatures, frissons). Si la montre synchronise une nuit < 7h ou un score < 70, ou si la
-      FC repos reste >= 56 demain : deux matins de suite, repos préventif 48 h et le bloc 3
-      attend. Lundi (bloc 3, jour 1) : on ne démarre que si FC repos <= 55, VFC >= 50 et rien à
-      signaler. Rien modifié sur Intervals.
+      Mise à jour 09h15 après resynchronisation de la montre (première version rouge, faite sans la nuit,
+      avec une FC repos de 58 provisoire). Nuit réelle : 8h09, score 89 (le meilleur de la semaine), FC repos 55
+      (moyenne 7 jours 54,4), VFC 48 ms (56,1 en moyenne, -14 %, sous le seuil de 50). Le signal de la première
+      version tombe : FC repos 55, pas de hausse de 5 bpm, sommeil excellent. Il reste un seul indicateur bas,
+      la VFC, au lendemain de 3h de VO2max (TSS 151, 400 W sur le 15e effort) : lecture la plus probable, trace
+      de l'effort d'hier, pas un début d'infection. Pas de veto santé (il faut au moins deux signaux
+      concordants), mais la condition posée pour le renfo (VFC >= 50) n'est pas remplie : renfo B2S4 supprimé,
+      sans rattrapage. Repos, marche tranquille ou 15 min de mobilité douce au plus, ni vélo ni course à pied.
+      Repas riches en glucides, hydratation, coucher avant 22h. Lundi, bloc 3 jour 1 : démarrage seulement si
+      FC repos <= 55, VFC >= 50 et aucun symptôme (nez, gorge, courbatures, frissons) ; si la VFC reste < 50 deux
+      matins de suite, ou FC repos >= 56, repos préventif 48 h et le bloc 3 attend. Semaine W47 : 10,2 h
+      réalisées, bien au-dessus des 5,8 h projetées, plafond de +30 % (12,3 h) non franchi. Rien modifié sur Intervals.
     ressenti_cyril:
 analyse_coach:
   maj: null
