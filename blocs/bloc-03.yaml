@@ -27,8 +27,9 @@ semaines:
     vo2max: [lundi, vendredi]
     vo2max_sur_fatigue: samedi
     seances_dures: 3
-    repos: [jeudi, dimanche]
-    velo_min: 730
+    repos: [jeudi]
+    exception_repos: un seul jour de repos, decide par Cyril le 22/11 (semaine choc suivie de la S4 d'assimilation et des fetes)
+    velo_min: 850
     renfo_min: 60
   - numero: 4
     organisation: auto_ecole_lundi_et_jeudi_puis_paris
@@ -329,6 +330,17 @@ seances:
       - { type: effort, repetitions: 4, duree_min: 4, cible: 105-110%, cadence: 80-90, recup_min: 3, recup_cible: 50-55% }
       - { type: continu, duree_min: 172, cible: 62-75% }
       - { type: retour_calme, duree_min: 10, cible: 55-65% }
+
+  - jour: 21
+    sport: Ride
+    nom: Z2 souple 2h + 6 sprints (lendemain du choc)
+    duree_min: 120
+    description: "Exception decidee par Cyril le 22/11 : un seul jour de repos dans la semaine choc, compense par l'assimilation de la S4 et des fetes. Seulement si le matin est vert (aucun veto sante). Z2 souple, plat, FC <= 150, plus bas que d'habitude. Dans la premiere heure, 6 sprints de 10s a fond, 5 min Z1-Z2 entre chaque. Demi-tour si les jambes sont lourdes au bout de 15 min. Jamais au-dela de 2h."
+    intervalles:
+      - { type: echauffement, duree_min: 20, cible: 55-65% }
+      - { type: effort, repetitions: 6, duree_s: 10, cible: 200-280%, recup_min: 5, recup_cible: 55-65% }
+      - { type: continu, duree_min: 59, cible: 60-68% }
+      - { type: retour_calme, duree_min: 10, cible: 50-60% }
 
   - jour: 21
     sport: WeightTraining

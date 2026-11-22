@@ -124,7 +124,7 @@ blocs:
     volume_cible_h: [7.5, 13.5]
     rythme: "S1 12h00 velo (VO2 jeudi + samedi, sortie longue dimanche) -> S2 10h40 (auto-ecole jeudi : VO2 vendredi, sortie longue samedi avec 2x6x1') -> S3 choc 12h10 (VO2 lundi + vendredi, sortie longue samedi avec 4x4') -> S4 assimilation 6h35 (Paris des le jeudi 17, home trainer vendredi Z2 et samedi rappel VO2). Renfo 1h-1h10 par semaine en plus. Velotaf mardi/mercredi uniquement (travail), supprime sans remplacement s'il pleut. Semaine avec auto-ecole le jeudi : seance du jeudi le vendredi, sortie longue samedi, repos dimanche, VO2 le lundi suivant."
     garde_fous: "Veto individualise : symptome, ou FC repos >= 58, VFC < 42 ou sommeil < 70 deux matins de suite, ou decouplage > 10 % sans cause. Creux isole au lendemain d'une seance dure = normal, aucune decision sur une valeur provisoire. Ordre de coupe : series de la sortie longue, puis une repetition par VO2, puis la VO2 entiere."
-    decision: "2026-11-22 : bloc etendu a 4 semaines avec la S4 en assimilation (auto-ecole les 03, 10, 12, 14 et 17/12, Paris des le 17/12), choc en S3, trail retire du programme (contraintes.yaml). Valide par Cyril."
+    decision: "2026-11-22 : bloc etendu a 4 semaines avec la S4 en assimilation (auto-ecole les 03, 10, 12, 14 et 17/12, Paris des le 17/12), choc en S3, trail retire du programme (contraintes.yaml). Valide par Cyril. Ajout du 22/11 : 2h Z2 les dimanches 06/12 et 13/12 (avec sprints le 13) ; exception decidee par Cyril, un seul jour de repos dans la semaine choc (S3, 14h10 de selle, au-dessus du plafond de 14h) compense par la S4 et les fetes."
     fichier: blocs/bloc-03.yaml
 
   - id: decharge-fetes
