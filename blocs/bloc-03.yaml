@@ -18,8 +18,8 @@ semaines:
     vo2max: [vendredi]
     vo2max_sur_fatigue: samedi
     seances_dures: 2
-    repos: [lundi, jeudi, dimanche]
-    velo_min: 640
+    repos: [lundi, jeudi]
+    velo_min: 760
     renfo_min: 70
   - numero: 3
     organisation: auto_ecole_jeudi_et_samedi_matin
@@ -241,6 +241,14 @@ seances:
       - { type: effort, repetitions: 6, duree_min: 1, cible: 110-115%, cadence: 75-90, recup_min: 1, recup_cible: 50-55% }
       - { type: continu, duree_min: 106, cible: 62-75% }
       - { type: retour_calme, duree_min: 10, cible: 55-65% }
+
+  - jour: 14
+    sport: Ride
+    nom: Z2 souple 2h (veille du choc)
+    duree_min: 120
+    description: "Ajout du 22/11 a la demande de Cyril. Z2 souple, FC <= 164 qui commande, plat ou vallonne doux, aucune bosse appuyee, aucun sprint : demain commence la semaine choc. Jusqu'a 2h30 si les jambes sont fraiches, jamais au-dela. Supprimee si la sortie longue de samedi a laisse des jambes lourdes."
+    intervalles:
+      - { type: continu, duree_min: 120, cible: 60-70% }
 
   - jour: 15
     sport: Ride
