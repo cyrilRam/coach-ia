@@ -526,7 +526,13 @@ suivi_quotidien:
       FC repos <= 55, VFC >= 50 et aucun symptôme (nez, gorge, courbatures, frissons) ; si la VFC reste < 50 deux
       matins de suite, ou FC repos >= 56, repos préventif 48 h et le bloc 3 attend. Semaine W47 : 10,2 h
       réalisées, bien au-dessus des 5,8 h projetées, plafond de +30 % (12,3 h) non franchi. Rien modifié sur Intervals.
-    ressenti_cyril:
+    ressenti_cyril: >
+      « Vfc peut être que c'est parce que je suis sorti le soir j'ai bcp mangé au restau et je me suis couché tard »
+    precision_coach: >
+      Cause connue (sortie restaurant, gros repas, coucher tardif) : le creux de VFC à 48 ms se lit comme
+      ponctuel et digestif/circadien, pas comme un signe d'infection (sommeil 8h09 score 89, FC repos 55).
+      Pas de signal d'alerte santé. Verdict orange maintenu : renfo supprimé, jour d'assimilation après la
+      semaine choc. Le contrôle de lundi (VFC >= 50, FC repos <= 55, aucun symptôme) valide l'explication.
 analyse_coach:
   maj: null
   synthese: null
