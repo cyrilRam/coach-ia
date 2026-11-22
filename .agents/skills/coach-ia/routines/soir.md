@@ -35,7 +35,7 @@ Ajouter une entrée à la fin de `forme/<semaine>.yaml > suivi_quotidien`. Ne ja
     charge: {ctl: 68.1, atl: 85.0, tsb: -16.9, heures_semaine: 11.4, heures_prevues: 13.0}
     ecarts: >
       Ce qui a différé de la prescription, ou « conforme ».
-    demain: "Trail 1h20 Z2, alerte FC 160"
+    demain: "Sortie longue 5h Z2, FC <= 164"
     consigne: >
       Deux ou trois phrases pour demain.
     ressenti_cyril:
@@ -46,7 +46,7 @@ Puis : `git add forme/<semaine>.yaml`, `git commit -m "soir AAAA-MM-JJ"`, `git p
 ## 6. Notifier
 
 Une notification push d'une ligne, moins de 200 caractères :
-`✅ 3x12' faite à 266 W, Z2 propre · Demain : trail 1h20, alerte FC 160`
+`✅ 3x12' faite à 266 W, Z2 propre · Demain : sortie longue 5h Z2, FC ≤ 164`
 Si aucun outil de notification n'est disponible, l'écrire en tête du message final.
 
 ## 7. Message final

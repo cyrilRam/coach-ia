@@ -1,0 +1,427 @@
+id: bloc-03
+nom: PMA Concentree
+duree_semaines: 4
+objectif: Elever le plafond aerobie (PMA, ratio 5min/20min = 1.11) par 7 seances VO2max dont une semaine choc en S3, une sortie longue chaque semaine, puis une semaine d'assimilation avant les fetes
+focus: [vo2max_micro_intervalles, vo2max_4min_5min, vo2max_sur_fatigue, sortie_longue_z2, maintien_sprints, renfo_entretien]
+valide_le: '2026-11-22'
+
+semaines:
+  - numero: 1
+    organisation: normale
+    vo2max: [jeudi, samedi]
+    seances_dures: 2
+    repos: [mercredi, vendredi]
+    velo_min: 720
+    renfo_min: 70
+  - numero: 2
+    organisation: auto_ecole_jeudi
+    vo2max: [vendredi]
+    vo2max_sur_fatigue: samedi
+    seances_dures: 2
+    repos: [lundi, jeudi, dimanche]
+    velo_min: 640
+    renfo_min: 70
+  - numero: 3
+    organisation: auto_ecole_jeudi_et_samedi_matin
+    type: choc
+    vo2max: [lundi, vendredi]
+    vo2max_sur_fatigue: samedi
+    seances_dures: 3
+    repos: [jeudi, dimanche]
+    velo_min: 730
+    renfo_min: 60
+  - numero: 4
+    organisation: auto_ecole_lundi_et_jeudi_puis_paris
+    type: assimilation
+    vo2max: [samedi]
+    home_trainer: [vendredi, samedi]
+    seances_dures: 1
+    repos: [lundi, jeudi, dimanche]
+    velo_min: 395
+    renfo_min: 70
+
+garde_fous:
+  veto_sante: symptome (nez, gorge, courbatures, frissons), ou FC repos >= 58 deux matins de suite, ou VFC < 42 deux matins de suite, ou score de sommeil < 70 deux nuits de suite, ou decouplage > 10 % sur une sortie reguliere sans chaleur ni parcours en cause
+  creux_isole: un creux de VFC au lendemain d'une seance dure est la norme, pas un signal ; aucune decision sur une valeur provisoire avant synchronisation de la nuit
+  velotaf: mardi et mercredi = travail, velotaf uniquement ; supprime sans remplacement si la meteo l'empeche
+  ordre_de_coupe: series de la sortie longue d'abord, puis une repetition par seance VO2max, puis la seance VO2max entiere
+  repetitions: le nombre prescrit est un plafond ; arret de la seance si deux repetitions de suite tombent a plus de 5 % sous la cible basse
+  z2: FC <= 164 qui commande, 60-75 % FTP, aucune bosse appuyee, ni en velotaf ni en sortie longue
+  charge: TSB < -25 au matin d'une seance VO2max ou ramp rate > 7 -> la seance saute ; le creux du soir des sorties longues (-25 a -27 attendu en S2, S3, S4) n'est pas un signal s'il remonte vers -15 apres le repos du lendemain
+
+seances:
+  - jour: 1
+    sport: Ride
+    nom: Z2 souple de reprise
+    duree_min: 90
+    description: "Z2 stricte, plat ou vallonne doux, FC <= 164 qui commande. Aucune bosse appuyee, aucune Z3. Reveille les jambes apres le dimanche de repos, rien de plus."
+    intervalles:
+      - { type: continu, duree_min: 90, cible: 60-72% }
+
+  - jour: 1
+    sport: WeightTraining
+    nom: Renfo B3 - Force bas du corps (entretien)
+    duree_min: 40
+    description: |
+      SEANCE FORCE ENTRETIEN (lundi soir, 72 h avant la premiere VO2max) - 40 min
+      Bloc PMA : on entretient la force, on ne la developpe pas. RPE 7 (3 reps en reserve), 2 series au lieu de 3.
+
+      1. Echauffement & Activation (6 min) :
+      - Cat-Cow + World's Greatest Stretch : 2x 6 reps/cote
+      - Pont fessier bilateral : 1x 12 reps
+      - Squat poids du corps : 1x 10 reps
+
+      2. Force (22 min) - recup 2' entre series :
+      - Squat 1 jambe assis-debout sur chaise (descente 4s) : 2x 6 reps/jambe
+      - Fentes bulgares (pause 2s en bas) : 2x 8 reps/jambe
+      - Pont ischios 1 jambe, talon sur chaise (maintien 2s en haut) : 2x 8 reps/jambe
+      - Mollets 1 jambe excentriques sur marche (descente 4s) : 2x 12 reps/cote
+
+      3. Gainage (8 min) - 2 tours :
+      - Planche ventrale : 60s
+      - Deadbug lent (3s par extension) : 10 reps/cote
+      - Planche laterale : 45s/cote
+
+      4. Decompression (4 min) : psoas, ischios, fessiers.
+
+  - jour: 2
+    sport: Ride
+    nom: Velotaf A/R Z2
+    duree_min: 130
+    description: "Velotaf en Z2 souple, FC <= 164 qui commande. Raidars montes assis, sans chercher la puissance. Supprime si pluie, sans remplacement."
+    intervalles:
+      - { type: continu, duree_min: 130, cible: 60-72% }
+
+  - jour: 4
+    sport: Ride
+    nom: VO2max 3x(10x40/20)
+    duree_min: 90
+    description: "Pause dej, dans une montee reguliere. Echauffement 25 min progressif avec 2 accelerations de 10s. 3 series de 10 x (40s a 115-120 % / 20s a 50-60 %), 5 min Z1 entre les series. Premiere serie au bas de la fourchette : la FC doit monter progressivement jusqu'au plafond, pas des la 3e repetition. Cadence 85-95 rpm. Arret si deux 40s de suite tombent sous 345 W."
+    intervalles:
+      - { type: echauffement, duree_min: 25, cible: 60-75% }
+      - { type: effort, repetitions: 10, duree_s: 40, cible: 115-120%, cadence: 85-95, recup_s: 20, recup_cible: 50-60% }
+      - { type: continu, duree_min: 5, cible: 50-55% }
+      - { type: effort, repetitions: 10, duree_s: 40, cible: 115-120%, cadence: 85-95, recup_s: 20, recup_cible: 50-60% }
+      - { type: continu, duree_min: 5, cible: 50-55% }
+      - { type: effort, repetitions: 10, duree_s: 40, cible: 115-120%, cadence: 85-95, recup_s: 20, recup_cible: 50-60% }
+      - { type: retour_calme, duree_min: 25, cible: 50-65% }
+
+  - jour: 5
+    sport: WeightTraining
+    nom: Renfo B3 - Posture & Haut du corps
+    duree_min: 30
+    description: |
+      SEANCE POSTURE (jour de repos velo, a la maison) - 30 min : pas de jambes
+
+      1. Echauffement express (5 min) :
+      - Rotations thoraciques : 2x 8 reps/cote
+      - Bird-Dog : 2x 8 reps
+
+      2. Circuit Postural (20 min) - 3 tours (recup 1') :
+      - Rowing inverse sous une table solide, jambes tendues : 3x 10 reps
+      - Y-T-W au sol (maintien 3s bras decolles) : 3x 10 reps par lettre
+      - Pompes tempo (descente 3s) : 3x 12 reps
+      - Planche commando : 3x 16 reps
+      - Gainage lateral avec abduction jambe : 3x 40s/cote
+
+      3. Decompression (5 min) : dos, pectoraux, psoas.
+
+  - jour: 6
+    sport: Ride
+    nom: VO2max 4x4'
+    duree_min: 110
+    description: "Dans un col regulier. Echauffement 30 min avec 5 min en fin de Z2. 4 x 4 min a 108-113 %, recup 3 min a 50-55 %. Les deux premieres au bas de la fourchette (335-340 W), la derniere aussi forte que la premiere. Cadence 80-90 rpm, assis ou danseuse. Ensuite 30 min de Z2 stricte et retour : demain sortie longue."
+    intervalles:
+      - { type: echauffement, duree_min: 30, cible: 60-70% }
+      - { type: continu, duree_min: 5, cible: 65-75% }
+      - { type: effort, repetitions: 4, duree_min: 4, cible: 108-113%, cadence: 80-90, recup_min: 3, recup_cible: 50-55% }
+      - { type: continu, duree_min: 30, cible: 60-72% }
+      - { type: retour_calme, duree_min: 15, cible: 55-65% }
+
+  - jour: 7
+    sport: Ride
+    nom: Sortie longue 5h Z2 + 6 sprints
+    duree_min: 300
+    description: "Lendemain de VO2max : Z2 stricte toute la journee, FC <= 164 qui commande, cols montes au train. Apres 1h, 6 sprints de 10s a fond (assis puis danseuse, 3 sur le plat lance, 3 en debut de bosse), 5 min Z1-Z2 entre chaque. 60-90 g de glucides par heure des la premiere heure."
+    intervalles:
+      - { type: echauffement, duree_min: 20, cible: 60-70% }
+      - { type: continu, duree_min: 40, cible: 62-72% }
+      - { type: effort, repetitions: 6, duree_s: 10, cible: 200-280%, recup_min: 5, recup_cible: 55-65% }
+      - { type: continu, duree_min: 200, cible: 62-75% }
+      - { type: retour_calme, duree_min: 10, cible: 55-65% }
+
+  - jour: 8
+    sport: WeightTraining
+    nom: Renfo B3 - Posture & Haut du corps
+    duree_min: 30
+    description: |
+      SEANCE POSTURE (lundi, jour de repos velo) - 30 min : pas de jambes
+
+      1. Echauffement express (5 min) :
+      - Rotations thoraciques : 2x 8 reps/cote
+      - Bird-Dog : 2x 8 reps
+
+      2. Circuit Postural (20 min) - 3 tours (recup 1') :
+      - Rowing inverse sous une table solide, jambes tendues : 3x 10 reps
+      - Y-T-W au sol (maintien 3s bras decolles) : 3x 10 reps par lettre
+      - Pompes tempo (descente 3s) : 3x 12 reps
+      - Planche commando : 3x 16 reps
+      - Gainage lateral avec abduction jambe : 3x 40s/cote
+
+      3. Decompression (5 min) : dos, pectoraux, psoas.
+
+  - jour: 9
+    sport: Ride
+    nom: Velotaf A/R Z2
+    duree_min: 130
+    description: "Velotaf en Z2 souple, FC <= 164 qui commande. Raidars montes assis, sans chercher la puissance. Supprime si pluie, sans remplacement."
+    intervalles:
+      - { type: continu, duree_min: 130, cible: 60-72% }
+
+  - jour: 10
+    sport: Ride
+    nom: Velotaf A/R Z2
+    duree_min: 130
+    description: "Velotaf en Z2 souple, FC <= 164 qui commande. Raidars montes assis. Supprime si pluie, sans remplacement."
+    intervalles:
+      - { type: continu, duree_min: 130, cible: 60-72% }
+
+  - jour: 10
+    sport: WeightTraining
+    nom: Renfo B3 - Force bas du corps (entretien)
+    duree_min: 40
+    description: |
+      SEANCE FORCE ENTRETIEN (mercredi soir, 48 h avant la VO2max de vendredi) - 40 min
+      RPE 7 (3 reps en reserve), 2 series. Supprimee si les jambes sont lourdes apres le velotaf.
+
+      1. Echauffement & Activation (6 min) :
+      - Cat-Cow + World's Greatest Stretch : 2x 6 reps/cote
+      - Pont fessier bilateral : 1x 12 reps
+      - Squat poids du corps : 1x 10 reps
+
+      2. Force (22 min) - recup 2' entre series :
+      - Squat 1 jambe assis-debout sur chaise (descente 4s) : 2x 6 reps/jambe
+      - Fentes bulgares (pause 2s en bas) : 2x 8 reps/jambe
+      - Pont ischios 1 jambe, talon sur chaise (maintien 2s en haut) : 2x 8 reps/jambe
+      - Mollets 1 jambe excentriques sur marche (descente 4s) : 2x 12 reps/cote
+
+      3. Gainage (8 min) - 2 tours :
+      - Planche ventrale : 60s
+      - Deadbug lent (3s par extension) : 10 reps/cote
+      - Planche laterale : 45s/cote
+
+      4. Decompression (4 min) : psoas, ischios, fessiers.
+
+  - jour: 12
+    sport: Ride
+    nom: VO2max 4x5' variees (40s/1')
+    duree_min: 80
+    description: "Seance du jeudi decalee (auto-ecole). Pause dej, montee reguliere. Echauffement 25 min. 4 repetitions de 5 min, chacune = 3 x (40s a 115-120 % + 1 min a 98-102 %), recup 3 min a 50 %. Le 1 min a FTP n'est pas une recuperation : la FC doit rester haute. Cadence 85-95 rpm. Arret si la 4e ne tient pas 320 W de moyenne."
+    intervalles:
+      - { type: echauffement, duree_min: 25, cible: 60-75% }
+      - { type: effort, repetitions: 3, duree_s: 40, cible: 115-120%, cadence: 85-95, recup_min: 1, recup_cible: 98-102% }
+      - { type: continu, duree_min: 3, cible: 48-52% }
+      - { type: effort, repetitions: 3, duree_s: 40, cible: 115-120%, cadence: 85-95, recup_min: 1, recup_cible: 98-102% }
+      - { type: continu, duree_min: 3, cible: 48-52% }
+      - { type: effort, repetitions: 3, duree_s: 40, cible: 115-120%, cadence: 85-95, recup_min: 1, recup_cible: 98-102% }
+      - { type: continu, duree_min: 3, cible: 48-52% }
+      - { type: effort, repetitions: 3, duree_s: 40, cible: 115-120%, cadence: 85-95, recup_min: 1, recup_cible: 98-102% }
+      - { type: retour_calme, duree_min: 25, cible: 50-65% }
+
+  - jour: 13
+    sport: Ride
+    nom: Sortie longue 5h + VO2max sur fatigue 2x6x1'
+    duree_min: 300
+    description: "Lendemain de VO2max. Z2 stricte pendant 2h30, puis dans un col regulier : 2 series de 6 x 1 min a 110-115 %, recup 1 min Z1, 8 min Z1-Z2 entre les series. La derniere minute aussi forte que la premiere. Puis Z2 stricte jusqu'a la fin. C'est la premiere chose qui saute au moindre signal : la sortie reste alors 5h en Z2. 60-90 g de glucides par heure."
+    intervalles:
+      - { type: echauffement, duree_min: 20, cible: 60-70% }
+      - { type: continu, duree_min: 130, cible: 62-72% }
+      - { type: effort, repetitions: 6, duree_min: 1, cible: 110-115%, cadence: 75-90, recup_min: 1, recup_cible: 50-55% }
+      - { type: continu, duree_min: 8, cible: 55-65% }
+      - { type: effort, repetitions: 6, duree_min: 1, cible: 110-115%, cadence: 75-90, recup_min: 1, recup_cible: 50-55% }
+      - { type: continu, duree_min: 106, cible: 62-75% }
+      - { type: retour_calme, duree_min: 10, cible: 55-65% }
+
+  - jour: 15
+    sport: Ride
+    nom: VO2max 3x(13x30/15)
+    duree_min: 85
+    description: "Semaine choc, seance 1/3 (seance du samedi decalee au lundi). Montee reguliere. Echauffement 25 min. 3 series de 13 x (30s a 115-120 % / 15s a 50-60 %), 3 min a 50 % entre les series. Format le plus documente pour la VO2max chez le cycliste entraine. Si les deux premieres series passent sans perte de puissance, la troisieme peut monter a 120-125 %. Cadence 90-100 rpm."
+    intervalles:
+      - { type: echauffement, duree_min: 25, cible: 60-75% }
+      - { type: effort, repetitions: 13, duree_s: 30, cible: 115-120%, cadence: 90-100, recup_s: 15, recup_cible: 50-60% }
+      - { type: continu, duree_min: 3, cible: 48-52% }
+      - { type: effort, repetitions: 13, duree_s: 30, cible: 115-120%, cadence: 90-100, recup_s: 15, recup_cible: 50-60% }
+      - { type: continu, duree_min: 3, cible: 48-52% }
+      - { type: effort, repetitions: 13, duree_s: 30, cible: 115-120%, cadence: 90-100, recup_s: 15, recup_cible: 50-60% }
+      - { type: retour_calme, duree_min: 25, cible: 50-65% }
+
+  - jour: 16
+    sport: Ride
+    nom: Velotaf A/R Z2
+    duree_min: 130
+    description: "Semaine choc, lendemain de VO2max : Z2 souple, FC <= 164 qui commande. Raidars montes assis. Supprime si pluie, sans remplacement."
+    intervalles:
+      - { type: continu, duree_min: 130, cible: 60-70% }
+
+  - jour: 17
+    sport: Ride
+    nom: Velotaf A/R Z2
+    duree_min: 130
+    description: "Semaine choc : Z2 souple, FC <= 164 qui commande. Raidars montes assis. Supprime si pluie, sans remplacement. Pas de renfo jambes ce soir."
+    intervalles:
+      - { type: continu, duree_min: 130, cible: 60-70% }
+
+  - jour: 18
+    sport: WeightTraining
+    nom: Renfo B3 - Posture & Haut du corps
+    duree_min: 30
+    description: |
+      SEANCE POSTURE (jeudi, auto-ecole, pas de velo) - 30 min : pas de jambes
+
+      1. Echauffement express (5 min) :
+      - Rotations thoraciques : 2x 8 reps/cote
+      - Bird-Dog : 2x 8 reps
+
+      2. Circuit Postural (20 min) - 3 tours (recup 1') :
+      - Rowing inverse sous une table solide, jambes tendues : 3x 10 reps
+      - Y-T-W au sol (maintien 3s bras decolles) : 3x 10 reps par lettre
+      - Pompes tempo (descente 3s) : 3x 12 reps
+      - Planche commando : 3x 16 reps
+      - Gainage lateral avec abduction jambe : 3x 40s/cote
+
+      3. Decompression (5 min) : dos, pectoraux, psoas.
+
+  - jour: 19
+    sport: Ride
+    nom: VO2max 5x5' variees (40s/1')
+    duree_min: 85
+    description: "Semaine choc, seance 2/3. Seance du jeudi decalee (auto-ecole). Pause dej, montee reguliere. Echauffement 25 min. 5 repetitions de 5 min, chacune = 3 x (40s a 115-120 % + 1 min a 98-102 %), recup 3 min a 50 %. Une repetition de plus qu'en semaine 2. Cadence 85-95 rpm. Arret si deux repetitions de suite tombent sous 320 W de moyenne."
+    intervalles:
+      - { type: echauffement, duree_min: 25, cible: 60-75% }
+      - { type: effort, repetitions: 3, duree_s: 40, cible: 115-120%, cadence: 85-95, recup_min: 1, recup_cible: 98-102% }
+      - { type: continu, duree_min: 3, cible: 48-52% }
+      - { type: effort, repetitions: 3, duree_s: 40, cible: 115-120%, cadence: 85-95, recup_min: 1, recup_cible: 98-102% }
+      - { type: continu, duree_min: 3, cible: 48-52% }
+      - { type: effort, repetitions: 3, duree_s: 40, cible: 115-120%, cadence: 85-95, recup_min: 1, recup_cible: 98-102% }
+      - { type: continu, duree_min: 3, cible: 48-52% }
+      - { type: effort, repetitions: 3, duree_s: 40, cible: 115-120%, cadence: 85-95, recup_min: 1, recup_cible: 98-102% }
+      - { type: continu, duree_min: 3, cible: 48-52% }
+      - { type: effort, repetitions: 3, duree_s: 40, cible: 115-120%, cadence: 85-95, recup_min: 1, recup_cible: 98-102% }
+      - { type: retour_calme, duree_min: 25, cible: 50-65% }
+
+  - jour: 20
+    sport: Ride
+    nom: Sortie longue 5h + VO2max sur fatigue 4x4'
+    duree_min: 300
+    description: "Semaine choc, seance 3/3. Auto-ecole 8h30-10h : depart vers 10h15, retour avant la nuit (eclairage avant/arriere). Lendemain de VO2max. Z2 stricte 1h30, puis dans un col regulier 4 x 4 min a 105-110 %, recup 3 min a 50-55 %, puis Z2 stricte jusqu'a la fin. C'est la premiere chose qui saute au moindre signal : la sortie reste alors 5h en Z2. 60-90 g de glucides par heure."
+    intervalles:
+      - { type: echauffement, duree_min: 20, cible: 60-70% }
+      - { type: continu, duree_min: 70, cible: 62-72% }
+      - { type: effort, repetitions: 4, duree_min: 4, cible: 105-110%, cadence: 80-90, recup_min: 3, recup_cible: 50-55% }
+      - { type: continu, duree_min: 172, cible: 62-75% }
+      - { type: retour_calme, duree_min: 10, cible: 55-65% }
+
+  - jour: 21
+    sport: WeightTraining
+    nom: Renfo B3 - Gainage & Mobilite
+    duree_min: 30
+    description: |
+      SEANCE GAINAGE & MOBILITE (dimanche, fin du choc, pas de velo) - 30 min : pas de jambes
+
+      1. Gainage (15 min) - 3 tours :
+      - Planche ventrale : 60s
+      - Deadbug lent (3s par extension) : 10 reps/cote
+      - Planche laterale : 45s/cote
+      - Bird-Dog avec maintien 3s : 8 reps/cote
+
+      2. Mobilite (15 min) :
+      - World's Greatest Stretch : 2x 6 reps/cote
+      - Rotations thoraciques : 2x 8 reps/cote
+      - Psoas, ischios, fessiers, mollets : 1 min par position
+
+  - jour: 22
+    sport: WeightTraining
+    nom: Renfo B3 - Posture & Haut du corps
+    duree_min: 30
+    description: |
+      SEANCE POSTURE (lundi, auto-ecole, debut de l'assimilation, pas de velo) - 30 min : pas de jambes
+
+      1. Echauffement express (5 min) :
+      - Rotations thoraciques : 2x 8 reps/cote
+      - Bird-Dog : 2x 8 reps
+
+      2. Circuit Postural (20 min) - 3 tours (recup 1') :
+      - Rowing inverse sous une table solide, jambes tendues : 3x 10 reps
+      - Y-T-W au sol (maintien 3s bras decolles) : 3x 10 reps par lettre
+      - Pompes tempo (descente 3s) : 3x 12 reps
+      - Planche commando : 3x 16 reps
+      - Gainage lateral avec abduction jambe : 3x 40s/cote
+
+      3. Decompression (5 min) : dos, pectoraux, psoas.
+
+  - jour: 23
+    sport: Ride
+    nom: Velotaf A/R Z2
+    duree_min: 130
+    description: "Assimilation : Z2 souple, FC <= 164 qui commande, encore plus facile que d'habitude. Raidars montes assis. Supprime si pluie, sans remplacement."
+    intervalles:
+      - { type: continu, duree_min: 130, cible: 60-70% }
+
+  - jour: 24
+    sport: Ride
+    nom: Velotaf A/R Z2
+    duree_min: 130
+    description: "Assimilation : Z2 souple, FC <= 164 qui commande. Raidars montes assis. Supprime si pluie, sans remplacement."
+    intervalles:
+      - { type: continu, duree_min: 130, cible: 60-70% }
+
+  - jour: 24
+    sport: WeightTraining
+    nom: Renfo B3 - Force bas du corps (entretien)
+    duree_min: 40
+    description: |
+      SEANCE FORCE ENTRETIEN (mercredi soir, 72 h avant la VO2max de samedi) - 40 min
+      RPE 7 (3 reps en reserve), 2 series. Supprimee si les jambes sont lourdes apres le velotaf.
+
+      1. Echauffement & Activation (6 min) :
+      - Cat-Cow + World's Greatest Stretch : 2x 6 reps/cote
+      - Pont fessier bilateral : 1x 12 reps
+      - Squat poids du corps : 1x 10 reps
+
+      2. Force (22 min) - recup 2' entre series :
+      - Squat 1 jambe assis-debout sur chaise (descente 4s) : 2x 6 reps/jambe
+      - Fentes bulgares (pause 2s en bas) : 2x 8 reps/jambe
+      - Pont ischios 1 jambe, talon sur chaise (maintien 2s en haut) : 2x 8 reps/jambe
+      - Mollets 1 jambe excentriques sur marche (descente 4s) : 2x 12 reps/cote
+
+      3. Gainage (8 min) - 2 tours :
+      - Planche ventrale : 60s
+      - Deadbug lent (3s par extension) : 10 reps/cote
+      - Planche laterale : 45s/cote
+
+      4. Decompression (4 min) : psoas, ischios, fessiers.
+
+  - jour: 26
+    sport: VirtualRide
+    nom: Home trainer Z2 souple (Paris)
+    duree_min: 60
+    description: "Home trainer a Paris. Z2 souple, FC <= 150, aucun effort. Ventilateur et hydratation : sur home trainer la FC monte plus vite qu'a l'exterieur, c'est la FC qui commande."
+    intervalles:
+      - { type: echauffement, duree_min: 10, cible: 55-65% }
+      - { type: continu, duree_min: 45, cible: 60-70% }
+      - { type: retour_calme, duree_min: 5, cible: 50-60% }
+
+  - jour: 27
+    sport: VirtualRide
+    nom: Home trainer VO2max rappel 3x(10x40/20)
+    duree_min: 75
+    description: "Home trainer a Paris, derniere seance avant les fetes. Seulement si le matin est vert (pas de veto sante) et les jambes fraiches, sinon 1h Z2 souple. 3 series de 10 x (40s a 115-120 % / 20s a 50-60 %), 5 min Z1 entre les series. Rappel de la PMA apres l'assimilation, pas une seance de plus du choc : on s'arrete a la cible, pas au-dela. Ventilateur."
+    intervalles:
+      - { type: echauffement, duree_min: 15, cible: 55-70% }
+      - { type: effort, repetitions: 10, duree_s: 40, cible: 115-120%, cadence: 90-100, recup_s: 20, recup_cible: 50-60% }
+      - { type: continu, duree_min: 5, cible: 50-55% }
+      - { type: effort, repetitions: 10, duree_s: 40, cible: 115-120%, cadence: 90-100, recup_s: 20, recup_cible: 50-60% }
+      - { type: continu, duree_min: 5, cible: 50-55% }
+      - { type: effort, repetitions: 10, duree_s: 40, cible: 115-120%, cadence: 90-100, recup_s: 20, recup_cible: 50-60% }
+      - { type: retour_calme, duree_min: 20, cible: 50-60% }

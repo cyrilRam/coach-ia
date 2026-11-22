@@ -76,9 +76,9 @@ Le repo GitHub `cyrilRam/coach-ia` est la seule source de vérité : Cyril trava
   - **Cibles relatives** : en `% FTP` (ex: `88-93%`) ou zone (`Z2`, `Z4`), JAMAIS en watts absolus.
   - **Contraintes** :
     - Repos obligatoires (lundi et vendredi par défaut, min 2/semaine).
-    - Vélotaf mardi et mercredi.
-    - Samedi : sortie longue (5 à 6h en préparation hivernale).
-    - Dimanche : trail (au moins une fois toutes les 2 semaines) ou récup.
+    - Vélotaf mardi et mercredi (jours de travail) : supprimé sans remplacement s'il pleut, jamais une autre séance à la place.
+    - Week-end : sortie longue (5 à 6h en préparation hivernale) le samedi ou le dimanche, l'autre jour sortie de 2 à 4h ou repos.
+    - Trail optionnel, selon le temps et l'envie, à la place de la sortie courte du week-end.
     - Max 3 séances dures / semaine, jamais plus de 2 jours durs consécutifs.
 - Présentation du bloc à Cyril pour discussion et validation.
 

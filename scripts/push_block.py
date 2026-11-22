@@ -104,7 +104,8 @@ def etapes(seance: dict, ftp: int) -> list[str]:
         cible = cible_texte(it.get("cible"), ftp, en_fc)
         avant_effort = index + 1 < len(intervalles) and intervalles[index + 1].get("type") == TYPE_EFFORT
         lap_etape = DECLENCHEMENT_LAP if avant_effort else ""
-        lap_recup = DECLENCHEMENT_LAP if it.get("type") == TYPE_EFFORT else ""
+        reps = it.get("repetitions", 1)
+        lap_recup = DECLENCHEMENT_LAP if it.get("type") == TYPE_EFFORT and reps == 1 else ""
 
         if "duree_s" in it:
             duree_str = f"{it['duree_s']}s"
@@ -113,8 +114,7 @@ def etapes(seance: dict, ftp: int) -> list[str]:
         else:
             duree_str = f"{it.get('duree_min', 0)}m"
 
-        reps = it.get("repetitions", 1)
-        cadence = f" {it['cadence']}rpm" if it.get("cadence") else ""
+        cadence =f" {it['cadence']}rpm" if it.get("cadence") else ""
 
         if it.get("recup_s"):
             recup_str = f"{it['recup_s']}s"

@@ -25,7 +25,7 @@ Depuis `data/cache/wellness.json` (clé `id` = date) : nuit du jour et 14 jours 
 - Charge : CTL, ATL, TSB (CTL − ATL), charge des 3 derniers jours (`data/cache/activities.json`).
 - Donnée absente (montre pas encore synchronisée, nuit coupée) : le dire, ne rien inventer, donner un verdict conditionnel (« si tu as dormi 7h et que tu te sens bien : … »).
 
-Seuils (assimilation anticipée et veto) : FC repos ≥ 56 deux matins de suite, VFC < 50 ms, nuit < 7h ou score < 70 deux nuits de suite, TSB < −25. Un creux isolé avec une cause connue (lever tôt, stress, nuit coupée par la montre) se lit comme tel.
+Seuils (veto individualisé, validé par Cyril le 22/11/2026) : symptôme (nez, gorge, courbatures, frissons), FC repos ≥ 58 deux matins de suite, VFC < 42 ms deux matins de suite, nuit < 7h ou score < 70 deux nuits de suite, découplage > 10 % sur une sortie régulière sans chaleur ni parcours en cause, TSB < −25 le matin d'une séance dure. Chez Cyril, la FC repos monte et la VFC baisse après plusieurs jours de repos, et la VFC plonge le lendemain d'une grosse séance puis remonte en 24 h : un creux isolé, ou avec une cause connue (lever tôt, stress, repas tardif, nuit coupée par la montre), se lit comme tel. Aucune décision sur une valeur provisoire avant la synchronisation complète de la nuit. Le fichier de bloc (`garde_fous`) précise ces seuils s'il en diffère.
 
 ## 4. Décider
 

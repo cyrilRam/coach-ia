@@ -117,23 +117,25 @@ blocs:
   - id: bloc-03
     nom: PMA Concentrée
     du: 2026-11-23
-    au: 2026-12-13
-    duree_semaines: 3
+    au: 2026-12-20
+    duree_semaines: 4
     objectif: elever le plafond aerobie (PMA, point faible relatif 5min/20min = 1.11) avant les blocs sweet spot et seuil
-    focus: [pma_z5_concentree, sortie_longue_avec_series_pma, maintien_sprints, endurance_z2_stricte]
-    volume_cible_h: [12, 13.5]
-    rythme: "3 semaines de charge PMA (12h, 13h, 13h30) : 3 seances PMA/semaine (jeudi midi, serie dans la sortie longue du samedi, dimanche), 2 seances les WE de trail. Assimilation assuree par la periode decharge-fetes qui suit."
-    garde_fous: "bloc le plus traumatisant de l'hiver : Z2 et velotaf strictement souples. Sommeil degrade, FC repos +5 bpm ou VFC en chute -> on supprime d'abord la seance du dimanche"
+    focus: [vo2max_concentree, vo2max_sur_fatigue, sortie_longue_z2, maintien_sprints, renfo_entretien]
+    volume_cible_h: [7.5, 13.5]
+    rythme: "S1 12h00 velo (VO2 jeudi + samedi, sortie longue dimanche) -> S2 10h40 (auto-ecole jeudi : VO2 vendredi, sortie longue samedi avec 2x6x1') -> S3 choc 12h10 (VO2 lundi + vendredi, sortie longue samedi avec 4x4') -> S4 assimilation 6h35 (Paris des le jeudi 17, home trainer vendredi Z2 et samedi rappel VO2). Renfo 1h-1h10 par semaine en plus. Velotaf mardi/mercredi uniquement (travail), supprime sans remplacement s'il pleut. Semaine avec auto-ecole le jeudi : seance du jeudi le vendredi, sortie longue samedi, repos dimanche, VO2 le lundi suivant."
+    garde_fous: "Veto individualise : symptome, ou FC repos >= 58, VFC < 42 ou sommeil < 70 deux matins de suite, ou decouplage > 10 % sans cause. Creux isole au lendemain d'une seance dure = normal, aucune decision sur une valeur provisoire. Ordre de coupe : series de la sortie longue, puis une repetition par VO2, puis la VO2 entiere."
+    decision: "2026-11-22 : bloc etendu a 4 semaines avec la S4 en assimilation (auto-ecole les 03, 10, 12, 14 et 17/12, Paris des le 17/12), choc en S3, trail retire du programme (contraintes.yaml). Valide par Cyril."
+    fichier: blocs/bloc-03.yaml
 
   - id: decharge-fetes
-    nom: Décharge Paris & Fêtes
-    du: 2026-12-14
+    nom: Décharge Fêtes
+    du: 2026-12-21
     au: 2026-12-27
-    duree_semaines: 2
-    objectif: assimiler le bloc PMA en respectant les indisponibilites
-    focus: [assimilation, z2_libre, course_a_pied_paris]
+    duree_semaines: 1
+    objectif: prolonger l'assimilation du bloc PMA (commencee en S4 du bloc 3) en respectant les indisponibilites
+    focus: [assimilation, z2_libre]
     volume_cible_h: [4, 10]
-    rythme: "S1 (Paris) : lundi repos, velotaf mardi-mercredi, footing libre a Paris jeudi-dimanche (~4-5h velo) -> S2 (fetes) : velotaf jusqu'au 23/12, repos 24-25, sorties Z2 libres 26-27 (~8-10h)"
+    rythme: "Lieu a confirmer (Paris depuis le 17/12) : Z2 libre ou home trainer selon le lieu, repos 24-25, sorties Z2 libres 26-27, aucune intensite"
 
   - id: bloc-04
     nom: Sweet Spot Extensif
@@ -155,7 +157,7 @@ blocs:
     focus: [seuil_z4, over_unders, entretien_pma_jeudi, resistance_dplus, test_controle_fevrier]
     test: "Test 2 de contrôle 3 min + 12 min le samedi 20/02, en fin d'assimilation, pour valider la progression et fixer le pacing de Madone-Peille (et de la repetition au Paris-Nice Challenge)"
     volume_cible_h: [10, 14]
-    rythme: "Cycle 3:1 -> S1 12h30, S2 13h30, S3 14h, S4 assimilation 10h + test. Week-ends alternes : A = samedi sortie longue 5-6h avec series seuil en col + dimanche trail ; B = samedi intensites en col 3h-3h30 + dimanche sortie longue sur fatigue 4h30-5h"
+    rythme: "Cycle 3:1 -> S1 12h30, S2 13h30, S3 14h, S4 assimilation 10h + test. Week-ends alternes : A = samedi sortie longue 5-6h avec series seuil en col + dimanche sortie de 2 a 4h en Z2 (trail possible selon le temps et l'envie) ; B = samedi intensites en col 3h-3h30 + dimanche sortie longue sur fatigue 4h30-5h"
 
   - id: bloc-06
     nom: Seuil Long en Col & Volume Montagne
@@ -166,7 +168,7 @@ blocs:
     focus: [seuil_long_cols_30_45min, pacing_madone, entretien_pma, pnc_repetition_generale]
     course: "Paris Nice Challenge (samedi 13 mars 2027 - 150 km, 3500 D+) - priorite C, courue dans la charge"
     volume_cible_h: [12.5, 13.5]
-    rythme: "3 semaines de charge -> S1 12h30, S2 13h30 seuil long en col -> S3 ~13h course comprise (jeudi Z2 souple + activation courte, vendredi repos, PNC samedi aux allures Madone, dimanche Z1 court ou repos). Trail le WE du 06-07/03."
+    rythme: "3 semaines de charge -> S1 12h30, S2 13h30 seuil long en col -> S3 ~13h course comprise (jeudi Z2 souple + activation courte, vendredi repos, PNC samedi aux allures Madone, dimanche Z1 court ou repos). WE du 06-07/03 : sortie de 2 a 4h en Z2 (trail possible)."
 
   - id: bloc-07
     nom: Montagne de Printemps, Madone & GFNY
@@ -239,8 +241,8 @@ synthese_construction:
     4. PMA en bloc : un bloc PMA concentré en décembre (bloc 3, jusqu'à 3 séances/semaine dans la limite de 3 séances dures et 2 jours durs consécutifs), entretien court le jeudi tous les 7 à 10 jours de janvier à mars, rappel concentré d'une semaine en S2 du bloc 7 (post Paris-Nice), entretien sur le bloc Bonette.
     5. Récupération post-course : régénération active en Z1/Z2 souple. Post-Paris-Nice : une semaine de récupération avant le rappel PMA. Entre Madone-Peille et GFNY : récupération lundi-mercredi, activation jeudi et samedi.
     6. Sprints en Phase 1 (hiver) : rappels de sprints courts alactiques (10-15s max, récup complète 3-4 min) en fin de sortie Z2 et départs arrêtés à fort couple en bosse.
-    7. Intégration stricte des contraintes : 2 jours de repos/semaine (lundi/vendredi), vélotaf mardi/mercredi (2h10 AR) toujours en Z2, séance du jeudi plafonnée à 2h sur la pause déjeuner, sortie longue 5-6h chaque semaine, renforcement musculaire 2x/semaine tout l'hiver (hors quota selle). Trail un dimanche sur deux, supprimé les week-ends de course (décision de Cyril : le trail est secondaire).
-    8. Week-ends alternés à partir du bloc 5 : A = samedi sortie longue 5-6h avec séries de seuil ou d'allure course en col + dimanche trail ; B = samedi intensités spécifiques en col 3h-3h30 + dimanche sortie longue de volume sur fatigue 4h30-5h.
+    7. Intégration stricte des contraintes : 2 jours de repos/semaine (lundi/vendredi), vélotaf mardi/mercredi (2h10 AR) toujours en Z2, séance du jeudi plafonnée à 2h sur la pause déjeuner, sortie longue 5-6h chaque semaine, renforcement musculaire 2x/semaine tout l'hiver (hors quota selle). Trail optionnel depuis le 22/11/2026 (décision de Cyril) : selon le temps et l'envie, à la place de la sortie courte du week-end, jamais en plus.
+    8. Week-ends alternés à partir du bloc 5 : A = samedi sortie longue 5-6h avec séries de seuil ou d'allure course en col + dimanche sortie de 2 à 4h en Z2 (trail possible) ; B = samedi intensités spécifiques en col 3h-3h30 + dimanche sortie longue de volume sur fatigue 4h30-5h.
     9. Protocole de tests terrain 3 min + 12 min en côte (20 min Z1 entre les deux) : 02-03/01/2027 (bloc 4), 20/02/2027 (fin bloc 5). Le test optionnel du 15/05 est supprimé (révision du 09/11/2026) : la Drapoise sert de référence pour le pacing Bonette.
     10. Maladie : aucune séance rattrapée. Une semaine de charge touchée par 3 jours de maladie ou plus devient une semaine d'assimilation ; si le calendrier coince, on retire une semaine de charge, jamais une assimilation.
     11. Rôle de canalisateur du coach : exigence maximale sur les blocs de charge et les intensités ciblées (bloc PMA, seuil, chocs de cols) ; fermeté sur la facilité des séances Z2/vélotaf, l'assimilation post-choc et le veto dès que des signaux inquiétants apparaissent (sommeil bas, dérive cardiaque anormale, FC repos en hausse, VFC en chute).
