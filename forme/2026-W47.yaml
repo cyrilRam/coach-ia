@@ -507,6 +507,28 @@ suivi_quotidien:
       avant 22h30. Lundi le bloc 3 démarre : S1 plafonnée à 12,3 h, vérifier le matin avant toute série.
       Météo et équipement de Nice non consultés. Rien modifié sur Intervals.
     ressenti_cyril: "J'ai fait 3 fois 5x1min à 350W et encore la dernière donc le 15eme. J'ai réussi à tenir 400W"
+  - date: '2026-11-22'
+    moment: matin
+    nuit: {sommeil_h: null, score: null, vfc_ms: null, vfc_moy7: 57.5, fc_repos: 58, fc_repos_moy7: 54.7}
+    charge: {ctl: 67.4, atl: 69.5, tsb: -2.1}
+    seance_prevue: "Jour 28 (fin du bloc 2), pluie : renfo B2S4 bas du corps 45 min, seulement si FC repos <= 55, VFC >= 50 et jambes correctes ; sinon repos complet"
+    verdict: rouge
+    consigne: >
+      Nuit du 21 au 22 pas encore synchronisée (montre) : ni durée, ni score de sommeil, ni VFC,
+      je n'en invente pas. Seule la FC repos est remontée : 58, soit +5 bpm sur hier (53) et sur
+      la moyenne 7 jours (54,7), et au-dessus de la condition posée hier soir (<= 55) pour le
+      renfo. Ça vient après 3h de séance VO2max hier (TSS 151, 400 W sur le 15e effort, ATL de
+      69,3 à 80,2) : peut-être la simple trace de l'effort, mais c'est aussi la forme que prend
+      « l'illusion du tout va bien » quand une infection couve. Un matin isolé n'est pas un veto
+      santé, c'est un renfo supprimé : repos complet aujourd'hui, ni renfo bas du corps, ni vélo,
+      ni course à pied, marche tranquille au plus. C'est le jour d'assimilation de la semaine
+      choc, rien à rattraper. Repas riches en glucides, hydratation, coucher avant 22h.
+      Au réveil définitif, note dans cet ordre : FC repos au calme, VFC, symptômes (nez, gorge,
+      courbatures, frissons). Si la montre synchronise une nuit < 7h ou un score < 70, ou si la
+      FC repos reste >= 56 demain : deux matins de suite, repos préventif 48 h et le bloc 3
+      attend. Lundi (bloc 3, jour 1) : on ne démarre que si FC repos <= 55, VFC >= 50 et rien à
+      signaler. Rien modifié sur Intervals.
+    ressenti_cyril:
 analyse_coach:
   maj: null
   synthese: null
