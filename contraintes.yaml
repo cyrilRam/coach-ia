@@ -25,7 +25,7 @@ semaine:
 
 
 trail:
-  frequence_min: toutes_les_2_semaines, sur une journée du WE (10 à 20km avec bcp de d+)
+  frequence_min: aucune selon le temps et l'envie peut remplacer la sortie courte du WE
   duree_h: 1 à 2 h
 
 renforcement_musculaire:
@@ -39,7 +39,7 @@ charge:
   jours_durs_consecutifs_max: 2
   variation_volume_hebdo_max_pct: 30
   variation_volume_reference: moyenne_3_semaines_precedentes
-  
+
 indisponibilites: []
   # - du: 2026-12-24
   #   au: 2027-01-02
