@@ -58,7 +58,7 @@
 
 **Renforcement :** 8 séances, 4h05 pour 5h50. Sur les 4 séances de force bas du corps du bloc, 2 faites (B2S1, B2S2) ; les deux B2S4 ont été supprimées. Fréquence de 2 par semaine tenue en S1, S3 et S4, pas en S2. Le passage à la force avec charge demandé à la fin du bloc 1 n'a pas eu lieu (séances restées au poids du corps).
 
-**Trail : zéro sur le bloc.** Dernier trail le 25/10 : 08/11 annulé (veto), W46 et W47 sans. Contrainte « toutes les 2 semaines » non tenue quatre week-ends de suite.
+**Trail : zéro sur le bloc.** Dernier trail le 25/10 : 08/11 annulé (veto), W46 et W47 sans. Contrainte « toutes les 2 semaines » non tenue quatre week-ends de suite. Décision de Cyril le 22/11 : le trail sort du programme (trop compliqué d'accès pour être planifié chaque quinzaine).
 
 ### 3. Ressenti Athlète & Signaux Physiologiques
 
@@ -68,6 +68,7 @@
 * **Le creux de VFC du lendemain d'une grosse journée est la norme** : 50 le 19/11 et 48 le 22/11, au lendemain des journées dures, remontée à 55 en 24 h après le 19/11 (le 22/11 se vérifie lundi matin). Il ne signale pas une fatigue accumulée.
 * **Valeurs provisoires du matin trompeuses :** FC repos lue à 57 le 08/11 (corrigée à 52 après synchronisation), à 58 le 22/11 (corrigée à 55). Le veto du trail du 08/11 s'appuyait en partie sur une valeur provisoire.
 * **Seul vrai épisode de fatigue du bloc :** 07-08/11, 241 TSS avec Z3 non planifiée sur une VFC déjà basse (51, 48, 46), écart thermique de 15 °C, TSB -20. L'assimilation avancée était justifiée par la charge, même si la lecture « infection possible » était trop prudente.
+* **La semaine légère de la S3 a payé**, et Cyril la juge lui-même bénéfique. À sa sortie, la VFC revient à 56 et la FC repos à 54 ; l'efficacité en endurance remonte de 1,37-1,41 à 1,45-1,46 ; il monte le col d'Èze 20 à 30 W plus fort à FC égale ; il réussit la séance VO2 du 21/11 et ses jambes sont au top. À retenir pour la suite : après 6 semaines de charge, il faut une vraie semaine légère, même incomplète (elle s'est arrêtée au jeudi). Ce qui a moins marché, ce sont les vetos quotidiens calés sur des seuils fixes.
 * **Polarisation (temps FC, vélo + CAP) :** 94 % en Z1-Z2 en W44, 93 % en W45, 94 % en W46, 87 % en W47 (bloc de force puis VO2). Côté puissance, la Z3 reste haute : 153 min en W44, 67 min en W45 et W46, 78 min en W47. Une partie se fait à 236-240 W avec une FC de Z2 (relecture de la W46 : Z2 cardiaque tenue jusqu'à ~240 W). La vraie zone grise est au-delà de 250 W : lundi 16/11 2 x 6' à 252 W, samedi 07/11 67 min hors blocs.
 * **Aucun signal de maladie sur le bloc :** pas de symptôme confirmé, pas de dérive cardiaque hors parcours et chaleur.
 
@@ -83,7 +84,6 @@
 **À consolider**
 * Les jours faciles : les jours de repos ont été roulés (16/11, 20/11), avec de la Z3 au-dessus de 250 W.
 * Séries réalisées = séries prescrites : 4 efforts au lieu de 3 le 07/11, 15 x 1' au lieu de 10 le 21/11, 401 W ajoutés le 18/11.
-* Le trail : zéro en 4 semaines.
 * La force bas du corps en renfo : 2 sur 4.
 * Les départs arrêtés : jamais réalisés.
 * Les séances clés perdues à la pluie (3x12' du 05/11, trail, semaine W46) faute de plan B.
@@ -94,7 +94,7 @@
 3. **Garde-fou PMA de la saison maintenu :** au premier vrai signal, la séance du dimanche saute en premier.
 4. **Polarisation :** Z2 et vélotaf à 240 W au plus et FC ≤ 164, la FC commande. Les jours de repos sont des repos. Pas de CAP ajoutée un jour dur.
 5. **Séances clés :** le nombre de répétitions prescrit est un plafond, pas un minimum. Dans un bloc à 3 séances PMA par semaine, le surplus se paie sur la séance suivante.
-6. **Trail :** dès la S1 du bloc 3, puis toutes les 2 semaines, comme le veut `contraintes.yaml`.
+6. **Trail retiré du programme (décision de Cyril, 22/11).** Le week-end devient 100 % vélo : sortie longue un jour, sortie de 2 à 4h l'autre jour (règle `gestion_we` de `contraintes.yaml`). Le dimanche du bloc 3 porte déjà une séance PMA : sur les semaines lourdes, c'est elle qui saute en premier au moindre signal. Le trail ne disparaît que lorsque Cyril l'a retiré de `contraintes.yaml` ; les mentions du macrocycle (bloc 3, week-ends alternés à partir du bloc 5) sont revues avec la nouvelle organisation de semaine.
 7. **Plan B pluie pour chaque séance clé** (Nice en décembre, pas de home trainer) : séance déplacée au jour sec suivant dans la limite des 2 jours durs consécutifs, ou format court en côte entre deux averses, ou CAP en côte pour la PMA. Écrit dans le fichier de bloc, pas décidé le matin même.
 8. **Renfo :** 1 séance de force bas du corps par semaine, placée loin des séances PMA (au moins 48 h avant), plus 1 séance posture. Passage à la charge à décider avec Cyril.
 9. **Sprints :** le focus « maintien sprints » du bloc 3 est prescrit en intervalles explicites (nombre, durée, récupération), sinon il disparaît comme les départs arrêtés.
