@@ -7,14 +7,27 @@ semaine: 2026-W47
 du: 2026-11-16
 au: 2026-11-22
 
-mesures: {}
+mesures:
+  maj: '2026-11-22'
+  ctl_fin: 67.4
+  atl_fin: 69.9
+  tsb_fin: -2.5
+  ramp_rate: -0.45868683
+  charge_totale: 461
+  heures: 10.6
+  distance_km: 210
+  denivele_m: 4143
+  seances: 9
+  sommeil_moyen_h: 8.2
+  hrv_moyenne: 56.1
+  fc_repos_moyenne: 54.3
 
 # saisie manuelle
 ressenti:
-  global:
-  jambes:
-  motivation:
-  sommeil:
+  global: Tres bon ressenti. J'ai pu faire plus d'heures que prevu avec au total 3 seances de force.
+  jambes: 3 bonnes seances de force et vendredi une seance ou je mettais 240/250 W avec 150 bpm sur le col eze. Samedi j'ai aussi tenu les W sans difficultés
+  motivation: Tres bonne hate de commencer le gros bloc de V02
+  sommeil: Tres bon et on a pu voir que ma FC et VFC augmentent et baissent quand je suis en repos
   seances_manquees: []
   imprevus:
   notes:
@@ -24,60 +37,88 @@ adaptations: []
 suivi_quotidien:
   - date: '2026-11-16'
     moment: matin
-    nuit: {sommeil_h: null, score: null, vfc_ms: null, vfc_moy7: 49.6, fc_repos: null, fc_repos_moy7: 55.3}
+    nuit: {sommeil_h: null, score: null, vfc_ms: null, vfc_moy7: 49.6, fc_repos: 
+        null, fc_repos_moy7: 55.3}
     charge: {ctl: 68.0, atl: 75.0, tsb: -6.9}
-    seance_prevue: "Renfo B2S4 force bas du corps (jour 22, formation lundi) : supprimée par la consigne du 15/11 soir, repos jambes"
+    seance_prevue: "Renfo B2S4 force bas du corps (jour 22, formation lundi) : supprimée
+      par la consigne du 15/11 soir, repos jambes"
     verdict: rouge
     consigne: >
-      Nuit du 15 au 16 pas encore synchronisée (montre) : aucune valeur de sommeil, VFC ni
-      FC repos, je n'en invente pas. Derniers relevés (15 nov) : FC repos 56, VFC 47 ms,
-      moy7 VFC 49,6 et FC repos 55,3 ; VFC sous 50 sur 6 matins sur 7, FC repos à 56-58
-      depuis quatre jours. Hier 4h21, TSS 180 un jour de repos prescrit (356 TSS en trois
-      jours, TSB passé de +14,9 à -6,9). Verdict conditionnel, rouge par défaut : pas de
-      renfo jambes, pas de vélo, pas de vélotaf si présentiel ; marche tranquille au plus.
+      Nuit du 15 au 16 pas encore synchronisée (montre) : aucune valeur de sommeil,
+      VFC ni
+      FC repos, je n'en invente pas. Derniers relevés (15 nov) : FC repos 56, VFC
+      47 ms,
+      moy7 VFC 49,6 et FC repos 55,3 ; VFC sous 50 sur 6 matins sur 7, FC repos à
+      56-58
+      depuis quatre jours. Hier 4h21, TSS 180 un jour de repos prescrit (356 TSS en
+      trois
+      jours, TSB passé de +14,9 à -6,9). Verdict conditionnel, rouge par défaut :
+      pas de
+      renfo jambes, pas de vélo, pas de vélotaf si présentiel ; marche tranquille
+      au plus.
       Le renfo B2S4 n'est pas décalé ce soir : il se replace mercredi, si les chiffres
-      le permettent. Au réveil, note FC repos et VFC. Si FC repos <= 54 et VFC >= 52 et rien
+      le permettent. Au réveil, note FC repos et VFC. Si FC repos <= 54 et VFC >=
+      52 et rien
       à signaler : rien ne change aujourd'hui, mais c'est le premier des deux matins
       qui ouvrent la reprise. FC repos >= 56, VFC < 50 ou symptôme (nez, gorge, courbatures,
       frissons) : repos complet 48 h de plus, passerelle de la semaine à revoir. Coucher
-      avant 22h, repas riches, hydratation. Présentiel ou distanciel : à trancher ce soir
+      avant 22h, repas riches, hydratation. Présentiel ou distanciel : à trancher
+      ce soir
       avec toi, ainsi que les garde-fous santé proposés dans l'analyse W46.
     ressenti_cyril:
   - date: '2026-11-16'
     moment: matin
-    nuit: {sommeil_h: 8.3, score: 78, vfc_ms: 51, vfc_moy7: 47.6, fc_repos: 54, fc_repos_moy7: 55.6}
+    nuit: {sommeil_h: 8.3, score: 78, vfc_ms: 51, vfc_moy7: 47.6, fc_repos: 54, 
+        fc_repos_moy7: 55.6}
     charge: {ctl: 68.0, atl: 75.0, tsb: -7.0}
-    seance_prevue: "Renfo B2S4 force bas du corps (jour 22, formation lundi) : supprimée par la consigne du 15/11 soir, repos jambes"
+    seance_prevue: "Renfo B2S4 force bas du corps (jour 22, formation lundi) : supprimée
+      par la consigne du 15/11 soir, repos jambes"
     verdict: orange
     consigne: >
-      Nuit synchronisée : 8h19, score 78, VFC 51 ms (moy7 47,6), FC repos 54 (moy7 55,6).
-      Premier signe de détente après quatre matins à 56-58 et VFC 42-47, aucun seuil de veto
-      franchi, mais la VFC reste sous 52 et un seul matin ne fait pas une tendance, après
+      Nuit synchronisée : 8h19, score 78, VFC 51 ms (moy7 47,6), FC repos 54 (moy7
+      55,6).
+      Premier signe de détente après quatre matins à 56-58 et VFC 42-47, aucun seuil
+      de veto
+      franchi, mais la VFC reste sous 52 et un seul matin ne fait pas une tendance,
+      après
       les 180 TSS d'hier un jour de repos. Orange : la séance du jour reste supprimée
       (pas de renfo jambes, pas de vélo, pas de vélotaf si présentiel), marche tranquille
       au plus. Demain, si FC repos <= 54 et VFC >= 52 et aucun symptôme (nez, gorge,
-      courbatures), c'est le second matin qui ouvre la reprise (Z2 souple, FC qui commande,
+      courbatures), c'est le second matin qui ouvre la reprise (Z2 souple, FC qui
+      commande,
       pas de Z3). Sinon repos 48 h de plus. Coucher avant 22h, repas riches, hydratation.
     ressenti_cyril:
   - date: '2026-11-16'
     moment: conversation
-    nuit: {sommeil_h: 8.3, score: 78, vfc_ms: 51, vfc_moy7: 47.6, fc_repos: 54, fc_repos_moy7: 55.6}
+    nuit: {sommeil_h: 8.3, score: 78, vfc_ms: 51, vfc_moy7: 47.6, fc_repos: 54, 
+        fc_repos_moy7: 55.6}
     charge: {ctl: 68.0, atl: 75.0, tsb: -7.0}
-    seance_prevue: "Pas de formation lundi : Cyril demande vélo ou renfo B2S4 force bas du corps"
+    seance_prevue: "Pas de formation lundi : Cyril demande vélo ou renfo B2S4 force
+      bas du corps"
     verdict: orange
     consigne: >
-      Vélo souple oui, renfo force non aujourd'hui. Le matin est en détente (FC repos 54,
+      Vélo souple oui, renfo force non aujourd'hui. Le matin est en détente (FC repos
+      54,
       VFC 51 à 1 ms du seuil de 52, sommeil 8h19 score 78), aucun veto, mais les jambes
-      sortent de 4h21 / 180 TSS hier et de 356 TSS en trois jours : le B2S4 à RPE 7-8
-      (fentes bulgares, squats 1 jambe) empilerait une fatigue musculaire sur des jambes
-      déjà chargées. Vélo : 1h30 à 2h max, plat ou vallonné doux, seul, FC <= 150 quelle
+      sortent de 4h21 / 180 TSS hier et de 356 TSS en trois jours : le B2S4 à RPE
+      7-8
+      (fentes bulgares, squats 1 jambe) empilerait une fatigue musculaire sur des
+      jambes
+      déjà chargées. Vélo : 1h30 à 2h max, plat ou vallonné doux, seul, FC <= 150
+      quelle
       que soit la puissance, pas de Z3, pas de sprint, TSS visé 60 à 90 (pas 180 comme
-      hier). Pas de départ au moindre symptôme (nez, gorge, courbatures, frissons) ; FC
-      au-dessus de 150 plus de 5 min ou FC qui dérive à puissance égale : on lève le pied
-      ou demi-tour. Renfo B2S4 replacé mercredi soir (au moins 72 h avant samedi) si FC
-      repos <= 55 et VFC >= 50 mercredi matin, renfo posture jeudi soir. Mardi : vélotaf Z2
-      souple ou Z2 de 1h à 1h30 à midi, décision au réveil selon FC repos <= 55 et VFC >= 50.
-      Vendredi repos, samedi et dimanche conditionnés à ces trois matins. Rien modifié sur
+      hier). Pas de départ au moindre symptôme (nez, gorge, courbatures, frissons)
+      ; FC
+      au-dessus de 150 plus de 5 min ou FC qui dérive à puissance égale : on lève
+      le pied
+      ou demi-tour. Renfo B2S4 replacé mercredi soir (au moins 72 h avant samedi)
+      si FC
+      repos <= 55 et VFC >= 50 mercredi matin, renfo posture jeudi soir. Mardi : vélotaf
+      Z2
+      souple ou Z2 de 1h à 1h30 à midi, décision au réveil selon FC repos <= 55 et
+      VFC >= 50.
+      Vendredi repos, samedi et dimanche conditionnés à ces trois matins. Rien modifié
+      sur
       Intervals.
     ressenti_cyril: >
       « Ma journée de lundi s'est libérée, pas de formation. Est-ce que je sors rouler,
@@ -85,454 +126,727 @@ suivi_quotidien:
   - date: '2026-11-16'
     moment: soir
     realise:
-      - {nom: "Vélo route Nice (sortie souple)", duree_min: 108, tss: 73, np_w: 199, fc_moy: 137, fc_max: 172, d_plus_m: 956}
-    charge: {ctl: 68.0, atl: 75.8, tsb: -7.8, heures_semaine: 1.8, heures_prevues: 7.4}
+      - {nom: "Vélo route Nice (sortie souple)", duree_min: 108, tss: 73, np_w: 
+          199, fc_moy: 137, fc_max: 172, d_plus_m: 956}
+    charge: {ctl: 68.0, atl: 75.8, tsb: -7.8, heures_semaine: 1.8, 
+        heures_prevues: 7.4}
     ecarts: >
-      Vélo fait (1h48, TSS 73, dans la fourchette 60-90), FC moyenne 137 sous le plafond de 150,
-      pas de renfo (conforme à la consigne). Écarts : 956 m de D+ sur 1h48, 21 min en puissance Z3
-      (NP 199 W, bosses poussées) alors que la consigne disait « pas de Z3 », même si la FC
-      reste en Z1-Z2 (4 min en zone FC 3, pic 172 bpm). Découplage Pw:HR 22,7 %, très au-dessus
-      de 10 % : à lire avec prudence sur un parcours vallonné, mais cumulé à des VFC sous 50
-      six matins sur sept et FC repos 56-58 jusqu'à hier, c'est un point de vigilance, pas
+      Vélo fait (1h48, TSS 73, dans la fourchette 60-90), FC moyenne 137 sous le plafond
+      de 150,
+      pas de renfo (conforme à la consigne). Écarts : 956 m de D+ sur 1h48, 21 min
+      en puissance Z3
+      (NP 199 W, bosses poussées) alors que la consigne disait « pas de Z3 », même
+      si la FC
+      reste en Z1-Z2 (4 min en zone FC 3, pic 172 bpm). Découplage Pw:HR 22,7 %, très
+      au-dessus
+      de 10 % : à lire avec prudence sur un parcours vallonné, mais cumulé à des VFC
+      sous 50
+      six matins sur sept et FC repos 56-58 jusqu'à hier, c'est un point de vigilance,
+      pas
       un feu vert. Semaine : 1,8 h sur 5h15-9h35 prévues, rien à rattraper.
-    demain: "Mardi : vélotaf Z2 souple (60-72 %, 186-223 W, FC <= 148) ou Z2 midi 1h-1h30, décision au réveil"
+    demain: "Mardi : vélotaf Z2 souple (60-72 %, 186-223 W, FC <= 148) ou Z2 midi
+      1h-1h30, décision au réveil"
     consigne: >
-      Demain matin, FC repos et VFC avant de décider : FC repos <= 55 et VFC >= 50 et aucun
-      symptôme (nez, gorge, courbatures) : vélotaf ou Z2 de 1h à 1h30, 186-223 W, FC <= 148,
-      zéro bosse appuyée, zéro Z3. Si FC repos >= 56, VFC < 50 ou symptôme : repos, rien d'autre.
-      Coucher avant 22h, repas riches, hydratation. Renfo B2S4 toujours conditionné à mercredi matin.
+      Demain matin, FC repos et VFC avant de décider : FC repos <= 55 et VFC >= 50
+      et aucun
+      symptôme (nez, gorge, courbatures) : vélotaf ou Z2 de 1h à 1h30, 186-223 W,
+      FC <= 148,
+      zéro bosse appuyée, zéro Z3. Si FC repos >= 56, VFC < 50 ou symptôme : repos,
+      rien d'autre.
+      Coucher avant 22h, repas riches, hydratation. Renfo B2S4 toujours conditionné
+      à mercredi matin.
     ressenti_cyril:
   - date: '2026-11-17'
     moment: matin
-    nuit: {sommeil_h: null, score: null, vfc_ms: null, vfc_moy7: 47.6, fc_repos: null, fc_repos_moy7: 55.6}
+    nuit: {sommeil_h: null, score: null, vfc_ms: null, vfc_moy7: 47.6, fc_repos: 
+        null, fc_repos_moy7: 55.6}
     charge: {ctl: 68.6, atl: 78.2, tsb: -9.6}
-    seance_prevue: "Jour 23 : vélotaf A/R Z2 60-72 % (186-223 W), supprimé si présentiel ; sinon Z2 midi 1h-1h30 selon la décision de la veille"
+    seance_prevue: "Jour 23 : vélotaf A/R Z2 60-72 % (186-223 W), supprimé si présentiel
+      ; sinon Z2 midi 1h-1h30 selon la décision de la veille"
     verdict: orange
     consigne: >
-      Nuit du 16 au 17 pas encore synchronisée (montre) : ni sommeil, ni VFC, ni FC repos,
-      je n'en invente pas. Dernier relevé (16 nov) : FC repos 54, VFC 51 ms, sommeil 8h19
-      score 78 ; moyennes 7 jours VFC 47,6 et FC repos 55,6. Charge : CTL 68,6, ATL 78,2,
-      TSB -9,6 ; 356 TSS sur les trois derniers jours (103, 180, 73). Hier : 1h48 à 73 TSS,
-      mais 21 min en Z3 de puissance malgré la consigne et découplage Pw:HR 22,7 % : point
-      de vigilance, pas un feu vert. Verdict conditionnel, orange. Au réveil, note FC repos
+      Nuit du 16 au 17 pas encore synchronisée (montre) : ni sommeil, ni VFC, ni FC
+      repos,
+      je n'en invente pas. Dernier relevé (16 nov) : FC repos 54, VFC 51 ms, sommeil
+      8h19
+      score 78 ; moyennes 7 jours VFC 47,6 et FC repos 55,6. Charge : CTL 68,6, ATL
+      78,2,
+      TSB -9,6 ; 356 TSS sur les trois derniers jours (103, 180, 73). Hier : 1h48
+      à 73 TSS,
+      mais 21 min en Z3 de puissance malgré la consigne et découplage Pw:HR 22,7 %
+      : point
+      de vigilance, pas un feu vert. Verdict conditionnel, orange. Au réveil, note
+      FC repos
       et VFC. Si FC repos <= 55, VFC >= 50 et aucun symptôme (nez, gorge, courbatures,
       frissons) : vélotaf ou Z2 de 1h à 1h30, 186-223 W, FC <= 148, zéro bosse appuyée,
-      zéro Z3 (les bosses se montent assises, sans chercher la puissance). Si FC repos >= 56,
-      VFC < 50 ou symptôme : repos, rien d'autre. Présentiel : pas de vélotaf. Coucher avant
+      zéro Z3 (les bosses se montent assises, sans chercher la puissance). Si FC repos
+      >= 56,
+      VFC < 50 ou symptôme : repos, rien d'autre. Présentiel : pas de vélotaf. Coucher
+      avant
       22h, repas riches, hydratation. Renfo B2S4 toujours conditionné à mercredi matin.
     ressenti_cyril:
   - date: '2026-11-17'
     moment: matin
-    nuit: {sommeil_h: null, score: null, vfc_ms: null, vfc_moy7: 47.6, fc_repos: null, fc_repos_moy7: 55.6}
+    nuit: {sommeil_h: null, score: null, vfc_ms: null, vfc_moy7: 47.6, fc_repos: 
+        null, fc_repos_moy7: 55.6}
     charge: {ctl: 68.6, atl: 78.2, tsb: -9.6}
-    seance_prevue: "Jour 23 : vélotaf A/R Z2 60-72 % (186-223 W), supprimé si présentiel ; sinon Z2 midi 1h-1h30"
+    seance_prevue: "Jour 23 : vélotaf A/R Z2 60-72 % (186-223 W), supprimé si présentiel
+      ; sinon Z2 midi 1h-1h30"
     verdict: orange
     consigne: >
       Seconde passe de 8h : la nuit du 16 au 17 n'est toujours pas remontée d'Intervals
-      (sommeil, VFC, FC repos vides), je ne la devine pas. Le premier verdict du matin reste donc
-      valable, conditionnel. Dès que la montre se synchronise : FC repos <= 55, VFC >= 50,
-      aucun symptôme (nez, gorge, courbatures, frissons) : vélotaf ou Z2 1h-1h30, 186-223 W,
-      FC <= 148, zéro Z3, bosses montées assises. FC repos >= 56, VFC < 50 ou symptôme :
-      repos, rien d'autre. Montre non synchronisée et rien à signaler au réveil : Z2 courte
-      et souple (1h max), à toi de juger au ressenti des jambes. Présentiel : pas de vélotaf.
+      (sommeil, VFC, FC repos vides), je ne la devine pas. Le premier verdict du matin
+      reste donc
+      valable, conditionnel. Dès que la montre se synchronise : FC repos <= 55, VFC
+      >= 50,
+      aucun symptôme (nez, gorge, courbatures, frissons) : vélotaf ou Z2 1h-1h30,
+      186-223 W,
+      FC <= 148, zéro Z3, bosses montées assises. FC repos >= 56, VFC < 50 ou symptôme
+      :
+      repos, rien d'autre. Montre non synchronisée et rien à signaler au réveil :
+      Z2 courte
+      et souple (1h max), à toi de juger au ressenti des jambes. Présentiel : pas
+      de vélotaf.
       Charge : TSB -9,6, 356 TSS sur trois jours, donc rien de dur aujourd'hui.
     ressenti_cyril:
   - date: '2026-11-17'
     moment: matin
-    nuit: {sommeil_h: 8.3, score: 55, vfc_ms: 62, vfc_moy7: 48.1, fc_repos: 54, fc_repos_moy7: 55.6}
+    nuit: {sommeil_h: 8.3, score: 55, vfc_ms: 62, vfc_moy7: 48.1, fc_repos: 54, 
+        fc_repos_moy7: 55.6}
     charge: {ctl: 68.6, atl: 78.2, tsb: -9.6}
-    seance_prevue: "Jour 23 : vélotaf A/R Z2 60-72 % (186-223 W), supprimé si présentiel ; sinon Z2 midi 1h-1h30"
+    seance_prevue: "Jour 23 : vélotaf A/R Z2 60-72 % (186-223 W), supprimé si présentiel
+      ; sinon Z2 midi 1h-1h30"
     verdict: orange
     consigne: >
-      Nuit enfin synchronisée : 8h17 mais score 55 (qualité 4, nuit probablement hachée malgré
-      la durée), VFC 62 ms (moy7 48,1, nettement au-dessus), FC repos 54 (moy7 55,6). Les deux
-      conditions posées hier sont remplies (FC repos <= 55, VFC >= 50) : aucun seuil de veto
-      franchi, le score de sommeil isolé ne fait pas un veto (il en faut deux de suite sous 70,
-      hier 78). Mais deuxième matin seulement de détente après des FC repos à 56-58, 356 TSS en
-      trois jours, TSB -9,6 et un découplage de 22,7 % hier : orange, la reprise reste douce.
-      Vélotaf ou Z2 de 1h à 1h15 maximum (pas les 2h10 du bloc), 186-223 W, FC <= 148, zéro Z3,
+      Nuit enfin synchronisée : 8h17 mais score 55 (qualité 4, nuit probablement hachée
+      malgré
+      la durée), VFC 62 ms (moy7 48,1, nettement au-dessus), FC repos 54 (moy7 55,6).
+      Les deux
+      conditions posées hier sont remplies (FC repos <= 55, VFC >= 50) : aucun seuil
+      de veto
+      franchi, le score de sommeil isolé ne fait pas un veto (il en faut deux de suite
+      sous 70,
+      hier 78). Mais deuxième matin seulement de détente après des FC repos à 56-58,
+      356 TSS en
+      trois jours, TSB -9,6 et un découplage de 22,7 % hier : orange, la reprise reste
+      douce.
+      Vélotaf ou Z2 de 1h à 1h15 maximum (pas les 2h10 du bloc), 186-223 W, FC <=
+      148, zéro Z3,
       bosses montées assises. Départ uniquement si rien à signaler (nez, gorge, courbatures,
-      frissons) ; présentiel : pas de vélotaf. Si les jambes sont lourdes au bout de 15 min :
+      frissons) ; présentiel : pas de vélotaf. Si les jambes sont lourdes au bout
+      de 15 min :
       demi-tour. Coucher avant 22h. Renfo B2S4 toujours conditionné à mercredi matin
-      (FC repos <= 55, VFC >= 50, et un score de sommeil correct ce soir). Si le score reste
+      (FC repos <= 55, VFC >= 50, et un score de sommeil correct ce soir). Si le score
+      reste
       sous 70 deux nuits de suite, veto.
     ressenti_cyril:
   - date: '2026-11-17'
     moment: conversation
-    nuit: {sommeil_h: 8.3, score: 55, vfc_ms: 62, vfc_moy7: 48.1, fc_repos: 54, fc_repos_moy7: 55.6}
+    nuit: {sommeil_h: 8.3, score: 55, vfc_ms: 62, vfc_moy7: 48.1, fc_repos: 54, 
+        fc_repos_moy7: 55.6}
     charge: {ctl: 68.6, atl: 78.2, tsb: -9.6}
     seance_prevue: "Jour 23 : vélotaf A/R Z2 60-72 %, supprimé si présentiel"
     verdict: orange
     consigne: >
       Cyril corrige la lecture de la semaine passée : chez lui, en phase de récupération,
-      la FC repos monte et la VFC baisse. Vérification sur 90 jours : du 10 au 14/11, après
-      0, 0, 0, 51 et 3 TSS les veilles, FC repos 52 -> 58 et VFC 65 -> 42 ; dès la reprise
-      du vélo (103 TSS le 14, 180 le 15) FC repos 56 -> 54 et VFC 47 -> 62 le 17. Le schéma
-      colle à son récit, avec deux réserves : échantillon court, et symptôme nasal déclaré
-      le 12/11. Conséquence : les seuils FC repos >= 56 et VFC < 50 ne valent pas veto
-      sanitaire chez lui après plusieurs jours de repos. Les seuils de matin.md ne sont pas
-      modifiés, à décider avec lui. Séance du jour inchangée en intensité (Z2 stricte, FC <= 148).
+      la FC repos monte et la VFC baisse. Vérification sur 90 jours : du 10 au 14/11,
+      après
+      0, 0, 0, 51 et 3 TSS les veilles, FC repos 52 -> 58 et VFC 65 -> 42 ; dès la
+      reprise
+      du vélo (103 TSS le 14, 180 le 15) FC repos 56 -> 54 et VFC 47 -> 62 le 17.
+      Le schéma
+      colle à son récit, avec deux réserves : échantillon court, et symptôme nasal
+      déclaré
+      le 12/11. Conséquence : les seuils FC repos >= 56 et VFC < 50 ne valent pas
+      veto
+      sanitaire chez lui après plusieurs jours de repos. Les seuils de matin.md ne
+      sont pas
+      modifiés, à décider avec lui. Séance du jour inchangée en intensité (Z2 stricte,
+      FC <= 148).
     ressenti_cyril: >
-      « Toutes tes analyses de la semaine dernière étaient fausses. En récup j'ai une hausse
+      « Toutes tes analyses de la semaine dernière étaient fausses. En récup j'ai
+      une hausse
       de la FC et une baisse de la VFC. »
   - date: '2026-11-17'
     moment: conversation
-    nuit: {sommeil_h: 8.3, score: 55, vfc_ms: 62, vfc_moy7: 48.1, fc_repos: 54, fc_repos_moy7: 55.6}
+    nuit: {sommeil_h: 8.3, score: 55, vfc_ms: 62, vfc_moy7: 48.1, fc_repos: 54, 
+        fc_repos_moy7: 55.6}
     charge: {ctl: 68.6, atl: 78.2, tsb: -9.6}
     seance_prevue: "Jour 23 : vélotaf A/R Z2 60-72 %, supprimé si présentiel"
     verdict: vert
     consigne: >
       Score de sommeil 55 expliqué : routine cassée (travail jusqu'à 22h au lieu d'écrans
-      coupés vers 20h), rêves continus, réveils pour uriner. Creux isolé avec cause connue,
-      durée correcte (8h17), VFC 62 et FC repos 54 bons : pas un signal de santé. Verdict
-      relevé à vert pour une séance d'endurance : vélotaf ou Z2 jusqu'à la durée du bloc
-      si les jambes vont bien, 186-223 W, FC <= 148, zéro Z3, bosses assises, demi-tour si
-      jambes lourdes après 15 min, pas de départ au moindre symptôme. Ce soir : écrans coupés
-      vers 20h, routine habituelle, moins de liquide en fin de soirée. Si les nuits restent
-      sous 70 malgré la routine rétablie, on en reparle. Renfo B2S4 toujours conditionné à
+      coupés vers 20h), rêves continus, réveils pour uriner. Creux isolé avec cause
+      connue,
+      durée correcte (8h17), VFC 62 et FC repos 54 bons : pas un signal de santé.
+      Verdict
+      relevé à vert pour une séance d'endurance : vélotaf ou Z2 jusqu'à la durée du
+      bloc
+      si les jambes vont bien, 186-223 W, FC <= 148, zéro Z3, bosses assises, demi-tour
+      si
+      jambes lourdes après 15 min, pas de départ au moindre symptôme. Ce soir : écrans
+      coupés
+      vers 20h, routine habituelle, moins de liquide en fin de soirée. Si les nuits
+      restent
+      sous 70 malgré la routine rétablie, on en reparle. Renfo B2S4 toujours conditionné
+      à
       mercredi matin.
     ressenti_cyril: >
-      « Je n'ai pas arrêté de rêver cette nuit, j'ai eu beaucoup envie de pisser, et hier
-      soir ce n'était pas la même routine : d'habitude j'arrête les écrans vers 20h et je me
+      « Je n'ai pas arrêté de rêver cette nuit, j'ai eu beaucoup envie de pisser,
+      et hier
+      soir ce n'était pas la même routine : d'habitude j'arrête les écrans vers 20h
+      et je me
       repose avec ma femme. Hier j'ai bossé jusqu'à 22h. »
   - date: '2026-11-17'
     moment: soir
     realise: []
-    charge: {ctl: 66.4, atl: 65.7, tsb: 0.7, heures_semaine: 1.8, heures_prevues: 7.4}
+    charge: {ctl: 66.4, atl: 65.7, tsb: 0.7, heures_semaine: 1.8, heures_prevues: 
+        7.4}
     ecarts: >
-      Aucune activité enregistrée aujourd'hui : vélotaf / Z2 prévu (conditionnel, verdict vert
-      pour de l'endurance) non fait ou non synchronisé. Constaté, sans rattrapage. Une journée
-      sans charge après 356 TSS en trois jours : ATL redescendue à 65,7, TSB à +0,7 (CTL 66,4).
-      Semaine : 1,8 h sur 5h15-9h35 prévues. Le score de sommeil 55 de cette nuit avait une cause
+      Aucune activité enregistrée aujourd'hui : vélotaf / Z2 prévu (conditionnel,
+      verdict vert
+      pour de l'endurance) non fait ou non synchronisé. Constaté, sans rattrapage.
+      Une journée
+      sans charge après 356 TSS en trois jours : ATL redescendue à 65,7, TSB à +0,7
+      (CTL 66,4).
+      Semaine : 1,8 h sur 5h15-9h35 prévues. Le score de sommeil 55 de cette nuit
+      avait une cause
       connue (routine cassée), pas un signal de santé.
-    demain: "Mercredi, jour 24 : vélotaf A/R Z2 60-72 % (186-223 W, FC <= 148) ; renfo B2S4 bas du corps conditionné au matin"
+    demain: "Mercredi, jour 24 : vélotaf A/R Z2 60-72 % (186-223 W, FC <= 148) ; renfo
+      B2S4 bas du corps conditionné au matin"
     consigne: >
-      Écrans coupés vers 20h, routine habituelle, moins de liquide en fin de soirée, coucher avant 22h
-      pour valider que le score remonte. Demain matin : FC repos <= 55, VFC >= 50, aucun symptôme (nez,
-      gorge, courbatures) et score de sommeil correct (>= 70) : vélotaf Z2 souple, 186-223 W, zéro Z3,
-      bosses assises ; renfo B2S4 force bas du corps le soir (au moins 72 h avant samedi). Score < 70
-      deux nuits de suite : veto, repos ou Z1. Le TSB neutre ne justifie pas de durcir : Z2 reste Z2.
+      Écrans coupés vers 20h, routine habituelle, moins de liquide en fin de soirée,
+      coucher avant 22h
+      pour valider que le score remonte. Demain matin : FC repos <= 55, VFC >= 50,
+      aucun symptôme (nez,
+      gorge, courbatures) et score de sommeil correct (>= 70) : vélotaf Z2 souple,
+      186-223 W, zéro Z3,
+      bosses assises ; renfo B2S4 force bas du corps le soir (au moins 72 h avant
+      samedi). Score < 70
+      deux nuits de suite : veto, repos ou Z1. Le TSB neutre ne justifie pas de durcir
+      : Z2 reste Z2.
     ressenti_cyril:
   - date: '2026-11-18'
     moment: matin
-    nuit: {sommeil_h: null, score: null, vfc_ms: null, vfc_moy7: 48.1, fc_repos: null, fc_repos_moy7: 55.6}
+    nuit: {sommeil_h: null, score: null, vfc_ms: null, vfc_moy7: 48.1, fc_repos: 
+        null, fc_repos_moy7: 55.6}
     charge: {ctl: 66.4, atl: 65.7, tsb: 0.7}
-    seance_prevue: "Jour 24 : vélotaf A/R Z2 60-72 % (186-223 W, 130 min au bloc), supprimé si présentiel ; renfo B2S4 bas du corps ce soir, conditionné à ce matin"
+    seance_prevue: "Jour 24 : vélotaf A/R Z2 60-72 % (186-223 W, 130 min au bloc),
+      supprimé si présentiel ; renfo B2S4 bas du corps ce soir, conditionné à ce matin"
     verdict: orange
     consigne: >
-      Nuit du 17 au 18 pas encore synchronisée (montre) : ni sommeil, ni score, ni VFC, ni
-      FC repos, je n'en invente pas. Dernier relevé (17 nov) : 8h17 mais score 55 (routine
-      cassée, cause connue), VFC 62, FC repos 54 ; moyennes 7 jours VFC 48,1 et FC repos 55,6.
-      Charge réelle au 17 : CTL 66,4, ATL 65,7, TSB +0,7, aucune séance faite hier ; les
-      chiffres du 18 affichés par Intervals (ATL 69,5) sont une projection du vélotaf prévu,
-      pas du réalisé. Verdict conditionnel, orange. Au réveil : si FC repos <= 55, VFC >= 50,
-      score >= 70 et aucun symptôme (nez, gorge, courbatures, frissons) : vélotaf Z2 souple,
-      186-223 W, FC <= 148, zéro Z3, bosses assises, 1h à 1h30 pour une reprise (le TSB neutre
-      ne justifie pas de durcir) ; renfo B2S4 bas du corps ce soir, RPE 7-8, au moins 72 h
-      avant samedi. Score < 70 une deuxième nuit de suite ou symptôme : repos ou Z1 courte, pas
-      de renfo. Montre non synchronisée et rien à signaler : Z2 courte de 1h max, au ressenti
-      des jambes. Présentiel : pas de vélotaf. Écrans coupés vers 20h hier soir ? C'est ce
+      Nuit du 17 au 18 pas encore synchronisée (montre) : ni sommeil, ni score, ni
+      VFC, ni
+      FC repos, je n'en invente pas. Dernier relevé (17 nov) : 8h17 mais score 55
+      (routine
+      cassée, cause connue), VFC 62, FC repos 54 ; moyennes 7 jours VFC 48,1 et FC
+      repos 55,6.
+      Charge réelle au 17 : CTL 66,4, ATL 65,7, TSB +0,7, aucune séance faite hier
+      ; les
+      chiffres du 18 affichés par Intervals (ATL 69,5) sont une projection du vélotaf
+      prévu,
+      pas du réalisé. Verdict conditionnel, orange. Au réveil : si FC repos <= 55,
+      VFC >= 50,
+      score >= 70 et aucun symptôme (nez, gorge, courbatures, frissons) : vélotaf
+      Z2 souple,
+      186-223 W, FC <= 148, zéro Z3, bosses assises, 1h à 1h30 pour une reprise (le
+      TSB neutre
+      ne justifie pas de durcir) ; renfo B2S4 bas du corps ce soir, RPE 7-8, au moins
+      72 h
+      avant samedi. Score < 70 une deuxième nuit de suite ou symptôme : repos ou Z1
+      courte, pas
+      de renfo. Montre non synchronisée et rien à signaler : Z2 courte de 1h max,
+      au ressenti
+      des jambes. Présentiel : pas de vélotaf. Écrans coupés vers 20h hier soir ?
+      C'est ce
       que dira le score.
     ressenti_cyril:
   - date: '2026-11-18'
     moment: matin
-    nuit: {sommeil_h: 8.5, score: 91, vfc_ms: 62, vfc_moy7: 50.1, fc_repos: 53, fc_repos_moy7: 55.3}
+    nuit: {sommeil_h: 8.5, score: 91, vfc_ms: 62, vfc_moy7: 50.1, fc_repos: 53, 
+        fc_repos_moy7: 55.3}
     charge: {ctl: 67.0, atl: 69.5, tsb: -2.5}
-    seance_prevue: "Jour 24 : vélotaf A/R Z2 60-72 % (186-223 W, 130 min au bloc), supprimé si présentiel ; renfo B2S4 bas du corps ce soir"
+    seance_prevue: "Jour 24 : vélotaf A/R Z2 60-72 % (186-223 W, 130 min au bloc),
+      supprimé si présentiel ; renfo B2S4 bas du corps ce soir"
     verdict: vert
     consigne: >
-      Nuit enfin synchronisée : 8h31, score 91, VFC 62 (moyenne 7 jours 50,1), FC repos 53
-      (moyenne 7 jours 55,3). Les trois conditions posées ce matin sont remplies (FC <= 55,
-      VFC >= 50, score >= 70) : la nuit du 17 au 18 efface le creux à 55. Vélotaf Z2 maintenu,
-      186-223 W, FC <= 148, zéro Z3, bosses assises ; présentiel : pas de vélotaf. Renfo B2S4
-      bas du corps ce soir maintenu, RPE 7-8, au moins 72 h avant samedi. Seul garde-fou : aucun
+      Nuit enfin synchronisée : 8h31, score 91, VFC 62 (moyenne 7 jours 50,1), FC
+      repos 53
+      (moyenne 7 jours 55,3). Les trois conditions posées ce matin sont remplies (FC
+      <= 55,
+      VFC >= 50, score >= 70) : la nuit du 17 au 18 efface le creux à 55. Vélotaf
+      Z2 maintenu,
+      186-223 W, FC <= 148, zéro Z3, bosses assises ; présentiel : pas de vélotaf.
+      Renfo B2S4
+      bas du corps ce soir maintenu, RPE 7-8, au moins 72 h avant samedi. Seul garde-fou
+      : aucun
       symptôme (nez, gorge, courbatures) en cours de journée, sinon on coupe.
     ressenti_cyril:
   - date: '2026-11-18'
     moment: conversation
-    nuit: {sommeil_h: 8.5, score: 91, vfc_ms: 62, vfc_moy7: 50.1, fc_repos: 53, fc_repos_moy7: 55.3}
+    nuit: {sommeil_h: 8.5, score: 91, vfc_ms: 62, vfc_moy7: 50.1, fc_repos: 53, 
+        fc_repos_moy7: 55.3}
     charge: {ctl: 67.0, atl: 69.5, tsb: -2.5}
-    seance_prevue: "Distanciel, pas de vélotaf. Cyril propose 1h midi + 1h jeudi matin, deux séances de force"
+    seance_prevue: "Distanciel, pas de vélotaf. Cyril propose 1h midi + 1h jeudi matin,
+      deux séances de force"
     verdict: vert
     consigne: >
-      Récupération confirmée (FC repos 53, VFC 62, score 91, VFC qui remonte avec la reprise
-      comme Cyril l'a décrit). Force oui aujourd'hui, pas deux jours de suite : samedi (2x5x1'
-      Z5) et dimanche (couple 6x3') sont déjà deux séances dures, une force mercredi et une jeudi
-      ferait quatre, au-delà du plafond de trois de contraintes.yaml. Mercredi midi 1h : 15 min
-      Z2, 4x5' à 88-93 % (273-288 W) à 55-60 rpm, assis, montée régulière, récup 3' Z1, retour
-      Z2 ; puissance égale sur les quatre blocs. Ce soir renfo B2S4 bas du corps, RPE 7-8 :
-      jour dur complet, jambes au repos ensuite. Jeudi matin 1h Z2 souple 186-223 W, FC <= 148,
-      zéro Z3, bosses assises (dérouille les jambes du renfo) ; renfo posture le soir. Vendredi
-      repos. Week-end inchangé. Alternative si Cyril tient à la force jeudi : dimanche passe en
-      2h Z2 et le renfo B2S4 de ce soir glisse à mardi prochain. Rien modifié sur Intervals.
+      Récupération confirmée (FC repos 53, VFC 62, score 91, VFC qui remonte avec
+      la reprise
+      comme Cyril l'a décrit). Force oui aujourd'hui, pas deux jours de suite : samedi
+      (2x5x1'
+      Z5) et dimanche (couple 6x3') sont déjà deux séances dures, une force mercredi
+      et une jeudi
+      ferait quatre, au-delà du plafond de trois de contraintes.yaml. Mercredi midi
+      1h : 15 min
+      Z2, 4x5' à 88-93 % (273-288 W) à 55-60 rpm, assis, montée régulière, récup 3'
+      Z1, retour
+      Z2 ; puissance égale sur les quatre blocs. Ce soir renfo B2S4 bas du corps,
+      RPE 7-8 :
+      jour dur complet, jambes au repos ensuite. Jeudi matin 1h Z2 souple 186-223
+      W, FC <= 148,
+      zéro Z3, bosses assises (dérouille les jambes du renfo) ; renfo posture le soir.
+      Vendredi
+      repos. Week-end inchangé. Alternative si Cyril tient à la force jeudi : dimanche
+      passe en
+      2h Z2 et le renfo B2S4 de ce soir glisse à mardi prochain. Rien modifié sur
+      Intervals.
     ressenti_cyril: >
-      « J'ai pleinement récupéré et tu vois mes stats reviennent à la normale avec l'activité.
-      Pas de vt car distanciel pour la formation. J'ai une heure ce midi pour rouler. Et demain
+      « J'ai pleinement récupéré et tu vois mes stats reviennent à la normale avec
+      l'activité.
+      Pas de vt car distanciel pour la formation. J'ai une heure ce midi pour rouler.
+      Et demain
       matin aussi. Je fais 2 séances de force d'une heure. »
 
   - date: '2026-11-18'
     moment: conversation
-    nuit: {sommeil_h: 8.5, score: 91, vfc_ms: 62, vfc_moy7: 50.1, fc_repos: 53, fc_repos_moy7: 55.3}
+    nuit: {sommeil_h: 8.5, score: 91, vfc_ms: 62, vfc_moy7: 50.1, fc_repos: 53, 
+        fc_repos_moy7: 55.3}
     charge: {ctl: 67.0, atl: 69.5, tsb: -2.5}
-    seance_prevue: "Cyril veut 4 séances dures cette semaine (force mercredi et jeudi + samedi + dimanche), faute de sortie longue"
+    seance_prevue: "Cyril veut 4 séances dures cette semaine (force mercredi et jeudi
+      + samedi + dimanche), faute de sortie longue"
     verdict: orange
     consigne: >
-      Quatre séances dures, non : le plafond de trois vient de contraintes.yaml, que seul Cyril
-      modifie, et la semaine sans sortie longue était déjà prévue dans l'ajustement du 08/11.
-      Plan à trois qui garde les deux forces : mercredi midi 4x5' à 88-93 % (273-288 W), 55-60 rpm,
-      soir renfo posture ; jeudi matin le couple de dimanche avancé, 15' Z2 puis 6x3' à 93-97 %
-      (288-301 W), 50-55 rpm, assis, récup 3' Z1, si FC repos <= 55 et jambes correctes ;
-      vendredi repos ; samedi 2h + 2x5x1' à 110-115 % (341-357 W) inchangé ; dimanche 2h Z2
-      souple avec le frère, renfo B2S4 bas du corps le soir (ou lundi, jour off). Bloc 3 démarre
+      Quatre séances dures, non : le plafond de trois vient de contraintes.yaml, que
+      seul Cyril
+      modifie, et la semaine sans sortie longue était déjà prévue dans l'ajustement
+      du 08/11.
+      Plan à trois qui garde les deux forces : mercredi midi 4x5' à 88-93 % (273-288
+      W), 55-60 rpm,
+      soir renfo posture ; jeudi matin le couple de dimanche avancé, 15' Z2 puis 6x3'
+      à 93-97 %
+      (288-301 W), 50-55 rpm, assis, récup 3' Z1, si FC repos <= 55 et jambes correctes
+      ;
+      vendredi repos ; samedi 2h + 2x5x1' à 110-115 % (341-357 W) inchangé ; dimanche
+      2h Z2
+      souple avec le frère, renfo B2S4 bas du corps le soir (ou lundi, jour off).
+      Bloc 3 démarre
       lundi sur des jambes fraîches. Rien modifié sur Intervals.
     ressenti_cyril: >
-      « Cette semaine on va faire 4 séances c'est pas grave j'ai pas de sortie longue ce we »
+      « Cette semaine on va faire 4 séances c'est pas grave j'ai pas de sortie longue
+      ce we »
   - date: '2026-11-18'
     moment: conversation
-    nuit: {sommeil_h: 8.5, score: 91, vfc_ms: 62, vfc_moy7: 50.1, fc_repos: 53, fc_repos_moy7: 55.3}
+    nuit: {sommeil_h: 8.5, score: 91, vfc_ms: 62, vfc_moy7: 50.1, fc_repos: 53, 
+        fc_repos_moy7: 55.3}
     charge: {ctl: 67.0, atl: 69.5, tsb: -2.5}
-    seance_prevue: "Dimanche : 2h Z2 avec le frère, renfo B2S4 bas du corps le soir ; météo annoncée mauvaise"
+    seance_prevue: "Dimanche : 2h Z2 avec le frère, renfo B2S4 bas du corps le soir
+      ; météo annoncée mauvaise"
     verdict: vert
     consigne: >
-      Dimanche sans vélo si la pluie se confirme : renfo B2S4 bas du corps à la maison, pas de
-      rattrapage. La semaine reste à trois séances dures (force mercredi, couple jeudi, Z5 samedi),
-      plan inchangé ailleurs. Volume estimé autour de 6h ; la S1 du bloc 3 est plafonnée à +30 %
-      du réel de la W47, soit environ 7h30-8h au lieu de 12h, à reprendre lors de la construction
+      Dimanche sans vélo si la pluie se confirme : renfo B2S4 bas du corps à la maison,
+      pas de
+      rattrapage. La semaine reste à trois séances dures (force mercredi, couple jeudi,
+      Z5 samedi),
+      plan inchangé ailleurs. Volume estimé autour de 6h ; la S1 du bloc 3 est plafonnée
+      à +30 %
+      du réel de la W47, soit environ 7h30-8h au lieu de 12h, à reprendre lors de
+      la construction
       du bloc 3. Rien modifié sur Intervals.
     ressenti_cyril: >
-      « Surtout dimanche je vais sûrement pas pouvoir rouler la météo a pas l'air bonne »
+      « Surtout dimanche je vais sûrement pas pouvoir rouler la météo a pas l'air
+      bonne »
   - date: '2026-11-18'
     moment: conversation
-    nuit: {sommeil_h: 8.5, score: 91, vfc_ms: 62, vfc_moy7: 50.1, fc_repos: 53, fc_repos_moy7: 55.3}
+    nuit: {sommeil_h: 8.5, score: 91, vfc_ms: 62, vfc_moy7: 50.1, fc_repos: 53, 
+        fc_repos_moy7: 55.3}
     charge: {ctl: 67.0, atl: 69.5, tsb: -2.5}
     seance_prevue: "Question du plafond +30 % pour la S1 du bloc 3"
     verdict: vert
     consigne: >
-      Sur le fond Cyril a en partie raison : après W46 (assimilation) et une W47 légère, la
-      fatigue est basse et un S1 à 12h ferait monter la CTL d'environ 5 points, sous le plafond
-      de 7 du ramp rate. Mais le +30 % est dans contraintes.yaml et dans la décision du 08/11
-      qu'il a validée : le coach ne le contourne pas. S'il veut une exception, c'est à lui de
-      modifier contraintes.yaml (par exemple référence sur la moyenne 4 semaines ou la CTL plutôt
-      que la seule semaine précédente) ; la décision sur la S1 se prend à la construction du
-      bloc 3, après lecture de sa W47 réelle. Levier immédiat conforme : allonger le Z2 de samedi.
+      Sur le fond Cyril a en partie raison : après W46 (assimilation) et une W47 légère,
+      la
+      fatigue est basse et un S1 à 12h ferait monter la CTL d'environ 5 points, sous
+      le plafond
+      de 7 du ramp rate. Mais le +30 % est dans contraintes.yaml et dans la décision
+      du 08/11
+      qu'il a validée : le coach ne le contourne pas. S'il veut une exception, c'est
+      à lui de
+      modifier contraintes.yaml (par exemple référence sur la moyenne 4 semaines ou
+      la CTL plutôt
+      que la seule semaine précédente) ; la décision sur la S1 se prend à la construction
+      du
+      bloc 3, après lecture de sa W47 réelle. Levier immédiat conforme : allonger
+      le Z2 de samedi.
     ressenti_cyril: >
-      « Après si je dépasse les 30 % on s'en fout, cette semaine n'aura pas été fatigante et
+      « Après si je dépasse les 30 % on s'en fout, cette semaine n'aura pas été fatigante
+      et
       m'aura permis de récup encore avant le gros bloc de PMA »
   - date: '2026-11-18'
     moment: conversation
-    nuit: {sommeil_h: 8.5, score: 91, vfc_ms: 62, vfc_moy7: 50.1, fc_repos: 53, fc_repos_moy7: 55.3}
+    nuit: {sommeil_h: 8.5, score: 91, vfc_ms: 62, vfc_moy7: 50.1, fc_repos: 53, 
+        fc_repos_moy7: 55.3}
     charge: {ctl: 67.0, atl: 69.5, tsb: -2.5}
-    seance_prevue: "Formation à distance, peu de temps : 1h de force aujourd'hui, 1h de force demain, samedi inchangé, dimanche probablement sans vélo (pluie)"
+    seance_prevue: "Formation à distance, peu de temps : 1h de force aujourd'hui,
+      1h de force demain, samedi inchangé, dimanche probablement sans vélo (pluie)"
     verdict: vert
     consigne: >
-      Mercredi 1h : 4x5' à 88-93 % en 55-60 rpm, récup 3' Z1. Jeudi 1h : 6x3' à 93-97 % en
-      50-55 rpm assis, récup 3' Z1, si FC repos <= 55 et jambes correctes. Samedi 2h + 2x5x1'
+      Mercredi 1h : 4x5' à 88-93 % en 55-60 rpm, récup 3' Z1. Jeudi 1h : 6x3' à 93-97
+      % en
+      50-55 rpm assis, récup 3' Z1, si FC repos <= 55 et jambes correctes. Samedi
+      2h + 2x5x1'
       à 110-115 % inchangé. Dimanche renfo B2S4 bas du corps si pluie, pas de rattrapage.
-      Projection W47 autour de 5h50. Cyril demande de calculer la limite de variation de volume
-      sur la moyenne des 3 dernières semaines au lieu de la seule semaine précédente : moyenne
-      W45-W47 = (12,1 + 10,5 + 5,8) / 3 = 9,5h, plafond +30 % = 12,3h, la S1 du bloc 3 à 12h
+      Projection W47 autour de 5h50. Cyril demande de calculer la limite de variation
+      de volume
+      sur la moyenne des 3 dernières semaines au lieu de la seule semaine précédente
+      : moyenne
+      W45-W47 = (12,1 + 10,5 + 5,8) / 3 = 9,5h, plafond +30 % = 12,3h, la S1 du bloc
+      3 à 12h
       passe. Le ramp rate CTL <= 7 reste le second garde-fou. La règle vit dans
-      contraintes.yaml, que seul Cyril modifie : nouvelle règle appliquée dès qu'il l'y a
+      contraintes.yaml, que seul Cyril modifie : nouvelle règle appliquée dès qu'il
+      l'y a
       inscrite. Rien modifié sur Intervals.
     ressenti_cyril: >
-      « J'aimerais que tu changes la règle des 30 % sur la semaine et que ça soit sur la
-      moyenne des 3 dernières semaines, comme ça je peux commencer le bloc 4 avec du volume »
+      « J'aimerais que tu changes la règle des 30 % sur la semaine et que ça soit
+      sur la
+      moyenne des 3 dernières semaines, comme ça je peux commencer le bloc 4 avec
+      du volume »
   - date: '2026-11-18'
     moment: soir
     realise:
-      - {nom: "Force avec premières intensités (vélo midi)", duree_min: 60, tss: 61, np_w: 243, fc_moy: 156, fc_max: 186, d_plus_m: 531}
-      - {nom: "Nice Course à pied (non prévue)", duree_min: 40, tss: 35, fc_moy: 151, fc_max: 172, d_plus_m: 57}
-    charge: {ctl: 67.1, atl: 70.3, tsb: -3.2, heures_semaine: 4.2, heures_prevues: 5.8}
+      - {nom: "Force avec premières intensités (vélo midi)", duree_min: 60, tss: 
+          61, np_w: 243, fc_moy: 156, fc_max: 186, d_plus_m: 531}
+      - {nom: "Nice Course à pied (non prévue)", duree_min: 40, tss: 35, fc_moy: 
+          151, fc_max: 172, d_plus_m: 57}
+    charge: {ctl: 67.1, atl: 70.3, tsb: -3.2, heures_semaine: 4.2, 
+        heures_prevues: 5.8}
     ecarts: >
-      Vélo midi fait (1h, TSS 61, NP 243 W), découplage 0,5 % : propre, bien meilleur que les 22,7 %
-      de lundi. FC max 186, 19 min en FC zone 4 (puissance : 9 min Z4, 3 min Z5-Z6, 13 min Z3) :
-      le détail par répétition n'est pas lu ici, à vérifier sur Intervals si besoin ; les 4x5' à
-      273-288 W paraissent tenues dans l'ensemble. Écart : course à pied de 40 min à 17h, non prévue
-      au plan (trail uniquement le dimanche), FC moy 151, 2 min 25 en FC zone 3, TSS 35 : une séance
-      de plus sur un jour déjà dur, sans rattrapage à compenser mais à ne pas répéter. Renfo posture
-      du soir non vu dans les données (pas encore synchronisé ou non fait). Semaine : 4,2 h sur
+      Vélo midi fait (1h, TSS 61, NP 243 W), découplage 0,5 % : propre, bien meilleur
+      que les 22,7 %
+      de lundi. FC max 186, 19 min en FC zone 4 (puissance : 9 min Z4, 3 min Z5-Z6,
+      13 min Z3) :
+      le détail par répétition n'est pas lu ici, à vérifier sur Intervals si besoin
+      ; les 4x5' à
+      273-288 W paraissent tenues dans l'ensemble. Écart : course à pied de 40 min
+      à 17h, non prévue
+      au plan (trail uniquement le dimanche), FC moy 151, 2 min 25 en FC zone 3, TSS
+      35 : une séance
+      de plus sur un jour déjà dur, sans rattrapage à compenser mais à ne pas répéter.
+      Renfo posture
+      du soir non vu dans les données (pas encore synchronisé ou non fait). Semaine
+      : 4,2 h sur
       environ 5h50 projetées, rien à rattraper.
-    demain: "Jeudi, jour 25 : 1h matin, 15' Z2 puis 6x3' à 93-97 % (288-301 W), 50-55 rpm, assis, récup 3' Z1, si FC repos <= 55 et jambes correctes ; sinon 1h Z2 souple"
+    demain: "Jeudi, jour 25 : 1h matin, 15' Z2 puis 6x3' à 93-97 % (288-301 W), 50-55
+      rpm, assis, récup 3' Z1, si FC repos <= 55 et jambes correctes ; sinon 1h Z2
+      souple"
     consigne: >
-      Demain matin, condition posée : FC repos <= 55, VFC >= 50, jambes correctes, aucun symptôme.
-      Sinon 1h Z2 souple (186-223 W, FC <= 148, zéro Z3). Si la puissance ne tient pas dès la 3e
-      répétition, on arrête les séries et on finit en Z2. Aujourd'hui tu as fait vélo dur et
-      course à pied : demain c'est la dernière séance dure avant samedi, pas de course à pied en
-      plus. Coucher avant 22h, écrans coupés vers 20h comme la nuit à 91, repas riches en glucides
+      Demain matin, condition posée : FC repos <= 55, VFC >= 50, jambes correctes,
+      aucun symptôme.
+      Sinon 1h Z2 souple (186-223 W, FC <= 148, zéro Z3). Si la puissance ne tient
+      pas dès la 3e
+      répétition, on arrête les séries et on finit en Z2. Aujourd'hui tu as fait vélo
+      dur et
+      course à pied : demain c'est la dernière séance dure avant samedi, pas de course
+      à pied en
+      plus. Coucher avant 22h, écrans coupés vers 20h comme la nuit à 91, repas riches
+      en glucides
       ce soir. Vendredi repos complet.
     ressenti_cyril:
   - date: '2026-11-19'
     moment: matin
-    nuit: {sommeil_h: 7.85, score: 78, vfc_ms: 50, vfc_moy7: 51.1, fc_repos: 56, fc_repos_moy7: 55.3}
+    nuit: {sommeil_h: 7.85, score: 78, vfc_ms: 50, vfc_moy7: 51.1, fc_repos: 56, 
+        fc_repos_moy7: 55.3}
     charge: {ctl: 66.8, atl: 68.4, tsb: -1.6}
-    seance_prevue: "Jour 25 : 1h matin, 15' Z2 puis 6x3' à 93-97 % (288-301 W), 50-55 rpm, assis, récup 3' Z1 ; condition posée hier : FC repos <= 55, VFC >= 50, jambes correctes, aucun symptôme ; sinon 1h Z2 souple"
+    seance_prevue: "Jour 25 : 1h matin, 15' Z2 puis 6x3' à 93-97 % (288-301 W), 50-55
+      rpm, assis, récup 3' Z1 ; condition posée hier : FC repos <= 55, VFC >= 50,
+      jambes correctes, aucun symptôme ; sinon 1h Z2 souple"
     verdict: orange
     consigne: >
-      Nuit synchronisée (mise à jour de l'entrée provisoire de 7h) : 7h51, score 78, VFC 50
-      (62 hier, moyenne 7 jours 51,1), FC repos 56 (53 hier, moyenne 7 jours 55,3). La
-      condition posée hier n'est pas remplie : FC repos 56 > 55, et VFC au plancher à 50 après
-      12 ms de chute en une nuit, au lendemain d'un vélo dur et d'une course à pied non prévue
-      (TSS 61 + 35). Creux isolé, pas de veto (FC repos 56 un seul matin, score > 70, TSB
-      -1,6), mais on ne prend pas le risque pour six minutes de plus. Séance adaptée : 1h Z2
-      souple, 186-223 W, FC <= 148, zéro Z3, pas de 6x3'. Si tu as un symptôme (nez, gorge,
-      courbatures, frissons) : repos. Les 3' à 288-301 W ne sont pas perdues : on en reparle
-      avec toi, rien n'est déplacé sur Intervals. Demain FC repos >= 56 de nouveau, ou score
-      < 70 : repos franc. Écrans coupés vers 20h, coucher avant 22h, vendredi repos complet.
+      Nuit synchronisée (mise à jour de l'entrée provisoire de 7h) : 7h51, score 78,
+      VFC 50
+      (62 hier, moyenne 7 jours 51,1), FC repos 56 (53 hier, moyenne 7 jours 55,3).
+      La
+      condition posée hier n'est pas remplie : FC repos 56 > 55, et VFC au plancher
+      à 50 après
+      12 ms de chute en une nuit, au lendemain d'un vélo dur et d'une course à pied
+      non prévue
+      (TSS 61 + 35). Creux isolé, pas de veto (FC repos 56 un seul matin, score >
+      70, TSB
+      -1,6), mais on ne prend pas le risque pour six minutes de plus. Séance adaptée
+      : 1h Z2
+      souple, 186-223 W, FC <= 148, zéro Z3, pas de 6x3'. Si tu as un symptôme (nez,
+      gorge,
+      courbatures, frissons) : repos. Les 3' à 288-301 W ne sont pas perdues : on
+      en reparle
+      avec toi, rien n'est déplacé sur Intervals. Demain FC repos >= 56 de nouveau,
+      ou score
+      < 70 : repos franc. Écrans coupés vers 20h, coucher avant 22h, vendredi repos
+      complet.
     ressenti_cyril:
   - date: '2026-11-19'
     moment: soir
     realise:
-      - {nom: "Force (vélo midi)", duree_min: 61, tss: 60, np_w: 241, fc_moy: 156, fc_max: 188, d_plus_m: 510}
-      - {nom: "Nice Course à pied (non prévue)", duree_min: 31, tss: 8, fc_moy: 109, fc_max: 127, d_plus_m: 8}
-    charge: {ctl: 67.1, atl: 70.0, tsb: -2.9, heures_semaine: 5.7, heures_prevues: 5.8}
+      - {nom: "Force (vélo midi)", duree_min: 61, tss: 60, np_w: 241, fc_moy: 
+          156, fc_max: 188, d_plus_m: 510}
+      - {nom: "Nice Course à pied (non prévue)", duree_min: 31, tss: 8, fc_moy: 
+          109, fc_max: 127, d_plus_m: 8}
+    charge: {ctl: 67.1, atl: 70.0, tsb: -2.9, heures_semaine: 5.7, 
+        heures_prevues: 5.8}
     ecarts: >
-      Écart avec la consigne du matin (orange : 1h Z2 souple, FC <= 148, zéro Z3, pas de 6x3') :
-      le vélo de midi est une séance de force, pas du Z2. NP 241 W, FC moyenne 156, FC max 188 ;
-      temps en puissance : Z3 9 min, Z4 13 min, Z5-Z6 3 min, seulement 17 min en Z2 ; 19 min en FC
+      Écart avec la consigne du matin (orange : 1h Z2 souple, FC <= 148, zéro Z3,
+      pas de 6x3') :
+      le vélo de midi est une séance de force, pas du Z2. NP 241 W, FC moyenne 156,
+      FC max 188 ;
+      temps en puissance : Z3 9 min, Z4 13 min, Z5-Z6 3 min, seulement 17 min en Z2
+      ; 19 min en FC
       zone 4. Découplage Pw:HR 12,1 % (> 10 %), contre 0,5 % hier. Le détail par répétition
-      n'est pas lu ici (à vérifier sur Intervals), mais l'intensité a été faite malgré le creux du
-      matin (FC repos 56, VFC 50 après 62). Course à pied de 31 min à 17h, non prévue : FC moyenne
-      109, tout en Z1, TSS 8, sans conséquence en soi, mais deuxième jour de suite. Semaine : 5,7 h
-      sur environ 5h50 projetées, rien à rattraper. Deuxième jour dur d'affilée (force hier,
-      force aujourd'hui) avec une FC repos remontée et une VFC au plancher : signal à surveiller,
+      n'est pas lu ici (à vérifier sur Intervals), mais l'intensité a été faite malgré
+      le creux du
+      matin (FC repos 56, VFC 50 après 62). Course à pied de 31 min à 17h, non prévue
+      : FC moyenne
+      109, tout en Z1, TSS 8, sans conséquence en soi, mais deuxième jour de suite.
+      Semaine : 5,7 h
+      sur environ 5h50 projetées, rien à rattraper. Deuxième jour dur d'affilée (force
+      hier,
+      force aujourd'hui) avec une FC repos remontée et une VFC au plancher : signal
+      à surveiller,
       pas un veto (un seul matin, score 78, TSB -2,9).
-    demain: "Vendredi, jour 26 : repos complet. Samedi, jour 27 : 2h + 2x5x1' à 110-115 % (341-357 W), conditionné au matin"
+    demain: "Vendredi, jour 26 : repos complet. Samedi, jour 27 : 2h + 2x5x1' à 110-115
+      % (341-357 W), conditionné au matin"
     consigne: >
-      Demain repos complet, sans vélo ni course à pied : c'est là que les deux jours durs
+      Demain repos complet, sans vélo ni course à pied : c'est là que les deux jours
+      durs
       s'assimilent. Coucher avant 22h, écrans coupés vers 20h, repas riches en glucides,
-      hydratation. Samedi matin : la séance 2x5x1' est maintenue si FC repos <= 55, VFC >= 50,
-      score de sommeil >= 70 et aucun symptôme (nez, gorge, courbatures, frissons). Si FC repos
-      >= 56 deux matins de suite (jeudi et samedi) ou VFC < 50 ou symptôme : on retire les
-      séries, 2h Z2 stricte au plus, ou repos. Dimanche : pas de renfo B2S4 bas du corps
-      s'il reste de la fatigue samedi, décision avec toi. Météo non consultée ce soir. Rien
+      hydratation. Samedi matin : la séance 2x5x1' est maintenue si FC repos <= 55,
+      VFC >= 50,
+      score de sommeil >= 70 et aucun symptôme (nez, gorge, courbatures, frissons).
+      Si FC repos
+      >= 56 deux matins de suite (jeudi et samedi) ou VFC < 50 ou symptôme : on retire
+      les
+      séries, 2h Z2 stricte au plus, ou repos. Dimanche : pas de renfo B2S4 bas du
+      corps
+      s'il reste de la fatigue samedi, décision avec toi. Météo non consultée ce soir.
+      Rien
       modifié sur Intervals.
     ressenti_cyril: >
-      « Franchement super jambes sur la sortie j'étais au dessus 300W sur toutes les séries »
+      « Franchement super jambes sur la sortie j'étais au dessus 300W sur toutes les
+      séries »
   - date: '2026-11-20'
     moment: matin
-    nuit: {sommeil_h: 8.64, score: 81, vfc_ms: 55, vfc_moy7: 52.7, fc_repos: 55, fc_repos_moy7: 55.1}
+    nuit: {sommeil_h: 8.64, score: 81, vfc_ms: 55, vfc_moy7: 52.7, fc_repos: 55, 
+        fc_repos_moy7: 55.1}
     charge: {ctl: 65.5, atl: 60.7, tsb: 4.8}
     seance_prevue: "Jour 26 : repos complet, sans vélo ni course à pied"
     verdict: vert
     consigne: >
-      Nuit de 8h38, score 81, VFC 55 ms (50 hier, moyenne 7 jours 52,7), FC repos 55 (56 hier,
-      moyenne 55,1) : le creux d'hier se referme, aucun seuil de veto franchi, TSB +4,8 (169 TSS
-      sur les trois derniers jours dont 96 mercredi, 68 hier). Repos complet maintenu : ni vélo
-      ni course à pied, même si les jambes sont bonnes, c'est aujourd'hui que force et couple
-      s'assimilent. Marche tranquille, repas riches en glucides, hydratation, coucher avant 22h,
-      écrans coupés vers 20h. Samedi : 2h + 2x5x1' à 110-115 % (341-357 W) maintenue si demain
-      matin FC repos <= 55, VFC >= 50, score >= 70 et aucun symptôme (nez, gorge, courbatures,
+      Nuit de 8h38, score 81, VFC 55 ms (50 hier, moyenne 7 jours 52,7), FC repos
+      55 (56 hier,
+      moyenne 55,1) : le creux d'hier se referme, aucun seuil de veto franchi, TSB
+      +4,8 (169 TSS
+      sur les trois derniers jours dont 96 mercredi, 68 hier). Repos complet maintenu
+      : ni vélo
+      ni course à pied, même si les jambes sont bonnes, c'est aujourd'hui que force
+      et couple
+      s'assimilent. Marche tranquille, repas riches en glucides, hydratation, coucher
+      avant 22h,
+      écrans coupés vers 20h. Samedi : 2h + 2x5x1' à 110-115 % (341-357 W) maintenue
+      si demain
+      matin FC repos <= 55, VFC >= 50, score >= 70 et aucun symptôme (nez, gorge,
+      courbatures,
       frissons) ; la tendance est bonne, à confirmer au réveil. Rien modifié sur Intervals.
     ressenti_cyril:
   - date: '2026-11-20'
     moment: conversation
-    nuit: {sommeil_h: 8.64, score: 81, vfc_ms: 55, vfc_moy7: 52.7, fc_repos: 55, fc_repos_moy7: 55.1}
+    nuit: {sommeil_h: 8.64, score: 81, vfc_ms: 55, vfc_moy7: 52.7, fc_repos: 55, 
+        fc_repos_moy7: 55.1}
     charge: {ctl: 65.5, atl: 60.7, tsb: 4.8}
-    seance_prevue: "Jour 26 : repos complet ; Cyril propose 1h30 Z1/Z2 (beau temps, dimanche pluvieux)"
+    seance_prevue: "Jour 26 : repos complet ; Cyril propose 1h30 Z1/Z2 (beau temps,
+      dimanche pluvieux)"
     verdict: orange
     consigne: >
-      Pas de veto santé (nuit 8h38 score 81, VFC 55, FC repos 55, TSB +4,8), mais le repos du
+      Pas de veto santé (nuit 8h38 score 81, VFC 55, FC repos 55, TSB +4,8), mais
+      le repos du
       jour est le temps d'assimilation après deux jours de force et avant 2x5x1' samedi.
-      Compromis : sortie de récupération 1h à 1h15 max, Z1 stricte (<= 171 W, FC <= 148),
-      plat ou vallonné doux, zéro bosse appuyée, zéro Z3, pas de course à pied en plus.
+      Compromis : sortie de récupération 1h à 1h15 max, Z1 stricte (<= 171 W, FC <=
+      148),
+      plat ou vallonné doux, zéro bosse appuyée, zéro Z3, pas de course à pied en
+      plus.
       Pas de départ au moindre symptôme. Si FC repos >= 56 samedi matin, les séries
       sautent : cette sortie ne doit pas en être la cause. Rien modifié sur Intervals.
     ressenti_cyril: >
-      « Un peu de temps et super météo je vais faire 1h30 de z1/z2 comme dimanche il fait moche »
+      « Un peu de temps et super météo je vais faire 1h30 de z1/z2 comme dimanche
+      il fait moche »
   - date: '2026-11-20'
     moment: soir
     realise:
-      - {nom: "Full court (vélo route, sortie de récupération)", duree_min: 86, tss: 65, np_w: 210, fc_moy: 144, fc_max: 171, d_plus_m: 661}
-    charge: {ctl: 67.1, atl: 69.3, tsb: -2.3, heures_semaine: 7.2, heures_prevues: 5.8}
+      - {nom: "Full court (vélo route, sortie de récupération)", duree_min: 86, 
+          tss: 65, np_w: 210, fc_moy: 144, fc_max: 171, d_plus_m: 661}
+    charge: {ctl: 67.1, atl: 69.3, tsb: -2.3, heures_semaine: 7.2, 
+        heures_prevues: 5.8}
     ecarts: >
-      Repos complet prescrit le matin, remplacé par la sortie de récupération négociée avec toi
-      (1h à 1h15 max, Z1 stricte <= 171 W, FC <= 148, zéro bosse appuyée, zéro Z3). Réalisé :
-      1h26 (au-dessus du plafond de 1h15), TSS 65, NP 210 W (plafond Z1 171 W dépassé), FC moyenne
-      144 (sous 148 en moyenne, pic 171). Temps en puissance : Z1 23 min, Z2 36 min, Z3 23 min
-      (interdit), Z4 3 min, Z5-Z7 1 min ; 661 m de D+. FC : 44 min en zone 1, 42 min en zone 2,
-      rien au-dessus. Découplage Pw:HR 21,2 %, EF 1,46 : très au-dessus de 10 %, à lire avec
-      prudence sur parcours vallonné, mais comme lundi (22,7 %). Semaine : 7,2 h réalisées contre
-      5,8 h prévues. Les 23 min de Z3 sont de la zone grise non planifiée, sur un jour dédié à
-      l'assimilation entre deux jours de force et les séries de samedi. Pas de veto santé, mais
+      Repos complet prescrit le matin, remplacé par la sortie de récupération négociée
+      avec toi
+      (1h à 1h15 max, Z1 stricte <= 171 W, FC <= 148, zéro bosse appuyée, zéro Z3).
+      Réalisé :
+      1h26 (au-dessus du plafond de 1h15), TSS 65, NP 210 W (plafond Z1 171 W dépassé),
+      FC moyenne
+      144 (sous 148 en moyenne, pic 171). Temps en puissance : Z1 23 min, Z2 36 min,
+      Z3 23 min
+      (interdit), Z4 3 min, Z5-Z7 1 min ; 661 m de D+. FC : 44 min en zone 1, 42 min
+      en zone 2,
+      rien au-dessus. Découplage Pw:HR 21,2 %, EF 1,46 : très au-dessus de 10 %, à
+      lire avec
+      prudence sur parcours vallonné, mais comme lundi (22,7 %). Semaine : 7,2 h réalisées
+      contre
+      5,8 h prévues. Les 23 min de Z3 sont de la zone grise non planifiée, sur un
+      jour dédié à
+      l'assimilation entre deux jours de force et les séries de samedi. Pas de veto
+      santé, mais
       la sortie n'a pas été une récupération.
-    demain: "Samedi, jour 27 : 2h + 2x5x1' à 110-115 % (341-357 W), conditionné au matin"
+    demain: "Samedi, jour 27 : 2h + 2x5x1' à 110-115 % (341-357 W), conditionné au
+      matin"
     consigne: >
-      Demain matin, dans cet ordre : FC repos, VFC, score de sommeil, symptômes. Séries 2x5x1'
-      maintenues seulement si FC repos <= 55, VFC >= 50, score >= 70 et rien à signaler (nez, gorge,
-      courbatures, frissons) ; sinon 2h Z2 stricte ou repos. Hors séries : Z2 stricte, plafond 232 W,
-      pas de bosse poussée. Avec la sortie d'aujourd'hui en plus, la fraîcheur n'est pas acquise : si
-      les jambes sont lourdes à l'échauffement, on supprime les séries sans discuter. Coucher avant 22h,
-      écrans coupés vers 20h, repas riches en glucides ce soir, petit-déjeuner solide, 60-90 g de glucides
-      par heure. Équipement et météo de Nice non consultés ce soir. Dimanche : jour pluvieux, pas de renfo
+      Demain matin, dans cet ordre : FC repos, VFC, score de sommeil, symptômes. Séries
+      2x5x1'
+      maintenues seulement si FC repos <= 55, VFC >= 50, score >= 70 et rien à signaler
+      (nez, gorge,
+      courbatures, frissons) ; sinon 2h Z2 stricte ou repos. Hors séries : Z2 stricte,
+      plafond 232 W,
+      pas de bosse poussée. Avec la sortie d'aujourd'hui en plus, la fraîcheur n'est
+      pas acquise : si
+      les jambes sont lourdes à l'échauffement, on supprime les séries sans discuter.
+      Coucher avant 22h,
+      écrans coupés vers 20h, repas riches en glucides ce soir, petit-déjeuner solide,
+      60-90 g de glucides
+      par heure. Équipement et météo de Nice non consultés ce soir. Dimanche : jour
+      pluvieux, pas de renfo
       B2S4 bas du corps si fatigue samedi, décision avec toi. Rien modifié sur Intervals.
     ressenti_cyril: >
-      « C'était les meilleurs que j'ai eu sur un col. J'étais à 240/250 W pour 150 bpm ce midi »
+      « C'était les meilleurs que j'ai eu sur un col. J'étais à 240/250 W pour 150
+      bpm ce midi »
   - date: '2026-11-21'
     moment: matin
-    nuit: {sommeil_h: 7.47, score: 82, vfc_ms: 65, vfc_moy7: 56.0, fc_repos: 53, fc_repos_moy7: 54.4}
+    nuit: {sommeil_h: 7.47, score: 82, vfc_ms: 65, vfc_moy7: 56.0, fc_repos: 53, 
+        fc_repos_moy7: 54.4}
     charge: {ctl: 67.1, atl: 69.3, tsb: -2.3}
-    seance_prevue: "Jour 27 : 2h + 2x5x1' à 110-115 % (341-357 W), 65-75 rpm, dans un col régulier ; hors séries Z2 stricte, plafond 232 W"
+    seance_prevue: "Jour 27 : 2h + 2x5x1' à 110-115 % (341-357 W), 65-75 rpm, dans
+      un col régulier ; hors séries Z2 stricte, plafond 232 W"
     verdict: vert
     consigne: >
-      Nuit de 7h28, score 82, VFC 65 ms (moyenne 7 jours 56,0, au plus haut de la semaine), FC repos 53
-      (moyenne 54,4) : les quatre conditions posées hier sont remplies (FC repos <= 55, VFC >= 50,
-      score >= 70, durée > 7h), aucun seuil de veto franchi. Charge de référence au 20 au soir (réalisé) :
-      CTL 67,1, ATL 69,3, TSB -2,3 ; 229 TSS sur les trois derniers jours (96, 68, 65). Les chiffres du 21
-      affichés par Intervals (ATL 74,1) projettent la séance prévue, pas du réalisé. Séance clé maintenue :
-      2x5x1' à 110-115 % (341-357 W), vise le haut de la fourchette sur la première minute et sors la
-      dernière à la même puissance. Échauffement complet de 30 min, et si les jambes sont lourdes dans
-      les 10 premières minutes, on supprime les séries sans discuter. Hors séries : Z2 stricte, plafond
-      232 W, pas de bosse poussée (hier 23 min de Z3 sur une sortie de récupération). Aucun départ au
-      moindre symptôme (nez, gorge, courbatures, frissons). Après : manger 60-90 g de glucides par heure,
-      pas de course à pied en plus. Dimanche pluvieux : pas de renfo B2S4 bas du corps si les jambes
+      Nuit de 7h28, score 82, VFC 65 ms (moyenne 7 jours 56,0, au plus haut de la
+      semaine), FC repos 53
+      (moyenne 54,4) : les quatre conditions posées hier sont remplies (FC repos <=
+      55, VFC >= 50,
+      score >= 70, durée > 7h), aucun seuil de veto franchi. Charge de référence au
+      20 au soir (réalisé) :
+      CTL 67,1, ATL 69,3, TSB -2,3 ; 229 TSS sur les trois derniers jours (96, 68,
+      65). Les chiffres du 21
+      affichés par Intervals (ATL 74,1) projettent la séance prévue, pas du réalisé.
+      Séance clé maintenue :
+      2x5x1' à 110-115 % (341-357 W), vise le haut de la fourchette sur la première
+      minute et sors la
+      dernière à la même puissance. Échauffement complet de 30 min, et si les jambes
+      sont lourdes dans
+      les 10 premières minutes, on supprime les séries sans discuter. Hors séries
+      : Z2 stricte, plafond
+      232 W, pas de bosse poussée (hier 23 min de Z3 sur une sortie de récupération).
+      Aucun départ au
+      moindre symptôme (nez, gorge, courbatures, frissons). Après : manger 60-90 g
+      de glucides par heure,
+      pas de course à pied en plus. Dimanche pluvieux : pas de renfo B2S4 bas du corps
+      si les jambes
       sont marquées, décision avec toi ce soir. Rien modifié sur Intervals.
     ressenti_cyril:
   - date: '2026-11-21'
     moment: soir
     realise:
-      - {nom: "Force 3 x 5 x 1min vo2 max (col)", duree_min: 179, tss: 151, np_w: 222, fc_moy: 147, fc_max: 187, d_plus_m: 1421}
-    charge: {ctl: 69.0, atl: 80.2, tsb: -11.2, heures_semaine: 10.2, heures_prevues: 5.8}
+      - {nom: "Force 3 x 5 x 1min vo2 max (col)", duree_min: 179, tss: 151, np_w: 
+          222, fc_moy: 147, fc_max: 187, d_plus_m: 1421}
+    charge: {ctl: 69.0, atl: 80.2, tsb: -11.2, heures_semaine: 10.2, 
+        heures_prevues: 5.8}
     ecarts: >
-      Plus long et plus chargé que prescrit : 2h59 au lieu de 2h, 1421 m D+, TSS 151, trois séries
-      annoncées au titre contre deux prévues. Précision de Cyril : 3 x 5 x 1 min à ~350 W, dernier effort (15e) à 400 W (~129 % FTP, au-dessus de la fourchette 110-115 %). Détection auto : 8 efforts à 357 W et 5 à 339 W. Découplage 3,8 % (bon), cadence moyenne 71 rpm. Hors séries :
-      Z3 11,6 min + 6,2 min de sweet spot (3 % du temps en Z4-Z5 FC), la Z2 stricte n'a pas été
-      respectée sur tout le temps hors séries. Semaine à 10,2 h réalisées contre 5,8 h projetées :
+      Plus long et plus chargé que prescrit : 2h59 au lieu de 2h, 1421 m D+, TSS 151,
+      trois séries
+      annoncées au titre contre deux prévues. Précision de Cyril : 3 x 5 x 1 min à
+      ~350 W, dernier effort (15e) à 400 W (~129 % FTP, au-dessus de la fourchette
+      110-115 %). Détection auto : 8 efforts à 357 W et 5 à 339 W. Découplage 3,8
+      % (bon), cadence moyenne 71 rpm. Hors séries :
+      Z3 11,6 min + 6,2 min de sweet spot (3 % du temps en Z4-Z5 FC), la Z2 stricte
+      n'a pas été
+      respectée sur tout le temps hors séries. Semaine à 10,2 h réalisées contre 5,8
+      h projetées :
       le plafond de +30 % (12,3 h) n'est pas franchi.
-    demain: "Dimanche, jour 28, pluie : renfo B2S4 bas du corps 45 min, allégé ou supprimé selon le matin"
+    demain: "Dimanche, jour 28, pluie : renfo B2S4 bas du corps 45 min, allégé ou
+      supprimé selon le matin"
     consigne: >
-      Série clé réussie, et c'est elle qui compte : maintenant on assimile. Demain, fin de bloc, avant
-      le bloc PMA de lundi : renfo seulement si FC repos <= 55, VFC >= 50 et jambes correctes au réveil,
-      et alors à RPE 6 (3 reps en réserve), 30 min, sinon repos complet. Pas de vélo ni de course à pied
-      en plus. Si sec : 1h30 de Z1 stricte au plus (<= 171 W, FC <= 148). Ce soir : glucides, coucher
-      avant 22h30. Lundi le bloc 3 démarre : S1 plafonnée à 12,3 h, vérifier le matin avant toute série.
+      Série clé réussie, et c'est elle qui compte : maintenant on assimile. Demain,
+      fin de bloc, avant
+      le bloc PMA de lundi : renfo seulement si FC repos <= 55, VFC >= 50 et jambes
+      correctes au réveil,
+      et alors à RPE 6 (3 reps en réserve), 30 min, sinon repos complet. Pas de vélo
+      ni de course à pied
+      en plus. Si sec : 1h30 de Z1 stricte au plus (<= 171 W, FC <= 148). Ce soir
+      : glucides, coucher
+      avant 22h30. Lundi le bloc 3 démarre : S1 plafonnée à 12,3 h, vérifier le matin
+      avant toute série.
       Météo et équipement de Nice non consultés. Rien modifié sur Intervals.
-    ressenti_cyril: "J'ai fait 3 fois 5x1min à 350W et encore la dernière donc le 15eme. J'ai réussi à tenir 400W"
+    ressenti_cyril: "J'ai fait 3 fois 5x1min à 350W et encore la dernière donc le
+      15eme. J'ai réussi à tenir 400W"
   - date: '2026-11-22'
     moment: matin
-    nuit: {sommeil_h: 8.15, score: 89, vfc_ms: 48, vfc_moy7: 56.1, fc_repos: 55, fc_repos_moy7: 54.4}
+    nuit: {sommeil_h: 8.15, score: 89, vfc_ms: 48, vfc_moy7: 56.1, fc_repos: 55, 
+        fc_repos_moy7: 54.4}
     charge: {ctl: 67.4, atl: 69.5, tsb: -2.1}
-    seance_prevue: "Jour 28 (fin du bloc 2), pluie : renfo B2S4 bas du corps 45 min, seulement si FC repos <= 55, VFC >= 50 et jambes correctes ; sinon repos complet"
+    seance_prevue: "Jour 28 (fin du bloc 2), pluie : renfo B2S4 bas du corps 45 min,
+      seulement si FC repos <= 55, VFC >= 50 et jambes correctes ; sinon repos complet"
     verdict: orange
     consigne: >
-      Mise à jour 09h15 après resynchronisation de la montre (première version rouge, faite sans la nuit,
-      avec une FC repos de 58 provisoire). Nuit réelle : 8h09, score 89 (le meilleur de la semaine), FC repos 55
-      (moyenne 7 jours 54,4), VFC 48 ms (56,1 en moyenne, -14 %, sous le seuil de 50). Le signal de la première
-      version tombe : FC repos 55, pas de hausse de 5 bpm, sommeil excellent. Il reste un seul indicateur bas,
-      la VFC, au lendemain de 3h de VO2max (TSS 151, 400 W sur le 15e effort) : lecture la plus probable, trace
-      de l'effort d'hier, pas un début d'infection. Pas de veto santé (il faut au moins deux signaux
-      concordants), mais la condition posée pour le renfo (VFC >= 50) n'est pas remplie : renfo B2S4 supprimé,
-      sans rattrapage. Repos, marche tranquille ou 15 min de mobilité douce au plus, ni vélo ni course à pied.
-      Repas riches en glucides, hydratation, coucher avant 22h. Lundi, bloc 3 jour 1 : démarrage seulement si
-      FC repos <= 55, VFC >= 50 et aucun symptôme (nez, gorge, courbatures, frissons) ; si la VFC reste < 50 deux
-      matins de suite, ou FC repos >= 56, repos préventif 48 h et le bloc 3 attend. Semaine W47 : 10,2 h
-      réalisées, bien au-dessus des 5,8 h projetées, plafond de +30 % (12,3 h) non franchi. Rien modifié sur Intervals.
+      Mise à jour 09h15 après resynchronisation de la montre (première version rouge,
+      faite sans la nuit,
+      avec une FC repos de 58 provisoire). Nuit réelle : 8h09, score 89 (le meilleur
+      de la semaine), FC repos 55
+      (moyenne 7 jours 54,4), VFC 48 ms (56,1 en moyenne, -14 %, sous le seuil de
+      50). Le signal de la première
+      version tombe : FC repos 55, pas de hausse de 5 bpm, sommeil excellent. Il reste
+      un seul indicateur bas,
+      la VFC, au lendemain de 3h de VO2max (TSS 151, 400 W sur le 15e effort) : lecture
+      la plus probable, trace
+      de l'effort d'hier, pas un début d'infection. Pas de veto santé (il faut au
+      moins deux signaux
+      concordants), mais la condition posée pour le renfo (VFC >= 50) n'est pas remplie
+      : renfo B2S4 supprimé,
+      sans rattrapage. Repos, marche tranquille ou 15 min de mobilité douce au plus,
+      ni vélo ni course à pied.
+      Repas riches en glucides, hydratation, coucher avant 22h. Lundi, bloc 3 jour
+      1 : démarrage seulement si
+      FC repos <= 55, VFC >= 50 et aucun symptôme (nez, gorge, courbatures, frissons)
+      ; si la VFC reste < 50 deux
+      matins de suite, ou FC repos >= 56, repos préventif 48 h et le bloc 3 attend.
+      Semaine W47 : 10,2 h
+      réalisées, bien au-dessus des 5,8 h projetées, plafond de +30 % (12,3 h) non
+      franchi. Rien modifié sur Intervals.
     ressenti_cyril: >
-      « Vfc peut être que c'est parce que je suis sorti le soir j'ai bcp mangé au restau et je me suis couché tard »
+      « Vfc peut être que c'est parce que je suis sorti le soir j'ai bcp mangé au
+      restau et je me suis couché tard »
     precision_coach: >
-      Cause connue (sortie restaurant, gros repas, coucher tardif) : le creux de VFC à 48 ms se lit comme
-      ponctuel et digestif/circadien, pas comme un signe d'infection (sommeil 8h09 score 89, FC repos 55).
-      Pas de signal d'alerte santé. Verdict orange maintenu : renfo supprimé, jour d'assimilation après la
-      semaine choc. Le contrôle de lundi (VFC >= 50, FC repos <= 55, aucun symptôme) valide l'explication.
+      Cause connue (sortie restaurant, gros repas, coucher tardif) : le creux de VFC
+      à 48 ms se lit comme
+      ponctuel et digestif/circadien, pas comme un signe d'infection (sommeil 8h09
+      score 89, FC repos 55).
+      Pas de signal d'alerte santé. Verdict orange maintenu : renfo supprimé, jour
+      d'assimilation après la
+      semaine choc. Le contrôle de lundi (VFC >= 50, FC repos <= 55, aucun symptôme)
+      valide l'explication.
   - date: '2026-11-22'
     moment: soir
     realise:
@@ -551,6 +865,112 @@ suivi_quotidien:
       Ce soir : glucides, hydratation, coucher avant 22h. Météo de Nice non consultée. Rien modifié sur Intervals.
     ressenti_cyril:
 analyse_coach:
-  maj: null
-  synthese: null
-  decision: null
+  maj: '2026-11-22'
+  synthese: >
+    BILAN W47 (16-22/11), PASSERELLE VERS LE BLOC PMA, RÉUSSIE ET PLUS CHARGÉE
+    QUE PRÉVU. 10,6 h, 461 TSS, 210 km, 4143 m D+, 9 séances (5 vélo, 2 CAP,
+    2 renfo). Prévu après l'ajustement du 18/11 : ~5h50 (fourchette du bloc
+    5h15-9h35). W46 : 10,5 h, 410 TSS. CTL 67,9 -> 67,4 (stable depuis deux
+    semaines), ATL 69,9, TSB -2,5, Ramp Rate -0,5. Pas d'alerte charge.
+
+    SANTÉ, AUCUN SIGNAL. Sommeil 8,2 h de moyenne, scores 78, 55, 91, 78, 81,
+    82, 89 (moyenne 79) ; le seul creux (55, le 17) a une cause connue (travail
+    jusqu'à 22h, routine cassée) et la nuit suivante est à 91. VFC 51, 62, 62,
+    50, 55, 65, 48 (moyenne 56,1 contre 49,6 en W46 et 56,3 en W45). FC repos
+    54, 54, 53, 56, 55, 53, 55 (moyenne 54,3 contre 55,3). Aucun symptôme.
+
+    HYPOTHÈSE DE CYRIL CONFIRMÉE. Prévision W46 : après 3-4 jours de reprise,
+    VFC vers 55-60 et FC repos vers 52-53. Réalisé : VFC 56 (confirmé), FC
+    repos 53-55 (un peu au-dessus). Troisième épisode qui colle : chez lui, le
+    repos fait monter la FC repos et baisser la VFC, la charge les ramène. Le
+    schéma de la semaine est sain : la VFC plonge le matin qui suit chaque
+    grosse journée (50 le 19 après vélo dur + CAP, 48 le 22 après 3h de VO2max
+    et un restaurant) et remonte en 24 h (55, puis 65). Réponse aiguë normale,
+    pas de fatigue accumulée. Les deux oranges des routines (jeudi FC 56,
+    dimanche VFC 48) étaient des faux positifs : seuils sur un seul matin trop
+    serrés pour son profil.
+
+    SÉANCES CLÉS.
+    Mercredi 18 : 1h, NP 243 W, 4x5' basse cadence (détection auto 4x3'45 à
+    273 W) plus 1'44 à 401 W non prescrit ; découplage 0,5 %, EF 1,56.
+    Jeudi 19 : couple 6x3' fait malgré l'orange du matin, répétitions à
+    285-304 W (92-98 %, cible 93-97 %), « au-dessus de 300 W sur toutes les
+    séries » ; découplage 12,1 %, EF 1,54. VFC 55 le lendemain : sa lecture
+    des jambes était la bonne.
+    Samedi 21 : 2h59, 1421 m D+, TSS 151, 15 x 1' au lieu de 10 : 8 efforts à
+    357 W (115 %), 5 à 339 W (109 %), le 15e à ~400 W (129 %). Découplage
+    3,8 % et EF 1,51 sur 3 h. Aucun effondrement sur la répétition : la
+    capacité à encaisser du VO2max est là, l'entrée en bloc PMA est méritée.
+
+    MARQUEURS AÉROBIES EN PROGRÈS. EF des sorties d'endurance : 1,45 (lundi),
+    1,46 (vendredi), contre 1,41 (W46), 1,37 (W45), 1,39 (W44). Col d'Èze
+    vendredi à 240-250 W pour ~150 bpm, contre 220 W pour ~150 bpm en W46 :
+    +20-30 W à FC égale, à confirmer sur une sortie longue (fraîcheur et
+    température jouent). Les découplages de 22,7 % (lundi) et 21,2 % (vendredi)
+    sont un artefact de parcours court bosse + descente : samedi, 3 h
+    vallonnées, 3,8 %. Pas une dérive cardiaque.
+
+    POLARISATION, LE POINT FAIBLE. Les deux jours faciles ne l'ont pas été.
+    Lundi (souple, pas de Z3) : 1h48, TSS 73, 956 m D+, 21 min en Z3 dont
+    2 x 6' à 252 W, au-dessus du plafond de 240 W proposé en W46. Vendredi
+    (repos prescrit, négocié en 1h15 de Z1) : 1h26, TSS 65, 23 min en Z3 ; la
+    FC est restée en Z1-Z2, donc pas de zone grise cardiaque, mais aucun des
+    deux jours de repos préférés (lundi, vendredi) n'a été un repos. S'y
+    ajoutent deux CAP non prévues (mercredi 40' FC 151, jeudi 31' Z1), samedi
+    3 séries au lieu de 2 et 3 h au lieu de 2 h. Cette semaine, le corps a
+    absorbé (VFC 65 samedi matin). En bloc PMA, ce même empilement est
+    exactement ce qui use sans créer.
+
+    CONTRAINTES. Séances dures 3 (mercredi, jeudi, samedi) : tenu. Jours durs
+    consécutifs 2 (mercredi-jeudi) : tenu. Jours sans vélo 2 (mardi, dimanche,
+    renfo léger) : tenu, mais pas aux jours préférés. Volume 10,6 h sous le
+    plafond de 12,3 h : tenu. Renfo 2 séances (mardi 46', dimanche 26', FC en
+    Z1) : tenu sur le papier, mais aucune séance de force bas du corps B2S4
+    faite de la semaine. Trail : dernier le 25/10, quatre week-ends sans,
+    contrainte « toutes les 2 semaines » non tenue (W45 annulé sur la santé,
+    W46-W47 non planifié).
+
+    RESSENTI. Très bon global, jambes excellentes sur les trois séances de
+    force et sur le col d'Èze, motivation très haute pour le bloc VO2, sommeil
+    très bon, et Cyril constate lui-même FC repos et VFC qui bougent avec le
+    repos. Le ressenti et les chiffres de santé disent la même chose.
+
+    DONNÉES DATÉES. FTP 310 W déclaré le 12/09 et puissance_record du 12/09 :
+    plus de deux mois. Les 357 W tenus sur 1' (115 %) sont cohérents avec
+    310 W, rien ne justifie de proposer un autre FTP avant le test du 02-03/01.
+    build_profile.py à relancer pour rafraîchir les records.
+  decision: >
+    W48 = S1 du bloc 3 PMA concentrée (23-29/11). Entrée validée sur la santé :
+    VFC moyenne 56, FC repos 54, sommeil 8,2 h score moyen 79, TSB -2,5,
+    jambes et motivation au plus haut. On peut charger fort.
+
+    Lundi 23 : repos complet, ni vélo ni renfo ni CAP, c'est là que le choc de
+    samedi s'assimile. Contrôle du matin habituel.
+
+    Le fichier blocs/bloc-03.yaml n'existe pas encore : bilan du bloc 2
+    (blocs/analyse/bloc-02.md) puis construction du bloc 3 lundi, pour que la
+    S1 démarre mardi. Rien ne part sur Intervals sans ordre explicite.
+
+    Volume S1 : plafond recalculé sur le réel (moyenne W45-W47 = 12,1 + 10,5
+    + 10,6 = 11,1 h, +30 % = 14,4 h, et non plus 12,3 h calculé sur les 5h50
+    projetées). La S1 à 12 h prévue au macrocycle passe largement, le ramp
+    rate restera loin de 7.
+
+    Trail obligatoire dans la S1 (dimanche 29) ou au plus tard en S2 : quatre
+    week-ends sans, contrainte non négociable.
+
+    Garde-fous PMA, appliqués fermement. Z2 et vélotaf : <= 240 W et FC <= 164,
+    la FC commande, aucune bosse appuyée. Les jours de repos sont des repos.
+    Pas de CAP ajoutée un jour dur. Séries réalisées = séries prescrites :
+    15 x 1' au lieu de 10, c'était une passerelle ; dans un bloc à 3 séances
+    PMA par semaine, le surplus se paie sur la séance suivante.
+
+    Garde-fou santé individualisé, proposé à Cyril (déjà proposé en W46, W47
+    le confirme) : veto sur symptôme (nez, gorge, courbatures, frissons), ou
+    FC repos >= 58 deux matins de suite, ou VFC < 42 deux matins de suite, ou
+    score de sommeil < 70 deux nuits de suite, ou dérive à l'effort
+    (découplage > 10 % sur une sortie régulière sans chaleur en cause). Un
+    creux isolé au lendemain d'une grosse séance est la norme chez lui, pas un
+    signal. Les seuils de routines/matin.md et soir.md ne sont pas modifiés
+    tant que Cyril ne l'a pas validé. Pas de proposition de FTP. Rien modifié
+    sur Intervals.
