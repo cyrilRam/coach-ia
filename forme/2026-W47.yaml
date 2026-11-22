@@ -533,6 +533,23 @@ suivi_quotidien:
       ponctuel et digestif/circadien, pas comme un signe d'infection (sommeil 8h09 score 89, FC repos 55).
       Pas de signal d'alerte santé. Verdict orange maintenu : renfo supprimé, jour d'assimilation après la
       semaine choc. Le contrôle de lundi (VFC >= 50, FC repos <= 55, aucun symptôme) valide l'explication.
+  - date: '2026-11-22'
+    moment: soir
+    realise:
+      - {nom: "Muscul. (séance légère, FC 84 moy / 101 max)", duree_min: 26, tss: 3, fc_moy: 84, fc_max: 101}
+    charge: {ctl: 67.4, atl: 69.9, tsb: -2.5, heures_semaine: 10.6, heures_prevues: 5.8}
+    ecarts: >
+      Renfo B2S4 supprimé ce matin, mais 26 min de musculation enregistrées à 17h28 : FC moyenne 84,
+      max 101, TSS 3, 100 % en Z1 FC, donc charge négligeable, probablement mobilité ou gainage doux ;
+      pas de vélo ni de course à pied. Pas de dérive, rien d'anormal. Semaine W47 : 10,6 h réalisées contre
+      5,8 h projetées, plafond de +30 % (12,3 h) non franchi.
+    demain: "Lundi, jour 1 du bloc 3 : repos (jour de repos préféré), aucun fichier bloc-03 encore créé ; contrôle du matin pour valider l'entrée en bloc PMA"
+    consigne: >
+      Semaine choc bouclée, c'est maintenant que ça s'assimile : lundi repos complet, ni vélo ni renfo.
+      Contrôle au réveil : FC repos <= 55, VFC >= 50 et aucun symptôme (nez, gorge, courbatures, frissons).
+      VFC < 50 un deuxième matin de suite ou FC repos >= 56 : repos préventif 48 h et le bloc PMA attend.
+      Ce soir : glucides, hydratation, coucher avant 22h. Météo de Nice non consultée. Rien modifié sur Intervals.
+    ressenti_cyril:
 analyse_coach:
   maj: null
   synthese: null
