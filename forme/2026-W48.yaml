@@ -1,0 +1,45 @@
+# Une semaine = un fichier. Nommage en semaines ISO.
+# Section "mesures" : generee par scripts/weekly.py, ne pas editer a la main.
+# Section "ressenti" : saisie manuelle, l'agent n'y ecrit jamais.
+# Section "analyse_coach" : analyse hebdomadaire formulee par l'IA et conservee.
+
+semaine: 2026-W48
+du: 2026-11-23
+au: 2026-11-29
+
+mesures: {}
+
+# saisie manuelle
+ressenti:
+  global:
+  jambes:
+  motivation:
+  sommeil:
+  seances_manquees: []
+  imprevus:
+  notes:
+
+adaptations: []
+
+suivi_quotidien:
+  - date: '2026-11-23'
+    moment: matin
+    nuit: {sommeil_h: 8.2, score: 86, vfc_ms: 54, vfc_moy7: 56.1, fc_repos: 54, fc_repos_moy7: 54.3}
+    charge: {ctl: 67.3, atl: 69.3, tsb: -1.9}
+    seance_prevue: "Jour 1 du bloc 3 : Z2 souple de reprise 90 min (60-72 % FTP, 186-223 W, FC <= 164) + renfo B3 bas du corps entretien 40 min le soir"
+    verdict: vert
+    consigne: >
+      Contrôle d'entrée en bloc PMA validé sur les données : nuit de 8h10, score 86, FC repos 54
+      (seuil <= 55), VFC 54 ms (seuil >= 50, moyenne 7 jours 56,1, soit -4 %). Le creux de 48 d'hier
+      est remonté en 24 h, comme d'habitude chez toi. TSB -1,9, charge des 3 derniers jours : 151 TSS
+      samedi, puis quasi rien. Seule condition non vérifiable d'ici : aucun symptôme (nez, gorge,
+      courbatures, frissons) ; au moindre doute, repos et tu me le dis ici. Séance maintenue :
+      90 min de Z2 vraiment souple, FC <= 164 qui commande, aucune bosse appuyée, aucune Z3. Ce n'est
+      pas une séance pour se faire mal, la VO2max arrive jeudi. Renfo le soir, 2 séries RPE 7, pas
+      plus. Rien modifié sur Intervals.
+    ressenti_cyril:
+
+analyse_coach:
+  maj: null
+  synthese: null
+  decision: null
