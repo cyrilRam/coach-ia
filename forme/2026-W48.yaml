@@ -59,7 +59,9 @@ suivi_quotidien:
       >= 7h, aucun symptôme. Si mercredi matin la VFC retombe sous 42 ou la FC repos monte à 58,
       on en parle avant. Au moindre symptôme (nez, gorge, courbatures, frissons) : repos. Rien
       modifié sur Intervals.
-    ressenti_cyril:
+    ressenti_cyril: >
+      VFC basse expliquée par des coupures de mesure dans la nuit et un lever tôt à 6h15
+      (donc VFC et durée de sommeil sous-estimées). Creux isolé à cause connue, non retenu comme signal.
 
 analyse_coach:
   maj: null
