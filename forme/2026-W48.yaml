@@ -39,6 +39,28 @@ suivi_quotidien:
       plus. Rien modifié sur Intervals.
     ressenti_cyril:
 
+  - date: '2026-11-24'
+    moment: matin
+    nuit: {sommeil_h: 7.1, score: 78, vfc_ms: 47, vfc_moy7: 54.4, fc_repos: 55, fc_repos_moy7: 54.4}
+    charge: {ctl: 67.3, atl: 68.9, tsb: -1.6}
+    seance_prevue: "Jour 2 du bloc 3 : vélotaf A/R Z2 souple (130 min, 60-72 % FTP, 186-223 W, FC <= 164). Aller déjà fait à 7h04 (71 min, FC moy 138, Z1-Z2 quasi seulement)."
+    verdict: vert
+    consigne: >
+      Aucun seuil de veto touché : nuit de 7h08 (score 78), FC repos 55, VFC 47 ms (-14 % vs moyenne
+      7 jours 54,4, mais bien au-dessus de 42 ; second creux en 3 jours après celui de 48 dimanche,
+      à surveiller sans en faire un signal). Données de la nuit synchronisées à 8h40. TSB -1,6 ;
+      charge récente : 86 TSS hier, 48 TSS déjà faits ce matin. L'aller de ce matin était
+      exemplaire (FC moy 138, 2 min de Z3 seulement). Retour : même chose, Z2 stricte, FC <= 164
+      qui commande, Raidars montés assis, rien de plus. Point à corriger : la sortie d'hier, prévue
+      « souple », est partie plus haut que le plafond (PN 225 W pour 223 W max, découplage 12,8 %,
+      environ 4 min en Z5-Z7, FC max 203). Le relief (784 m de D+) explique une part du découplage,
+      donc pas de veto, mais la Z2 du vélotaf ne se durcit pas : la VO2max de jeudi se prépare en
+      fraîcheur. Conditions pour jeudi (à vérifier jeudi matin) : FC repos < 58 et VFC >= 42, nuit
+      >= 7h, aucun symptôme. Si mercredi matin la VFC retombe sous 42 ou la FC repos monte à 58,
+      on en parle avant. Au moindre symptôme (nez, gorge, courbatures, frissons) : repos. Rien
+      modifié sur Intervals.
+    ressenti_cyril:
+
 analyse_coach:
   maj: null
   synthese: null
