@@ -63,6 +63,24 @@ suivi_quotidien:
       VFC basse expliquée par des coupures de mesure dans la nuit et un lever tôt à 6h15
       (donc VFC et durée de sommeil sous-estimées). Creux isolé à cause connue, non retenu comme signal.
 
+  - date: '2026-11-25'
+    moment: matin
+    nuit: {sommeil_h: 8.4, score: 78, vfc_ms: 53, vfc_moy7: 53.1, fc_repos: 50, fc_repos_moy7: 54.0}
+    charge: {ctl: 66.4, atl: 63.4, tsb: 3.0}
+    seance_prevue: "Jour 3 du bloc 3 (S1 mercredi) : repos au bloc, aucune séance prévue"
+    verdict: vert
+    consigne: >
+      Nuit de 8h25 (score 78), VFC 53 ms (remontée de +6 vs hier, moyenne 7 jours 53,1), FC repos 50
+      (la plus basse de la période, moyenne 7 jours 54,0) : aucun seuil de veto touché, la nuit
+      récupère bien ce début de bloc. TSB +3,0. Charge des 3 derniers jours : 82 TSS lundi, 48 + 32
+      hier (retour du vélotaf à FC moy 124, bien en Z2). Mercredi est un jour de repos au bloc : on
+      le garde tel quel, pas de séance ajoutée, et si une sortie utilitaire est inévitable elle reste
+      en Z1-Z2 sans appuyer. Jeudi (VO2max 3x(10x40/20)) : conditions posées hier remplies à ce
+      stade (FC repos < 58, VFC >= 42, nuit >= 7h). Reste à vérifier jeudi matin : aucun symptôme
+      (nez, gorge, courbatures, frissons). Jeudi, c'est la séance pour aller chercher le haut de la
+      fourchette ; la fraîcheur d'aujourd'hui sert à ça. Rien modifié sur Intervals.
+    ressenti_cyril:
+
 analyse_coach:
   maj: null
   synthese: null
