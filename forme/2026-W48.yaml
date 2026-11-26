@@ -81,6 +81,27 @@ suivi_quotidien:
       fourchette ; la fraîcheur d'aujourd'hui sert à ça. Rien modifié sur Intervals.
     ressenti_cyril:
 
+  - date: '2026-11-26'
+    moment: matin
+    nuit: {sommeil_h: 9.45, score: 90, vfc_ms: 70, vfc_moy7: 56.0, fc_repos: 52, fc_repos_moy7: 53.4}
+    charge: {ctl: 67.2, atl: 67.9, tsb: -0.7}
+    seance_prevue: "Jour 4 du bloc 3 : VO2max 3x(10x40/20), 90 min, pause déj, montée régulière. 40 s à 356-372 W (115-120 % FTP 310), 20 s à 155-186 W, 5 min à 155-170 W entre les séries"
+    verdict: vert
+    consigne: >
+      Nuit de 9h27 (score 90), VFC 70 ms (+25 % vs moyenne 7 jours 56,0), FC repos 52 (moyenne 7 jours
+      53,4) : aucun seuil de veto touché, c'est la meilleure nuit du bloc. TSB -0,7, charge des 3
+      derniers jours : 48 + 32 TSS mardi, rien hier. Les conditions posées mardi sont remplies
+      (FC repos < 58, VFC >= 42, nuit >= 7h). Reste une condition que les données ne voient pas :
+      aucun symptôme (nez, gorge, courbatures, frissons) ; au moindre doute, repos et tu me le
+      dis ici. Séance maintenue, et c'est la séance pour aller chercher le haut de la fourchette :
+      échauffement complet de 25 min avec les 2 accélérations, première série au bas de la fourchette
+      (356 W) pour que la FC monte progressivement, puis 3 séries à 115-120 %, cadence 85-95. Arrêt
+      si deux 40 s de suite tombent sous 345 W. Les récups de 20 s restent vraiment souples
+      (155-186 W), le retour au calme aussi : tout ce qui est hors des 40 s reste en Z1-Z2. Après la
+      séance, assimilation : repas, sieste si possible, vendredi sans rien de plus que prévu. Rien
+      modifié sur Intervals.
+    ressenti_cyril:
+
 analyse_coach:
   maj: null
   synthese: null
