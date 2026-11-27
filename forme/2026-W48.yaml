@@ -101,7 +101,13 @@ suivi_quotidien:
       (nez, gorge, courbatures, frissons), la séance saute ou se transforme en Z2 et on en parle ici.
       Si tout tient, c'est la séance pour aller chercher le haut de la fourchette. Rien modifié sur
       Intervals.
-    ressenti_cyril:
+    ressenti_cyril: >
+      Un peu fatigué ce matin, attribué à la séance VO2max de la veille, avec la VFC plus basse.
+    ajustement_conversation: >
+      Fatigue légère et expliquée, concordante avec le creux de VFC post-séance : pas un signal de
+      veto. Renfo maintenu mais allégé (2 tours au lieu de 3, RPE facile, arrêt si les jambes ou la
+      tête ne suivent pas). Demain, le ressenti des jambes au réveil compte autant que les chiffres
+      pour décider du 4x4'.
 
 analyse_coach:
   maj: null
