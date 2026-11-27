@@ -81,6 +81,28 @@ suivi_quotidien:
       fourchette ; la fraîcheur d'aujourd'hui sert à ça. Rien modifié sur Intervals.
     ressenti_cyril:
 
+  - date: '2026-11-27'
+    moment: matin
+    nuit: {sommeil_h: 7.7, score: 63, vfc_ms: 47, vfc_moy7: 54.9, fc_repos: 55, fc_repos_moy7: 53.4}
+    charge: {ctl: 66.0, atl: 61.1, tsb: 4.9}
+    seance_prevue: "Jour 5 du bloc 3 : renfo B3 posture et haut du corps, 30 min à la maison, pas de jambes (repos vélo)"
+    verdict: vert
+    consigne: >
+      Aucun seuil de veto touché : nuit de 7h42, FC repos 55 (< 58), VFC 47 ms (> 42). Deux points à
+      noter sans en faire un signal : le score de sommeil tombe à 63 (< 70, mais une seule nuit après
+      90 hier) et la VFC recule de 70 à 47, ce qui est le creux habituel au lendemain d'une grosse
+      séance (VO2max d'hier : 117 TSS, 2h02, 1085 m D+, découplage 13 % mais sur une séance
+      d'intervalles en relief, donc pas lisible comme dérive). Charge : rien mercredi, 117 TSS
+      jeudi, TSB +4,9. Donnée de la nuit possiblement incomplète : aucune décision n'en dépend, la
+      séance du jour ne sollicite pas les jambes. Séance maintenue : renfo posture 30 min, RPE
+      facile, sans chercher à en faire plus. Journée d'assimilation, sieste ou coucher tôt si
+      possible. Condition pour demain (VO2max 4x4' en col) : à vérifier demain matin. Si le score de
+      sommeil repasse sous 70 une 2e nuit, ou FC repos >= 58, ou VFC < 42, ou le moindre symptôme
+      (nez, gorge, courbatures, frissons), la séance saute ou se transforme en Z2 et on en parle ici.
+      Si tout tient, c'est la séance pour aller chercher le haut de la fourchette. Rien modifié sur
+      Intervals.
+    ressenti_cyril:
+
 analyse_coach:
   maj: null
   synthese: null
