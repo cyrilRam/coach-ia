@@ -110,6 +110,27 @@ suivi_quotidien:
       tête ne suivent pas). Demain, le ressenti des jambes au réveil compte autant que les chiffres
       pour décider du 4x4'.
 
+  - date: '2026-11-28'
+    moment: matin
+    nuit: {sommeil_h: 9.0, score: 92, vfc_ms: 65, vfc_moy7: 54.9, fc_repos: 52, fc_repos_moy7: 53.3}
+    charge: {ctl: 67.0, atl: 67.1, tsb: -0.1}
+    seance_prevue: "Jour 6 du bloc 3 : VO2max 4x4' en col régulier (110 min : 30' Z2 + 5' Z2 haut, 4 x 4' à 335-350 W, récup 3' à 155-170 W, 30' Z2 stricte, retour calme). Cible 108-113 % FTP, les deux premières au bas de la fourchette (335-340 W)."
+    verdict: vert
+    consigne: >
+      Condition posée hier remplie : le score de sommeil repasse de 63 à 92 (une seule nuit sous 70,
+      pas de veto), nuit de 9h02, FC repos 52 (< 58), VFC 65 ms (+18 % vs moyenne 7 jours 54,9, bien
+      au-dessus de 42). Le creux de VFC d'hier était bien le creux post-séance habituel, remonté en
+      24 h, et la sieste d'hier a fait son travail. TSB -0,1 ; charge des 3 derniers jours : 117 TSS
+      jeudi, rien mercredi ni vendredi hors renfo léger. Seule condition non vérifiable d'ici : aucun
+      symptôme (nez, gorge, courbatures, frissons) ; au moindre doute, repos et tu me le dis ici, et
+      les jambes au réveil comptent autant que les chiffres. Séance maintenue, c'est LA séance clé
+      de la semaine : on va chercher le haut de la fourchette. Les deux premières répétitions à
+      335-340 W (pas plus, sinon la 4e paie), la dernière aussi forte que la première, voire
+      jusqu'à 350 W si les jambes répondent. Ordre de coupe si ça se dégrade : une répétition, puis
+      la séance entière, jamais l'inverse. Z2 stricte avant et après, FC <= 164. Demain : sortie
+      longue Z2 stricte, on ne durcit rien. Rien modifié sur Intervals.
+    ressenti_cyril:
+
 analyse_coach:
   maj: null
   synthese: null
